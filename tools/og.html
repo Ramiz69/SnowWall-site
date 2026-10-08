@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OG image renderer</title>
+<!-- Renders the 1200×630 social image for one language from the real weather engine and saves
+     it through tools/og.mjs. Open http://localhost:8790/tools/og.html?lang=en (and ?lang=ru). -->
+<style>
+  body { margin: 0; background: #111; color: #ccc; font: 14px -apple-system, system-ui, sans-serif; }
+  #stage { position: absolute; left: 0; top: 0; width: 1200px; height: 630px; overflow: hidden;
+    --flake: 255,255,255; --halo: 0,0,0; --rain: 176,202,236; --settle: #f2f7ff; --settle-shade: rgba(120,170,255,.28); --canvas-dark: 1; }
+  #stage h1 { position: absolute; left: 0; right: 0; top: 248px; margin: 0; text-align: center; color: transparent;
+    font: 700 108px/1.04 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; letter-spacing: -0.035em; }
+  #stage h1 .w { display: inline-block; white-space: nowrap; }
+  canvas.layer { position: absolute; inset: 0; width: 1200px; height: 630px; }
+  #out { position: absolute; top: 650px; left: 0; width: 600px; }
+  #log { position: absolute; top: 650px; left: 620px; }
+</style>
+</head>
+<body>
+<div id="stage"><canvas class="layer" id="b"></canvas><h1 id="h"></h1><canvas class="layer" id="f"></canvas></div>
+<canvas id="out" width="1200" height="630"></canvas>
+<pre id="log">rendering…</pre>
+<script type="module">
+import { Weather } from '/src/js/weather.js';
+
+const COPY = {
+  en: { title: 'Weather for your desktop.', eyebrow: 'SnowWall for Mac', foot: 'Free on the Mac App Store' },
+  ru: { title: 'Погода на вашем экране.', eyebrow: 'SnowWall для Mac', foot: 'Бесплатно в Mac App Store' },
+};
+const lang = new URLSearchParams(location.search).get('lang') || 'en';
+const c = COPY[lang];
+const h = document.getElementById('h');
+h.innerHTML = c.title.split(' ').map(w => `<span class="w">${w}</span>`).join(' ');
+const words = [...h.querySelectorAll('.w')];
+// Two lines like the hero: break before the second half.
+const brk = Math.ceil(words.length / 2);
+words[brk].before(document.createElement('br'));
+const FONT = '-apple-system, BlinkMacSystemFont, system-ui, sans-serif';
+
+await document.fonts.ready;
+const icon = new Image();
+await new Promise((ok, fail) => { icon.onload = ok; icon.onerror = fail; icon.src = '/src/static/icon.png'; });   // not decode(): it stalls in a hidden tab
+
+const stage = document.getElementById('stage');
+const w = new Weather({ host: stage, back: document.getElementById('b'), front: document.getElementById('f'), text: words, still: true, maxDpr: 1, pointer: false, tune: { amount: .8 } });
+w.resize();
+// let more snow pile on the letters than a few seconds would
+for (let i = 0; i < 900; i++) w.step(1 / 30);
+w.draw();
+
+const out = document.getElementById('out'), x = out.getContext('2d');
+const sky = x.createLinearGradient(0, 0, 0, 630);
+sky.addColorStop(0, '#03060d'); sky.addColorStop(.55, '#081226'); sky.addColorStop(1, '#12233f');
+x.fillStyle = sky; x.fillRect(0, 0, 1200, 630);
+for (const [cx, cy, r, col] of [[360, 200, 420, 'rgba(64,190,160,.16)'], [860, 150, 380, 'rgba(90,120,255,.15)']]) {
+  const g = x.createRadialGradient(cx, cy, 0, cx, cy, r); g.addColorStop(0, col); g.addColorStop(1, 'rgba(0,0,0,0)');
+  x.fillStyle = g; x.fillRect(0, 0, 1200, 630);
+}
+x.drawImage(document.getElementById('b'), 0, 0);
+x.save(); x.shadowColor = 'rgba(0,0,0,.35)'; x.shadowBlur = 24; x.shadowOffsetY = 10;
+x.drawImage(icon, 552, 58, 96, 96); x.restore();
+x.fillStyle = '#a3b4cd'; x.textAlign = 'center'; x.font = `600 26px ${FONT}`;
+x.fillText(c.eyebrow, 600, 200);
+// headline: same tinted gradient as the site, drawn word by word at the DOM positions
+const hr = stage.getBoundingClientRect();
+const grad = x.createLinearGradient(0, 248, 0, 248 + 230);
+grad.addColorStop(0, '#c7d5ea'); grad.addColorStop(1, '#7f98bd');
+x.fillStyle = grad; x.textAlign = 'left'; x.font = `700 108px ${FONT}`;
+if ('letterSpacing' in x) x.letterSpacing = `${-0.035 * 108}px`;
+for (const el of words) {
+  const r = el.getBoundingClientRect(), m = x.measureText(el.textContent);
+  x.save(); x.translate(r.left - hr.left, r.top - hr.top + (m.fontBoundingBoxAscent || 99));
+  x.scale(m.width ? r.width / m.width : 1, 1); x.fillText(el.textContent, 0, 0); x.restore();
+}
+if ('letterSpacing' in x) x.letterSpacing = '0px';
+x.drawImage(document.getElementById('f'), 0, 0);
+x.fillStyle = '#a3b4cd'; x.textAlign = 'center'; x.font = `500 24px ${FONT}`;
+x.fillText(c.foot + ' · snowwall.app', 600, 560);
+
+const blob = await new Promise(r => out.toBlob(r, 'image/png'));
+const res = await fetch(`/save?lang=${lang}`, { method: 'POST', body: blob });
+document.getElementById('log').textContent = `${lang}: ${res.status} ${await res.text()}`;
+</script>
+</body>
+</html>

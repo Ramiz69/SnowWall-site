@@ -105,8 +105,7 @@ section { position: relative; }
 /* ---------- 2 · it settles on your windows (sticky) ---------- */
 .settle { height: 190vh; background: linear-gradient(180deg, var(--page) 0%, var(--sky-2) 12%, var(--sky-1) 50%, var(--sky-2) 88%, var(--page) 100%); }
 /* light mode: the stage is a dusk sky so white snow reads; copy gets darker greys to keep AA */
-:root:not([data-theme="dark"]) .settle { --muted: #1c2b42; --faint: #1f2e45; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .settle { --muted: #a3b4cd; --faint: #8295b3; } }
+.hero, .settle, .page-top { --muted: var(--on-sky-muted); --faint: var(--on-sky-faint); }
 .settle-stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; display: grid; align-items: center; isolation: isolate; }
 .settle-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(24px, 5vw, 72px); align-items: center; }
 .settle-steps { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 14px; max-width: 30rem; }

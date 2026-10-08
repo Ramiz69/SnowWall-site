@@ -5,7 +5,8 @@
   color-scheme: light;
   --sky-1: #6f8fbd; --sky-2: #a9bedb; --sky-3: #cbd8ea;
   --page: #cbd8ea; --page-2: #bccbe1; --page-deep: #b0c1da;
-  --ink: #0d1726; --muted: #33445e; --faint: #46576f;
+  --ink: #0d1726; --muted: #33445e; --faint: #38485f;
+  --on-sky-muted: #1e2d44; --on-sky-faint: #16243a;   /* greys that keep AA on the light dusk sky */
   --line: rgba(13, 23, 38, .14);
   --glass: rgba(255, 255, 255, .52); --glass-solid: rgba(240, 245, 251, .82); --glass-line: rgba(13, 23, 38, .10); --glass-on: #ffffff;
   --accent: #1d4f9a; --accent-soft: rgba(29, 79, 154, .12);
@@ -23,7 +24,7 @@
     color-scheme: dark;
     --sky-1: #03060d; --sky-2: #081226; --sky-3: #12233f;
     --page: #12233f; --page-2: #0d1a31; --page-deep: #081226;
-    --ink: #eef3fb; --muted: #a3b4cd; --faint: #8295b3;
+    --ink: #eef3fb; --muted: #a3b4cd; --faint: #8295b3; --on-sky-muted: #a3b4cd; --on-sky-faint: #8295b3;
     --line: rgba(255, 255, 255, .12);
     --glass: rgba(18, 30, 52, .55); --glass-solid: rgba(20, 34, 60, .86); --glass-line: rgba(255, 255, 255, .10); --glass-on: rgba(255, 255, 255, .14);
     --accent: #8fc1ff; --accent-soft: rgba(143, 193, 255, .12);
@@ -39,7 +40,7 @@
   color-scheme: dark;
   --sky-1: #03060d; --sky-2: #081226; --sky-3: #12233f;
   --page: #12233f; --page-2: #0d1a31; --page-deep: #081226;
-  --ink: #eef3fb; --muted: #a3b4cd; --faint: #8295b3;
+  --ink: #eef3fb; --muted: #a3b4cd; --faint: #8295b3; --on-sky-muted: #a3b4cd; --on-sky-faint: #8295b3;
   --line: rgba(255, 255, 255, .12);
   --glass: rgba(18, 30, 52, .55); --glass-solid: rgba(20, 34, 60, .86); --glass-line: rgba(255, 255, 255, .10); --glass-on: rgba(255, 255, 255, .14);
   --accent: #8fc1ff; --accent-soft: rgba(143, 193, 255, .12);

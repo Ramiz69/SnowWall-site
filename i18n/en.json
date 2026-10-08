@@ -15,8 +15,8 @@
   "ui": {
     "skip": "Skip to content",
     "langNav": "Language and appearance",
-    "play": "Play",
-    "pause": "Pause",
+    "play": "Play animation",
+    "pause": "Pause animation",
     "themeAuto": "Color scheme: automatic",
     "themeLabels": "Color scheme: automatic|Color scheme: light|Color scheme: dark",
     "themeShort": { "auto": "Auto", "light": "Light", "dark": "Dark" },
