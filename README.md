@@ -71,13 +71,13 @@ only while on screen, never under Reduce Motion; `media-src 'self'` already allo
 them: `node tools/og.mjs`, open `http://localhost:8790/tools/og.html?lang=en` and `?lang=ru`
 in a browser on a Mac (so the headline is set in the system font), and commit the PNGs.
 
-## Cloudflare Pages settings
+## Cloudflare deployment
 
-Pages serves the committed `public/` folder as it is, with no build step, so the project's
-settings stay as they were: Framework preset *None*, **build command empty**, **build output
-directory `public`**. `public/` is the build's output and is committed: after changing anything
-in `src/` or `i18n/`, run `node build.mjs` and commit `public/` with the change. Every push to
-`main` redeploys; other branches get preview URLs.
+The site is deployed by **Cloudflare Workers Builds** (project `snowwall-site`), which serves the
+committed `public/` folder as static assets, `_headers` included, with no build step. `public/`
+is the build's output and is committed: after changing anything in `src/` or `i18n/`, run
+`node build.mjs` and commit `public/` with the change. A push to `main` deploys; if that build
+fails, the previous version stays live.
 
 To switch on the 1.1 sections when 1.1 is in the App Store, build with `node build.mjs
 --release=1.1` and commit the result.
