@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="{{lang}}" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#081226" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#6f8fbd" media="(prefers-color-scheme: light)">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}">
+<link rel="canonical" href="{{url}}">
+<link rel="alternate" hreflang="en" href="{{site}}/">
+<link rel="alternate" hreflang="ru" href="{{site}}/ru/">
+<link rel="alternate" hreflang="x-default" href="{{site}}/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowWall">
+<meta property="og:title" content="{{meta.ogTitle}}">
+<meta property="og:description" content="{{meta.ogDescription}}">
+<meta property="og:url" content="{{url}}">
+<meta property="og:image" content="{{site}}/og/og-{{lang}}.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{meta.ogAlt}}">
+<meta property="og:locale" content="{{meta.locale}}">
+<meta property="og:locale:alternate" content="{{meta.localeAlt}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{meta.ogTitle}}">
+<meta name="twitter:description" content="{{meta.ogDescription}}">
+<meta name="twitter:image" content="{{site}}/og/og-{{lang}}.png">
+<meta name="apple-itunes-app" content="app-id=6809149964">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="stylesheet" href="{{@css/home.css}}">
+<script src="{{@js/theme-init.js}}"></script>
+<script type="module" src="{{@js/main.js}}"></script>
+{{modulepreload}}
+<script type="application/ld+json">{{jsonld}}</script>
+</head>
+<body>
+<a class="skip" href="#main">{{ui.skip}}</a>
+
+<header class="topbar">
+  <button class="chip motion-chip play" id="hero-play" type="button" aria-pressed="false" data-play="{{ui.play}}" data-pause="{{ui.pause}}">{{ui.play}}</button>
+  <nav class="topnav" aria-label="{{ui.langNav}}">
+    <a class="chip" href="{{otherLang.href}}" hreflang="{{otherLang.code}}" lang="{{otherLang.code}}">{{otherLang.label}}</a>
+    <button class="chip" id="theme" type="button" data-labels="{{ui.themeLabels}}" data-light="{{ui.themeShort.light}}" data-dark="{{ui.themeShort.dark}}" aria-label="{{ui.themeAuto}}">{{ui.themeShort.auto}}</button>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- 1 · Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <img class="app-icon" src="{{@assets/icon-192.webp}}" alt="" width="96" height="96" fetchpriority="high">
+    <p class="eyebrow enter">{{hero.eyebrow}}</p>
+    <h1 id="hero-title" class="display headline">{{hero.titleHtml}}</h1>
+    <p class="sub enter">{{hero.sub}}</p>
+    <div class="cta">
+      <a class="badge" href="{{appStore}}"><img src="{{@assets/badge-mac-black-{{badgeLang}}.svg}}" alt="{{ui.badgeAlt}}" width="187" height="48"></a>
+      <span class="price enter">{{hero.price}}</span>
+    </div>
+    <div class="switcher enter" role="radiogroup" aria-label="{{hero.switcherLabel}}">
+      <button type="button" role="radio" aria-checked="true" data-effect="snow">{{hero.modes.snow}}</button>
+      <button type="button" role="radio" aria-checked="false" data-effect="rain" tabindex="-1">{{hero.modes.rain}}</button>
+      <button type="button" role="radio" aria-checked="false" data-effect="blossom" tabindex="-1">{{hero.modes.blossom}}</button>
+    </div>
+    <p class="now-showing" aria-live="polite" data-template="{{hero.nowShowing}}"></p>
+  </div>
+  <p class="req">{{hero.req}}</p>
+  <canvas class="layer front" aria-hidden="true"></canvas>
+</section>
+
+<!-- 2 · It settles on your windows -->
+<section class="settle" id="settle" aria-labelledby="settle-title">
+  <div class="settle-stage">
+    <canvas class="layer back" aria-hidden="true"></canvas>
+    <div class="wrap settle-grid">
+      <div class="settle-copy">
+        <h2 id="settle-title" class="display reveal">{{settle.title}}</h2>
+        <ol class="settle-steps">
+          {{#settle.steps}}<li>{{.}}</li>{{/settle.steps}}
+        </ol>
+        <p class="hint">{{settle.hint}}</p>
+      </div>
+      <div class="mock-wrap">
+        <div class="mock" role="img" aria-label="{{settle.mockLabel}}">
+          <div class="mock-title" aria-hidden="true">{{mock.title}}</div>
+          <div class="mock-body" aria-hidden="true">
+            <ul class="mock-side">
+              {{#mock.tabs}}<li class="{{.cls}}"><i></i>{{.name}}</li>{{/mock.tabs}}
+            </ul>
+            <div class="mock-pane">
+              <p class="mock-h">{{mock.styleSize}}</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>{{mock.style}}</span><span class="seg"><b>{{mock.soft}}</b><b class="on">{{mock.crystal}}</b><b>{{mock.sparkle}}</b></span></div>
+                <div class="mock-row"><span>{{mock.smallest}}</span><span class="track"><i class="fill f25"></i></span><em>{{mock.smallestValue}}</em></div>
+                <div class="mock-row"><span>{{mock.largest}}</span><span class="track"><i class="fill f45"></i></span><em>{{mock.largestValue}}</em></div>
+              </div>
+              <p class="mock-h">{{mock.color}}</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>{{mock.color}}</span><span class="well"></span></div>
+                <div class="mock-row"><span>{{mock.opacity}}</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
+              </div>
+              <p class="mock-h">{{mock.performance}}</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>{{mock.quality}}</span><span class="radios"><b>{{mock.saver}}</b><b class="on">{{mock.balanced}}</b><b>{{mock.ultra}}</b></span></div>
+                <div class="mock-row"><span>{{mock.count}}</span><span class="track"><i class="fill f60"></i></span><em>{{mock.countValue}}</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas class="layer front" aria-hidden="true"></canvas>
+    <button class="chip play section-play" type="button" aria-pressed="false" data-play="{{ui.play}}" data-pause="{{ui.pause}}">{{ui.play}}</button>
+  </div>
+</section>
+
+<!-- 3 · Weather for every season -->
+<section class="seasons" id="effects" aria-labelledby="seasons-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="seasons-title" class="display reveal">{{seasons.title}}</h2>
+      <p class="lede reveal">{{seasons.lede}}</p>
+    </header>
+    <ul class="cards" role="list">
+      {{#effects}}<li class="card-item reveal">
+        <button class="card fx-{{.id}}" type="button" aria-pressed="{{.pressed}}" data-effect="{{.id}}">
+          <span class="poster poster-{{.id}}">{{.video}}<canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">{{.name}}</span>
+            <span class="card-desc">{{.desc}}</span>
+          </span>
+          <span class="tag tag-{{.tier}}">{{.tierLabel}}</span>
+        </button>
+      </li>{{/effects}}
+    </ul>
+    <p class="seasons-note" aria-live="polite" data-template="{{seasons.chosen}}"><span class="choose-hint">{{seasons.hint}}</span></p>
+  </div>
+  <button class="chip play section-play" type="button" aria-pressed="false" data-play="{{ui.play}}" data-pause="{{ui.pause}}">{{ui.play}}</button>
+</section>
+
+<!-- 4 · Ambient Mode -->
+<section class="ambient night" id="ambient" aria-labelledby="ambient-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="ambient-clock" aria-hidden="true">
+    <span class="clock-time">9:41</span>
+    <span class="clock-date"></span>
+  </div>
+  <div class="wrap ambient-copy">
+    <h2 id="ambient-title" class="display reveal">{{ambient.title}}</h2>
+    <p class="lede reveal">{{ambient.body}}</p>
+    <p class="tag tag-pro reveal">{{ambient.tag}}</p>
+  </div>
+  <button class="chip play section-play" type="button" aria-pressed="false" data-play="{{ui.play}}" data-pause="{{ui.pause}}">{{ui.play}}</button>
+</section>
+
+<!-- 5 · Tune every flake -->
+<section class="tune" id="tune" aria-labelledby="tune-title" data-still="{{tune.still}}">
+  <div class="wrap tune-grid">
+    <div class="tune-copy">
+      <h2 id="tune-title" class="display reveal">{{tune.title}}</h2>
+      <p class="lede reveal">{{tune.lede}}</p>
+      <form class="sliders glass reveal" aria-label="{{tune.formLabel}}">
+        {{#tune.sliders}}<div class="slider">
+          <label for="s-{{.id}}">{{.label}}</label>
+          <output for="s-{{.id}}" id="o-{{.id}}"></output>
+          <input type="range" id="s-{{.id}}" name="{{.id}}" min="{{.min}}" max="{{.max}}" step="{{.step}}" value="{{.value}}" data-unit="{{.unit}}" data-from="{{.from}}" data-to="{{.to}}">
+          <span class="ends" aria-hidden="true"><span>{{.minLabel}}</span><span>{{.maxLabel}}</span></span>
+        </div>{{/tune.sliders}}
+        <button class="reset" type="reset">{{tune.reset}}</button>
+      </form>
+    </div>
+    <div class="tune-view reveal">
+      <canvas class="layer back" aria-hidden="true"></canvas>
+      <button class="chip play section-play" type="button" aria-pressed="false" data-play="{{ui.play}}" data-pause="{{ui.pause}}">{{ui.play}}</button>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Over your windows or behind them -->
+<section class="behind" id="behind" aria-labelledby="behind-title">
+  <div class="behind-stage">
+    <div class="wrap behind-head">
+      <h2 id="behind-title" class="display reveal">{{behind.title}}</h2>
+      <p class="lede reveal">{{behind.lede}}</p>
+    </div>
+    <div class="desk">
+      <canvas class="layer back" aria-hidden="true"></canvas>
+      <div class="mock mock-small" role="img" aria-label="{{behind.mockLabel}}">
+        <div class="mock-title" aria-hidden="true">{{mock.title}}</div>
+        <div class="mock-pane" aria-hidden="true">
+          <p class="mock-h">{{mock.layering}}</p>
+          <div class="mock-group">
+            <div class="mock-row toggle-row">
+              <span><strong>{{mock.behind}}</strong><small>{{mock.behindHelp}}</small></span>
+              <span class="toggle"><i></i></span>
+            </div>
+          </div>
+          <p class="mock-h">{{mock.windows}}</p>
+          <div class="mock-group">
+            <div class="mock-row toggle-row dim-when-behind">
+              <span><strong>{{mock.land}}</strong><small>{{mock.landHelp}}</small></span>
+              <span class="toggle on-static"><i></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas class="layer front" aria-hidden="true"></canvas>
+      <p class="desk-state" aria-hidden="true"><span class="s-over">{{behind.over}}</span><span class="s-behind">{{behind.behind}}</span></p>
+    </div>
+    <div class="behind-controls">
+      <button class="switch-btn" type="button" role="switch" aria-checked="false">{{behind.switchLabel}}</button>
+      <button class="chip play section-play" type="button" aria-pressed="false" data-play="{{ui.play}}" data-pause="{{ui.pause}}">{{ui.play}}</button>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Built for the Mac -->
+<section class="built" id="built" aria-labelledby="built-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="built-title" class="display reveal">{{built.title}}</h2>
+      <p class="lede reveal">{{built.lede}}</p>
+    </header>
+    <ul class="facts" role="list">
+      {{#built.facts}}<li class="fact glass reveal">{{.icon}}<h3>{{.title}}</h3><p>{{.body}}</p></li>{{/built.facts}}
+      {{#built.facts11}}<li class="fact glass reveal" data-release="1.1" hidden>{{.icon}}<h3>{{.title}}</h3><p>{{.body}}</p></li>{{/built.facts11}}
+    </ul>
+  </div>
+</section>
+
+<!-- 8 · Private by design -->
+<section class="private" id="privacy" aria-labelledby="private-title">
+  <div class="wrap">
+    <h2 id="private-title" class="display">{{private.title}}</h2>
+    <ul class="noes" role="list">
+      {{#private.items}}<li><strong>{{.title}}</strong><span>{{.body}}</span></li>{{/private.items}}
+    </ul>
+    <p class="private-more">{{private.more}}</p>
+  </div>
+</section>
+
+<!-- 9 · SnowWall Pro -->
+<section class="pro" id="pro" aria-labelledby="pro-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="pro-title" class="display reveal">{{pro.title}}</h2>
+      <p class="lede reveal">{{pro.lede}}</p>
+    </header>
+    <div class="compare glass reveal">
+      <table>
+        <caption class="vh">{{pro.caption}}</caption>
+        <thead><tr><th scope="col"><span class="vh">{{pro.feature}}</span></th><th scope="col">{{pro.free}}</th><th scope="col" class="pro-col">SnowWall Pro</th></tr></thead>
+        <tbody>
+          {{#pro.rows}}<tr><th scope="row">{{.label}}{{.note}}</th><td>{{.free}}</td><td class="pro-col">{{.pro}}</td></tr>{{/pro.rows}}
+        </tbody>
+      </table>
+    </div>
+    <div class="release-note glass" data-release="1.1" hidden>
+      {{#pro.release11}}<p><strong>{{.title}}</strong> {{.body}}</p>{{/pro.release11}}
+    </div>
+    <div class="pro-cta">
+      <a class="badge" href="{{appStore}}"><img src="{{@assets/badge-mac-black-{{badgeLang}}.svg}}" alt="{{ui.badgeAlt}}" width="187" height="48" loading="lazy"></a>
+      <p class="price">{{pro.price}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · FAQ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap narrow">
+    <h2 id="faq-title" class="display reveal">{{faq.title}}</h2>
+    <div class="faq-list">
+      {{#faq.items}}<details><summary>{{.q}}</summary><div class="answer">{{.a}}</div></details>{{/faq.items}}
+      {{#faq.items11}}<details data-release="1.1" hidden><summary>{{.q}}</summary><div class="answer">{{.a}}</div></details>{{/faq.items11}}
+    </div>
+    <p class="faq-more">{{faq.more}}</p>
+  </div>
+</section>
+
+</main>
+
+<!-- 11 · Footer -->
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="{{@assets/icon-192.webp}}" alt="" width="40" height="40" loading="lazy">
+      <p><strong>SnowWall</strong><br>{{footer.tagline}}</p>
+    </div>
+    <a class="badge" href="{{appStore}}"><img src="{{@assets/badge-mac-black-{{badgeLang}}.svg}}" alt="{{ui.badgeAlt}}" width="187" height="48" loading="lazy"></a>
+    <nav class="footer-nav" aria-label="{{footer.navLabel}}">
+      <a href="/support/">{{footer.support}}</a>
+      <a href="/privacy/">{{footer.privacy}}</a>
+      <a href="/terms/">{{footer.terms}}</a>
+      <a href="{{otherLang.href}}" hreflang="{{otherLang.code}}" lang="{{otherLang.code}}">{{otherLang.name}}</a>
+    </nav>
+    <p class="footer-small">{{footer.small}}</p>
+  </div>
+</footer>
+</body>
+</html>
