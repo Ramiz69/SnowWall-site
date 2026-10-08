@@ -2,7 +2,7 @@
 
 The public site for [SnowWall](https://snowwall.app), a macOS menu bar app that draws weather
 over the desktop. Built from `src/` into `public/` by `build.mjs` (Node, no dependencies) and
-served by Cloudflare Pages at **snowwall.app**.
+served by Cloudflare at **snowwall.app**.
 
 | Path | What | Used by |
 |---|---|---|
@@ -11,8 +11,8 @@ served by Cloudflare Pages at **snowwall.app**.
 | `/support/` | answers and the support address | Support URL in App Store Connect (required, must be a web page) |
 | `/privacy/` | privacy policy | the app's purchase window, Privacy Policy URL in App Store Connect |
 | `/terms/` | terms of use | the app's purchase window |
-| `404.html` | anything else | served by Pages for unknown paths |
-| `_headers` | security and cache headers | read by Pages, not published as a page |
+| `404.html` | anything else | served by Cloudflare for unknown paths |
+| `_headers` | security and cache headers | read by Cloudflare, not published as a page |
 
 **The URLs are the point.** Each page is `name/index.html`, so it answers at `/name` and
 `/name/`. The app builds its links as `https://snowwall.app/privacy` and
@@ -52,8 +52,7 @@ Copy for 1.1 (Control Center pause, widgets, Spotlight actions, “describe a mo
 Christmas free in December, live Pro preview) is already written in both languages and sits
 in the page with `data-release="1.1" hidden`. When 1.1 is live on the App Store:
 
-- either set the Pages environment variable `RELEASE` to `1.1` and redeploy,
-- or run `node build.mjs --release=1.1` locally to look first.
+run `node build.mjs --release=1.1`, check it with `node tools/serve.mjs 8787`, and commit `public/`.
 
 The blocks are in `src/home.html` (facts grid, Pro section, FAQ) and their strings under
 `built.facts11`, `pro.release11` and `faq.items11` in `i18n/*.json`.
