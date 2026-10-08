@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#081226" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#6f8fbd" media="(prefers-color-scheme: light)">
+<title>SnowWall for Mac: snow, rain and seasons on your desktop</title>
+<meta name="description" content="SnowWall draws snow, rain, petals and more across your Mac desktop. Flakes drift around your pointer and settle on your windows. Free, from the menu bar, with no permissions to grant.">
+<link rel="canonical" href="https://snowwall.app/">
+<link rel="alternate" hreflang="en" href="https://snowwall.app/">
+<link rel="alternate" hreflang="ru" href="https://snowwall.app/ru/">
+<link rel="alternate" hreflang="x-default" href="https://snowwall.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowWall">
+<meta property="og:title" content="SnowWall: weather for your Mac desktop">
+<meta property="og:description" content="Snow drifts across your Mac, moves aside for your pointer and settles on your windows. Free on the Mac App Store.">
+<meta property="og:url" content="https://snowwall.app/">
+<meta property="og:image" content="https://snowwall.app/og/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The words “Weather for your desktop.” with snow settled on the letters, on a night sky.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SnowWall: weather for your Mac desktop">
+<meta name="twitter:description" content="Snow drifts across your Mac, moves aside for your pointer and settles on your windows. Free on the Mac App Store.">
+<meta name="twitter:image" content="https://snowwall.app/og/og-en.png">
+<meta name="apple-itunes-app" content="app-id=6809149964">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="stylesheet" href="/assets/home.c1ec445513.css">
+<script src="/assets/theme-init.3da56ff09f.js"></script>
+<script type="module" src="/assets/main.ce77b75042.js"></script>
+<link rel="modulepreload" href="/assets/theme.44868fb97d.js">
+<link rel="modulepreload" href="/assets/effects.662733e831.js">
+<link rel="modulepreload" href="/assets/motion.fbf57fc8e4.js">
+<link rel="modulepreload" href="/assets/stats.c5ab680bf8.js">
+<link rel="modulepreload" href="/assets/weather.b80f0fd2b2.js">
+<link rel="modulepreload" href="/assets/util.0f60c0292c.js">
+<link rel="modulepreload" href="/assets/hero.70b12ba8a7.js">
+<link rel="modulepreload" href="/assets/sections.16f4cef942.js">
+<link rel="modulepreload" href="/assets/reveal.6837af5595.js">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SnowWall","url":"https://snowwall.app/","inLanguage":"en","description":"A menu bar app that draws snow, rain and seasonal weather across the Mac desktop. Flakes drift around the pointer and settle on windows.","image":"https://snowwall.app/icon.png","operatingSystem":"macOS 26 or later","applicationCategory":"DesktopEnhancementApplication","installUrl":"https://apps.apple.com/app/id6809149964","offers":[{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/id6809149964"},{"@type":"Offer","name":"SnowWall Pro","description":"One-time in-app purchase","price":"14.99","priceCurrency":"USD","url":"https://apps.apple.com/app/id6809149964"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <button class="chip motion-chip play" id="hero-play" type="button" aria-pressed="false" data-play="Play animation" data-pause="Pause animation">Play animation</button>
+  <nav class="topnav" aria-label="Language and appearance">
+    <a class="chip" href="/ru/" hreflang="ru" lang="ru">RU</a>
+    <button class="chip" id="theme" type="button" data-labels="Color scheme: automatic|Color scheme: light|Color scheme: dark" data-light="Light" data-dark="Dark" aria-label="Color scheme: automatic">Auto</button>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- 1 · Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <img class="app-icon" src="/assets/icon-192.3a014ec50c.webp" alt="" width="96" height="96" fetchpriority="high">
+    <p class="eyebrow enter">SnowWall for Mac</p>
+    <h1 id="hero-title" class="display headline"><span class="w">Weather</span> <span class="w">for</span> <span class="w">your</span> <span class="w">desktop.</span></h1>
+    <p class="sub enter">Snow drifts across your Mac, moves aside for your pointer and settles on your windows. All from a snowflake in the menu bar.</p>
+    <div class="cta">
+      <a class="badge" href="https://apps.apple.com/app/id6809149964"><img src="/assets/badge-mac-black-en.15111cd043.svg" alt="Download on the Mac App Store" width="187" height="48"></a>
+      <span class="price enter">Free. SnowWall Pro is a one-time $14.99.</span>
+    </div>
+    <div class="switcher enter" role="radiogroup" aria-label="Preview an effect">
+      <button type="button" role="radio" aria-checked="true" data-effect="snow">Snow</button>
+      <button type="button" role="radio" aria-checked="false" data-effect="rain" tabindex="-1">Rain</button>
+      <button type="button" role="radio" aria-checked="false" data-effect="blossom" tabindex="-1">Blossom</button>
+    </div>
+    <p class="now-showing" aria-live="polite" data-template="Now showing: {name}"></p>
+  </div>
+  <p class="req">Requires macOS 26 or later</p>
+  <canvas class="layer front" aria-hidden="true"></canvas>
+</section>
+
+<!-- 2 · It settles on your windows -->
+<section class="settle" id="settle" aria-labelledby="settle-title">
+  <div class="settle-stage">
+    <canvas class="layer back" aria-hidden="true"></canvas>
+    <div class="wrap settle-grid">
+      <div class="settle-copy">
+        <h2 id="settle-title" class="display reveal">It settles on your windows.</h2>
+        <ol class="settle-steps">
+          <li>Flakes drift away from your pointer.</li><li>They land on the top edge of the window in front.</li><li>Snow builds up along the bottom of the screen, and frost creeps in from the edges while you’re away.</li>
+        </ol>
+        <p class="hint">Move your pointer through the snow.</p>
+      </div>
+      <div class="mock-wrap">
+        <div class="mock" role="img" aria-label="SnowWall’s Settings window, open on Appearance, with snow piled along its top edge.">
+          <div class="mock-title" aria-hidden="true">SnowWall Settings</div>
+          <div class="mock-body" aria-hidden="true">
+            <ul class="mock-side">
+              <li class="t-general"><i></i>General</li><li class="t-effects"><i></i>Effects</li><li class="t-appearance on"><i></i>Appearance</li><li class="t-physics"><i></i>Physics</li><li class="t-interaction"><i></i>Interaction</li><li class="t-presets"><i></i>Presets</li>
+            </ul>
+            <div class="mock-pane">
+              <p class="mock-h">Style & Size</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>Style</span><span class="seg"><b>Soft</b><b class="on">Crystal</b><b>Sparkle</b></span></div>
+                <div class="mock-row"><span>Smallest</span><span class="track"><i class="fill f25"></i></span><em>3 pt</em></div>
+                <div class="mock-row"><span>Largest</span><span class="track"><i class="fill f45"></i></span><em>14 pt</em></div>
+              </div>
+              <p class="mock-h">Color</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>Color</span><span class="well"></span></div>
+                <div class="mock-row"><span>Opacity</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
+              </div>
+              <p class="mock-h">Performance</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>Quality</span><span class="radios"><b>Battery Saver</b><b class="on">Balanced</b><b>Ultra</b></span></div>
+                <div class="mock-row"><span>Snowflake Count</span><span class="track"><i class="fill f60"></i></span><em>2,400</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas class="layer front" aria-hidden="true"></canvas>
+    <button class="chip play section-play" type="button" aria-pressed="false" data-play="Play animation" data-pause="Pause animation">Play animation</button>
+  </div>
+</section>
+
+<!-- 3 · Weather for every season -->
+<section class="seasons" id="effects" aria-labelledby="seasons-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="seasons-title" class="display reveal">Weather for every season.</h2>
+      <p class="lede reveal">Snowfall and Rain come free. SnowWall Pro adds eight more, from a blizzard to a shower of confetti.</p>
+    </header>
+    <ul class="cards" role="list">
+      <li class="card-item reveal">
+        <button class="card fx-snow" type="button" aria-pressed="true" data-effect="snow">
+          <span class="poster poster-snow"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Snowfall</span>
+            <span class="card-desc">Soft white flakes, drifting down.</span>
+          </span>
+          <span class="tag tag-free">Free</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-rain" type="button" aria-pressed="false" data-effect="rain">
+          <span class="poster poster-rain"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Rain</span>
+            <span class="card-desc">Raindrops streaming past your windows.</span>
+          </span>
+          <span class="tag tag-free">Free</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-blizzard" type="button" aria-pressed="false" data-effect="blizzard">
+          <span class="poster poster-blizzard"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Blizzard</span>
+            <span class="card-desc">Dense, wind-driven snow.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-christmas" type="button" aria-pressed="false" data-effect="christmas">
+          <span class="poster poster-christmas"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Christmas</span>
+            <span class="card-desc">Snow with a red and green sparkle.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-frozen" type="button" aria-pressed="false" data-effect="frozen">
+          <span class="poster poster-frozen"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Frozen</span>
+            <span class="card-desc">Icy blue crystals.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-glass" type="button" aria-pressed="false" data-effect="glass">
+          <span class="poster poster-glass"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Rain on Glass</span>
+            <span class="card-desc">Condensation gathers and runs down the screen.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-blossom" type="button" aria-pressed="false" data-effect="blossom">
+          <span class="poster poster-blossom"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Cherry Blossom</span>
+            <span class="card-desc">Pink petals on a spring breeze.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-leaves" type="button" aria-pressed="false" data-effect="leaves">
+          <span class="poster poster-leaves"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Autumn Leaves</span>
+            <span class="card-desc">Warm leaves, turning as they fall.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-stars" type="button" aria-pressed="false" data-effect="stars">
+          <span class="poster poster-stars"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Starry Night</span>
+            <span class="card-desc">Twinkling golden stars.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-confetti" type="button" aria-pressed="false" data-effect="confetti">
+          <span class="poster poster-confetti"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Confetti</span>
+            <span class="card-desc">Every piece its own color.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li>
+    </ul>
+    <p class="seasons-note" aria-live="polite" data-template="{name} is falling now."><span class="choose-hint">Choose one to see it fall, here and at the top of the page.</span></p>
+  </div>
+  <button class="chip play section-play" type="button" aria-pressed="false" data-play="Play animation" data-pause="Pause animation">Play animation</button>
+</section>
+
+<!-- 4 · Ambient Mode -->
+<section class="ambient night" id="ambient" aria-labelledby="ambient-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="ambient-clock" aria-hidden="true">
+    <span class="clock-time">9:41</span>
+    <span class="clock-date"></span>
+  </div>
+  <div class="wrap ambient-copy">
+    <h2 id="ambient-title" class="display reveal">Ambient Mode, when you step away.</h2>
+    <p class="lede reveal">Snow fills the screen with a clock over it. Any key or click brings your desktop back.</p>
+    <p class="tag tag-pro reveal">Included with SnowWall Pro</p>
+  </div>
+  <button class="chip play section-play" type="button" aria-pressed="false" data-play="Play animation" data-pause="Pause animation">Play animation</button>
+</section>
+
+<!-- 5 · Tune every flake -->
+<section class="tune" id="tune" aria-labelledby="tune-title" data-still="Still">
+  <div class="wrap tune-grid">
+    <div class="tune-copy">
+      <h2 id="tune-title" class="display reveal">Tune every flake.</h2>
+      <p class="lede reveal">Size, speed, wind, sway, color and how much snow falls. Try four of them here; the app has the rest.</p>
+      <form class="sliders glass reveal" aria-label="Snow settings for the preview">
+        <div class="slider">
+          <label for="s-size">Largest flakes</label>
+          <output for="s-size" id="o-size"></output>
+          <input type="range" id="s-size" name="size" min="5" max="30" step="1" value="14" data-unit="pt" data-from="" data-to="">
+          <span class="ends" aria-hidden="true"><span>Small</span><span>Large</span></span>
+        </div><div class="slider">
+          <label for="s-speed">Fall speed</label>
+          <output for="s-speed" id="o-speed"></output>
+          <input type="range" id="s-speed" name="speed" min="0.5" max="5" step="0.1" value="1.5" data-unit="×" data-from="" data-to="">
+          <span class="ends" aria-hidden="true"><span>Slow</span><span>Fast</span></span>
+        </div><div class="slider">
+          <label for="s-wind">Wind</label>
+          <output for="s-wind" id="o-wind"></output>
+          <input type="range" id="s-wind" name="wind" min="-3" max="3" step="0.1" value="0.5" data-unit="" data-from="to the left" data-to="to the right">
+          <span class="ends" aria-hidden="true"><span>Left</span><span>Right</span></span>
+        </div><div class="slider">
+          <label for="s-amount">Snowflake count</label>
+          <output for="s-amount" id="o-amount"></output>
+          <input type="range" id="s-amount" name="amount" min="100" max="4000" step="100" value="1500" data-unit="" data-from="" data-to="">
+          <span class="ends" aria-hidden="true"><span>A few</span><span>Lots</span></span>
+        </div>
+        <button class="reset" type="reset">Reset</button>
+      </form>
+    </div>
+    <div class="tune-view reveal">
+      <canvas class="layer back" aria-hidden="true"></canvas>
+      <button class="chip play section-play" type="button" aria-pressed="false" data-play="Play animation" data-pause="Pause animation">Play animation</button>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Over your windows or behind them -->
+<section class="behind" id="behind" aria-labelledby="behind-title">
+  <div class="behind-stage">
+    <div class="wrap behind-head">
+      <h2 id="behind-title" class="display reveal">Over your windows or behind them.</h2>
+      <p class="lede reveal">Keep the weather over everything, or send it behind your windows, between the wallpaper and the desktop icons.</p>
+    </div>
+    <div class="desk">
+      <canvas class="layer back" aria-hidden="true"></canvas>
+      <div class="mock mock-small" role="img" aria-label="SnowWall’s Interaction settings with the Keep Effects Behind Windows switch.">
+        <div class="mock-title" aria-hidden="true">SnowWall Settings</div>
+        <div class="mock-pane" aria-hidden="true">
+          <p class="mock-h">Layering</p>
+          <div class="mock-group">
+            <div class="mock-row toggle-row">
+              <span><strong>Keep Effects Behind Windows</strong><small>Draws it between the wallpaper and the desktop icons instead of over everything</small></span>
+              <span class="toggle"><i></i></span>
+            </div>
+          </div>
+          <p class="mock-h">Windows</p>
+          <div class="mock-group">
+            <div class="mock-row toggle-row dim-when-behind">
+              <span><strong>Land on Windows</strong><small>Flakes stop on the top edge of the frontmost window</small></span>
+              <span class="toggle on-static"><i></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas class="layer front" aria-hidden="true"></canvas>
+      <p class="desk-state" aria-hidden="true"><span class="s-over">Over your windows</span><span class="s-behind">Behind them</span></p>
+    </div>
+    <div class="behind-controls">
+      <button class="switch-btn" type="button" role="switch" aria-checked="false">Keep effects behind windows</button>
+      <button class="chip play section-play" type="button" aria-pressed="false" data-play="Play animation" data-pause="Pause animation">Play animation</button>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Built for the Mac -->
+<section class="built" id="built" aria-labelledby="built-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="built-title" class="display reveal">Built for the Mac.</h2>
+      <p class="lede reveal">A real simulation, drawn on the graphics processor, that knows when to step back.</p>
+    </header>
+    <ul class="facts" role="list">
+      <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>Drawn with Metal</h3><p>Up to 10,000 particles at Ultra quality, simulated on the GPU. Nothing loops, because nothing is a video.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>Battery Saver</h3><p>A lighter quality setting for long days away from a charger.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>30 fps in Low Power Mode</h3><p>It also drops to 30 frames a second when the Mac runs hot, and pauses while the display sleeps.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>All your displays</h3><p>Snow falls across every screen you connect.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>Reduce Motion, your way</h3><p>When Reduce Motion is on, stop the snow, slow it down or leave it running.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>Shortcuts and Focus</h3><p>Shortcuts actions, and a Focus filter that pauses the snow while a Focus is on.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16 languages</h3><p>English, Russian, Japanese, Arabic, Hindi and eleven more.</p></li>
+      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Pause from Control Center</h3><p>A Control Center control stops and starts the snow without opening the menu.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Desktop widgets show what is falling and switch it with a click.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Spotlight actions</h3><p>Pause, resume or change the effect straight from Spotlight.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Describe a mood</h3><p>On Macs with Apple Intelligence, describe a mood and SnowWall builds a preset for it.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 8 · Private by design -->
+<section class="private" id="privacy" aria-labelledby="private-title">
+  <div class="wrap">
+    <h2 id="private-title" class="display">Private by design.</h2>
+    <ul class="noes" role="list">
+      <li><strong>No data collected.</strong><span>No analytics, no crash reporting, no tracking. SnowWall makes no network requests of its own.</span></li><li><strong>No permissions to grant.</strong><span>It draws over your desktop without reading what is on it. No screen recording, no accessibility access.</span></li><li><strong>No account.</strong><span>Nothing to sign up for. Your purchase is between you and the App Store.</span></li>
+    </ul>
+    <p class="private-more">The details are in the <a href="/privacy/">privacy policy</a>. It is short, because there is little to say.</p>
+  </div>
+</section>
+
+<!-- 9 · SnowWall Pro -->
+<section class="pro" id="pro" aria-labelledby="pro-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="pro-title" class="display reveal">Free to start. Pro, once.</h2>
+      <p class="lede reveal">Snowfall and Rain are yours to keep and tune. SnowWall Pro opens up everything else with one purchase. No subscription.</p>
+    </header>
+    <div class="compare glass reveal">
+      <table>
+        <caption class="vh">What the free version and SnowWall Pro include</caption>
+        <thead><tr><th scope="col"><span class="vh">Feature</span></th><th scope="col">Free</th><th scope="col" class="pro-col">SnowWall Pro</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Snowfall and Rain, fully tunable</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td></tr><tr><th scope="row">Snow that settles on windows, drifts and frost</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td></tr><tr><th scope="row">Over your windows or behind them</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td></tr><tr><th scope="row">Shortcuts, Focus filter and Quiet at Night</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td></tr><tr><th scope="row">Saved presets</th><td>3</td><td class="pro-col">Unlimited</td></tr><tr><th scope="row">Quality</th><td>Battery Saver, Balanced</td><td class="pro-col">Adds Ultra, up to 10,000 particles</td></tr><tr><th scope="row">Eight more effects<span class="note">Blizzard, Christmas, Frozen, Cherry Blossom, Rain on Glass, Autumn Leaves, Starry Night and Confetti</span></th><td><span class="no" aria-hidden="true">—</span><span class="vh">Not included</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td></tr><tr><th scope="row">Ambient Mode</th><td><span class="no" aria-hidden="true">—</span><span class="vh">Not included</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td></tr><tr><th scope="row">Eight visual effects<span class="note">Bloom, Aurora Light, Depth of Field and more</span></th><td><span class="no" aria-hidden="true">—</span><span class="vh">Not included</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td></tr><tr><th scope="row">Holiday dates<span class="note">Christmas, New Year, Halloween and spring blossom switch on by themselves</span></th><td><span class="no" aria-hidden="true">—</span><span class="vh">Not included</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td></tr><tr><th scope="row">Themes that change with the seasons</th><td><span class="no" aria-hidden="true">—</span><span class="vh">Not included</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Included</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="release-note glass" data-release="1.1" hidden>
+      <p><strong>Christmas is free in December.</strong> The Christmas effect is open to everyone for the whole month.</p><p><strong>Try before you buy.</strong> Preview any Pro effect live on your own desktop before you decide.</p>
+    </div>
+    <div class="pro-cta">
+      <a class="badge" href="https://apps.apple.com/app/id6809149964"><img src="/assets/badge-mac-black-en.15111cd043.svg" alt="Download on the Mac App Store" width="187" height="48" loading="lazy"></a>
+      <p class="price">SnowWall Pro is a one-time purchase of $14.99. Restore it on every Mac signed in to your Apple Account.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · FAQ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap narrow">
+    <h2 id="faq-title" class="display reveal">Questions.</h2>
+    <div class="faq-list">
+      <details><summary>Is SnowWall free?</summary><div class="answer"><p>Yes. Snowfall and Rain are free, with every setting, and you can save three presets. SnowWall Pro is a one-time purchase that adds the other eight effects, Ambient Mode, the visual effects, Ultra quality and unlimited presets. It is not a subscription.</p></div></details><details><summary>I opened SnowWall. Where is it?</summary><div class="answer"><p>SnowWall has no window or Dock icon of its own. It lives in the menu bar as a snowflake at the top of the screen. Click it to pause, switch effects or open Settings.</p></div></details><details><summary>Will it slow my Mac down or drain the battery?</summary><div class="answer"><p>It draws on the graphics processor, so it uses some energy. It pauses when the display sleeps and drops to 30 frames a second in Low Power Mode or when the Mac runs hot. For less, choose Battery Saver quality or lower the snowflake count.</p></div></details><details><summary>Does it need any permissions?</summary><div class="answer"><p>No. SnowWall draws over the desktop without reading what is on screen. If macOS ever asks you to give it screen recording or accessibility access, don’t grant it, and please <a href="/support/">let us know</a>.</p></div></details><details><summary>Can the snow stay behind my windows?</summary><div class="answer"><p>Yes. Turn on Keep Effects Behind Windows in Settings, under Interaction. The snow then falls between your wallpaper and your desktop icons.</p></div></details><details><summary>I use Reduce Motion.</summary><div class="answer"><p>When Reduce Motion is on, SnowWall stops the snow by default. You can choose to slow it down instead, or to leave it running.</p></div></details><details><summary>Which Macs does it run on?</summary><div class="answer"><p>Any Mac with macOS 26 or later.</p></div></details>
+      <details data-release="1.1" hidden><summary>Can I pause it without the menu?</summary><div class="answer"><p>Yes. Add SnowWall’s control to Control Center, or use the Pause action in Spotlight or Shortcuts.</p></div></details>
+    </div>
+    <p class="faq-more">Something else? See <a href="/support/">Support</a>, or write to <a href="mailto:ramiz161@icloud.com?subject=SnowWall">ramiz161@icloud.com</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- 11 · Footer -->
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/icon-192.3a014ec50c.webp" alt="" width="40" height="40" loading="lazy">
+      <p><strong>SnowWall</strong><br>Weather for your Mac desktop.</p>
+    </div>
+    <a class="badge" href="https://apps.apple.com/app/id6809149964"><img src="/assets/badge-mac-black-en.15111cd043.svg" alt="Download on the Mac App Store" width="187" height="48" loading="lazy"></a>
+    <nav class="footer-nav" aria-label="Site">
+      <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Use</a>
+      <a href="/ru/" hreflang="ru" lang="ru">Русский</a>
+    </nav>
+    <p class="footer-small">Requires macOS 26 or later. Mac and Mac App Store are trademarks of Apple Inc.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Local preview of dist/ that behaves like Cloudflare Pages where it matters for testing:
-// it applies the rules in dist/_headers (so the CSP is enforced in the browser), serves
+// Local preview of public/ that behaves like Cloudflare Pages where it matters for testing:
+// it applies the rules in public/_headers (so the CSP is enforced in the browser), serves
 // /name and /name/ from name/index.html, and answers unknown paths with 404.html.
 //
 //   node tools/serve.mjs [port]      (default 8787, bound to 127.0.0.1)
@@ -10,7 +10,7 @@ import { readFileSync, existsSync, statSync } from 'node:fs';
 import { join, extname, normalize, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const DIST = join(dirname(fileURLToPath(import.meta.url)), '..', 'dist');
+const DIST = join(dirname(fileURLToPath(import.meta.url)), '..', 'public');
 const PORT = parseInt(process.argv[2] || '8787', 10);
 const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml',
   '.png': 'image/png', '.webp': 'image/webp', '.xml': 'application/xml', '.txt': 'text/plain', '.mp4': 'video/mp4', '.webm': 'video/webm', '.json': 'application/json' };
@@ -36,4 +36,4 @@ createServer((req, res) => {
   for (const r of rules) if (r.re.test(path)) for (const [k, v] of r.headers) res.setHeader(k, v);
   res.setHeader('Content-Type', TYPES[extname(file)] || 'application/octet-stream');
   res.writeHead(status).end(readFileSync(file));
-}).listen(PORT, '127.0.0.1', () => console.log(`dist/ on http://localhost:${PORT}/ (headers from _headers applied)`));
+}).listen(PORT, '127.0.0.1', () => console.log(`public/ on http://localhost:${PORT}/ (headers from _headers applied)`));

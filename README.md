@@ -1,7 +1,7 @@
 # SnowWall site
 
 The public site for [SnowWall](https://snowwall.app), a macOS menu bar app that draws weather
-over the desktop. Built from `src/` into `dist/` by `build.mjs` (Node, no dependencies) and
+over the desktop. Built from `src/` into `public/` by `build.mjs` (Node, no dependencies) and
 served by Cloudflare Pages at **snowwall.app**.
 
 | Path | What | Used by |
@@ -22,7 +22,7 @@ already installed.
 ## Layout
 
 ```
-build.mjs              the build: templates + i18n -> dist/, hashed assets, sitemap, size report
+build.mjs              the build: templates + i18n -> public/, hashed assets, sitemap, size report
 i18n/en.json, ru.json  every string on the home page, per language
 src/home.html          home page template ({{key}}, {{#list}}…{{/list}}, {{@asset}})
 src/page.html          layout for support, privacy, terms and 404
@@ -39,7 +39,7 @@ tools/og.html, og.mjs  re-renders the 1200×630 social images from the real engi
 ## Building and checking locally
 
 ```sh
-node build.mjs                 # writes dist/ and prints page weights and JS size
+node build.mjs                 # writes public/ and prints page weights and JS size
 node tools/serve.mjs 8787      # http://localhost:8787/ with the _headers applied
 ```
 
@@ -73,20 +73,14 @@ in a browser on a Mac (so the headline is set in the system font), and commit th
 
 ## Cloudflare Pages settings
 
-The site now has a build step, so the existing project needs its build settings changed
-**before this branch is merged to `main`** (otherwise the next deploy finds no `public/`
-folder and publishes nothing useful):
+Pages serves the committed `public/` folder as it is, with no build step, so the project's
+settings stay as they were: Framework preset *None*, **build command empty**, **build output
+directory `public`**. `public/` is the build's output and is committed: after changing anything
+in `src/` or `i18n/`, run `node build.mjs` and commit `public/` with the change. Every push to
+`main` redeploys; other branches get preview URLs.
 
-1. **Workers & Pages → snowwall → Settings → Build → Build configuration**
-   - **Framework preset:** None
-   - **Build command:** `node build.mjs`
-   - **Build output directory:** `dist`
-   - **Root directory:** empty (the repository root)
-2. **Settings → Variables and Secrets** (optional): `NODE_VERSION` = `22`. The repo also has a
-   `.node-version` file with `22`, which the Pages build image reads; any Node 18+ works.
-   Leave `RELEASE` unset until 1.1 ships.
-3. Push the branch and open its **preview URL** (Pages builds every branch) to check the site
-   and the response headers there, then merge to `main`.
+To switch on the 1.1 sections when 1.1 is in the App Store, build with `node build.mjs
+--release=1.1` and commit the result.
 
 There is nothing to install: `package.json` has no dependencies.
 

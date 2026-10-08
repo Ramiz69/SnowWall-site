@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#081226" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#6f8fbd" media="(prefers-color-scheme: light)">
+<title>SnowWall для Mac: снег, дождь и времена года на рабочем столе</title>
+<meta name="description" content="SnowWall рисует снег, дождь, лепестки и не только прямо на рабочем столе Mac. Снежинки разлетаются от указателя и оседают на окнах. Бесплатно, из строки меню и без всяких разрешений.">
+<link rel="canonical" href="https://snowwall.app/ru/">
+<link rel="alternate" hreflang="en" href="https://snowwall.app/">
+<link rel="alternate" hreflang="ru" href="https://snowwall.app/ru/">
+<link rel="alternate" hreflang="x-default" href="https://snowwall.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowWall">
+<meta property="og:title" content="SnowWall: погода на рабочем столе Mac">
+<meta property="og:description" content="Снег падает по рабочему столу, расступается перед указателем и оседает на окнах. Бесплатно в Mac App Store.">
+<meta property="og:url" content="https://snowwall.app/ru/">
+<meta property="og:image" content="https://snowwall.app/og/og-ru.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Слова «Погода на вашем экране.» со снегом на буквах, на фоне ночного неба.">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SnowWall: погода на рабочем столе Mac">
+<meta name="twitter:description" content="Снег падает по рабочему столу, расступается перед указателем и оседает на окнах. Бесплатно в Mac App Store.">
+<meta name="twitter:image" content="https://snowwall.app/og/og-ru.png">
+<meta name="apple-itunes-app" content="app-id=6809149964">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="stylesheet" href="/assets/home.c1ec445513.css">
+<script src="/assets/theme-init.3da56ff09f.js"></script>
+<script type="module" src="/assets/main.ce77b75042.js"></script>
+<link rel="modulepreload" href="/assets/theme.44868fb97d.js">
+<link rel="modulepreload" href="/assets/effects.662733e831.js">
+<link rel="modulepreload" href="/assets/motion.fbf57fc8e4.js">
+<link rel="modulepreload" href="/assets/stats.c5ab680bf8.js">
+<link rel="modulepreload" href="/assets/weather.b80f0fd2b2.js">
+<link rel="modulepreload" href="/assets/util.0f60c0292c.js">
+<link rel="modulepreload" href="/assets/hero.70b12ba8a7.js">
+<link rel="modulepreload" href="/assets/sections.16f4cef942.js">
+<link rel="modulepreload" href="/assets/reveal.6837af5595.js">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SnowWall","url":"https://snowwall.app/ru/","inLanguage":"ru","description":"Приложение для строки меню, которое рисует снег, дождь и погоду любого сезона на рабочем столе Mac. Снежинки разлетаются от указателя и оседают на окнах.","image":"https://snowwall.app/icon.png","operatingSystem":"macOS 26 or later","applicationCategory":"DesktopEnhancementApplication","installUrl":"https://apps.apple.com/app/id6809149964","offers":[{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/id6809149964"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<header class="topbar">
+  <button class="chip motion-chip play" id="hero-play" type="button" aria-pressed="false" data-play="Запустить анимацию" data-pause="Остановить анимацию">Запустить анимацию</button>
+  <nav class="topnav" aria-label="Язык и оформление">
+    <a class="chip" href="/" hreflang="en" lang="en">EN</a>
+    <button class="chip" id="theme" type="button" data-labels="Оформление: автоматически|Оформление: светлое|Оформление: тёмное" data-light="Светлое" data-dark="Тёмное" aria-label="Оформление: автоматически">Авто</button>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- 1 · Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <img class="app-icon" src="/assets/icon-192.3a014ec50c.webp" alt="" width="96" height="96" fetchpriority="high">
+    <p class="eyebrow enter">SnowWall для Mac</p>
+    <h1 id="hero-title" class="display headline"><span class="w">Погода</span> <span class="w">на</span> <span class="w">вашем</span> <span class="w">экране.</span></h1>
+    <p class="sub enter">Снег падает по рабочему столу, расступается перед указателем и оседает на окнах. А управляется всё снежинкой в строке меню.</p>
+    <div class="cta">
+      <a class="badge" href="https://apps.apple.com/app/id6809149964"><img src="/assets/badge-mac-black-ru.909ba64429.svg" alt="Загрузите в Mac App Store" width="187" height="48"></a>
+      <span class="price enter">Бесплатно. SnowWall Pro — разовая покупка, без подписки.</span>
+    </div>
+    <div class="switcher enter" role="radiogroup" aria-label="Посмотреть эффект">
+      <button type="button" role="radio" aria-checked="true" data-effect="snow">Снег</button>
+      <button type="button" role="radio" aria-checked="false" data-effect="rain" tabindex="-1">Дождь</button>
+      <button type="button" role="radio" aria-checked="false" data-effect="blossom" tabindex="-1">Сакура</button>
+    </div>
+    <p class="now-showing" aria-live="polite" data-template="Сейчас: {name}"></p>
+  </div>
+  <p class="req">Требуется macOS 26 или новее</p>
+  <canvas class="layer front" aria-hidden="true"></canvas>
+</section>
+
+<!-- 2 · It settles on your windows -->
+<section class="settle" id="settle" aria-labelledby="settle-title">
+  <div class="settle-stage">
+    <canvas class="layer back" aria-hidden="true"></canvas>
+    <div class="wrap settle-grid">
+      <div class="settle-copy">
+        <h2 id="settle-title" class="display reveal">Оседает на ваших окнах.</h2>
+        <ol class="settle-steps">
+          <li>Снежинки разлетаются от указателя.</li><li>И ложатся на верхний край активного окна.</li><li>У нижнего края экрана растёт сугроб, а пока вас нет, по краям проступает иней.</li>
+        </ol>
+        <p class="hint">Проведите указателем сквозь снег.</p>
+      </div>
+      <div class="mock-wrap">
+        <div class="mock" role="img" aria-label="Окно настроек SnowWall на вкладке «Внешний вид», на его верхнем краю лежит снег.">
+          <div class="mock-title" aria-hidden="true">Настройки SnowWall</div>
+          <div class="mock-body" aria-hidden="true">
+            <ul class="mock-side">
+              <li class="t-general"><i></i>Основные</li><li class="t-effects"><i></i>Эффекты</li><li class="t-appearance on"><i></i>Внешний вид</li><li class="t-physics"><i></i>Физика</li><li class="t-interaction"><i></i>Взаимодействие</li><li class="t-presets"><i></i>Пресеты</li>
+            </ul>
+            <div class="mock-pane">
+              <p class="mock-h">Стиль и размер</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>Стиль</span><span class="seg"><b>Мягкий</b><b class="on">Кристалл</b><b>Искра</b></span></div>
+                <div class="mock-row"><span>Самые мелкие</span><span class="track"><i class="fill f25"></i></span><em>3 пт</em></div>
+                <div class="mock-row"><span>Самые крупные</span><span class="track"><i class="fill f45"></i></span><em>14 пт</em></div>
+              </div>
+              <p class="mock-h">Цвет</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>Цвет</span><span class="well"></span></div>
+                <div class="mock-row"><span>Непрозрачность</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
+              </div>
+              <p class="mock-h">Производительность</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>Качество</span><span class="radios"><b>Экономия энергии</b><b class="on">Сбалансированно</b><b>Ультра</b></span></div>
+                <div class="mock-row"><span>Количество снежинок</span><span class="track"><i class="fill f60"></i></span><em>2 400</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas class="layer front" aria-hidden="true"></canvas>
+    <button class="chip play section-play" type="button" aria-pressed="false" data-play="Запустить анимацию" data-pause="Остановить анимацию">Запустить анимацию</button>
+  </div>
+</section>
+
+<!-- 3 · Weather for every season -->
+<section class="seasons" id="effects" aria-labelledby="seasons-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="seasons-title" class="display reveal">Погода на любой сезон.</h2>
+      <p class="lede reveal">Снегопад и дождь бесплатны. SnowWall Pro добавляет ещё восемь эффектов, от метели до конфетти.</p>
+    </header>
+    <ul class="cards" role="list">
+      <li class="card-item reveal">
+        <button class="card fx-snow" type="button" aria-pressed="true" data-effect="snow">
+          <span class="poster poster-snow"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Снегопад</span>
+            <span class="card-desc">Мягкие белые хлопья.</span>
+          </span>
+          <span class="tag tag-free">Бесплатно</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-rain" type="button" aria-pressed="false" data-effect="rain">
+          <span class="poster poster-rain"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Дождь</span>
+            <span class="card-desc">Струи дождя за вашими окнами.</span>
+          </span>
+          <span class="tag tag-free">Бесплатно</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-blizzard" type="button" aria-pressed="false" data-effect="blizzard">
+          <span class="poster poster-blizzard"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Метель</span>
+            <span class="card-desc">Густой снег на сильном ветру.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-christmas" type="button" aria-pressed="false" data-effect="christmas">
+          <span class="poster poster-christmas"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Рождество</span>
+            <span class="card-desc">Снег с красными и зелёными искрами.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-frozen" type="button" aria-pressed="false" data-effect="frozen">
+          <span class="poster poster-frozen"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Лёд</span>
+            <span class="card-desc">Ледяные голубые кристаллы.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-glass" type="button" aria-pressed="false" data-effect="glass">
+          <span class="poster poster-glass"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Дождь по стеклу</span>
+            <span class="card-desc">Конденсат собирается в капли и стекает по экрану.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-blossom" type="button" aria-pressed="false" data-effect="blossom">
+          <span class="poster poster-blossom"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Сакура</span>
+            <span class="card-desc">Розовые лепестки на весеннем ветру.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-leaves" type="button" aria-pressed="false" data-effect="leaves">
+          <span class="poster poster-leaves"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Осенние листья</span>
+            <span class="card-desc">Тёплые листья кружатся, пока падают.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-stars" type="button" aria-pressed="false" data-effect="stars">
+          <span class="poster poster-stars"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Звёздная ночь</span>
+            <span class="card-desc">Мерцающие золотые звёзды.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-confetti" type="button" aria-pressed="false" data-effect="confetti">
+          <span class="poster poster-confetti"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">Конфетти</span>
+            <span class="card-desc">Каждый кусочек своего цвета.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li>
+    </ul>
+    <p class="seasons-note" aria-live="polite" data-template="Сейчас на экране: {name}."><span class="choose-hint">Выберите эффект, и он пойдёт здесь и в начале страницы.</span></p>
+  </div>
+  <button class="chip play section-play" type="button" aria-pressed="false" data-play="Запустить анимацию" data-pause="Остановить анимацию">Запустить анимацию</button>
+</section>
+
+<!-- 4 · Ambient Mode -->
+<section class="ambient night" id="ambient" aria-labelledby="ambient-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="ambient-clock" aria-hidden="true">
+    <span class="clock-time">9:41</span>
+    <span class="clock-date"></span>
+  </div>
+  <div class="wrap ambient-copy">
+    <h2 id="ambient-title" class="display reveal">Ambient-режим, пока вас нет.</h2>
+    <p class="lede reveal">Снег заполняет экран, а поверх появляются часы. Любая клавиша или щелчок возвращают рабочий стол.</p>
+    <p class="tag tag-pro reveal">Входит в SnowWall Pro</p>
+  </div>
+  <button class="chip play section-play" type="button" aria-pressed="false" data-play="Запустить анимацию" data-pause="Остановить анимацию">Запустить анимацию</button>
+</section>
+
+<!-- 5 · Tune every flake -->
+<section class="tune" id="tune" aria-labelledby="tune-title" data-still="Штиль">
+  <div class="wrap tune-grid">
+    <div class="tune-copy">
+      <h2 id="tune-title" class="display reveal">Настройте каждую снежинку.</h2>
+      <p class="lede reveal">Размер, скорость, ветер, покачивание, цвет и густота снега. Четыре настройки можно попробовать прямо здесь, остальные ждут в приложении.</p>
+      <form class="sliders glass reveal" aria-label="Настройки снега для превью">
+        <div class="slider">
+          <label for="s-size">Самые крупные</label>
+          <output for="s-size" id="o-size"></output>
+          <input type="range" id="s-size" name="size" min="5" max="30" step="1" value="14" data-unit="пт" data-from="" data-to="">
+          <span class="ends" aria-hidden="true"><span>Мелкие</span><span>Крупные</span></span>
+        </div><div class="slider">
+          <label for="s-speed">Скорость падения</label>
+          <output for="s-speed" id="o-speed"></output>
+          <input type="range" id="s-speed" name="speed" min="0.5" max="5" step="0.1" value="1.5" data-unit="×" data-from="" data-to="">
+          <span class="ends" aria-hidden="true"><span>Медленно</span><span>Быстро</span></span>
+        </div><div class="slider">
+          <label for="s-wind">Ветер</label>
+          <output for="s-wind" id="o-wind"></output>
+          <input type="range" id="s-wind" name="wind" min="-3" max="3" step="0.1" value="0.5" data-unit="" data-from="влево" data-to="вправо">
+          <span class="ends" aria-hidden="true"><span>Влево</span><span>Вправо</span></span>
+        </div><div class="slider">
+          <label for="s-amount">Количество снежинок</label>
+          <output for="s-amount" id="o-amount"></output>
+          <input type="range" id="s-amount" name="amount" min="100" max="4000" step="100" value="1500" data-unit="" data-from="" data-to="">
+          <span class="ends" aria-hidden="true"><span>Мало</span><span>Много</span></span>
+        </div>
+        <button class="reset" type="reset">Сбросить</button>
+      </form>
+    </div>
+    <div class="tune-view reveal">
+      <canvas class="layer back" aria-hidden="true"></canvas>
+      <button class="chip play section-play" type="button" aria-pressed="false" data-play="Запустить анимацию" data-pause="Остановить анимацию">Запустить анимацию</button>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Over your windows or behind them -->
+<section class="behind" id="behind" aria-labelledby="behind-title">
+  <div class="behind-stage">
+    <div class="wrap behind-head">
+      <h2 id="behind-title" class="display reveal">Поверх окон или за ними.</h2>
+      <p class="lede reveal">Пусть погода идёт поверх всего или уходит за окна, между обоями и значками на рабочем столе.</p>
+    </div>
+    <div class="desk">
+      <canvas class="layer back" aria-hidden="true"></canvas>
+      <div class="mock mock-small" role="img" aria-label="Настройки взаимодействия SnowWall с переключателем «Эффекты за окнами».">
+        <div class="mock-title" aria-hidden="true">Настройки SnowWall</div>
+        <div class="mock-pane" aria-hidden="true">
+          <p class="mock-h">Слои</p>
+          <div class="mock-group">
+            <div class="mock-row toggle-row">
+              <span><strong>Эффекты за окнами</strong><small>Рисуется между обоями и иконками рабочего стола, а не поверх всего</small></span>
+              <span class="toggle"><i></i></span>
+            </div>
+          </div>
+          <p class="mock-h">Окна</p>
+          <div class="mock-group">
+            <div class="mock-row toggle-row dim-when-behind">
+              <span><strong>Оседать на окнах</strong><small>Снежинки задерживаются на верхнем краю активного окна</small></span>
+              <span class="toggle on-static"><i></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas class="layer front" aria-hidden="true"></canvas>
+      <p class="desk-state" aria-hidden="true"><span class="s-over">Поверх окон</span><span class="s-behind">За окнами</span></p>
+    </div>
+    <div class="behind-controls">
+      <button class="switch-btn" type="button" role="switch" aria-checked="false">Эффекты за окнами</button>
+      <button class="chip play section-play" type="button" aria-pressed="false" data-play="Запустить анимацию" data-pause="Остановить анимацию">Запустить анимацию</button>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Built for the Mac -->
+<section class="built" id="built" aria-labelledby="built-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="built-title" class="display reveal">Сделано для Mac.</h2>
+      <p class="lede reveal">Настоящая симуляция на графическом процессоре, которая знает, когда уступить.</p>
+    </header>
+    <ul class="facts" role="list">
+      <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>Отрисовка на Metal</h3><p>До 10 000 частиц в качестве «Ультра», и все они считаются на GPU. Ничего не повторяется по кругу: это не видео.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>Экономия энергии</h3><p>Облегчённое качество для долгого дня без зарядки.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>30 кадров в режиме энергосбережения</h3><p>И столько же, когда Mac перегревается. А пока дисплей спит, снег стоит на паузе.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>Все дисплеи</h3><p>Снег идёт на каждом подключённом экране.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>«Уменьшение движения» по-вашему</h3><p>Когда оно включено, снег можно остановить, замедлить или оставить как есть.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>Команды и фокусирование</h3><p>Действия для «Команд» и фильтр фокусирования, который останавливает снег на время фокуса.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16 языков</h3><p>Русский, английский, японский, арабский, хинди и ещё одиннадцать.</p></li>
+      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Пауза из Пункта управления</h3><p>Элемент в Пункте управления останавливает и запускает снег, не открывая меню.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Виджеты</h3><p>Виджеты на рабочем столе показывают, что сейчас идёт, и переключают эффект одним щелчком.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Действия в Spotlight</h3><p>Пауза, продолжение или смена эффекта прямо из Spotlight.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Опишите настроение</h3><p>На Mac с Apple Intelligence опишите настроение, и SnowWall соберёт под него пресет.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 8 · Private by design -->
+<section class="private" id="privacy" aria-labelledby="private-title">
+  <div class="wrap">
+    <h2 id="private-title" class="display">Приватность по умолчанию.</h2>
+    <ul class="noes" role="list">
+      <li><strong>Никаких данных.</strong><span>Ни аналитики, ни отчётов о сбоях, ни слежки. Сам SnowWall не делает никаких сетевых запросов.</span></li><li><strong>Никаких разрешений.</strong><span>Он рисует поверх рабочего стола, не читая, что на нём. Ни записи экрана, ни универсального доступа.</span></li><li><strong>Никаких аккаунтов.</strong><span>Регистрироваться не нужно. Покупка остаётся между вами и App Store.</span></li>
+    </ul>
+    <p class="private-more">Подробности в <a href="/privacy/" hreflang="en">политике конфиденциальности</a> (на английском). Она короткая: рассказывать почти нечего.</p>
+  </div>
+</section>
+
+<!-- 9 · SnowWall Pro -->
+<section class="pro" id="pro" aria-labelledby="pro-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="pro-title" class="display reveal">Начните бесплатно. Pro покупается один раз.</h2>
+      <p class="lede reveal">Снегопад и дождь остаются с вами, со всеми настройками. SnowWall Pro открывает всё остальное одной покупкой, без подписки.</p>
+    </header>
+    <div class="compare glass reveal">
+      <table>
+        <caption class="vh">Что входит в бесплатную версию и в SnowWall Pro</caption>
+        <thead><tr><th scope="col"><span class="vh">Возможность</span></th><th scope="col">Бесплатно</th><th scope="col" class="pro-col">SnowWall Pro</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Снегопад и дождь со всеми настройками</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td></tr><tr><th scope="row">Снег на окнах, сугробы и иней</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td></tr><tr><th scope="row">Поверх окон или за ними</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td></tr><tr><th scope="row">«Команды», фильтр фокусирования и «Тише ночью»</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td></tr><tr><th scope="row">Свои пресеты</th><td>3</td><td class="pro-col">Без ограничений</td></tr><tr><th scope="row">Качество</th><td>«Экономия энергии», «Сбалансированно»</td><td class="pro-col">Плюс «Ультра», до 10 000 частиц</td></tr><tr><th scope="row">Ещё восемь эффектов<span class="note">Метель, Рождество, лёд, сакура, дождь по стеклу, осенние листья, звёздная ночь и конфетти</span></th><td><span class="no" aria-hidden="true">—</span><span class="vh">Не входит</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td></tr><tr><th scope="row">Ambient-режим</th><td><span class="no" aria-hidden="true">—</span><span class="vh">Не входит</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td></tr><tr><th scope="row">Восемь визуальных эффектов<span class="note">Свечение, северное сияние, глубина резкости и другие</span></th><td><span class="no" aria-hidden="true">—</span><span class="vh">Не входит</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td></tr><tr><th scope="row">Праздничные даты<span class="note">Рождество, Новый год, Хэллоуин и весеннее цветение включаются сами</span></th><td><span class="no" aria-hidden="true">—</span><span class="vh">Не входит</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td></tr><tr><th scope="row">Смена темы вместе со временем года</th><td><span class="no" aria-hidden="true">—</span><span class="vh">Не входит</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">Входит</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="release-note glass" data-release="1.1" hidden>
+      <p><strong>Рождество бесплатно весь декабрь.</strong> Эффект «Рождество» открыт всем на целый месяц.</p><p><strong>Сначала попробуйте.</strong> Любой эффект Pro можно посмотреть вживую на своём рабочем столе до покупки.</p>
+    </div>
+    <div class="pro-cta">
+      <a class="badge" href="https://apps.apple.com/app/id6809149964"><img src="/assets/badge-mac-black-ru.909ba64429.svg" alt="Загрузите в Mac App Store" width="187" height="48" loading="lazy"></a>
+      <p class="price">SnowWall Pro — разовая покупка. Её можно восстановить на любом Mac, где выполнен вход в ваш Аккаунт Apple.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · FAQ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap narrow">
+    <h2 id="faq-title" class="display reveal">Вопросы.</h2>
+    <div class="faq-list">
+      <details><summary>SnowWall бесплатный?</summary><div class="answer"><p>Да. Снегопад и дождь бесплатны, со всеми настройками, и можно сохранить три своих пресета. SnowWall Pro — разовая покупка: в нём остальные восемь эффектов, Ambient-режим, визуальные эффекты, качество «Ультра» и пресеты без ограничений. Это не подписка.</p></div></details><details><summary>Я открыл SnowWall. Где он?</summary><div class="answer"><p>У SnowWall нет своего окна и значка в Dock. Он живёт в строке меню, снежинкой в верхней части экрана. Нажмите на неё, чтобы поставить снег на паузу, сменить эффект или открыть настройки.</p></div></details><details><summary>Не замедлит ли он Mac и не посадит ли батарею?</summary><div class="answer"><p>Он рисует на графическом процессоре, поэтому немного энергии тратит. Когда дисплей засыпает, снег останавливается, а в режиме энергосбережения или при перегреве идёт с частотой 30 кадров в секунду. Чтобы тратить ещё меньше, выберите качество «Экономия энергии» или уменьшите количество снежинок.</p></div></details><details><summary>Нужны ли ему разрешения?</summary><div class="answer"><p>Нет. SnowWall рисует поверх рабочего стола и не читает, что на экране. Если macOS когда-нибудь попросит дать ему доступ к записи экрана или универсальному доступу, не соглашайтесь и, пожалуйста, <a href="/support/" hreflang="en">напишите нам</a>.</p></div></details><details><summary>Может ли снег идти за окнами?</summary><div class="answer"><p>Да. В настройках на вкладке «Взаимодействие» включите «Эффекты за окнами». Тогда снег пойдёт между обоями и значками на рабочем столе.</p></div></details><details><summary>У меня включено «Уменьшение движения».</summary><div class="answer"><p>Тогда SnowWall по умолчанию останавливает снег. Вместо этого его можно замедлить или оставить как есть.</p></div></details><details><summary>На каких Mac он работает?</summary><div class="answer"><p>На любом Mac с macOS 26 или новее.</p></div></details>
+      <details data-release="1.1" hidden><summary>Можно поставить паузу без меню?</summary><div class="answer"><p>Да. Добавьте элемент SnowWall в Пункт управления или используйте действие «Пауза» в Spotlight или «Командах».</p></div></details>
+    </div>
+    <p class="faq-more">Остались вопросы? Загляните в <a href="/support/" hreflang="en">поддержку</a> (на английском) или напишите на <a href="mailto:ramiz161@icloud.com?subject=SnowWall">ramiz161@icloud.com</a>. Можно по-русски.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- 11 · Footer -->
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/icon-192.3a014ec50c.webp" alt="" width="40" height="40" loading="lazy">
+      <p><strong>SnowWall</strong><br>Погода на рабочем столе Mac.</p>
+    </div>
+    <a class="badge" href="https://apps.apple.com/app/id6809149964"><img src="/assets/badge-mac-black-ru.909ba64429.svg" alt="Загрузите в Mac App Store" width="187" height="48" loading="lazy"></a>
+    <nav class="footer-nav" aria-label="Сайт">
+      <a href="/support/">Поддержка</a>
+      <a href="/privacy/">Конфиденциальность</a>
+      <a href="/terms/">Условия использования</a>
+      <a href="/" hreflang="en" lang="en">English</a>
+    </nav>
+    <p class="footer-small">Требуется macOS 26 или новее. Mac и Mac App Store — товарные знаки Apple Inc.</p>
+  </div>
+</footer>
+</body>
+</html>

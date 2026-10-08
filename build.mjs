@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-// Builds dist/ from src/ and i18n/. Zero dependencies: Node 18+ standard library only.
+// Builds public/ from src/ and i18n/. Zero dependencies: Node 18+ standard library only.
 //
 //   node build.mjs                 production build
 //   node build.mjs --release=1.1   also switches on blocks marked data-release="1.1"
 //   RELEASE=1.1 node build.mjs     same, for a Cloudflare Pages environment variable
 //
 // What it does: copies src/static as is; content-hashes src/assets, the CSS bundles and the JS
-// modules into dist/assets/ (served immutable); renders the home page per language from
+// modules into public/assets/ (served immutable); renders the home page per language from
 // src/home.html + i18n/<lang>.json, and the support/privacy/terms/404 pages from src/pages/
 // into src/page.html; writes sitemap.xml; prints page weights.
 
@@ -18,7 +18,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const SRC = join(ROOT, 'src');
-const DIST = join(ROOT, 'dist');
+const DIST = join(ROOT, 'public');
 const SITE = 'https://snowwall.app';
 const APP_STORE = 'https://apps.apple.com/app/id6809149964';
 const LANGS = ['en', 'ru'];
