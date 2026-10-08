@@ -1,0 +1,38 @@
+/* Support, Privacy, Terms and 404: the same tokens as the home page, set for reading. */
+body { background: var(--page); }
+.page-top {
+  padding: max(20px, env(safe-area-inset-top)) 16px 72px;
+  background: linear-gradient(180deg, var(--sky-1), var(--sky-2) 70%, var(--page));
+}
+.brand {
+  display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none;
+  font-weight: 700; font-size: 17px; letter-spacing: -.01em;
+  width: min(42rem, 100%); margin: 0 auto; display: flex;
+}
+.brand img { width: 32px; height: 32px; }
+.doc { width: min(42rem, 100% - 32px); margin: -40px auto 0; padding-bottom: 32px; }
+.doc h1 { font-size: clamp(36px, 6vw, 52px); line-height: 1.06; letter-spacing: -.035em; margin: 0 0 .4rem; text-wrap: balance; }
+.doc h2 { font-size: 1.3rem; margin: 2.75rem 0 .6rem; letter-spacing: -.015em; }
+.doc h3 { font-size: 1.05rem; margin: 1.75rem 0 .35rem; }
+.doc p, .doc li { color: var(--ink); }
+.doc ul, .doc ol { padding-left: 1.2rem; }
+.doc li { margin: .4rem 0; }
+.updated { color: var(--muted); font-size: .95rem; margin: 0 0 2.25rem; }
+.lede {
+  font-size: 1.12rem; background: var(--glass); border: 1px solid var(--glass-line);
+  border-radius: 16px; padding: 18px 20px; margin: 0 0 2rem;
+}
+kbd, code {
+  font: .88em ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: var(--glass); border: 1px solid var(--glass-line); border-radius: 6px; padding: 0 .35em;
+}
+code { word-break: break-all; }
+.page-foot {
+  width: min(42rem, 100% - 32px); margin: 3rem auto 0; padding: 1.25rem 0 calc(40px + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px;
+}
+nav.site { display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: .95rem; }
+nav.site a[aria-current="page"] { color: var(--muted); text-decoration: none; }
+.badge { display: inline-block; line-height: 0; margin: 12px; border-radius: 8px; }
+.badge img { height: 48px; width: auto; }

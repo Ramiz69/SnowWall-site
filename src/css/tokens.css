@@ -1,0 +1,83 @@
+/* Shared tokens and base. Light is "winter dusk", dark is "night". The dark block appears three
+   times on purpose: system dark (unless the visitor chose light), an explicit dark choice, and
+   `.night` for sections that are always night (Ambient Mode, effect posters). */
+:root {
+  color-scheme: light;
+  --sky-1: #6f8fbd; --sky-2: #a9bedb; --sky-3: #cbd8ea;
+  --page: #cbd8ea; --page-2: #bccbe1; --page-deep: #b0c1da;
+  --ink: #0d1726; --muted: #33445e; --faint: #46576f;
+  --line: rgba(13, 23, 38, .14);
+  --glass: rgba(255, 255, 255, .52); --glass-solid: rgba(240, 245, 251, .82); --glass-line: rgba(13, 23, 38, .10); --glass-on: #ffffff;
+  --accent: #1d4f9a; --accent-soft: rgba(29, 79, 154, .12);
+  --flake: 255, 255, 255; --halo: 30, 52, 92; --rain: 52, 78, 118; --settle: #ffffff; --settle-shade: rgba(40, 64, 104, .35);
+  --canvas-dark: 0;
+  --aurora-a: rgba(255, 255, 255, 0); --aurora-b: rgba(255, 255, 255, 0);
+  --head-1: #13213a; --head-2: #2c4266;
+  --win: rgba(247, 249, 252, .94); --win-ink: #1b2433; --win-muted: #5d6778; --win-line: rgba(0, 0, 0, .08); --win-group: rgba(0, 0, 0, .035); --win-side: rgba(236, 240, 246, .9);
+  --shadow-lg: 0 40px 90px -30px rgba(16, 30, 60, .55), 0 2px 8px rgba(16, 30, 60, .12);
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --font: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --sky-1: #03060d; --sky-2: #081226; --sky-3: #12233f;
+    --page: #12233f; --page-2: #0d1a31; --page-deep: #081226;
+    --ink: #eef3fb; --muted: #a3b4cd; --faint: #8295b3;
+    --line: rgba(255, 255, 255, .12);
+    --glass: rgba(18, 30, 52, .55); --glass-solid: rgba(20, 34, 60, .86); --glass-line: rgba(255, 255, 255, .10); --glass-on: rgba(255, 255, 255, .14);
+    --accent: #8fc1ff; --accent-soft: rgba(143, 193, 255, .12);
+    --flake: 255, 255, 255; --halo: 0, 0, 0; --rain: 176, 202, 236; --settle: #f2f7ff; --settle-shade: rgba(120, 170, 255, .28);
+    --canvas-dark: 1;
+    --aurora-a: rgba(64, 190, 160, .16); --aurora-b: rgba(90, 120, 255, .14);
+    --head-1: #c7d5ea; --head-2: #7f98bd;
+    --win: rgba(30, 36, 48, .94); --win-ink: #e9edf4; --win-muted: #9aa5b8; --win-line: rgba(255, 255, 255, .08); --win-group: rgba(255, 255, 255, .045); --win-side: rgba(38, 45, 59, .9);
+    --shadow-lg: 0 40px 90px -30px rgba(0, 0, 0, .8), 0 2px 8px rgba(0, 0, 0, .3);
+  }
+}
+:root[data-theme="dark"], .night {
+  color-scheme: dark;
+  --sky-1: #03060d; --sky-2: #081226; --sky-3: #12233f;
+  --page: #12233f; --page-2: #0d1a31; --page-deep: #081226;
+  --ink: #eef3fb; --muted: #a3b4cd; --faint: #8295b3;
+  --line: rgba(255, 255, 255, .12);
+  --glass: rgba(18, 30, 52, .55); --glass-solid: rgba(20, 34, 60, .86); --glass-line: rgba(255, 255, 255, .10); --glass-on: rgba(255, 255, 255, .14);
+  --accent: #8fc1ff; --accent-soft: rgba(143, 193, 255, .12);
+  --flake: 255, 255, 255; --halo: 0, 0, 0; --rain: 176, 202, 236; --settle: #f2f7ff; --settle-shade: rgba(120, 170, 255, .28);
+  --canvas-dark: 1;
+  --aurora-a: rgba(64, 190, 160, .16); --aurora-b: rgba(90, 120, 255, .14);
+  --head-1: #c7d5ea; --head-2: #7f98bd;
+  --win: rgba(30, 36, 48, .94); --win-ink: #e9edf4; --win-muted: #9aa5b8; --win-line: rgba(255, 255, 255, .08); --win-group: rgba(255, 255, 255, .045); --win-side: rgba(38, 45, 59, .9);
+  --shadow-lg: 0 40px 90px -30px rgba(0, 0, 0, .8), 0 2px 8px rgba(0, 0, 0, .3);
+}
+:root[data-theme="light"] { color-scheme: light; }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html, body { margin: 0; }
+body {
+  background: var(--page); color: var(--ink);
+  font: 17px/1.55 var(--font);
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+img, svg, video, canvas { display: block; max-width: 100%; }
+a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip {
+  position: absolute; left: 16px; top: -60px; z-index: 100; padding: 10px 14px; border-radius: 10px;
+  background: var(--glass-solid); color: var(--ink); font-weight: 600; transition: top .2s var(--ease-out);
+}
+.skip:focus { top: 12px; }
+
+.chip {
+  appearance: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+  font: 600 13px/1 var(--font); color: var(--muted); text-decoration: none;
+  padding: 8px 12px; border-radius: 999px; border: 1px solid var(--glass-line); background: var(--glass);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  transition: color .2s var(--ease-out), background-color .2s var(--ease-out), transform .2s var(--ease-out);
+}
+.chip:hover { color: var(--ink); }
+.chip:active { transform: scale(.96); }
