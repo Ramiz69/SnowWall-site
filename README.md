@@ -57,6 +57,13 @@ run `node build.mjs --release=1.1`, check it with `node tools/serve.mjs 8787`, a
 The blocks are in `src/home.html` (facts grid, Pro section, FAQ) and their strings under
 `built.facts11`, `pro.release11` and `faq.items11` in `i18n/*.json`.
 
+## Adding a language
+
+The language menu reads `LANGUAGES` in `build.mjs`, which already lists all 16 languages the app
+ships in. A language appears on the site once `i18n/<code>.json` exists (copy `en.json`, translate,
+set `lang`, `path`, `badgeLang`); the build then also needs a flag drawing for it in `FLAGS`, and
+the hreflang links in `src/home.html` and the sitemap need the new page.
+
 ## Adding effect videos
 
 The gallery cards work with canvas posters alone. To add a short loop for a card, put

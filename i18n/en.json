@@ -17,9 +17,8 @@
     "langNav": "Language and appearance",
     "play": "Play animation",
     "pause": "Pause animation",
-    "themeAuto": "Color scheme: automatic",
-    "themeLabels": "Color scheme: automatic|Color scheme: light|Color scheme: dark",
-    "themeShort": { "auto": "Auto", "light": "Light", "dark": "Dark" },
+    "language": "Language",
+    "theme": { "label": "Color scheme", "auto": "Auto", "light": "Light", "dark": "Dark" },
     "badgeAlt": "Download on the Mac App Store",
     "included": "Included",
     "notIncluded": "Not included"

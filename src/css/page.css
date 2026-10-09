@@ -4,10 +4,11 @@ body { background: var(--page); }
   padding: max(20px, env(safe-area-inset-top)) 16px 72px;
   background: linear-gradient(180deg, var(--sky-1), var(--sky-2) 70%, var(--page));
 }
+.page-bar { width: min(42rem, 100%); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.topnav { display: flex; gap: 8px; }
 .brand {
   align-items: center; gap: 10px; color: var(--ink); text-decoration: none;
-  font-weight: 700; font-size: 17px; letter-spacing: -.01em;
-  width: min(42rem, 100%); margin: 0 auto; display: flex;
+  font-weight: 700; font-size: 17px; letter-spacing: -.01em; display: flex;
 }
 .brand img { width: 32px; height: 32px; }
 .doc { width: min(42rem, 100% - 32px); margin: -40px auto 0; padding-bottom: 32px; }

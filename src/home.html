@@ -42,8 +42,7 @@
 <header class="topbar">
   <button class="chip motion-chip play" id="hero-play" type="button" aria-pressed="false" data-play="{{ui.play}}" data-pause="{{ui.pause}}">{{ui.play}}</button>
   <nav class="topnav" aria-label="{{ui.langNav}}">
-    <a class="chip" href="{{otherLang.href}}" hreflang="{{otherLang.code}}" lang="{{otherLang.code}}">{{otherLang.label}}</a>
-    <button class="chip" id="theme" type="button" data-labels="{{ui.themeLabels}}" data-light="{{ui.themeShort.light}}" data-dark="{{ui.themeShort.dark}}" aria-label="{{ui.themeAuto}}">{{ui.themeShort.auto}}</button>
+    {{menus}}
   </nav>
 </header>
 
