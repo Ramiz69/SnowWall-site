@@ -23,25 +23,25 @@ const SITE = 'https://snowwall.app';
 const APP_STORE = 'https://apps.apple.com/app/id6809149964';
 // Every language the app ships in, in the order the language menu lists them. A language joins
 // the site (its home page, the menu, sitemap) once i18n/<code>.json exists; only en and ru do now.
-// `flag` names an entry in FLAGS below; flags stand for where a language is from, not who speaks it,
-// so the ones marked "decide" need the owner's call before those pages are built.
+// No flags: a flag names a country, not a language, and several of these have no single country.
+// The menu shows each language by its own name, the way Apple's own language pickers do.
 const LANGUAGES = [
-  { code: 'en', short: 'EN', name: 'English', flag: 'gb' },
-  { code: 'ru', short: 'RU', name: 'Русский', flag: 'ru' },
-  { code: 'ar', short: 'AR', name: 'العربية', flag: null },        // decide: no single country
-  { code: 'de', short: 'DE', name: 'Deutsch', flag: 'de' },
-  { code: 'es', short: 'ES', name: 'Español', flag: 'es' },
-  { code: 'fr', short: 'FR', name: 'Français', flag: 'fr' },
-  { code: 'hi', short: 'HI', name: 'हिन्दी', flag: 'in' },
-  { code: 'id', short: 'ID', name: 'Bahasa Indonesia', flag: 'id' },
-  { code: 'it', short: 'IT', name: 'Italiano', flag: 'it' },
-  { code: 'ja', short: 'JA', name: '日本語', flag: 'jp' },
-  { code: 'ko', short: 'KO', name: '한국어', flag: 'kr' },
-  { code: 'pt-BR', short: 'PT', name: 'Português (Brasil)', flag: 'br' },
-  { code: 'tr', short: 'TR', name: 'Türkçe', flag: 'tr' },
-  { code: 'vi', short: 'VI', name: 'Tiếng Việt', flag: 'vn' },
-  { code: 'zh-Hans', short: '简', name: '简体中文', flag: null },   // decide
-  { code: 'zh-Hant', short: '繁', name: '繁體中文', flag: null },   // decide
+  { code: 'en', short: 'EN', name: 'English' },
+  { code: 'ru', short: 'RU', name: 'Русский' },
+  { code: 'ar', short: 'AR', name: 'العربية' },
+  { code: 'de', short: 'DE', name: 'Deutsch' },
+  { code: 'es', short: 'ES', name: 'Español' },
+  { code: 'fr', short: 'FR', name: 'Français' },
+  { code: 'hi', short: 'HI', name: 'हिन्दी' },
+  { code: 'id', short: 'ID', name: 'Bahasa Indonesia' },
+  { code: 'it', short: 'IT', name: 'Italiano' },
+  { code: 'ja', short: 'JA', name: '日本語' },
+  { code: 'ko', short: 'KO', name: '한국어' },
+  { code: 'pt-BR', short: 'PT', name: 'Português (Brasil)' },
+  { code: 'tr', short: 'TR', name: 'Türkçe' },
+  { code: 'vi', short: 'VI', name: 'Tiếng Việt' },
+  { code: 'zh-Hans', short: '简', name: '简体中文' },
+  { code: 'zh-Hant', short: '繁', name: '繁體中文' },
 ].map(l => ({ ...l, path: l.code === 'en' ? '/' : `/${l.code.toLowerCase()}/` }));
 const BUILT = LANGUAGES.filter(l => existsSync(join(ROOT, 'i18n', `${l.code}.json`)));
 const LANGS = BUILT.map(l => l.code);
@@ -146,17 +146,9 @@ const TAB_IDS = ['general', 'effects', 'appearance', 'physics', 'interaction', '
 const effectData = JSON.parse(read(join(SRC, 'data/effects.json'))).effects;
 
 // ---------- header menus: language and colour scheme ----------
-// Flags are drawn at 4:3 and shown at 16×12; plain shapes, no ids, so a page can repeat them.
-const FLAGS = {
-  gb: '<svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"><rect width="60" height="30" fill="#012169"/><path d="M0 0l60 30M60 0 0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30M60 0 0 30" stroke="#C8102E" stroke-width="2"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg>',
-  ru: '<svg viewBox="0 0 3 3" preserveAspectRatio="none"><rect width="3" height="1" fill="#fff"/><rect y="1" width="3" height="1" fill="#0039A6"/><rect y="2" width="3" height="1" fill="#D52B1E"/></svg>',
-};
-const flag = code => {
-  if (!FLAGS[code]) return '';
-  return `<span class="flag" aria-hidden="true">${FLAGS[code].replace('<svg ', '<svg width="16" height="12" focusable="false" ')}</span>`;
-};
-for (const l of BUILT) if (!FLAGS[l.flag]) throw new Error(`language ${l.code} is built but has no flag drawing`);
 const svg16 = (body, cls = '') => `<svg${cls ? ` class="${cls}"` : ''} width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${body}</svg>`;
+// The language pill's mark: a globe, as in Apple's own language menus.
+const GLOBE = svg16('<circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.8 1.7 2.7 3.8 2.7 6.25S9.8 12.55 8 14.25M8 1.75C6.2 3.45 5.3 5.55 5.3 8s.9 4.55 2.7 6.25"/>', 'globe');
 const THEME_ICONS = {
   auto: '<circle cx="8" cy="8" r="5.75"/><path d="M8 2.25a5.75 5.75 0 0 0 0 11.5Z" fill="currentColor"/>',
   light: '<circle cx="8" cy="8" r="2.75"/><path d="M8 1.5v1.25M8 13.25v1.25M1.5 8h1.25M13.25 8h1.25M3.4 3.4l.9.9M11.7 11.7l.9.9M3.4 12.6l.9-.9M11.7 4.3l.9-.9"/>',
@@ -168,11 +160,11 @@ const TICK = svg16('<path d="m3.5 8.5 3 3 6-7"/>', 'tick');
 // `here` is the current language code; `hrefs` maps each built language to its page for this URL.
 function headerMenus(ui, here, hrefs) {
   const cur = BUILT.find(l => l.code === here);
-  const langItems = BUILT.map(l => `<li><a class="menu-item" tabindex="-1" href="${hrefs[l.code]}" hreflang="${l.code}" lang="${l.code}"${l.code === here ? ' aria-current="page"' : ''}>${flag(l.flag)}<span class="label">${l.name}</span>${TICK}</a></li>`).join('');
+  const langItems = BUILT.map(l => `<li><a class="menu-item" tabindex="-1" href="${hrefs[l.code]}" hreflang="${l.code}" lang="${l.code}"${l.code === here ? ' aria-current="page"' : ''}><span class="label">${l.name}</span>${TICK}</a></li>`).join('');
   const modes = ['auto', 'light', 'dark'];
   const themeIcon = m => svg16(THEME_ICONS[m], 'ico');
   return `<div class="menu-wrap lang-menu">
-      <button class="chip menu-btn" type="button" aria-expanded="false" aria-controls="lang-list"><span class="vh">${ui.language}: ${cur.name}</span> ${flag(cur.flag)}<span aria-hidden="true">${cur.short}</span>${CHEVRON}</button>
+      <button class="chip menu-btn" type="button" aria-expanded="false" aria-controls="lang-list"><span class="vh">${ui.language}: ${cur.name}</span> ${GLOBE}<span aria-hidden="true">${cur.short}</span>${CHEVRON}</button>
       <ul class="menu" id="lang-list" aria-label="${ui.language}">${langItems}</ul>
     </div>
     <div class="menu-wrap theme-menu" data-theme-menu>

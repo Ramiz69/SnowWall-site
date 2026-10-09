@@ -61,8 +61,7 @@ The blocks are in `src/home.html` (facts grid, Pro section, FAQ) and their strin
 
 The language menu reads `LANGUAGES` in `build.mjs`, which already lists all 16 languages the app
 ships in. A language appears on the site once `i18n/<code>.json` exists (copy `en.json`, translate,
-set `lang`, `path`, `badgeLang`); the build then also needs a flag drawing for it in `FLAGS`, and
-the hreflang links in `src/home.html` and the sitemap need the new page.
+set `lang`, `path`, `badgeLang`); the hreflang links in `src/home.html` and the sitemap need the new page.
 
 ## Adding effect videos
 
