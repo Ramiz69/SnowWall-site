@@ -227,14 +227,14 @@ for (const lang of LANGS) {
 }
 
 const pageTpl = read(join(SRC, 'page.html'));
-// Support, privacy and terms are English only: their language menu offers the other home pages.
+// Support, privacy, terms and the press kit are English only: their language menu offers the other home pages.
 const enUi = JSON.parse(read(join(ROOT, 'i18n', 'en.json'))).ui;
 for (const f of readdirSync(join(SRC, 'pages'))) {
   const raw = read(join(SRC, 'pages', f));
   const m = raw.match(/^<!--meta (\{.*?\}) -->\n/);
   if (!m) throw new Error(`${f}: missing <!--meta {...} --> header`);
   const meta = JSON.parse(m[1]);
-  const current = Object.fromEntries(['home', 'support', 'privacy', 'terms'].map(k => [k, k === meta.nav ? ' aria-current="page"' : '']));
+  const current = Object.fromEntries(['home', 'support', 'privacy', 'terms', 'press'].map(k => [k, k === meta.nav ? ' aria-current="page"' : '']));
   const data = {
     title: meta.title,
     metaDescription: meta.description ? `<meta name="description" content="${meta.description}">` : '',
