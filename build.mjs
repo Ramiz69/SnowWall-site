@@ -217,9 +217,12 @@ function homeData(t) {
     ...BUILT.filter(l => l.code !== t.lang).map(l => `<meta property="og:locale:alternate" content="${OG_LOCALE[l.code]}">`)].join('\n');
   const ogImage = existsSync(join(SRC, 'static/og', `og-${t.lang}.png`)) ? `og-${t.lang}.png` : 'og-en.png';
   const badgeLang = assets.has(`assets/badge-mac-black-${t.badgeLang}.svg`) ? t.badgeLang : 'en';
+  // The badge is drawn 48 px high; its width differs by language, and the img reserves it.
+  const [, , vbW, vbH] = read(join(SRC, 'assets', `badge-mac-black-${badgeLang}.svg`)).match(/viewBox="([^"]+)"/)[1].split(/\s+/).map(Number);
+  const badgeWidth = Math.round(48 * vbW / vbH);
   return {
     ...t,
-    dir: RTL.has(t.lang) ? 'rtl' : 'ltr', alternates, ogLocales, ogImage, badgeLang,
+    dir: RTL.has(t.lang) ? 'rtl' : 'ltr', alternates, ogLocales, ogImage, badgeLang, badgeWidth,
     site: SITE, url, appStore: campaign('site-home'), modulepreload,
     menus: headerMenus(t.ui, t.lang, homeHrefs),
     jsonld: JSON.stringify(jsonld).replace(/</g, '\\u003c'),

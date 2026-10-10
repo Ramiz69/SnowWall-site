@@ -69,9 +69,11 @@ English left in place.
 
 - Right to left: languages in `RTL` (`build.mjs`) get `dir="rtl"`. The CSS uses logical properties
   (`inset-inline-start`, `margin-inline-end`, `text-align: start`); keep it that way.
-- A language without its own `src/static/og/og-<code>.png` uses the English social image, and one
-  without `src/assets/badge-mac-black-<badgeLang>.svg` the English App Store badge. Apple's
-  localized badges come from its marketing tools.
+- Every language has its own social image (`src/static/og/og-<code>.png`) and Apple's own App Store
+  badge (`src/assets/badge-mac-black-<code>.svg`, named by `badgeLang`), taken unchanged from the
+  "Download on the Mac App Store" artwork at developer.apple.com/app-store/marketing/guidelines
+  (black lockup, SVG). A language without one falls back to English. The build reads each badge's
+  `viewBox` for the width it reserves at 48 px high.
 
 ## Adding effect videos
 

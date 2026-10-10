@@ -368,7 +368,7 @@ input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(
 .release-note p { margin: 0; }
 .release-note p + p { margin-top: 8px; }
 .pro-cta { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
-.pro-cta .badge { margin: 12px 12px 12px 0; }
+.pro-cta .badge { margin-block: 12px; margin-inline: 0 12px; }
 .pro-cta .price { max-width: 34rem; }
 
 /* ---------- 10 · faq ---------- */
