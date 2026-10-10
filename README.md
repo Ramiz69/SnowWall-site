@@ -59,6 +59,13 @@ run `node build.mjs --release=1.1`, check it with `node tools/serve.mjs 8787`, a
 The blocks are in `src/home.html` (facts grid, Pro section, FAQ) and their strings under
 `built.facts11`, `pro.release11` and `faq.items11` in `i18n/*.json`.
 
+The Settings window mocks change with the release too. 1.1's window (sidebar with search, Look &
+Motion with its live preview and section chips) sits between `<!--1.1-->` and `<!--/1.1-->`, and
+1.0's between `<!--pre1.1-->` and `<!--/pre1.1-->`; the build keeps only the one for its release,
+so the page never carries a hidden copy that a script could pick up. Their labels in `mock11` are
+the app's own strings, copied from `Localizable.xcstrings`; the FAQ answer that names the window
+switches to `faq.items[4].a11`, and the mocks' screen-reader labels to `mockLabel11`.
+
 ## Adding a language
 
 All 16 languages the app ships in are on the site. `LANGUAGES` in `build.mjs` lists them; a language

@@ -112,6 +112,10 @@ const modulepreload = [...done].filter(f => f !== 'main.js').map(f => `<link rel
 // {{key.path}} inserts a value, {{#list}}…{{/list}} repeats for each item ({{.field}} or {{.}}),
 // {{@src/path}} is a hashed asset URL. A missing key is an error, not an empty string.
 function render(tpl, data, where) {
+  // Release-specific markup, kept only in the build it belongs to, so scripts that look for an
+  // element (the settle canvas finds `.mock`) never find the other release's hidden copy.
+  tpl = tpl.replace(/<!--1\.1-->\n?([\s\S]*?)<!--\/1\.1-->\n?/g, (_, body) => RELEASE >= 1.1 ? body : '')
+           .replace(/<!--pre1\.1-->\n?([\s\S]*?)<!--\/pre1\.1-->\n?/g, (_, body) => RELEASE >= 1.1 ? '' : body);
   tpl = tpl.replace(/{{#([\w.]+)}}([\s\S]*?){{\/\1}}/g, (_, key, body) => {
     const list = get(data, key);
     if (!Array.isArray(list)) throw new Error(`${where}: {{#${key}}} is not a list`);
@@ -153,6 +157,7 @@ const ICONS = {
 const icon = name => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]}</svg>`;
 const CHECK = '<svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg>';
 const TAB_IDS = ['general', 'effects', 'appearance', 'physics', 'interaction', 'presets'];
+const TAB_IDS_11 = ['effect', 'look', 'automatic', 'presets', 'general', 'siri'];
 const effectData = JSON.parse(read(join(SRC, 'data/effects.json'))).effects;
 
 // ---------- header menus: language and colour scheme ----------
@@ -232,6 +237,14 @@ function homeData(t) {
       ? t.hero.title.split(/(?<=[、，])/).map(w => `<span class="w">${w}</span>`).join('')
       : t.hero.title.split(' ').map(w => `<span class="w">${w}</span>`).join(' ')) },
     mock: { ...t.mock, tabs: t.mock.tabs.map((name, i) => ({ name, cls: `t-${TAB_IDS[i]}${TAB_IDS[i] === 'appearance' ? ' on' : ''}` })) },
+    // The 1.1 window: its six sections, Look & Motion selected, and the section chips with the
+    // one each mock is scrolled to.
+    mock11: { ...t.mock11,
+      tabItems: t.mock11.tabs.map((name, i) => ({ name, cls: `t-${TAB_IDS_11[i]}${i === 1 ? ' on' : ''}` })),
+      chipItems: t.mock11.chips.map((name, i) => ({ name, cls: i === 0 ? 'on' : '' })),
+      chipItemsWindows: t.mock11.chips.map((name, i) => ({ name, cls: i === 2 ? 'on' : '' })) },
+    // From 1.1 an answer can point at the new window (`a11`).
+    faq: { ...t.faq, items: t.faq.items.map(i => (RELEASE >= 1.1 && i.a11 ? { ...i, a: i.a11 } : i)) },
     effects: effectData.map(e => ({
       id: e.id, name: t.effects[e.id].name, desc: t.effects[e.id].desc,
       tier: e.tier, tierLabel: t.tiers[e.tier], pressed: e.id === 'snow' ? 'true' : 'false', video: video(e.video),

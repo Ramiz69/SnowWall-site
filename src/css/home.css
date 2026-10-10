@@ -132,7 +132,7 @@ section { position: relative; }
 .mock-side .t-interaction i { background: #f59e0b; }
 .mock-side .t-presets i { background: #34c759; }
 .mock-side li.on { background: rgba(59, 130, 246, .16); font-weight: 600; }
-.mock-pane { padding: 12px 16px 16px; }
+.mock-pane { padding: 12px 16px 16px; min-width: 0; }
 .mock-h { margin: 10px 2px 6px; font-weight: 600; font-size: 12px; color: var(--win-muted); }
 .mock-group { background: var(--win-group); border: 1px solid var(--win-line); border-radius: 10px; }
 .mock-row { display: flex; align-items: center; gap: 10px; padding: 8px 12px; min-height: 36px; }
@@ -147,6 +147,53 @@ section { position: relative; }
 .track .fill::after { content: ""; position: absolute; inset-inline-end: -8px; top: -6px; width: 16px; height: 16px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .35); }
 .f25 { width: 25%; } .f45 { width: 45%; } .f60 { width: 60%; } .f85 { width: 85%; }
 .well { width: 40px; height: 22px; border-radius: 6px; background: #fff; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .18), 0 0 0 3px var(--win-group); }
+
+/* The 1.1 Settings window: the sidebar holds the window controls and the search field, and
+   Look & Motion opens with its live preview and the chips that jump between its sections. */
+.mock11 .mock-body { grid-template-columns: 186px 1fr; min-height: 360px; }
+/* A name too long for the sidebar ends in an ellipsis, as in a macOS sidebar. */
+.mock11 .mock-side li span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.mock11 .mock-side { display: flex; flex-direction: column; gap: 9px; padding: 12px 10px; }
+.mock11 .mock-side ul { list-style: none; margin: 0; padding: 0; }
+.lights { display: flex; gap: 7px; padding: 1px 3px 3px; }
+.lights i { width: 11px; height: 11px; border-radius: 50%; background: #ff5f57; }
+.lights i:nth-child(2) { background: #febc2e; } .lights i:nth-child(3) { background: #28c840; }
+.mock-search {
+  position: relative; display: block; padding: 5px 8px; padding-inline-start: 25px; border-radius: 7px;
+  background: var(--win-group); border: 1px solid var(--win-line); color: var(--win-muted);
+}
+.mock-search::before {
+  content: ""; position: absolute; inset-inline-start: 9px; top: 50%; width: 7px; height: 7px;
+  border: 1.5px solid currentColor; border-radius: 50%; transform: translateY(-62%);
+}
+.mock-side .t-effect i { background: linear-gradient(135deg, #f472b6, #a855f7); }
+.mock-side .t-look i { background: #3b82f6; }
+.mock-side .t-automatic i { background: #f59e0b; }
+.mock-side .t-siri i { background: linear-gradient(135deg, #6366f1, #ec4899); }
+.mock-ttl { margin: 2px 2px 10px; font-weight: 700; font-size: 15px; }
+.mock-preview {
+  display: flex; justify-content: flex-end; align-items: flex-end; gap: 6px; height: 86px; padding: 8px; border-radius: 10px;
+  background:
+    radial-gradient(circle at 14% 28%, #fff 0 1.4px, transparent 1.9px), radial-gradient(circle at 31% 62%, #fff 0 1px, transparent 1.5px),
+    radial-gradient(circle at 46% 22%, #fff 0 1.8px, transparent 2.3px), radial-gradient(circle at 58% 70%, #fff 0 1.2px, transparent 1.7px),
+    radial-gradient(circle at 70% 38%, #fff 0 1px, transparent 1.5px), radial-gradient(circle at 84% 18%, #fff 0 1.5px, transparent 2px),
+    radial-gradient(circle at 24% 84%, #fff 0 1.1px, transparent 1.6px), radial-gradient(circle at 90% 64%, #fff 0 1.3px, transparent 1.8px),
+    linear-gradient(180deg, #1d3463, #4b6fa8);
+}
+.pv-btn { font-size: 11px; font-weight: 500; line-height: 1; padding: 6px 10px; border-radius: 999px; color: #fff; background: rgba(255, 255, 255, .2); }
+.pv-pause { position: relative; width: 26px; padding: 0; height: 23px; }
+.pv-pause::before {
+  content: ""; position: absolute; left: 50%; top: 50%; width: 7px; height: 9px; box-sizing: border-box;
+  border-left: 2px solid #fff; border-right: 2px solid #fff; transform: translate(-50%, -50%);
+}
+.mock-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 2px; }
+.mock-chips b {
+  font-weight: 500; font-size: 12px; padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+  background: var(--win-group); border: 1px solid var(--win-line);
+}
+.mock-chips b.on { background: rgba(59, 130, 246, .18); border-color: rgba(59, 130, 246, .45); }
+.mock-small .mock-chips { margin-top: 0; }
+.mock-small .mock-chips b { font-size: 11px; padding: 2px 8px; }
 
 /* scroll-linked steps: each line comes up as you scroll through the sticky stage */
 @keyframes step-in { from { opacity: .4; transform: translateY(10px); } to { opacity: 1; transform: none; } }
@@ -445,6 +492,8 @@ input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(
   .mock { font-size: 12px; }
   .mock-body { grid-template-columns: 1fr; min-height: 0; }
   .mock-side { display: none; }
+  .mock11 .mock-body { grid-template-columns: 1fr; min-height: 0; }
+  .mock11 .mock-side { display: none; }
   .mock-row { padding: 7px 10px; min-height: 32px; }
   .track { width: 34%; }
   .seg b, .radios b { padding: 2px 6px; }

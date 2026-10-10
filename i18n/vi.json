@@ -38,7 +38,8 @@
       "Tuyết tích tụ dọc cạnh dưới màn hình, còn sương giá lan dần từ các cạnh khi bạn rời máy."
     ],
     "hint": "Lướt con trỏ qua làn tuyết.",
-    "mockLabel": "Cửa sổ Cài đặt của SnowWall đang mở mục Giao diện, có tuyết đọng dọc cạnh trên."
+    "mockLabel": "Cửa sổ Cài đặt của SnowWall đang mở mục Giao diện, có tuyết đọng dọc cạnh trên.",
+    "mockLabel11": "Cửa sổ Cài đặt của SnowWall đang mở mục Giao diện và chuyển động, có tuyết đọng dọc cạnh trên."
   },
   "mock": {
     "title": "Cài đặt SnowWall",
@@ -67,6 +68,26 @@
     "windows": "Cửa sổ",
     "land": "Đọng trên cửa sổ",
     "landHelp": "Bông tuyết dừng lại trên cạnh trên của cửa sổ phía trước"
+  },
+  "mock11": {
+    "search": "Tìm kiếm",
+    "tabs": ["Hiệu ứng", "Giao diện và chuyển động", "Tự động", "Cài đặt sẵn", "Cài đặt chung", "Siri & Phím tắt"],
+    "peek": "Xem nhanh",
+    "pause": "Tạm dừng",
+    "chips": ["Hạt", "Chuyển động", "Con trỏ và cửa sổ", "Chất lượng"],
+    "styleSize": "Kiểu và kích thước",
+    "style": "Kiểu",
+    "soft": "Mềm mại",
+    "crystal": "Pha lê",
+    "sparkle": "Lấp lánh",
+    "smallest": "Nhỏ nhất",
+    "largest": "Lớn nhất",
+    "colorOpacity": "Màu và độ mờ",
+    "color": "Màu",
+    "opacity": "Độ mờ",
+    "windows": "Cửa sổ",
+    "behind": "Giữ hiệu ứng phía sau cửa sổ",
+    "land": "Đọng trên cửa sổ"
   },
   "seasons": {
     "title": "Mùa nào thời tiết nấy.",
@@ -112,7 +133,8 @@
     "over": "Phủ lên cửa sổ",
     "behind": "Nằm phía sau",
     "switchLabel": "Giữ hiệu ứng phía sau cửa sổ",
-    "mockLabel": "Cài đặt Tương tác của SnowWall với công tắc Giữ hiệu ứng phía sau cửa sổ."
+    "mockLabel": "Cài đặt Tương tác của SnowWall với công tắc Giữ hiệu ứng phía sau cửa sổ.",
+    "mockLabel11": "Cài đặt Giao diện và chuyển động của SnowWall với công tắc Giữ hiệu ứng phía sau cửa sổ."
   },
   "built": {
     "title": "Thiết kế cho Mac.",
@@ -174,7 +196,7 @@
       { "q": "Tôi đã mở SnowWall. Ứng dụng ở đâu?", "a": "<p>SnowWall không có cửa sổ hay biểu tượng riêng trên Dock. Ứng dụng nằm trên thanh menu, là bông tuyết ở đầu màn hình. Bấm vào đó để tạm dừng, đổi hiệu ứng hoặc mở Cài đặt.</p>" },
       { "q": "Ứng dụng có làm chậm Mac hay hao pin không?", "a": "<p>SnowWall vẽ bằng bộ xử lý đồ họa nên có tốn một ít năng lượng. Ứng dụng tạm dừng khi màn hình ngủ và giảm xuống 30 khung hình mỗi giây khi bật Chế độ nguồn điện thấp hoặc khi Mac nóng lên. Muốn tiết kiệm hơn, hãy chọn chất lượng Tiết kiệm pin hoặc giảm số lượng bông tuyết.</p>" },
       { "q": "Ứng dụng có cần cấp quyền không?", "a": "<p>Không. SnowWall vẽ trên màn hình nền mà không đọc nội dung trên màn hình. Nếu macOS yêu cầu bạn cấp quyền ghi màn hình hoặc trợ năng cho ứng dụng, đừng đồng ý, và vui lòng <a href=\"/support/\" hreflang=\"en\">báo cho chúng tôi</a>.</p>" },
-      { "q": "Tuyết có thể nằm phía sau cửa sổ không?", "a": "<p>Có. Bật Giữ hiệu ứng phía sau cửa sổ trong Cài đặt, mục Tương tác. Khi đó tuyết sẽ rơi giữa hình nền và các biểu tượng trên màn hình nền.</p>" },
+      { "q": "Tuyết có thể nằm phía sau cửa sổ không?", "a": "<p>Có. Bật Giữ hiệu ứng phía sau cửa sổ trong Cài đặt, mục Tương tác. Khi đó tuyết sẽ rơi giữa hình nền và các biểu tượng trên màn hình nền.</p>", "a11": "<p>Có. Bật Giữ hiệu ứng phía sau cửa sổ trong Cài đặt, mục Giao diện và chuyển động › Con trỏ và cửa sổ. Khi đó tuyết sẽ rơi giữa hình nền và các biểu tượng trên màn hình nền.</p>" },
       { "q": "Tôi dùng Giảm chuyển động.", "a": "<p>Khi bật Giảm chuyển động, SnowWall mặc định dừng tuyết. Bạn có thể chọn làm chậm tuyết, hoặc để tuyết tiếp tục rơi.</p>" },
       { "q": "Ứng dụng chạy trên máy Mac nào?", "a": "<p>Mọi máy Mac chạy macOS 26 trở lên.</p>" }
     ],

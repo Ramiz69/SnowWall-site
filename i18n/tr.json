@@ -38,7 +38,8 @@
       "Ekranın alt kenarında kar birikir; siz bilgisayarın başında değilken kenarlardan buzlanma başlar."
     ],
     "hint": "İmlecinizi karın içinde gezdirin.",
-    "mockLabel": "Görünüm bölümünde açık SnowWall Ayarları penceresi, üst kenarında kar birikmiş."
+    "mockLabel": "Görünüm bölümünde açık SnowWall Ayarları penceresi, üst kenarında kar birikmiş.",
+    "mockLabel11": "Görünüm ve Hareket bölümünde açık SnowWall Ayarları penceresi, üst kenarında kar birikmiş."
   },
   "mock": {
     "title": "SnowWall Ayarları",
@@ -67,6 +68,26 @@
     "windows": "Pencereler",
     "land": "Pencerelere kon",
     "landHelp": "Taneler en öndeki pencerenin üst kenarında durur"
+  },
+  "mock11": {
+    "search": "Ara",
+    "tabs": ["Efekt", "Görünüm ve Hareket", "Otomatik", "Hazır Ayarlar", "Genel", "Siri ve Kestirmeler"],
+    "peek": "Göz At",
+    "pause": "Duraklat",
+    "chips": ["Parçacıklar", "Hareket", "İmleç ve Pencereler", "Kalite"],
+    "styleSize": "Stil ve Boyut",
+    "style": "Stil",
+    "soft": "Yumuşak",
+    "crystal": "Kristal",
+    "sparkle": "Parıltı",
+    "smallest": "En küçük",
+    "largest": "En büyük",
+    "colorOpacity": "Renk ve Saydamsızlık",
+    "color": "Renk",
+    "opacity": "Saydamsızlık",
+    "windows": "Pencereler",
+    "behind": "Efektleri pencerelerin arkasında tut",
+    "land": "Pencerelere kon"
   },
   "seasons": {
     "title": "Her mevsime bir hava.",
@@ -112,7 +133,8 @@
     "over": "Pencerelerin üstünde",
     "behind": "Arkasında",
     "switchLabel": "Efektleri pencerelerin arkasında tut",
-    "mockLabel": "SnowWall’un Etkileşim ayarları ve Efektleri pencerelerin arkasında tut anahtarı."
+    "mockLabel": "SnowWall’un Etkileşim ayarları ve Efektleri pencerelerin arkasında tut anahtarı.",
+    "mockLabel11": "SnowWall’un Görünüm ve Hareket ayarları ve Efektleri pencerelerin arkasında tut anahtarı."
   },
   "built": {
     "title": "Mac için tasarlandı.",
@@ -174,7 +196,7 @@
       { "q": "SnowWall’u açtım. Nerede?", "a": "<p>SnowWall’un kendi penceresi ya da Dock simgesi yoktur. Ekranın üstündeki menü çubuğunda bir kar tanesi olarak durur. Duraklatmak, efekt değiştirmek ya da Ayarlar’ı açmak için onu tıklayın.</p>" },
       { "q": "Mac’imi yavaşlatır ya da pilimi bitirir mi?", "a": "<p>Grafik işlemcide çizildiği için biraz enerji harcar. Ekran uyuduğunda duraklar; Düşük Güç Modu’nda ya da Mac ısındığında saniyede 30 kareye iner. Daha da az harcaması için Pil Tasarrufu kalitesini seçin ya da kar tanesi sayısını azaltın.</p>" },
       { "q": "Herhangi bir izin gerekiyor mu?", "a": "<p>Hayır. SnowWall ekranda ne olduğunu okumadan masaüstünün üzerine çizer. macOS bir gün ona ekran kaydı ya da erişilebilirlik erişimi vermenizi isterse izin vermeyin ve lütfen <a href=\"/support/\" hreflang=\"en\">bize haber verin</a>.</p>" },
-      { "q": "Kar pencerelerimin arkasında kalabilir mi?", "a": "<p>Evet. Ayarlar’da Etkileşim bölümünden Efektleri pencerelerin arkasında tut seçeneğini açın. Kar artık duvar kâğıdınız ile masaüstü simgeleriniz arasında yağar.</p>" },
+      { "q": "Kar pencerelerimin arkasında kalabilir mi?", "a": "<p>Evet. Ayarlar’da Etkileşim bölümünden Efektleri pencerelerin arkasında tut seçeneğini açın. Kar artık duvar kâğıdınız ile masaüstü simgeleriniz arasında yağar.</p>", "a11": "<p>Evet. Ayarlar’da Görünüm ve Hareket › İmleç ve Pencereler bölümünden Efektleri pencerelerin arkasında tut seçeneğini açın. Kar artık duvar kâğıdınız ile masaüstü simgeleriniz arasında yağar.</p>" },
       { "q": "Hareketi Azalt’ı kullanıyorum.", "a": "<p>Hareketi Azalt açıkken SnowWall varsayılan olarak karı durdurur. Bunun yerine yavaşlatmayı ya da yağmaya devam etmesini seçebilirsiniz.</p>" },
       { "q": "Hangi Mac’lerde çalışır?", "a": "<p>macOS 26 veya sonrası yüklü her Mac’te.</p>" }
     ],

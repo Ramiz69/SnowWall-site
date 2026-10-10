@@ -38,7 +38,8 @@
       "Salju menumpuk di bagian bawah layar, dan embun beku merambat dari tepi selama Anda pergi."
     ],
     "hint": "Gerakkan penunjuk menembus salju.",
-    "mockLabel": "Jendela Pengaturan SnowWall di tab Tampilan, dengan salju menumpuk di tepi atasnya."
+    "mockLabel": "Jendela Pengaturan SnowWall di tab Tampilan, dengan salju menumpuk di tepi atasnya.",
+    "mockLabel11": "Jendela Pengaturan SnowWall di tab Tampilan & Gerakan, dengan salju menumpuk di tepi atasnya."
   },
   "mock": {
     "title": "Pengaturan SnowWall",
@@ -67,6 +68,26 @@
     "windows": "Jendela",
     "land": "Hinggap di Jendela",
     "landHelp": "Kepingan salju berhenti di tepi atas jendela paling depan"
+  },
+  "mock11": {
+    "search": "Cari",
+    "tabs": ["Efek", "Tampilan & Gerakan", "Otomatis", "Preset", "Umum", "Siri & Pintasan"],
+    "peek": "Intip",
+    "pause": "Jeda",
+    "chips": ["Partikel", "Gerakan", "Penunjuk & Jendela", "Kualitas"],
+    "styleSize": "Gaya & Ukuran",
+    "style": "Gaya",
+    "soft": "Halus",
+    "crystal": "Kristal",
+    "sparkle": "Kilau",
+    "smallest": "Terkecil",
+    "largest": "Terbesar",
+    "colorOpacity": "Warna & Opasitas",
+    "color": "Warna",
+    "opacity": "Opasitas",
+    "windows": "Jendela",
+    "behind": "Efek di Belakang Jendela",
+    "land": "Hinggap di Jendela"
   },
   "seasons": {
     "title": "Cuaca untuk setiap musim.",
@@ -112,7 +133,8 @@
     "over": "Di atas jendela",
     "behind": "Di belakangnya",
     "switchLabel": "Efek di belakang jendela",
-    "mockLabel": "Pengaturan Interaksi SnowWall dengan sakelar Efek di Belakang Jendela."
+    "mockLabel": "Pengaturan Interaksi SnowWall dengan sakelar Efek di Belakang Jendela.",
+    "mockLabel11": "Pengaturan Tampilan & Gerakan SnowWall dengan sakelar Efek di Belakang Jendela."
   },
   "built": {
     "title": "Dibuat untuk Mac.",
@@ -174,7 +196,7 @@
       { "q": "Saya sudah membuka SnowWall. Di mana aplikasinya?", "a": "<p>SnowWall tidak punya jendela atau ikon Dock sendiri. Aplikasi ini tinggal di bar menu, berupa kepingan salju di bagian atas layar. Klik untuk menjeda, mengganti efek, atau membuka Pengaturan.</p>" },
       { "q": "Apakah Mac jadi lambat atau baterai cepat habis?", "a": "<p>SnowWall menggambar dengan prosesor grafis, jadi memang memakai sedikit energi. Aplikasi ini dijeda saat layar tidur dan turun ke 30 bingkai per detik dalam Mode Daya Rendah atau saat Mac panas. Agar lebih hemat, pilih Kualitas Hemat Baterai atau kurangi jumlah kepingan salju.</p>" },
       { "q": "Apakah perlu memberi izin?", "a": "<p>Tidak. SnowWall menggambar di atas desktop tanpa membaca isi layar. Jika macOS meminta Anda memberinya akses rekaman layar atau aksesibilitas, jangan izinkan, dan mohon <a href=\"/support/\" hreflang=\"en\">beri tahu kami</a>.</p>" },
-      { "q": "Bisakah salju tetap di belakang jendela?", "a": "<p>Bisa. Nyalakan Efek di Belakang Jendela di Pengaturan, bagian Interaksi. Salju lalu turun di antara wallpaper dan ikon desktop Anda.</p>" },
+      { "q": "Bisakah salju tetap di belakang jendela?", "a": "<p>Bisa. Nyalakan Efek di Belakang Jendela di Pengaturan, bagian Interaksi. Salju lalu turun di antara wallpaper dan ikon desktop Anda.</p>", "a11": "<p>Bisa. Nyalakan Efek di Belakang Jendela di Pengaturan, bagian Tampilan & Gerakan › Penunjuk & Jendela. Salju lalu turun di antara wallpaper dan ikon desktop Anda.</p>" },
       { "q": "Saya memakai Kurangi Gerakan.", "a": "<p>Saat Kurangi Gerakan aktif, SnowWall menghentikan salju secara default. Anda bisa memilih untuk memperlambatnya, atau membiarkannya tetap turun.</p>" },
       { "q": "Mac apa saja yang didukung?", "a": "<p>Mac apa pun dengan macOS 26 atau lebih baru.</p>" }
     ],

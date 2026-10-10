@@ -38,7 +38,8 @@
       "La nieve se acumula en la parte inferior de la pantalla y, mientras no estás, la escarcha avanza desde los bordes."
     ],
     "hint": "Pasa el puntero entre la nieve.",
-    "mockLabel": "La ventana de ajustes de SnowWall abierta en Apariencia, con nieve acumulada en su borde superior."
+    "mockLabel": "La ventana de ajustes de SnowWall abierta en Apariencia, con nieve acumulada en su borde superior.",
+    "mockLabel11": "La ventana de ajustes de SnowWall abierta en Aspecto y movimiento, con nieve acumulada en su borde superior."
   },
   "mock": {
     "title": "Ajustes de SnowWall",
@@ -67,6 +68,26 @@
     "windows": "Ventanas",
     "land": "Posarse en las ventanas",
     "landHelp": "Los copos se detienen sobre el borde superior de la ventana en primer plano"
+  },
+  "mock11": {
+    "search": "Buscar",
+    "tabs": ["Efecto", "Aspecto y movimiento", "Automático", "Preajustes", "General", "Siri y Atajos"],
+    "peek": "Echar un vistazo",
+    "pause": "Pausar",
+    "chips": ["Partículas", "Movimiento", "Puntero y ventanas", "Calidad"],
+    "styleSize": "Estilo y tamaño",
+    "style": "Estilo",
+    "soft": "Suave",
+    "crystal": "Cristal",
+    "sparkle": "Destello",
+    "smallest": "Tamaño mínimo",
+    "largest": "Tamaño máximo",
+    "colorOpacity": "Color y opacidad",
+    "color": "Color",
+    "opacity": "Opacidad",
+    "windows": "Ventanas",
+    "behind": "Efectos detrás de las ventanas",
+    "land": "Posarse en las ventanas"
   },
   "seasons": {
     "title": "Un clima para cada estación.",
@@ -112,7 +133,8 @@
     "over": "Encima de las ventanas",
     "behind": "Detrás",
     "switchLabel": "Efectos detrás de las ventanas",
-    "mockLabel": "Los ajustes de Interacción de SnowWall, con el interruptor Efectos detrás de las ventanas."
+    "mockLabel": "Los ajustes de Interacción de SnowWall, con el interruptor Efectos detrás de las ventanas.",
+    "mockLabel11": "Los ajustes de Aspecto y movimiento de SnowWall, con el interruptor Efectos detrás de las ventanas."
   },
   "built": {
     "title": "Hecha para el Mac.",
@@ -174,7 +196,7 @@
       { "q": "He abierto SnowWall. ¿Dónde está?", "a": "<p>SnowWall no tiene ventana ni icono en el Dock. Vive en la barra de menús, como un copo de nieve en la parte superior de la pantalla. Haz clic en él para pausar, cambiar de efecto o abrir los ajustes.</p>" },
       { "q": "¿Ralentiza el Mac o gasta batería?", "a": "<p>Dibuja con el procesador gráfico, así que consume algo de energía. Se pausa cuando la pantalla entra en reposo y baja a 30 fotogramas por segundo en modo de bajo consumo o si el Mac se calienta. Para gastar menos, elige la calidad Ahorro de energía o reduce la cantidad de copos.</p>" },
       { "q": "¿Necesita algún permiso?", "a": "<p>No. SnowWall dibuja sobre el escritorio sin leer lo que hay en pantalla. Si macOS te pide alguna vez darle acceso a la grabación de pantalla o a la accesibilidad, no lo concedas y, por favor, <a href=\"/support/\" hreflang=\"en\">avísanos</a>.</p>" },
-      { "q": "¿La nieve puede quedarse detrás de las ventanas?", "a": "<p>Sí. Activa Efectos detrás de las ventanas en los ajustes, en Interacción. La nieve caerá entonces entre el fondo de pantalla y los iconos del escritorio.</p>" },
+      { "q": "¿La nieve puede quedarse detrás de las ventanas?", "a": "<p>Sí. Activa Efectos detrás de las ventanas en los ajustes, en Interacción. La nieve caerá entonces entre el fondo de pantalla y los iconos del escritorio.</p>", "a11": "<p>Sí. Activa Efectos detrás de las ventanas en los ajustes, en Aspecto y movimiento › Puntero y ventanas. La nieve caerá entonces entre el fondo de pantalla y los iconos del escritorio.</p>" },
       { "q": "Uso Reducir movimiento.", "a": "<p>Con Reducir movimiento activado, SnowWall detiene la nieve por omisión. Si lo prefieres, puedes ralentizarla o dejarla caer.</p>" },
       { "q": "¿En qué Mac funciona?", "a": "<p>En cualquier Mac con macOS 26 o posterior.</p>" }
     ],

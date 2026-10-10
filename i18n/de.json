@@ -38,7 +38,8 @@
       "Am unteren Bildschirmrand wächst eine Schneedecke, und während du weg bist, zieht von den Rändern Raureif herein."
     ],
     "hint": "Fahr mit dem Zeiger durch den Schnee.",
-    "mockLabel": "Das Einstellungsfenster von SnowWall im Bereich „Darstellung“, auf seiner Oberkante liegt Schnee."
+    "mockLabel": "Das Einstellungsfenster von SnowWall im Bereich „Darstellung“, auf seiner Oberkante liegt Schnee.",
+    "mockLabel11": "Das Einstellungsfenster von SnowWall im Bereich „Aussehen & Bewegung“, auf seiner Oberkante liegt Schnee."
   },
   "mock": {
     "title": "SnowWall-Einstellungen",
@@ -67,6 +68,26 @@
     "windows": "Fenster",
     "land": "Auf Fenstern landen",
     "landHelp": "Flocken bleiben auf der Oberkante des vordersten Fensters liegen"
+  },
+  "mock11": {
+    "search": "Suchen",
+    "tabs": ["Effekt", "Aussehen & Bewegung", "Automatisch", "Voreinstellungen", "Allgemein", "Siri & Kurzbefehle"],
+    "peek": "Blick",
+    "pause": "Pausieren",
+    "chips": ["Partikel", "Bewegung", "Zeiger & Fenster", "Qualität"],
+    "styleSize": "Stil & Größe",
+    "style": "Stil",
+    "soft": "Weich",
+    "crystal": "Kristall",
+    "sparkle": "Glitzer",
+    "smallest": "Kleinste",
+    "largest": "Größte",
+    "colorOpacity": "Farbe & Deckkraft",
+    "color": "Farbe",
+    "opacity": "Deckkraft",
+    "windows": "Fenster",
+    "behind": "Effekte hinter Fenstern",
+    "land": "Auf Fenstern landen"
   },
   "seasons": {
     "title": "Wetter für jede Jahreszeit.",
@@ -112,7 +133,8 @@
     "over": "Über den Fenstern",
     "behind": "Dahinter",
     "switchLabel": "Effekte hinter Fenstern",
-    "mockLabel": "Die Interaktionseinstellungen von SnowWall mit dem Schalter „Effekte hinter Fenstern“."
+    "mockLabel": "Die Interaktionseinstellungen von SnowWall mit dem Schalter „Effekte hinter Fenstern“.",
+    "mockLabel11": "Die Einstellungen „Aussehen & Bewegung“ von SnowWall mit dem Schalter „Effekte hinter Fenstern“."
   },
   "built": {
     "title": "Für den Mac gemacht.",
@@ -174,7 +196,7 @@
       { "q": "Ich habe SnowWall geöffnet. Wo ist es?", "a": "<p>SnowWall hat kein eigenes Fenster und kein Symbol im Dock. Es wohnt als Schneeflocke in der Menüleiste oben am Bildschirm. Klick darauf, um zu pausieren, den Effekt zu wechseln oder die Einstellungen zu öffnen.</p>" },
       { "q": "Macht es meinen Mac langsamer oder leert den Akku?", "a": "<p>SnowWall zeichnet auf dem Grafikprozessor und braucht daher etwas Energie. Im Ruhezustand des Displays pausiert es, und im Stromsparmodus oder wenn der Mac heiß läuft, sinkt es auf 30 Bilder pro Sekunde. Für noch weniger wähle die Qualitätsstufe „Stromsparen“ oder reduziere die Anzahl der Flocken.</p>" },
       { "q": "Braucht es Berechtigungen?", "a": "<p>Nein. SnowWall zeichnet über den Schreibtisch, ohne zu lesen, was auf dem Bildschirm ist. Falls macOS dich je bittet, ihm Bildschirmaufnahme oder Zugriff auf die Bedienungshilfen zu erlauben, lehne ab und <a href=\"/support/\" hreflang=\"en\">sag uns bitte Bescheid</a>.</p>" },
-      { "q": "Kann der Schnee hinter meinen Fenstern bleiben?", "a": "<p>Ja. Aktiviere „Effekte hinter Fenstern“ in den Einstellungen unter „Interaktion“. Dann fällt der Schnee zwischen deinem Hintergrundbild und den Schreibtischsymbolen.</p>" },
+      { "q": "Kann der Schnee hinter meinen Fenstern bleiben?", "a": "<p>Ja. Aktiviere „Effekte hinter Fenstern“ in den Einstellungen unter „Interaktion“. Dann fällt der Schnee zwischen deinem Hintergrundbild und den Schreibtischsymbolen.</p>", "a11": "<p>Ja. Aktiviere „Effekte hinter Fenstern“ in den Einstellungen unter „Aussehen & Bewegung“ › „Zeiger & Fenster“. Dann fällt der Schnee zwischen deinem Hintergrundbild und den Schreibtischsymbolen.</p>" },
       { "q": "Ich nutze „Bewegung reduzieren“.", "a": "<p>Ist „Bewegung reduzieren“ aktiv, hält SnowWall den Schnee standardmäßig an. Du kannst ihn stattdessen auch verlangsamen oder weiterlaufen lassen.</p>" },
       { "q": "Auf welchen Macs läuft es?", "a": "<p>Auf jedem Mac mit macOS 26 oder neuer.</p>" }
     ],

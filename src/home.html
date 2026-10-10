@@ -81,6 +81,7 @@
         <p class="hint">{{settle.hint}}</p>
       </div>
       <div class="mock-wrap">
+<!--pre1.1-->
         <div class="mock" role="img" aria-label="{{settle.mockLabel}}">
           <div class="mock-title" aria-hidden="true">{{mock.title}}</div>
           <div class="mock-body" aria-hidden="true">
@@ -107,6 +108,35 @@
             </div>
           </div>
         </div>
+<!--/pre1.1-->
+<!--1.1-->
+        <!-- The 1.1 window: sidebar with search, Look & Motion with its live preview and section chips. -->
+        <div class="mock mock11" role="img" aria-label="{{settle.mockLabel11}}">
+          <div class="mock-body" aria-hidden="true">
+            <div class="mock-side">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mock-search">{{mock11.search}}</span>
+              <ul>{{#mock11.tabItems}}<li class="{{.cls}}"><i></i><span>{{.name}}</span></li>{{/mock11.tabItems}}</ul>
+            </div>
+            <div class="mock-pane">
+              <p class="mock-ttl">{{mock11.tabs.1}}</p>
+              <div class="mock-preview"><span class="pv-btn pv-pause" title="{{mock11.pause}}"></span><span class="pv-btn">{{mock11.peek}}</span></div>
+              <div class="mock-chips">{{#mock11.chipItems}}<b class="{{.cls}}">{{.name}}</b>{{/mock11.chipItems}}</div>
+              <p class="mock-h">{{mock11.styleSize}}</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>{{mock11.style}}</span><span class="seg"><b>{{mock11.soft}}</b><b class="on">{{mock11.crystal}}</b><b>{{mock11.sparkle}}</b></span></div>
+                <div class="mock-row"><span>{{mock11.smallest}}</span><span class="track"><i class="fill f25"></i></span><em>{{mock.smallestValue}}</em></div>
+                <div class="mock-row"><span>{{mock11.largest}}</span><span class="track"><i class="fill f45"></i></span><em>{{mock.largestValue}}</em></div>
+              </div>
+              <p class="mock-h">{{mock11.colorOpacity}}</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>{{mock11.color}}</span><span class="well"></span></div>
+                <div class="mock-row"><span>{{mock11.opacity}}</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--/1.1-->
       </div>
     </div>
     <canvas class="layer front" aria-hidden="true"></canvas>
@@ -186,6 +216,7 @@
     </div>
     <div class="desk">
       <canvas class="layer back" aria-hidden="true"></canvas>
+<!--pre1.1-->
       <div class="mock mock-small" role="img" aria-label="{{behind.mockLabel}}">
         <div class="mock-title" aria-hidden="true">{{mock.title}}</div>
         <div class="mock-pane" aria-hidden="true">
@@ -205,6 +236,26 @@
           </div>
         </div>
       </div>
+<!--/pre1.1-->
+<!--1.1-->
+      <div class="mock mock-small mock11" role="img" aria-label="{{behind.mockLabel11}}">
+        <div class="mock-title" aria-hidden="true">{{mock11.tabs.1}}</div>
+        <div class="mock-pane" aria-hidden="true">
+          <div class="mock-chips">{{#mock11.chipItemsWindows}}<b class="{{.cls}}">{{.name}}</b>{{/mock11.chipItemsWindows}}</div>
+          <p class="mock-h">{{mock11.windows}}</p>
+          <div class="mock-group">
+            <div class="mock-row toggle-row">
+              <span><strong>{{mock11.behind}}</strong><small>{{mock.behindHelp}}</small></span>
+              <span class="toggle"><i></i></span>
+            </div>
+            <div class="mock-row toggle-row dim-when-behind">
+              <span><strong>{{mock11.land}}</strong><small>{{mock.landHelp}}</small></span>
+              <span class="toggle on-static"><i></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--/1.1-->
       <canvas class="layer front" aria-hidden="true"></canvas>
       <p class="desk-state" aria-hidden="true"><span class="s-over">{{behind.over}}</span><span class="s-behind">{{behind.behind}}</span></p>
     </div>

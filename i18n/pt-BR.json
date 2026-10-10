@@ -38,7 +38,8 @@
       "A neve se acumula na parte de baixo da tela, e a geada avança pelas bordas enquanto você está ausente."
     ],
     "hint": "Passe o ponteiro pela neve.",
-    "mockLabel": "Janela de Ajustes do SnowWall, aberta em Aparência, com neve acumulada na borda superior."
+    "mockLabel": "Janela de Ajustes do SnowWall, aberta em Aparência, com neve acumulada na borda superior.",
+    "mockLabel11": "Janela de Ajustes do SnowWall, aberta em Aparência e movimento, com neve acumulada na borda superior."
   },
   "mock": {
     "title": "Ajustes do SnowWall",
@@ -67,6 +68,26 @@
     "windows": "Janelas",
     "land": "Pousar nas janelas",
     "landHelp": "Os flocos param na borda superior da janela em primeiro plano"
+  },
+  "mock11": {
+    "search": "Buscar",
+    "tabs": ["Efeito", "Aparência e movimento", "Automático", "Predefinições", "Geral", "Siri e Atalhos"],
+    "peek": "Espiar",
+    "pause": "Pausar",
+    "chips": ["Partículas", "Movimento", "Ponteiro e janelas", "Qualidade"],
+    "styleSize": "Estilo e tamanho",
+    "style": "Estilo",
+    "soft": "Difuso",
+    "crystal": "Cristal",
+    "sparkle": "Brilho",
+    "smallest": "Menor",
+    "largest": "Maior",
+    "colorOpacity": "Cor e opacidade",
+    "color": "Cor",
+    "opacity": "Opacidade",
+    "windows": "Janelas",
+    "behind": "Efeitos atrás das janelas",
+    "land": "Pousar nas janelas"
   },
   "seasons": {
     "title": "Um clima para cada estação.",
@@ -112,7 +133,8 @@
     "over": "Por cima das janelas",
     "behind": "Atrás delas",
     "switchLabel": "Efeitos atrás das janelas",
-    "mockLabel": "Ajustes de Interação do SnowWall com a opção Efeitos atrás das janelas."
+    "mockLabel": "Ajustes de Interação do SnowWall com a opção Efeitos atrás das janelas.",
+    "mockLabel11": "Ajustes de Aparência e movimento do SnowWall com a opção Efeitos atrás das janelas."
   },
   "built": {
     "title": "Feito para o Mac.",
@@ -174,7 +196,7 @@
       { "q": "Abri o SnowWall. Cadê ele?", "a": "<p>O SnowWall não tem janela nem ícone no Dock. Ele mora na barra de menus, como um floco de neve no topo da tela. Clique nele para pausar, trocar de efeito ou abrir os Ajustes.</p>" },
       { "q": "Ele deixa o Mac lento ou gasta a bateria?", "a": "<p>Ele desenha com o processador gráfico, então usa um pouco de energia. Pausa quando a tela entra em repouso e cai para 30 quadros por segundo no Modo de Pouca Energia ou quando o Mac esquenta. Para gastar menos, escolha a qualidade Economia de Bateria ou diminua a quantidade de flocos.</p>" },
       { "q": "Ele precisa de alguma permissão?", "a": "<p>Não. O SnowWall desenha sobre a mesa sem ler o que está na tela. Se o macOS algum dia pedir acesso de gravação de tela ou de acessibilidade para ele, não conceda e, por favor, <a href=\"/support/\" hreflang=\"en\">avise a gente</a>.</p>" },
-      { "q": "A neve pode ficar atrás das janelas?", "a": "<p>Sim. Ative Efeitos atrás das janelas nos Ajustes, em Interação. A neve passa a cair entre o papel de parede e os ícones da mesa.</p>" },
+      { "q": "A neve pode ficar atrás das janelas?", "a": "<p>Sim. Ative Efeitos atrás das janelas nos Ajustes, em Interação. A neve passa a cair entre o papel de parede e os ícones da mesa.</p>", "a11": "<p>Sim. Ative Efeitos atrás das janelas nos Ajustes, em Aparência e movimento › Ponteiro e janelas. A neve passa a cair entre o papel de parede e os ícones da mesa.</p>" },
       { "q": "Eu uso Reduzir movimento.", "a": "<p>Com Reduzir movimento ativado, o SnowWall para a neve por padrão. Se preferir, você pode deixá-la mais lenta ou mantê-la caindo.</p>" },
       { "q": "Em quais Macs ele funciona?", "a": "<p>Em qualquer Mac com macOS 26 ou posterior.</p>" }
     ],

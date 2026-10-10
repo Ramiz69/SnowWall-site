@@ -38,7 +38,8 @@
       "La neige s’accumule en bas de l’écran, et le givre gagne les bords pendant votre absence."
     ],
     "hint": "Passez le pointeur dans la neige.",
-    "mockLabel": "La fenêtre des réglages de SnowWall, ouverte sur Apparence, avec de la neige sur son bord supérieur."
+    "mockLabel": "La fenêtre des réglages de SnowWall, ouverte sur Apparence, avec de la neige sur son bord supérieur.",
+    "mockLabel11": "La fenêtre des réglages de SnowWall, ouverte sur Apparence et mouvement, avec de la neige sur son bord supérieur."
   },
   "mock": {
     "title": "Réglages de SnowWall",
@@ -67,6 +68,26 @@
     "windows": "Fenêtres",
     "land": "Se poser sur les fenêtres",
     "landHelp": "Les flocons s’arrêtent sur le haut de la fenêtre au premier plan"
+  },
+  "mock11": {
+    "search": "Rechercher",
+    "tabs": ["Effet", "Apparence et mouvement", "Automatique", "Préréglages", "Général", "Siri et Raccourcis"],
+    "peek": "Coup d’œil",
+    "pause": "Mettre en pause",
+    "chips": ["Particules", "Mouvement", "Pointeur et fenêtres", "Qualité"],
+    "styleSize": "Style et taille",
+    "style": "Style",
+    "soft": "Duveteux",
+    "crystal": "Cristallin",
+    "sparkle": "Scintillant",
+    "smallest": "Taille minimale",
+    "largest": "Taille maximale",
+    "colorOpacity": "Couleur et opacité",
+    "color": "Couleur",
+    "opacity": "Opacité",
+    "windows": "Fenêtres",
+    "behind": "Effets derrière les fenêtres",
+    "land": "Se poser sur les fenêtres"
   },
   "seasons": {
     "title": "Un temps pour chaque saison.",
@@ -112,7 +133,8 @@
     "over": "Devant les fenêtres",
     "behind": "Derrière",
     "switchLabel": "Effets derrière les fenêtres",
-    "mockLabel": "Les réglages d’interaction de SnowWall avec l’interrupteur « Effets derrière les fenêtres »."
+    "mockLabel": "Les réglages d’interaction de SnowWall avec l’interrupteur « Effets derrière les fenêtres ».",
+    "mockLabel11": "Les réglages Apparence et mouvement de SnowWall avec l’interrupteur « Effets derrière les fenêtres »."
   },
   "built": {
     "title": "Pensé pour le Mac.",
@@ -174,7 +196,7 @@
       { "q": "J’ai ouvert SnowWall. Où est-il ?", "a": "<p>SnowWall n’a ni fenêtre ni icône dans le Dock. Il vit dans la barre des menus, sous la forme d’un flocon en haut de l’écran. Cliquez dessus pour mettre en pause, changer d’effet ou ouvrir les réglages.</p>" },
       { "q": "Va-t-il ralentir mon Mac ou vider la batterie ?", "a": "<p>Il dessine avec le processeur graphique, il consomme donc un peu d’énergie. Il se met en pause quand l’écran est en veille et passe à 30 images par seconde en mode Économie d’énergie ou quand le Mac chauffe. Pour consommer encore moins, choisissez la qualité Économie d’énergie ou réduisez le nombre de flocons.</p>" },
       { "q": "Faut-il lui accorder des autorisations ?", "a": "<p>Non. SnowWall dessine sur le bureau sans lire ce qui est à l’écran. Si macOS vous demande un jour de lui accorder l’enregistrement de l’écran ou l’accès à l’accessibilité, refusez et <a href=\"/support/\" hreflang=\"en\">prévenez-nous</a>.</p>" },
-      { "q": "La neige peut-elle rester derrière mes fenêtres ?", "a": "<p>Oui. Activez « Effets derrière les fenêtres » dans les réglages, section Interaction. La neige tombe alors entre votre fond d’écran et les icônes du bureau.</p>" },
+      { "q": "La neige peut-elle rester derrière mes fenêtres ?", "a": "<p>Oui. Activez « Effets derrière les fenêtres » dans les réglages, section Interaction. La neige tombe alors entre votre fond d’écran et les icônes du bureau.</p>", "a11": "<p>Oui. Activez « Effets derrière les fenêtres » dans les réglages, section Apparence et mouvement › Pointeur et fenêtres. La neige tombe alors entre votre fond d’écran et les icônes du bureau.</p>" },
       { "q": "J’utilise « Réduire les animations ».", "a": "<p>Quand cette option est activée, SnowWall arrête la neige par défaut. Vous pouvez choisir de la ralentir à la place, ou de la laisser tomber.</p>" },
       { "q": "Sur quels Mac fonctionne-t-il ?", "a": "<p>Sur tout Mac équipé de macOS 26 ou version ultérieure.</p>" }
     ],
