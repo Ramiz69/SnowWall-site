@@ -21,6 +21,10 @@ const SRC = join(ROOT, 'src');
 const DIST = join(ROOT, 'public');
 const SITE = 'https://snowwall.app';
 const APP_STORE = 'https://apps.apple.com/app/id6809149964';
+// Links people click carry an App Store campaign (`ct`), so App Analytics shows which part of the
+// site a download came from. Structured data keeps the plain URL. The channel list and the provider
+// token live in the SnowWall repo, docs/press/campaign-links.py.
+const campaign = ct => `https://apps.apple.com/app/apple-store/id6809149964?pt=118223827&amp;ct=${ct}&amp;mt=8`;
 // Every language the app ships in, in the order the language menu lists them. A language joins
 // the site (its home page, the menu, sitemap) once i18n/<code>.json exists; only en and ru do now.
 // No flags: a flag names a country, not a language, and several of these have no single country.
@@ -201,7 +205,7 @@ function homeData(t) {
   };
   return {
     ...t,
-    site: SITE, url, appStore: APP_STORE, modulepreload,
+    site: SITE, url, appStore: campaign('site-home'), modulepreload,
     menus: headerMenus(t.ui, t.lang, homeHrefs),
     jsonld: JSON.stringify(jsonld).replace(/</g, '\\u003c'),
     hero: { ...t.hero, titleHtml: t.hero.title.split(' ').map(w => `<span class="w">${w}</span>`).join(' ') },
@@ -241,6 +245,7 @@ for (const f of readdirSync(join(SRC, 'pages'))) {
     robots: meta.robots ? `<meta name="robots" content="${meta.robots}">` : '',
     canonical: meta.robots ? '' : `<link rel="canonical" href="${SITE}${meta.path}">`,
     content: raw.slice(m[0].length).replace(/{{/g, '&#123;&#123;'),
+    storeLink: campaign(meta.nav === 'press' ? 'site-press' : 'site-support'),
     current,
     menus: headerMenus(enUi, 'en', { ...homeHrefs, en: meta.robots ? '/' : meta.path }),
   };
