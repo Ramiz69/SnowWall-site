@@ -47,6 +47,12 @@ const LANGUAGES = [
   { code: 'zh-Hans', short: '简', name: '简体中文' },
   { code: 'zh-Hant', short: '繁', name: '繁體中文' },
 ].map(l => ({ ...l, path: l.code === 'en' ? '/' : `/${l.code.toLowerCase()}/` }));
+// Open Graph locale per language, and which languages read right to left.
+const OG_LOCALE = {
+  en: 'en_US', ru: 'ru_RU', ar: 'ar_AR', de: 'de_DE', es: 'es_ES', fr: 'fr_FR', hi: 'hi_IN', id: 'id_ID',
+  it: 'it_IT', ja: 'ja_JP', ko: 'ko_KR', 'pt-BR': 'pt_BR', tr: 'tr_TR', vi: 'vi_VN', 'zh-Hans': 'zh_CN', 'zh-Hant': 'zh_TW',
+};
+const RTL = new Set(['ar']);
 const BUILT = LANGUAGES.filter(l => existsSync(join(ROOT, 'i18n', `${l.code}.json`)));
 const LANGS = BUILT.map(l => l.code);
 const releaseArg = process.argv.find(a => a.startsWith('--release='));
@@ -203,12 +209,25 @@ function homeData(t) {
       ...(t.jsonld.proOffer ? [{ '@type': 'Offer', name: t.jsonld.proOffer.name, description: 'One-time in-app purchase', price: t.jsonld.proOffer.price, priceCurrency: t.jsonld.proOffer.priceCurrency, url: APP_STORE }] : []),
     ],
   };
+  // Every built language is an alternate of every other, English is the default; a language
+  // without its own social image or App Store badge borrows the English one.
+  const alternates = [...BUILT.map(l => `<link rel="alternate" hreflang="${l.code}" href="${SITE}${l.path}">`),
+    `<link rel="alternate" hreflang="x-default" href="${SITE}/">`].join('\n');
+  const ogLocales = [`<meta property="og:locale" content="${OG_LOCALE[t.lang]}">`,
+    ...BUILT.filter(l => l.code !== t.lang).map(l => `<meta property="og:locale:alternate" content="${OG_LOCALE[l.code]}">`)].join('\n');
+  const ogImage = existsSync(join(SRC, 'static/og', `og-${t.lang}.png`)) ? `og-${t.lang}.png` : 'og-en.png';
+  const badgeLang = assets.has(`assets/badge-mac-black-${t.badgeLang}.svg`) ? t.badgeLang : 'en';
   return {
     ...t,
+    dir: RTL.has(t.lang) ? 'rtl' : 'ltr', alternates, ogLocales, ogImage, badgeLang,
     site: SITE, url, appStore: campaign('site-home'), modulepreload,
     menus: headerMenus(t.ui, t.lang, homeHrefs),
     jsonld: JSON.stringify(jsonld).replace(/</g, '\\u003c'),
-    hero: { ...t.hero, titleHtml: t.hero.title.split(' ').map(w => `<span class="w">${w}</span>`).join(' ') },
+    // Each word animates on its own and never breaks inside. Japanese and Chinese have no spaces,
+    // so their headline splits after its commas instead, where a line may break.
+    hero: { ...t.hero, titleHtml: (/^(ja|zh)/.test(t.lang)
+      ? t.hero.title.split(/(?<=[、，])/).map(w => `<span class="w">${w}</span>`).join('')
+      : t.hero.title.split(' ').map(w => `<span class="w">${w}</span>`).join(' ')) },
     mock: { ...t.mock, tabs: t.mock.tabs.map((name, i) => ({ name, cls: `t-${TAB_IDS[i]}${TAB_IDS[i] === 'appearance' ? ' on' : ''}` })) },
     effects: effectData.map(e => ({
       id: e.id, name: t.effects[e.id].name, desc: t.effects[e.id].desc,
@@ -225,7 +244,8 @@ const homeTpl = read(join(SRC, 'home.html'));
 for (const lang of LANGS) {
   const t = JSON.parse(read(join(ROOT, 'i18n', `${lang}.json`)));
   const html = render(homeTpl, homeData(t), `home/${lang}`);
-  const out = lang === 'en' ? 'index.html' : `${lang}/index.html`;
+  // The folder is the URL path, lowercase (`/pt-br/`, `/zh-hans/`), not the language code.
+  const out = `${t.path.slice(1)}index.html`;
   write(join(DIST, out), html);
   pages.push([t.path, out, html]);
 }
@@ -257,9 +277,10 @@ for (const f of readdirSync(join(SRC, 'pages'))) {
 
 // ---------- sitemap ----------
 const today = new Date().toISOString().slice(0, 10);
-const alt = `<xhtml:link rel="alternate" hreflang="en" href="${SITE}/"/><xhtml:link rel="alternate" hreflang="ru" href="${SITE}/ru/"/><xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/"/>`;
+const homePaths = new Set(BUILT.map(l => l.path));
+const alt = BUILT.map(l => `<xhtml:link rel="alternate" hreflang="${l.code}" href="${SITE}${l.path}"/>`).join('') + `<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/"/>`;
 const urls = pages.filter(p => !p[3]).map(([path]) =>
-  `  <url><loc>${SITE}${path}</loc><lastmod>${today}</lastmod>${path === '/' || path === '/ru/' ? alt : ''}</url>`);
+  `  <url><loc>${SITE}${path}</loc><lastmod>${today}</lastmod>${homePaths.has(path) ? alt : ''}</url>`);
 write(join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`);
 
 // ---------- report ----------

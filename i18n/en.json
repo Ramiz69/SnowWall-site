@@ -2,15 +2,12 @@
   "lang": "en",
   "path": "/",
   "badgeLang": "en",
-  "otherLang": { "code": "ru", "href": "/ru/", "label": "RU", "name": "Русский" },
   "meta": {
     "title": "SnowWall for Mac: snow, rain and seasons on your desktop",
     "description": "SnowWall draws snow, rain, petals and more across your Mac desktop. Flakes drift around your pointer and settle on your windows. Free, from the menu bar, with no permissions to grant.",
     "ogTitle": "SnowWall: weather for your Mac desktop",
     "ogDescription": "Snow drifts across your Mac, moves aside for your pointer and settles on your windows. Free on the Mac App Store.",
-    "ogAlt": "The words “Weather for your desktop.” with snow settled on the letters, on a night sky.",
-    "locale": "en_US",
-    "localeAlt": "ru_RU"
+    "ogAlt": "The words “Weather for your desktop.” with snow settled on the letters, on a night sky."
   },
   "ui": {
     "skip": "Skip to content",
@@ -184,7 +181,7 @@
     "items11": [
       { "q": "Can I pause it without the menu?", "a": "<p>Yes. Add SnowWall’s control to Control Center, or use the Pause action in Spotlight or Shortcuts.</p>" }
     ],
-    "more": "Something else? See <a href=\"/support/\">Support</a>, or write to <a href=\"mailto:ramiz161@icloud.com?subject=SnowWall\">ramiz161@icloud.com</a>."
+    "more": "Something else? See <a href=\"/support/\">Support</a>, or write to <a href=\"mailto:support@snowwall.app?subject=SnowWall\">support@snowwall.app</a>."
   },
   "footer": {
     "tagline": "Weather for your Mac desktop.",

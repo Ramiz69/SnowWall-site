@@ -1,0 +1,199 @@
+{
+  "lang": "tr",
+  "path": "/tr/",
+  "badgeLang": "en",
+  "meta": {
+    "title": "Mac için SnowWall: masaüstünüzde kar, yağmur ve mevsimler",
+    "description": "SnowWall, Mac masaüstünüze kar, yağmur, çiçek yaprakları ve daha fazlasını getirir. Taneler imlecinizden kaçar, pencerelerinizin üstünde birikir. Ücretsiz, menü çubuğundan çalışır ve hiçbir izin istemez.",
+    "ogTitle": "SnowWall: Mac masaüstünüzde hava değişiyor",
+    "ogDescription": "Kar Mac’inizin ekranında süzülür, imlecinize yol verir ve pencerelerinizin üstünde birikir. Mac App Store’da ücretsiz.",
+    "ogAlt": "Gece gökyüzünde, harflerinin üstünde kar biriken “Masaüstünüzde hava değişiyor.” yazısı."
+  },
+  "ui": {
+    "skip": "İçeriğe geç",
+    "langNav": "Dil ve görünüm",
+    "play": "Animasyonu oynat",
+    "pause": "Animasyonu duraklat",
+    "language": "Dil",
+    "theme": { "label": "Renk düzeni", "auto": "Otomatik", "light": "Açık", "dark": "Koyu" },
+    "badgeAlt": "Mac App Store’dan İndirin",
+    "included": "Dahil",
+    "notIncluded": "Dahil değil"
+  },
+  "hero": {
+    "eyebrow": "Mac için SnowWall",
+    "title": "Masaüstünüzde hava değişiyor.",
+    "sub": "Kar Mac’inizin ekranında süzülür, imlecinize yol verir ve pencerelerinizin üstünde birikir. Hepsi menü çubuğundaki bir kar tanesinden.",
+    "price": "Ücretsiz. SnowWall Pro tek seferlik 14,99 $.",
+    "switcherLabel": "Bir efekti önizleyin",
+    "modes": { "snow": "Kar", "rain": "Yağmur", "blossom": "Kiraz Çiçeği" },
+    "nowShowing": "Şu an: {name}",
+    "req": "macOS 26 veya sonrası gerekir"
+  },
+  "settle": {
+    "title": "Pencerelerinizin üstünde birikir.",
+    "steps": [
+      "Taneler imlecinizden uzağa süzülür.",
+      "Öndeki pencerenin üst kenarına konar.",
+      "Ekranın alt kenarında kar birikir; siz bilgisayarın başında değilken kenarlardan buzlanma başlar."
+    ],
+    "hint": "İmlecinizi karın içinde gezdirin.",
+    "mockLabel": "Görünüm bölümünde açık SnowWall Ayarları penceresi, üst kenarında kar birikmiş."
+  },
+  "mock": {
+    "title": "SnowWall Ayarları",
+    "tabs": ["Genel", "Efektler", "Görünüm", "Fizik", "Etkileşim", "Hazır Ayarlar"],
+    "styleSize": "Stil ve Boyut",
+    "style": "Stil",
+    "soft": "Yumuşak",
+    "crystal": "Kristal",
+    "sparkle": "Parıltı",
+    "smallest": "En küçük",
+    "largest": "En büyük",
+    "smallestValue": "3 pt",
+    "largestValue": "14 pt",
+    "color": "Renk",
+    "opacity": "Saydamsızlık",
+    "performance": "Performans",
+    "quality": "Kalite",
+    "saver": "Pil Tasarrufu",
+    "balanced": "Dengeli",
+    "ultra": "Ultra",
+    "count": "Kar Tanesi Sayısı",
+    "countValue": "2.400",
+    "layering": "Katmanlar",
+    "behind": "Efektleri pencerelerin arkasında tut",
+    "behindHelp": "Her şeyin üzerine değil, duvar kâğıdı ile masaüstü simgelerinin arasına çizer",
+    "windows": "Pencereler",
+    "land": "Pencerelere kon",
+    "landHelp": "Taneler en öndeki pencerenin üst kenarında durur"
+  },
+  "seasons": {
+    "title": "Her mevsime bir hava.",
+    "lede": "Kar Yağışı ve Yağmur ücretsiz. SnowWall Pro, tipiden konfeti yağmuruna sekiz efekt daha ekler.",
+    "hint": "Birini seçin; hem burada hem sayfanın üstünde yağsın.",
+    "chosen": "Şimdi yağan: {name}."
+  },
+  "packs": { "winter": "Kış", "spring": "İlkbahar", "autumn": "Sonbahar", "night": "Gece", "events": "Özel Günler" },
+  "tiers": { "free": "Ücretsiz", "pro": "Pro" },
+  "effects": {
+    "snow": { "name": "Kar Yağışı", "desc": "Yavaşça süzülen yumuşak beyaz taneler." },
+    "rain": { "name": "Yağmur", "desc": "Pencerelerinizin önünden akan yağmur damlaları." },
+    "blizzard": { "name": "Tipi", "desc": "Rüzgârla savrulan yoğun kar." },
+    "christmas": { "name": "Noel", "desc": "Kırmızı ve yeşil ışıltılı kar." },
+    "frozen": { "name": "Buzul", "desc": "Buz mavisi kristaller." },
+    "glass": { "name": "Camda Yağmur", "desc": "Buğu toplanır ve ekrandan aşağı süzülür." },
+    "blossom": { "name": "Kiraz Çiçeği", "desc": "Bahar esintisinde pembe yapraklar." },
+    "leaves": { "name": "Sonbahar Yaprakları", "desc": "Düşerken dönen sıcak renkli yapraklar." },
+    "stars": { "name": "Yıldızlı Gece", "desc": "Göz kırpan altın yıldızlar." },
+    "confetti": { "name": "Konfeti", "desc": "Her parçası ayrı bir renk." }
+  },
+  "ambient": {
+    "title": "Siz yokken Ortam Modu.",
+    "body": "Kar ekranı doldurur, üzerinde bir saat belirir. Herhangi bir tuş ya da tıklama masaüstünüzü geri getirir.",
+    "tag": "SnowWall Pro’ya dahil"
+  },
+  "tune": {
+    "title": "Her taneyi ayarlayın.",
+    "lede": "Boyut, hız, rüzgâr, salınım, renk ve kar miktarı. Dördünü burada deneyin, gerisi uygulamada.",
+    "formLabel": "Önizleme için kar ayarları",
+    "reset": "Sıfırla",
+    "sliders": [
+      { "id": "size", "label": "En büyük taneler", "min": "5", "max": "30", "step": "1", "value": "14", "unit": "pt", "minLabel": "Küçük", "maxLabel": "Büyük", "from": "", "to": "" },
+      { "id": "speed", "label": "Düşüş hızı", "min": "0.5", "max": "5", "step": "0.1", "value": "1.5", "unit": "×", "minLabel": "Yavaş", "maxLabel": "Hızlı", "from": "", "to": "" },
+      { "id": "wind", "label": "Rüzgâr", "min": "-3", "max": "3", "step": "0.1", "value": "0.5", "unit": "", "minLabel": "Sol", "maxLabel": "Sağ", "from": "sola", "to": "sağa" },
+      { "id": "amount", "label": "Kar tanesi sayısı", "min": "100", "max": "4000", "step": "100", "value": "1500", "unit": "", "minLabel": "Az", "maxLabel": "Çok", "from": "", "to": "" }
+    ],
+    "still": "Rüzgârsız"
+  },
+  "behind": {
+    "title": "Pencerelerin üstünde ya da arkasında.",
+    "lede": "Havayı her şeyin üzerinde tutun ya da pencerelerin arkasına, duvar kâğıdı ile masaüstü simgelerinin arasına gönderin.",
+    "over": "Pencerelerin üstünde",
+    "behind": "Arkasında",
+    "switchLabel": "Efektleri pencerelerin arkasında tut",
+    "mockLabel": "SnowWall’un Etkileşim ayarları ve Efektleri pencerelerin arkasında tut anahtarı."
+  },
+  "built": {
+    "title": "Mac için tasarlandı.",
+    "lede": "Grafik işlemcide çizilen, ne zaman geri çekileceğini bilen gerçek bir simülasyon.",
+    "facts": [
+      { "icon": "metal", "title": "Metal ile çizilir", "body": "Ultra kalitede 10.000 parçacığa kadar, hepsi GPU’da hesaplanır. Hiçbir şey döngüye girmez, çünkü hiçbiri video değil." },
+      { "icon": "battery", "title": "Pil Tasarrufu", "body": "Şarj aletinden uzak uzun günler için daha hafif bir kalite ayarı." },
+      { "icon": "gauge", "title": "Düşük Güç Modu’nda 30 fps", "body": "Mac ısındığında da saniyede 30 kareye iner, ekran uyurken duraklar." },
+      { "icon": "displays", "title": "Tüm ekranlarınız", "body": "Bağladığınız her ekrana kar yağar." },
+      { "icon": "motion", "title": "Hareketi Azalt, size göre", "body": "Hareketi Azalt açıkken karı durdurun, yavaşlatın ya da yağmaya devam etsin." },
+      { "icon": "shortcuts", "title": "Kestirmeler ve Odak", "body": "Kestirmeler eylemleri ve bir Odak açıkken karı duraklatan bir Odak filtresi." },
+      { "icon": "globe", "title": "16 dil", "body": "Türkçe, İngilizce, Rusça, Japonca, Arapça, Hintçe ve on dil daha." }
+    ],
+    "facts11": [
+      { "icon": "control", "title": "Denetim Merkezi’nden duraklatın", "body": "Denetim Merkezi’ndeki bir denetim, menüyü açmadan karı durdurur ve başlatır." },
+      { "icon": "widget", "title": "Araç Takımları", "body": "Masaüstü araç takımları neyin yağdığını gösterir ve tek tıkla değiştirir." },
+      { "icon": "search", "title": "Spotlight eylemleri", "body": "Efekti doğrudan Spotlight’tan duraklatın, sürdürün ya da değiştirin." },
+      { "icon": "sparkles", "title": "Bir ruh hâli tarif edin", "body": "Apple Intelligence’lı Mac’lerde bir ruh hâli tarif edin, SnowWall ona uygun bir hazır ayar oluştursun." }
+    ]
+  },
+  "private": {
+    "title": "Gizlilik, tasarımın parçası.",
+    "items": [
+      { "title": "Veri toplanmaz.", "body": "Analiz yok, çökme raporu yok, izleme yok. SnowWall kendi başına hiçbir ağ isteği yapmaz." },
+      { "title": "Verilecek izin yok.", "body": "Masaüstünüzde ne olduğunu okumadan üzerine çizer. Ekran kaydı da, erişilebilirlik erişimi de gerekmez." },
+      { "title": "Hesap yok.", "body": "Kaydolacak bir şey yok. Satın alma işleminiz sizinle App Store arasında kalır." }
+    ],
+    "more": "Ayrıntılar <a href=\"/privacy/\" hreflang=\"en\">gizlilik politikasında</a> (İngilizce). Kısa, çünkü söylenecek pek bir şey yok."
+  },
+  "pro": {
+    "title": "Ücretsiz başlayın. Pro bir kez alınır.",
+    "lede": "Kar Yağışı ve Yağmur tüm ayarlarıyla sizin. SnowWall Pro, gerisinin kilidini tek bir satın almayla açar. Abonelik yok.",
+    "caption": "Ücretsiz sürüm ve SnowWall Pro neleri içerir",
+    "feature": "Özellik",
+    "free": "Ücretsiz",
+    "rows": [
+      { "label": "Kar Yağışı ve Yağmur, tüm ayarlarıyla", "free": true, "pro": true },
+      { "label": "Pencerelerde biriken kar, kar yığınları ve buzlanma", "free": true, "pro": true },
+      { "label": "Pencerelerin üstünde ya da arkasında", "free": true, "pro": true },
+      { "label": "Kestirmeler, Odak filtresi ve Geceleri sakin", "free": true, "pro": true },
+      { "label": "Kayıtlı hazır ayarlar", "free": "3", "pro": "Sınırsız" },
+      { "label": "Kalite", "free": "Pil Tasarrufu, Dengeli", "pro": "Ultra da eklenir, 10.000 parçacığa kadar" },
+      { "label": "Sekiz efekt daha", "note": "Tipi, Noel, Buzul, Kiraz Çiçeği, Camda Yağmur, Sonbahar Yaprakları, Yıldızlı Gece ve Konfeti", "free": false, "pro": true },
+      { "label": "Ortam Modu", "free": false, "pro": true },
+      { "label": "Sekiz görsel efekt", "note": "Işıma, Kutup Işıkları, Alan Derinliği ve daha fazlası", "free": false, "pro": true },
+      { "label": "Özel günler", "note": "Noel, Yılbaşı, Cadılar Bayramı ve bahar çiçekleri kendiliğinden açılır", "free": false, "pro": true },
+      { "label": "Mevsimle birlikte değişen temalar", "free": false, "pro": true }
+    ],
+    "release11": [
+      { "title": "Aralıkta Noel ücretsiz.", "body": "Noel efekti ay boyunca herkese açık." },
+      { "title": "Almadan önce deneyin.", "body": "Karar vermeden önce istediğiniz Pro efektini kendi masaüstünüzde canlı olarak önizleyin." }
+    ],
+    "price": "SnowWall Pro, 14,99 $ tutarında tek seferlik bir satın almadır. Apple Hesabınızla giriş yaptığınız her Mac’te geri yükleyebilirsiniz."
+  },
+  "faq": {
+    "title": "Sorular.",
+    "items": [
+      { "q": "SnowWall ücretsiz mi?", "a": "<p>Evet. Kar Yağışı ve Yağmur tüm ayarlarıyla ücretsizdir ve üç hazır ayar kaydedebilirsiniz. SnowWall Pro tek seferlik bir satın almadır; diğer sekiz efekti, Ortam Modu’nu, görsel efektleri, Ultra kaliteyi ve sınırsız hazır ayarı ekler. Abonelik değildir.</p>" },
+      { "q": "SnowWall’u açtım. Nerede?", "a": "<p>SnowWall’un kendi penceresi ya da Dock simgesi yoktur. Ekranın üstündeki menü çubuğunda bir kar tanesi olarak durur. Duraklatmak, efekt değiştirmek ya da Ayarlar’ı açmak için onu tıklayın.</p>" },
+      { "q": "Mac’imi yavaşlatır ya da pilimi bitirir mi?", "a": "<p>Grafik işlemcide çizildiği için biraz enerji harcar. Ekran uyuduğunda duraklar; Düşük Güç Modu’nda ya da Mac ısındığında saniyede 30 kareye iner. Daha da az harcaması için Pil Tasarrufu kalitesini seçin ya da kar tanesi sayısını azaltın.</p>" },
+      { "q": "Herhangi bir izin gerekiyor mu?", "a": "<p>Hayır. SnowWall ekranda ne olduğunu okumadan masaüstünün üzerine çizer. macOS bir gün ona ekran kaydı ya da erişilebilirlik erişimi vermenizi isterse izin vermeyin ve lütfen <a href=\"/support/\" hreflang=\"en\">bize haber verin</a>.</p>" },
+      { "q": "Kar pencerelerimin arkasında kalabilir mi?", "a": "<p>Evet. Ayarlar’da Etkileşim bölümünden Efektleri pencerelerin arkasında tut seçeneğini açın. Kar artık duvar kâğıdınız ile masaüstü simgeleriniz arasında yağar.</p>" },
+      { "q": "Hareketi Azalt’ı kullanıyorum.", "a": "<p>Hareketi Azalt açıkken SnowWall varsayılan olarak karı durdurur. Bunun yerine yavaşlatmayı ya da yağmaya devam etmesini seçebilirsiniz.</p>" },
+      { "q": "Hangi Mac’lerde çalışır?", "a": "<p>macOS 26 veya sonrası yüklü her Mac’te.</p>" }
+    ],
+    "items11": [
+      { "q": "Menüyü açmadan duraklatabilir miyim?", "a": "<p>Evet. SnowWall denetimini Denetim Merkezi’ne ekleyin ya da Spotlight’ta veya Kestirmeler’de Duraklat eylemini kullanın.</p>" }
+    ],
+    "more": "Başka bir sorunuz mu var? <a href=\"/support/\" hreflang=\"en\">Destek</a> sayfasına (İngilizce) bakın ya da <a href=\"mailto:support@snowwall.app?subject=SnowWall\">support@snowwall.app</a> adresine yazın."
+  },
+  "footer": {
+    "tagline": "Mac masaüstünüzde dört mevsim.",
+    "navLabel": "Site",
+    "support": "Destek",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "press": "Basın",
+    "small": "macOS 26 veya sonrası gerekir. Mac ve Mac App Store, Apple Inc.’in ticari markalarıdır."
+  },
+  "jsonld": {
+    "description": "Mac masaüstüne kar, yağmur ve mevsim havası getiren bir menü çubuğu uygulaması. Taneler imleçten kaçar ve pencerelerin üstünde birikir.",
+    "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  }
+}

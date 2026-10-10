@@ -12,13 +12,13 @@ import { join, extname, normalize, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.png': 'image/png', '.webp': 'image/webp', '.svg': 'image/svg+xml' };
+const TYPES = { '.json': 'application/json; charset=utf-8', '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.png': 'image/png', '.webp': 'image/webp', '.svg': 'image/svg+xml' };
 
 createServer((req, res) => {
   const url = new URL(req.url, 'http://x');
   if (req.method === 'POST' && url.pathname === '/save') {
     const lang = url.searchParams.get('lang');
-    if (!/^[a-z]{2}$/.test(lang)) { res.writeHead(400).end('bad lang'); return; }
+    if (!/^[a-z]{2}(-[A-Za-z]{2,4})?$/.test(lang)) { res.writeHead(400).end('bad lang'); return; }
     const chunks = [];
     req.on('data', c => chunks.push(c));
     req.on('end', () => {

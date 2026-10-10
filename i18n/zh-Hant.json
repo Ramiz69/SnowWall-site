@@ -1,0 +1,199 @@
+{
+  "lang": "zh-Hant",
+  "path": "/zh-hant/",
+  "badgeLang": "en",
+  "meta": {
+    "title": "適用於 Mac 的 SnowWall：把雪、雨和四季帶到桌面",
+    "description": "SnowWall 讓雪花、雨滴、花瓣等在 Mac 桌面上飄落。雪花會避開指標，停留在視窗上。免費下載，從選單列即可控制，不需要授予任何權限。",
+    "ogTitle": "SnowWall：Mac 桌面上的天氣",
+    "ogDescription": "雪花飄過 Mac 桌面，為指標讓路，停留在你的視窗上。可在 Mac App Store 免費下載。",
+    "ogAlt": "夜空背景上的文字「桌面上的天氣。」，字上覆著積雪。"
+  },
+  "ui": {
+    "skip": "跳至內容",
+    "langNav": "語言與外觀",
+    "play": "播放動畫",
+    "pause": "暫停動畫",
+    "language": "語言",
+    "theme": { "label": "外觀", "auto": "自動", "light": "淺色", "dark": "深色" },
+    "badgeAlt": "從 Mac App Store 下載",
+    "included": "包含",
+    "notIncluded": "不包含"
+  },
+  "hero": {
+    "eyebrow": "適用於 Mac 的 SnowWall",
+    "title": "桌面上的天氣。",
+    "sub": "雪花飄過 Mac 桌面，為指標讓路，停留在你的視窗上。一切都在選單列的一片雪花裡。",
+    "price": "免費下載。SnowWall Pro 一次購買，只要 US$14.99。",
+    "switcherLabel": "預覽效果",
+    "modes": { "snow": "飄雪", "rain": "下雨", "blossom": "櫻花" },
+    "nowShowing": "正在顯示：{name}",
+    "req": "需要 macOS 26 或以後版本"
+  },
+  "settle": {
+    "title": "雪會停留在視窗上。",
+    "steps": [
+      "雪花會避開你的指標飄散。",
+      "它們落在最前方視窗的頂端邊緣。",
+      "雪沿著螢幕底部慢慢堆積；你離開時，霜會從邊緣逐漸蔓延。"
+    ],
+    "hint": "把指標移進雪裡試試看。",
+    "mockLabel": "SnowWall 的設定視窗，停在「外觀」頁面，頂端邊緣積著雪。"
+  },
+  "mock": {
+    "title": "SnowWall 設定",
+    "tabs": ["一般", "效果", "外觀", "物理", "互動", "預設組合"],
+    "styleSize": "樣式與大小",
+    "style": "樣式",
+    "soft": "柔和",
+    "crystal": "冰晶",
+    "sparkle": "閃耀",
+    "smallest": "最小",
+    "largest": "最大",
+    "smallestValue": "3 pt",
+    "largestValue": "14 pt",
+    "color": "顏色",
+    "opacity": "不透明度",
+    "performance": "效能",
+    "quality": "畫質",
+    "saver": "省電",
+    "balanced": "平衡",
+    "ultra": "極致",
+    "count": "雪花數量",
+    "countValue": "2,400",
+    "layering": "圖層",
+    "behind": "讓效果留在視窗後方",
+    "behindHelp": "顯示在背景圖片與桌面圖像之間，而不是覆蓋所有內容",
+    "windows": "視窗",
+    "land": "停留在視窗上",
+    "landHelp": "雪花會停留在最前方視窗的頂端邊緣"
+  },
+  "seasons": {
+    "title": "四季，各有天氣。",
+    "lede": "「飄雪」和「下雨」免費提供。SnowWall Pro 再加八種效果，從暴風雪到繽紛彩紙。",
+    "hint": "選一種效果，看它在這裡和頁面頂端飄落。",
+    "chosen": "正在飄落：{name}。"
+  },
+  "packs": { "winter": "冬季", "spring": "春季", "autumn": "秋季", "night": "夜晚", "events": "節日" },
+  "tiers": { "free": "免費", "pro": "Pro" },
+  "effects": {
+    "snow": { "name": "飄雪", "desc": "柔軟的白色雪花，輕輕飄落。" },
+    "rain": { "name": "下雨", "desc": "雨絲從視窗旁傾瀉而過。" },
+    "blizzard": { "name": "暴風雪", "desc": "狂風捲著漫天大雪。" },
+    "christmas": { "name": "聖誕節", "desc": "飄雪中閃爍著紅綠光點。" },
+    "frozen": { "name": "冰封", "desc": "冰藍色的晶體。" },
+    "glass": { "name": "雨打玻璃", "desc": "水氣凝結，沿著螢幕流下。" },
+    "blossom": { "name": "櫻花", "desc": "粉色花瓣隨春風飛舞。" },
+    "leaves": { "name": "秋日落葉", "desc": "暖色落葉，邊落邊旋轉。" },
+    "stars": { "name": "星夜", "desc": "金色星光閃爍。" },
+    "confetti": { "name": "彩紙", "desc": "每一片都有自己的顏色。" }
+  },
+  "ambient": {
+    "title": "離開時，進入氛圍模式。",
+    "body": "雪花佈滿螢幕，上方顯示時鐘。按下任意鍵或按一下，即可回到桌面。",
+    "tag": "包含在 SnowWall Pro 中"
+  },
+  "tune": {
+    "title": "每片雪花，隨你調整。",
+    "lede": "大小、速度、風力、搖擺、顏色和雪量都能調整。這裡可以試試其中四項，其餘都在 App 裡。",
+    "formLabel": "預覽的飄雪設定",
+    "reset": "重置",
+    "sliders": [
+      { "id": "size", "label": "最大雪花", "min": "5", "max": "30", "step": "1", "value": "14", "unit": "pt", "minLabel": "小", "maxLabel": "大", "from": "", "to": "" },
+      { "id": "speed", "label": "飄落速度", "min": "0.5", "max": "5", "step": "0.1", "value": "1.5", "unit": "×", "minLabel": "慢", "maxLabel": "快", "from": "", "to": "" },
+      { "id": "wind", "label": "風", "min": "-3", "max": "3", "step": "0.1", "value": "0.5", "unit": "", "minLabel": "向左", "maxLabel": "向右", "from": "向左", "to": "向右" },
+      { "id": "amount", "label": "雪花數量", "min": "100", "max": "4000", "step": "100", "value": "1500", "unit": "", "minLabel": "少", "maxLabel": "多", "from": "", "to": "" }
+    ],
+    "still": "無風"
+  },
+  "behind": {
+    "title": "在視窗上方，或在視窗後方。",
+    "lede": "讓天氣覆蓋所有內容，或退到視窗後方，顯示在背景圖片與桌面圖像之間。",
+    "over": "在視窗上方",
+    "behind": "在視窗後方",
+    "switchLabel": "讓效果留在視窗後方",
+    "mockLabel": "SnowWall 的「互動」設定，其中有「讓效果留在視窗後方」開關。"
+  },
+  "built": {
+    "title": "專為 Mac 打造。",
+    "lede": "由圖形處理器即時繪製的真實模擬，也懂得適時退讓。",
+    "facts": [
+      { "icon": "metal", "title": "採用 Metal 繪製", "body": "「極致」畫質下，多達 10,000 個粒子在 GPU 上即時模擬。它不是影片，所以永遠不會重複循環。" },
+      { "icon": "battery", "title": "省電畫質", "body": "較輕量的畫質設定，適合長時間不接電源使用。" },
+      { "icon": "gauge", "title": "低耗電模式下 30 fps", "body": "Mac 溫度過高時同樣降至每秒 30 格，顯示器睡眠時自動暫停。" },
+      { "icon": "displays", "title": "支援所有顯示器", "body": "雪花飄過你連接的每一個螢幕。" },
+      { "icon": "motion", "title": "減少動態效果，由你決定", "body": "開啟「減少動態效果」時，可以讓雪停下、放慢，或照常飄落。" },
+      { "icon": "shortcuts", "title": "捷徑與專注模式", "body": "提供「捷徑」動作，以及專注模式過濾條件：開啟專注模式時，雪會暫停。" },
+      { "icon": "globe", "title": "16 種語言", "body": "英文、俄文、日文、阿拉伯文、印地文等 16 種語言。" }
+    ],
+    "facts11": [
+      { "icon": "control", "title": "從控制中心暫停", "body": "使用控制中心裡的控制項目隨時暫停或繼續，不必打開選單。" },
+      { "icon": "widget", "title": "小工具", "body": "桌面小工具顯示目前的效果，按一下即可切換。" },
+      { "icon": "search", "title": "Spotlight 動作", "body": "直接在 Spotlight 中暫停、繼續或切換效果。" },
+      { "icon": "sparkles", "title": "描述一種氛圍", "body": "在支援 Apple Intelligence 的 Mac 上，描述一種氛圍，SnowWall 就會為它建立預設組合。" }
+    ]
+  },
+  "private": {
+    "title": "隱私，從設計開始。",
+    "items": [
+      { "title": "不收集任何資料。", "body": "沒有分析、沒有當機報告、沒有追蹤。SnowWall 本身不會發出任何網路請求。" },
+      { "title": "不需要授予任何權限。", "body": "它在桌面上繪製，但不讀取桌面上的內容。不需要螢幕錄製權限，也不需要輔助使用權限。" },
+      { "title": "不需要帳號。", "body": "不用註冊。你的購買只在你和 App Store 之間進行。" }
+    ],
+    "more": "詳情請參閱<a href=\"/privacy/\" hreflang=\"en\">隱私權政策</a>（英文）。內容很短，因為要說的本來就不多。"
+  },
+  "pro": {
+    "title": "免費開始。Pro，買一次就好。",
+    "lede": "「飄雪」和「下雨」永久免費，隨你調整。SnowWall Pro 一次購買即可解鎖其餘所有功能，免訂閱。",
+    "caption": "免費版與 SnowWall Pro 包含的功能",
+    "feature": "功能",
+    "free": "免費版",
+    "rows": [
+      { "label": "「飄雪」和「下雨」，所有設定皆可調整", "free": true, "pro": true },
+      { "label": "停留在視窗上的雪、底部積雪和霜", "free": true, "pro": true },
+      { "label": "在視窗上方或在視窗後方", "free": true, "pro": true },
+      { "label": "捷徑、專注模式過濾條件和「夜間減量」", "free": true, "pro": true },
+      { "label": "已儲存的預設組合", "free": "3 組", "pro": "無限制" },
+      { "label": "畫質", "free": "省電、平衡", "pro": "加入「極致」，多達 10,000 個粒子" },
+      { "label": "另外八種效果", "note": "暴風雪、聖誕節、冰封、櫻花、雨打玻璃、秋日落葉、星夜和彩紙", "free": false, "pro": true },
+      { "label": "氛圍模式", "free": false, "pro": true },
+      { "label": "八種視覺效果", "note": "光暈、極光、景深等", "free": false, "pro": true },
+      { "label": "節日日期", "note": "聖誕節、新年、萬聖節和春季櫻花會自動開啟", "free": false, "pro": true },
+      { "label": "隨季節變換的主題", "free": false, "pro": true }
+    ],
+    "release11": [
+      { "title": "十二月，聖誕節免費。", "body": "整個十二月，每個人都能使用「聖誕節」效果。" },
+      { "title": "先試用，再購買。", "body": "決定之前，可以在自己的桌面上即時預覽任何 Pro 效果。" }
+    ],
+    "price": "SnowWall Pro 為一次購買，價格為 US$14.99。在登入同一個 Apple 帳號的每部 Mac 上都能回復購買項目。"
+  },
+  "faq": {
+    "title": "常見問題",
+    "items": [
+      { "q": "SnowWall 是免費的嗎？", "a": "<p>是的。「飄雪」和「下雨」免費提供，所有設定都能使用，還能儲存三組預設組合。SnowWall Pro 為一次購買，加入其餘八種效果、氛圍模式、視覺效果、「極致」畫質和無限預設組合。它不是訂閱制。</p>" },
+      { "q": "我打開了 SnowWall，它在哪裡？", "a": "<p>SnowWall 沒有自己的視窗，也沒有 Dock 圖像。它以雪花圖像的形式待在螢幕頂端的選單列中。按一下即可暫停、切換效果或打開設定。</p>" },
+      { "q": "它會拖慢 Mac 或耗電嗎？", "a": "<p>它由圖形處理器繪製，因此會耗用一些電力。顯示器睡眠時它會暫停，在低耗電模式下或 Mac 溫度過高時降至每秒 30 格。想更省電，可以選擇「省電」畫質，或減少雪花數量。</p>" },
+      { "q": "它需要任何權限嗎？", "a": "<p>不需要。SnowWall 在桌面上繪製，但不讀取螢幕上的內容。如果 macOS 要求你授予它螢幕錄製或輔助使用權限，請不要允許，並<a href=\"/support/\" hreflang=\"en\">告訴我們</a>。</p>" },
+      { "q": "雪可以留在視窗後方嗎？", "a": "<p>可以。在設定的「互動」中開啟「讓效果留在視窗後方」，雪就會飄落在背景圖片與桌面圖像之間。</p>" },
+      { "q": "我開啟了「減少動態效果」。", "a": "<p>開啟「減少動態效果」時，SnowWall 預設會讓雪停下。你也可以選擇讓它放慢，或照常飄落。</p>" },
+      { "q": "哪些 Mac 可以使用？", "a": "<p>任何安裝 macOS 26 或以後版本的 Mac。</p>" }
+    ],
+    "items11": [
+      { "q": "不打開選單也能暫停嗎？", "a": "<p>可以。將 SnowWall 的控制項目加入控制中心，或在 Spotlight 或「捷徑」中使用「暫停」動作。</p>" }
+    ],
+    "more": "還有其他問題？請前往<a href=\"/support/\" hreflang=\"en\">支援頁面</a>（英文），或寄信至 <a href=\"mailto:support@snowwall.app?subject=SnowWall\">support@snowwall.app</a>。"
+  },
+  "footer": {
+    "tagline": "Mac 桌面上的天氣。",
+    "navLabel": "網站",
+    "support": "支援",
+    "privacy": "隱私權政策",
+    "terms": "使用條款",
+    "press": "媒體資料",
+    "small": "需要 macOS 26 或以後版本。Mac 和 Mac App Store 是 Apple Inc. 的商標。"
+  },
+  "jsonld": {
+    "description": "一款選單列 App，可在 Mac 桌面上呈現飄雪、下雨和四季天氣。雪花會避開指標，停留在視窗上。",
+    "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  }
+}

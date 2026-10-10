@@ -29,13 +29,18 @@ const COPY = {
   ru: { title: 'Погода на вашем экране.', eyebrow: 'SnowWall для Mac', foot: 'Бесплатно в Mac App Store' },
 };
 const lang = new URLSearchParams(location.search).get('lang') || 'en';
-const c = COPY[lang];
+// Every other language takes its headline from its own home page strings, and the badge's
+// wording for the line at the bottom.
+const t = COPY[lang] ? null : await (await fetch(`/i18n/${lang}.json`)).json();
+const c = COPY[lang] || { title: t.hero.title, eyebrow: t.hero.eyebrow, foot: t.ui.badgeAlt };
+document.documentElement.lang = lang;
+if (lang === 'ar') document.documentElement.dir = 'rtl';
 const h = document.getElementById('h');
-h.innerHTML = c.title.split(' ').map(w => `<span class="w">${w}</span>`).join(' ');
+h.innerHTML = (/^(ja|zh)/.test(lang) ? c.title.split(/(?<=[、，])/) : c.title.split(' ')).map(w => `<span class="w">${w}</span>`).join(/^(ja|zh)/.test(lang) ? '' : ' ');
 const words = [...h.querySelectorAll('.w')];
 // Two lines like the hero: break before the second half.
 const brk = Math.ceil(words.length / 2);
-words[brk].before(document.createElement('br'));
+if (words.length > 1) words[brk].before(document.createElement('br'));
 const FONT = '-apple-system, BlinkMacSystemFont, system-ui, sans-serif';
 
 await document.fonts.ready;
@@ -60,6 +65,8 @@ for (const [cx, cy, r, col] of [[360, 200, 420, 'rgba(64,190,160,.16)'], [860, 1
 x.drawImage(document.getElementById('b'), 0, 0);
 x.save(); x.shadowColor = 'rgba(0,0,0,.35)'; x.shadowBlur = 24; x.shadowOffsetY = 10;
 x.drawImage(icon, 552, 58, 96, 96); x.restore();
+// Right to left, the canvas has to be told, or a mixed line comes out in left-to-right order.
+x.direction = document.documentElement.dir === 'rtl' ? 'rtl' : 'ltr';
 x.fillStyle = '#a3b4cd'; x.textAlign = 'center'; x.font = `600 26px ${FONT}`;
 x.fillText(c.eyebrow, 600, 200);
 // headline: same tinted gradient as the site, drawn word by word at the DOM positions

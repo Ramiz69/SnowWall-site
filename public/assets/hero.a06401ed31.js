@@ -34,7 +34,8 @@ for (const fn of listeners) if (fn !== from) fn(id);
 radios.forEach((b, i) => {
 b.addEventListener('click', () => show(b.dataset.effect));
 b.addEventListener('keydown', e => {
-const d = e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : e.key === 'ArrowLeft' || e.key === 'ArrowUp' ? -1 : 0;
+const rtl = document.dir === 'rtl' ? -1 : 1;
+const d = e.key === 'ArrowRight' ? rtl : e.key === 'ArrowLeft' ? -rtl : e.key === 'ArrowDown' ? 1 : e.key === 'ArrowUp' ? -1 : 0;
 if (!d) return;
 e.preventDefault();
 const next = radios[(i + d + radios.length) % radios.length];

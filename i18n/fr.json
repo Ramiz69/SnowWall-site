@@ -1,0 +1,199 @@
+{
+  "lang": "fr",
+  "path": "/fr/",
+  "badgeLang": "en",
+  "meta": {
+    "title": "SnowWall pour Mac : neige, pluie et saisons sur votre bureau",
+    "description": "SnowWall fait tomber neige, pluie, pétales et plus encore sur le bureau de votre Mac. Les flocons contournent le pointeur et se posent sur vos fenêtres. Gratuit, depuis la barre des menus, sans aucune autorisation.",
+    "ogTitle": "SnowWall : la météo sur le bureau de votre Mac",
+    "ogDescription": "La neige tombe sur votre Mac, s’écarte du pointeur et se pose sur vos fenêtres. Gratuit sur le Mac App Store.",
+    "ogAlt": "Les mots « La météo sur votre bureau. » recouverts de neige, sur un ciel nocturne."
+  },
+  "ui": {
+    "skip": "Aller au contenu",
+    "langNav": "Langue et apparence",
+    "play": "Lancer l’animation",
+    "pause": "Mettre l’animation en pause",
+    "language": "Langue",
+    "theme": { "label": "Apparence", "auto": "Auto", "light": "Clair", "dark": "Sombre" },
+    "badgeAlt": "Télécharger dans le Mac App Store",
+    "included": "Inclus",
+    "notIncluded": "Non inclus"
+  },
+  "hero": {
+    "eyebrow": "SnowWall pour Mac",
+    "title": "La météo sur votre bureau.",
+    "sub": "La neige tombe sur votre Mac, s’écarte du pointeur et se pose sur vos fenêtres. Le tout depuis un flocon dans la barre des menus.",
+    "price": "Gratuit. SnowWall Pro, en achat unique : 14,99 $.",
+    "switcherLabel": "Voir un effet",
+    "modes": { "snow": "Neige", "rain": "Pluie", "blossom": "Fleurs" },
+    "nowShowing": "En ce moment : {name}",
+    "req": "Nécessite macOS 26 ou version ultérieure"
+  },
+  "settle": {
+    "title": "Elle se pose sur vos fenêtres.",
+    "steps": [
+      "Les flocons s’écartent de votre pointeur.",
+      "Ils se posent sur le haut de la fenêtre au premier plan.",
+      "La neige s’accumule en bas de l’écran, et le givre gagne les bords pendant votre absence."
+    ],
+    "hint": "Passez le pointeur dans la neige.",
+    "mockLabel": "La fenêtre des réglages de SnowWall, ouverte sur Apparence, avec de la neige sur son bord supérieur."
+  },
+  "mock": {
+    "title": "Réglages de SnowWall",
+    "tabs": ["Général", "Effets", "Apparence", "Physique", "Interaction", "Préréglages"],
+    "styleSize": "Style et taille",
+    "style": "Style",
+    "soft": "Duveteux",
+    "crystal": "Cristallin",
+    "sparkle": "Scintillant",
+    "smallest": "Taille minimale",
+    "largest": "Taille maximale",
+    "smallestValue": "3 pt",
+    "largestValue": "14 pt",
+    "color": "Couleur",
+    "opacity": "Opacité",
+    "performance": "Performances",
+    "quality": "Qualité",
+    "saver": "Économie d’énergie",
+    "balanced": "Équilibré",
+    "ultra": "Ultra",
+    "count": "Nombre de flocons",
+    "countValue": "2 400",
+    "layering": "Superposition",
+    "behind": "Effets derrière les fenêtres",
+    "behindHelp": "Affiche l’effet entre le fond d’écran et les icônes du bureau plutôt que par-dessus tout",
+    "windows": "Fenêtres",
+    "land": "Se poser sur les fenêtres",
+    "landHelp": "Les flocons s’arrêtent sur le haut de la fenêtre au premier plan"
+  },
+  "seasons": {
+    "title": "Un temps pour chaque saison.",
+    "lede": "Chute de neige et Pluie sont gratuits. SnowWall Pro en ajoute huit autres, du blizzard à la pluie de confettis.",
+    "hint": "Choisissez un effet pour le voir tomber, ici et en haut de la page.",
+    "chosen": "En ce moment : {name}."
+  },
+  "packs": { "winter": "Hiver", "spring": "Printemps", "autumn": "Automne", "night": "Nuit", "events": "Événements" },
+  "tiers": { "free": "Gratuit", "pro": "Pro" },
+  "effects": {
+    "snow": { "name": "Chute de neige", "desc": "De doux flocons blancs qui descendent lentement." },
+    "rain": { "name": "Pluie", "desc": "Des gouttes qui filent devant vos fenêtres." },
+    "blizzard": { "name": "Blizzard", "desc": "Une neige dense, poussée par le vent." },
+    "christmas": { "name": "Noël", "desc": "De la neige pailletée de rouge et de vert." },
+    "frozen": { "name": "Glace", "desc": "Des cristaux bleu glacier." },
+    "glass": { "name": "Pluie sur la vitre", "desc": "La buée se forme et ruisselle sur l’écran." },
+    "blossom": { "name": "Fleurs de cerisier", "desc": "Des pétales roses portés par la brise de printemps." },
+    "leaves": { "name": "Feuilles d’automne", "desc": "Des feuilles aux tons chauds qui tournoient en tombant." },
+    "stars": { "name": "Nuit étoilée", "desc": "Des étoiles dorées qui scintillent." },
+    "confetti": { "name": "Confettis", "desc": "Chacun de sa propre couleur." }
+  },
+  "ambient": {
+    "title": "Le mode Ambiance, quand vous vous éloignez.",
+    "body": "La neige remplit l’écran, surmontée d’une horloge. Une touche ou un clic, et votre bureau revient.",
+    "tag": "Inclus dans SnowWall Pro"
+  },
+  "tune": {
+    "title": "Réglez chaque flocon.",
+    "lede": "Taille, vitesse, vent, balancement, couleur et quantité de neige. Essayez-en quatre ici, l’app propose tous les autres.",
+    "formLabel": "Réglages de la neige pour l’aperçu",
+    "reset": "Réinitialiser",
+    "sliders": [
+      { "id": "size", "label": "Plus gros flocons", "min": "5", "max": "30", "step": "1", "value": "14", "unit": "pt", "minLabel": "Petits", "maxLabel": "Gros", "from": "", "to": "" },
+      { "id": "speed", "label": "Vitesse de chute", "min": "0.5", "max": "5", "step": "0.1", "value": "1.5", "unit": "×", "minLabel": "Lente", "maxLabel": "Rapide", "from": "", "to": "" },
+      { "id": "wind", "label": "Vent", "min": "-3", "max": "3", "step": "0.1", "value": "0.5", "unit": "", "minLabel": "Gauche", "maxLabel": "Droite", "from": "vers la gauche", "to": "vers la droite" },
+      { "id": "amount", "label": "Nombre de flocons", "min": "100", "max": "4000", "step": "100", "value": "1500", "unit": "", "minLabel": "Quelques-uns", "maxLabel": "Beaucoup", "from": "", "to": "" }
+    ],
+    "still": "Sans vent"
+  },
+  "behind": {
+    "title": "Devant vos fenêtres ou derrière.",
+    "lede": "Gardez la météo par-dessus tout, ou envoyez-la derrière vos fenêtres, entre le fond d’écran et les icônes du bureau.",
+    "over": "Devant les fenêtres",
+    "behind": "Derrière",
+    "switchLabel": "Effets derrière les fenêtres",
+    "mockLabel": "Les réglages d’interaction de SnowWall avec l’interrupteur « Effets derrière les fenêtres »."
+  },
+  "built": {
+    "title": "Pensé pour le Mac.",
+    "lede": "Une vraie simulation, calculée par le processeur graphique, qui sait se faire discrète.",
+    "facts": [
+      { "icon": "metal", "title": "Rendu avec Metal", "body": "Jusqu’à 10 000 particules en qualité Ultra, simulées par le GPU. Rien ne tourne en boucle, car rien n’est une vidéo." },
+      { "icon": "battery", "title": "Économie d’énergie", "body": "Une qualité plus légère pour les longues journées loin du chargeur." },
+      { "icon": "gauge", "title": "30 i/s en Économie d’énergie", "body": "L’animation passe aussi à 30 images par seconde quand le Mac chauffe, et se met en pause quand l’écran est en veille." },
+      { "icon": "displays", "title": "Tous vos écrans", "body": "La neige tombe sur chaque écran que vous branchez." },
+      { "icon": "motion", "title": "« Réduire les animations », à votre façon", "body": "Quand l’option est activée, arrêtez la neige, ralentissez-la ou laissez-la tomber." },
+      { "icon": "shortcuts", "title": "Raccourcis et Concentration", "body": "Des actions pour Raccourcis, et un filtre de concentration qui met la neige en pause pendant un mode de concentration." },
+      { "icon": "globe", "title": "16 langues", "body": "Français, anglais, japonais, arabe, hindi et onze autres." }
+    ],
+    "facts11": [
+      { "icon": "control", "title": "Pause depuis le Centre de contrôle", "body": "Une commande du Centre de contrôle arrête et relance la neige sans ouvrir le menu." },
+      { "icon": "widget", "title": "Widgets", "body": "Les widgets du bureau montrent ce qui tombe et changent d’effet en un clic." },
+      { "icon": "search", "title": "Actions dans Spotlight", "body": "Mettez en pause, reprenez ou changez d’effet directement depuis Spotlight." },
+      { "icon": "sparkles", "title": "Décrire une ambiance", "body": "Sur les Mac compatibles avec Apple Intelligence, décrivez une ambiance et SnowWall crée le préréglage assorti." }
+    ]
+  },
+  "private": {
+    "title": "Confidentiel par nature.",
+    "items": [
+      { "title": "Aucune donnée collectée.", "body": "Pas d’analyses, pas de rapports de plantage, pas de pistage. SnowWall n’effectue lui-même aucune requête réseau." },
+      { "title": "Aucune autorisation.", "body": "Il dessine sur votre bureau sans lire ce qui s’y trouve. Ni enregistrement de l’écran, ni accès à l’accessibilité." },
+      { "title": "Aucun compte.", "body": "Rien à créer. Votre achat reste entre vous et l’App Store." }
+    ],
+    "more": "Tous les détails figurent dans la <a href=\"/privacy/\" hreflang=\"en\">politique de confidentialité</a> (en anglais). Elle est courte, car il y a peu à dire."
+  },
+  "pro": {
+    "title": "Gratuit pour commencer. Pro, une fois.",
+    "lede": "Chute de neige et Pluie sont à vous, avec tous leurs réglages. SnowWall Pro débloque tout le reste en un seul achat. Sans abonnement.",
+    "caption": "Ce qu’incluent la version gratuite et SnowWall Pro",
+    "feature": "Fonctionnalité",
+    "free": "Gratuit",
+    "rows": [
+      { "label": "Chute de neige et Pluie, entièrement réglables", "free": true, "pro": true },
+      { "label": "Neige sur les fenêtres, accumulation et givre", "free": true, "pro": true },
+      { "label": "Devant vos fenêtres ou derrière", "free": true, "pro": true },
+      { "label": "Raccourcis, filtre de concentration et « Plus discret la nuit »", "free": true, "pro": true },
+      { "label": "Préréglages enregistrés", "free": "3", "pro": "Illimités" },
+      { "label": "Qualité", "free": "Économie d’énergie, Équilibré", "pro": "Ultra en plus, jusqu’à 10 000 particules" },
+      { "label": "Huit effets de plus", "note": "Blizzard, Noël, Glace, Fleurs de cerisier, Pluie sur la vitre, Feuilles d’automne, Nuit étoilée et Confettis", "free": false, "pro": true },
+      { "label": "Mode Ambiance", "free": false, "pro": true },
+      { "label": "Huit effets visuels", "note": "Halo lumineux, Aurore boréale, Profondeur de champ et d’autres", "free": false, "pro": true },
+      { "label": "Événements du calendrier", "note": "Noël, le Nouvel An, Halloween et la floraison du printemps s’activent d’eux-mêmes", "free": false, "pro": true },
+      { "label": "Des thèmes qui suivent les saisons", "free": false, "pro": true }
+    ],
+    "release11": [
+      { "title": "Noël est gratuit en décembre.", "body": "L’effet Noël est ouvert à tous pendant tout le mois." },
+      { "title": "Essayez avant d’acheter.", "body": "Testez n’importe quel effet Pro en direct sur votre bureau avant de vous décider." }
+    ],
+    "price": "SnowWall Pro est un achat unique de 14,99 $. Restaurez-le sur chaque Mac connecté à votre compte Apple."
+  },
+  "faq": {
+    "title": "Questions.",
+    "items": [
+      { "q": "SnowWall est-il gratuit ?", "a": "<p>Oui. Chute de neige et Pluie sont gratuits, avec tous leurs réglages, et vous pouvez enregistrer trois préréglages. SnowWall Pro est un achat unique qui ajoute les huit autres effets, le mode Ambiance, les effets visuels, la qualité Ultra et des préréglages illimités. Ce n’est pas un abonnement.</p>" },
+      { "q": "J’ai ouvert SnowWall. Où est-il ?", "a": "<p>SnowWall n’a ni fenêtre ni icône dans le Dock. Il vit dans la barre des menus, sous la forme d’un flocon en haut de l’écran. Cliquez dessus pour mettre en pause, changer d’effet ou ouvrir les réglages.</p>" },
+      { "q": "Va-t-il ralentir mon Mac ou vider la batterie ?", "a": "<p>Il dessine avec le processeur graphique, il consomme donc un peu d’énergie. Il se met en pause quand l’écran est en veille et passe à 30 images par seconde en mode Économie d’énergie ou quand le Mac chauffe. Pour consommer encore moins, choisissez la qualité Économie d’énergie ou réduisez le nombre de flocons.</p>" },
+      { "q": "Faut-il lui accorder des autorisations ?", "a": "<p>Non. SnowWall dessine sur le bureau sans lire ce qui est à l’écran. Si macOS vous demande un jour de lui accorder l’enregistrement de l’écran ou l’accès à l’accessibilité, refusez et <a href=\"/support/\" hreflang=\"en\">prévenez-nous</a>.</p>" },
+      { "q": "La neige peut-elle rester derrière mes fenêtres ?", "a": "<p>Oui. Activez « Effets derrière les fenêtres » dans les réglages, section Interaction. La neige tombe alors entre votre fond d’écran et les icônes du bureau.</p>" },
+      { "q": "J’utilise « Réduire les animations ».", "a": "<p>Quand cette option est activée, SnowWall arrête la neige par défaut. Vous pouvez choisir de la ralentir à la place, ou de la laisser tomber.</p>" },
+      { "q": "Sur quels Mac fonctionne-t-il ?", "a": "<p>Sur tout Mac équipé de macOS 26 ou version ultérieure.</p>" }
+    ],
+    "items11": [
+      { "q": "Puis-je mettre en pause sans passer par le menu ?", "a": "<p>Oui. Ajoutez la commande de SnowWall au Centre de contrôle, ou utilisez l’action « Mettre en pause » dans Spotlight ou Raccourcis.</p>" }
+    ],
+    "more": "Une autre question ? Consultez l’<a href=\"/support/\" hreflang=\"en\">assistance</a> (en anglais) ou écrivez à <a href=\"mailto:support@snowwall.app?subject=SnowWall\">support@snowwall.app</a>. En français, c’est très bien."
+  },
+  "footer": {
+    "tagline": "La météo sur le bureau de votre Mac.",
+    "navLabel": "Site",
+    "support": "Assistance",
+    "privacy": "Confidentialité",
+    "terms": "Conditions d’utilisation",
+    "press": "Presse",
+    "small": "Nécessite macOS 26 ou version ultérieure. Mac et Mac App Store sont des marques d’Apple Inc."
+  },
+  "jsonld": {
+    "description": "Une app pour la barre des menus qui fait tomber neige, pluie et météo de saison sur le bureau du Mac. Les flocons contournent le pointeur et se posent sur les fenêtres.",
+    "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  }
+}

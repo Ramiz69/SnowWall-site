@@ -71,7 +71,7 @@ a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 .vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .skip {
-  position: absolute; left: 16px; top: -60px; z-index: 100; padding: 10px 14px; border-radius: 10px;
+  position: absolute; inset-inline-start: 16px; top: -60px; z-index: 100; padding: 10px 14px; border-radius: 10px;
   background: var(--glass-solid); color: var(--ink); font-weight: 600; transition: top .2s var(--ease-out);
 }
 .skip:focus { top: 12px; }
@@ -88,8 +88,8 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ---------- header menus: language and colour scheme (menus.js) ---------- */
 .menu-wrap { position: relative; }
-.menu-btn { gap: 6px; padding-right: 9px; }
-.menu-btn .chev { width: 12px; height: 12px; margin-left: -1px; opacity: .7; transition: transform .2s var(--ease-out); }
+.menu-btn { gap: 6px; padding-inline-end: 9px; }
+.menu-btn .chev { width: 12px; height: 12px; margin-inline-start: -1px; opacity: .7; transition: transform .2s var(--ease-out); }
 .open > .menu-btn { color: var(--ink); }
 .open > .menu-btn .chev { transform: rotate(180deg); }
 .menu-btn .ico { width: 15px; height: 15px; margin-block: -1px; }
@@ -98,7 +98,7 @@ a:hover { text-decoration-thickness: 2px; }
 :root:not([data-theme]) .tv-auto, :root[data-theme="light"] .tv-light, :root[data-theme="dark"] .tv-dark { display: inline-flex; }
 
 .menu {
-  position: absolute; top: calc(100% + 8px); right: 0; z-index: 20;
+  position: absolute; top: calc(100% + 8px); inset-inline-end: 0; z-index: 20;
   min-width: 11rem; margin: 0; padding: 5px; list-style: none;
   border-radius: 15px; border: 1px solid var(--glass-line); background: var(--glass-solid);
   -webkit-backdrop-filter: blur(20px) saturate(1.5); backdrop-filter: blur(20px) saturate(1.5);

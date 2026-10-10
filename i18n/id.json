@@ -1,0 +1,199 @@
+{
+  "lang": "id",
+  "path": "/id/",
+  "badgeLang": "en",
+  "meta": {
+    "title": "SnowWall untuk Mac: salju, hujan, dan musim di desktop Anda",
+    "description": "SnowWall menghadirkan salju, hujan, kelopak bunga, dan banyak lagi ke desktop Mac Anda. Kepingan salju menghindari penunjuk dan menumpuk di jendela. Gratis, dari bar menu, tanpa izin apa pun.",
+    "ogTitle": "SnowWall: cuaca untuk desktop Mac Anda",
+    "ogDescription": "Salju turun di Mac Anda, menyingkir dari penunjuk, dan menumpuk di jendela. Gratis di Mac App Store.",
+    "ogAlt": "Tulisan “Cuaca untuk desktop Anda.” dengan salju menumpuk di atas hurufnya, berlatar langit malam."
+  },
+  "ui": {
+    "skip": "Langsung ke konten",
+    "langNav": "Bahasa dan tampilan",
+    "play": "Putar animasi",
+    "pause": "Jeda animasi",
+    "language": "Bahasa",
+    "theme": { "label": "Skema warna", "auto": "Otomatis", "light": "Terang", "dark": "Gelap" },
+    "badgeAlt": "Unduh di Mac App Store",
+    "included": "Termasuk",
+    "notIncluded": "Tidak termasuk"
+  },
+  "hero": {
+    "eyebrow": "SnowWall untuk Mac",
+    "title": "Cuaca untuk desktop Anda.",
+    "sub": "Salju yang tak pernah turun di luar kini turun di Mac Anda. Ia menyingkir dari penunjuk dan menumpuk di jendela, semuanya dari kepingan salju di bar menu.",
+    "price": "Gratis. SnowWall Pro cukup dibeli sekali seharga US$14,99.",
+    "switcherLabel": "Pratinjau efek",
+    "modes": { "snow": "Salju", "rain": "Hujan", "blossom": "Sakura" },
+    "nowShowing": "Sedang tampil: {name}",
+    "req": "Membutuhkan macOS 26 atau lebih baru"
+  },
+  "settle": {
+    "title": "Salju menumpuk di jendela Anda.",
+    "steps": [
+      "Kepingan salju menjauh dari penunjuk.",
+      "Lalu hinggap di tepi atas jendela paling depan.",
+      "Salju menumpuk di bagian bawah layar, dan embun beku merambat dari tepi selama Anda pergi."
+    ],
+    "hint": "Gerakkan penunjuk menembus salju.",
+    "mockLabel": "Jendela Pengaturan SnowWall di tab Tampilan, dengan salju menumpuk di tepi atasnya."
+  },
+  "mock": {
+    "title": "Pengaturan SnowWall",
+    "tabs": ["Umum", "Efek", "Tampilan", "Fisika", "Interaksi", "Preset"],
+    "styleSize": "Gaya & Ukuran",
+    "style": "Gaya",
+    "soft": "Halus",
+    "crystal": "Kristal",
+    "sparkle": "Kilau",
+    "smallest": "Terkecil",
+    "largest": "Terbesar",
+    "smallestValue": "3 pt",
+    "largestValue": "14 pt",
+    "color": "Warna",
+    "opacity": "Opasitas",
+    "performance": "Kinerja",
+    "quality": "Kualitas",
+    "saver": "Hemat Baterai",
+    "balanced": "Seimbang",
+    "ultra": "Ultra",
+    "count": "Jumlah Kepingan Salju",
+    "countValue": "2.400",
+    "layering": "Lapisan",
+    "behind": "Efek di Belakang Jendela",
+    "behindHelp": "Menampilkan efek di antara wallpaper dan ikon desktop, bukan di atas semuanya",
+    "windows": "Jendela",
+    "land": "Hinggap di Jendela",
+    "landHelp": "Kepingan salju berhenti di tepi atas jendela paling depan"
+  },
+  "seasons": {
+    "title": "Cuaca untuk setiap musim.",
+    "lede": "Hujan Salju dan Hujan gratis. SnowWall Pro menambahkan delapan lagi, dari badai salju hingga hujan konfeti.",
+    "hint": "Pilih satu untuk melihatnya turun, di sini dan di bagian atas halaman.",
+    "chosen": "{name} sedang turun."
+  },
+  "packs": { "winter": "Musim Dingin", "spring": "Musim Semi", "autumn": "Musim Gugur", "night": "Malam", "events": "Perayaan" },
+  "tiers": { "free": "Gratis", "pro": "Pro" },
+  "effects": {
+    "snow": { "name": "Hujan Salju", "desc": "Kepingan putih lembut yang melayang turun." },
+    "rain": { "name": "Hujan", "desc": "Tetes hujan mengalir melewati jendela Anda." },
+    "blizzard": { "name": "Badai Salju", "desc": "Salju lebat yang diterpa angin." },
+    "christmas": { "name": "Natal", "desc": "Salju dengan kilau merah dan hijau." },
+    "frozen": { "name": "Beku", "desc": "Kristal es berwarna biru." },
+    "glass": { "name": "Hujan di Kaca", "desc": "Embun berkumpul lalu mengalir turun di layar." },
+    "blossom": { "name": "Bunga Sakura", "desc": "Kelopak merah muda tertiup angin musim semi." },
+    "leaves": { "name": "Daun Gugur", "desc": "Daun berwarna hangat yang berputar saat jatuh." },
+    "stars": { "name": "Malam Berbintang", "desc": "Bintang emas yang berkelip." },
+    "confetti": { "name": "Konfeti", "desc": "Setiap kepingnya punya warna sendiri." }
+  },
+  "ambient": {
+    "title": "Mode Ambien, saat Anda pergi.",
+    "body": "Salju memenuhi layar dengan jam di atasnya. Tekan tombol apa saja atau klik untuk kembali ke desktop.",
+    "tag": "Termasuk dalam SnowWall Pro"
+  },
+  "tune": {
+    "title": "Atur setiap kepingan.",
+    "lede": "Ukuran, kecepatan, angin, ayunan, warna, dan jumlah salju. Coba empat di antaranya di sini; sisanya ada di aplikasi.",
+    "formLabel": "Pengaturan salju untuk pratinjau",
+    "reset": "Atur Ulang",
+    "sliders": [
+      { "id": "size", "label": "Kepingan terbesar", "min": "5", "max": "30", "step": "1", "value": "14", "unit": "pt", "minLabel": "Kecil", "maxLabel": "Besar", "from": "", "to": "" },
+      { "id": "speed", "label": "Kecepatan jatuh", "min": "0.5", "max": "5", "step": "0.1", "value": "1.5", "unit": "×", "minLabel": "Lambat", "maxLabel": "Cepat", "from": "", "to": "" },
+      { "id": "wind", "label": "Angin", "min": "-3", "max": "3", "step": "0.1", "value": "0.5", "unit": "", "minLabel": "Kiri", "maxLabel": "Kanan", "from": "ke kiri", "to": "ke kanan" },
+      { "id": "amount", "label": "Jumlah kepingan salju", "min": "100", "max": "4000", "step": "100", "value": "1500", "unit": "", "minLabel": "Sedikit", "maxLabel": "Banyak", "from": "", "to": "" }
+    ],
+    "still": "Tenang"
+  },
+  "behind": {
+    "title": "Di atas jendela atau di belakangnya.",
+    "lede": "Biarkan cuaca tampil di atas semuanya, atau pindahkan ke belakang jendela, di antara wallpaper dan ikon desktop.",
+    "over": "Di atas jendela",
+    "behind": "Di belakangnya",
+    "switchLabel": "Efek di belakang jendela",
+    "mockLabel": "Pengaturan Interaksi SnowWall dengan sakelar Efek di Belakang Jendela."
+  },
+  "built": {
+    "title": "Dibuat untuk Mac.",
+    "lede": "Simulasi sungguhan yang digambar oleh prosesor grafis, dan tahu kapan harus mengalah.",
+    "facts": [
+      { "icon": "metal", "title": "Digambar dengan Metal", "body": "Hingga 10.000 partikel pada Kualitas Ultra, disimulasikan di GPU. Tidak ada yang berulang, karena ini bukan video." },
+      { "icon": "battery", "title": "Hemat Baterai", "body": "Kualitas yang lebih ringan untuk hari panjang jauh dari pengisi daya." },
+      { "icon": "gauge", "title": "30 fps dalam Mode Daya Rendah", "body": "Juga turun ke 30 bingkai per detik saat Mac panas, dan dijeda selama layar tidur." },
+      { "icon": "displays", "title": "Semua layar Anda", "body": "Salju turun di setiap layar yang tersambung." },
+      { "icon": "motion", "title": "Kurangi Gerakan, sesuai pilihan Anda", "body": "Saat Kurangi Gerakan aktif, hentikan salju, perlambat, atau biarkan tetap turun." },
+      { "icon": "shortcuts", "title": "Pintasan dan Fokus", "body": "Tindakan untuk Pintasan, serta filter Fokus yang menjeda salju saat Fokus aktif." },
+      { "icon": "globe", "title": "16 bahasa", "body": "Indonesia, Inggris, Jepang, Arab, Hindi, dan sebelas lainnya." }
+    ],
+    "facts11": [
+      { "icon": "control", "title": "Jeda dari Pusat Kontrol", "body": "Kontrol di Pusat Kontrol menghentikan dan menjalankan salju tanpa membuka menu." },
+      { "icon": "widget", "title": "Widget", "body": "Widget desktop menampilkan efek yang sedang turun dan menggantinya dengan sekali klik." },
+      { "icon": "search", "title": "Tindakan Spotlight", "body": "Jeda, lanjutkan, atau ganti efek langsung dari Spotlight." },
+      { "icon": "sparkles", "title": "Gambarkan suasana", "body": "Di Mac dengan Apple Intelligence, gambarkan suasana dan SnowWall membuatkan preset yang cocok." }
+    ]
+  },
+  "private": {
+    "title": "Privat sejak awal.",
+    "items": [
+      { "title": "Tanpa pengumpulan data.", "body": "Tanpa analitik, laporan kerusakan, atau pelacakan. SnowWall sendiri tidak membuat permintaan jaringan apa pun." },
+      { "title": "Tanpa izin.", "body": "SnowWall menggambar di atas desktop tanpa membaca isinya. Tanpa rekaman layar, tanpa akses aksesibilitas." },
+      { "title": "Tanpa akun.", "body": "Tidak perlu mendaftar. Pembelian Anda hanya antara Anda dan App Store." }
+    ],
+    "more": "Detailnya ada di <a href=\"/privacy/\" hreflang=\"en\">kebijakan privasi</a> (dalam bahasa Inggris). Isinya singkat, karena memang tidak banyak yang perlu dikatakan."
+  },
+  "pro": {
+    "title": "Mulai gratis. Pro, sekali beli.",
+    "lede": "Hujan Salju dan Hujan milik Anda untuk dipakai dan diatur. SnowWall Pro membuka semua sisanya dengan sekali beli. Tanpa langganan.",
+    "caption": "Isi versi gratis dan SnowWall Pro",
+    "feature": "Fitur",
+    "free": "Gratis",
+    "rows": [
+      { "label": "Hujan Salju dan Hujan, bisa diatur sepenuhnya", "free": true, "pro": true },
+      { "label": "Salju yang menumpuk di jendela, timbunan salju, dan embun beku", "free": true, "pro": true },
+      { "label": "Di atas jendela atau di belakangnya", "free": true, "pro": true },
+      { "label": "Pintasan, filter Fokus, dan Tenang di Malam Hari", "free": true, "pro": true },
+      { "label": "Preset tersimpan", "free": "3", "pro": "Tanpa batas" },
+      { "label": "Kualitas", "free": "Hemat Baterai, Seimbang", "pro": "Ditambah Ultra, hingga 10.000 partikel" },
+      { "label": "Delapan efek tambahan", "note": "Badai Salju, Natal, Beku, Bunga Sakura, Hujan di Kaca, Daun Gugur, Malam Berbintang, dan Konfeti", "free": false, "pro": true },
+      { "label": "Mode Ambien", "free": false, "pro": true },
+      { "label": "Delapan efek visual", "note": "Pendaran, Cahaya Aurora, Ruang Tajam, dan lainnya", "free": false, "pro": true },
+      { "label": "Tanggal perayaan", "note": "Natal, Tahun Baru, Halloween, dan bunga musim semi aktif dengan sendirinya", "free": false, "pro": true },
+      { "label": "Tema yang berganti mengikuti musim", "free": false, "pro": true }
+    ],
+    "release11": [
+      { "title": "Natal gratis di bulan Desember.", "body": "Efek Natal terbuka untuk semua orang sepanjang bulan." },
+      { "title": "Coba sebelum membeli.", "body": "Lihat efek Pro apa pun langsung di desktop Anda sendiri sebelum memutuskan." }
+    ],
+    "price": "SnowWall Pro cukup dibeli sekali seharga US$14,99. Pulihkan di setiap Mac yang masuk ke Akun Apple Anda."
+  },
+  "faq": {
+    "title": "Pertanyaan.",
+    "items": [
+      { "q": "Apakah SnowWall gratis?", "a": "<p>Ya. Hujan Salju dan Hujan gratis, lengkap dengan semua pengaturannya, dan Anda bisa menyimpan tiga preset. SnowWall Pro dibeli sekali dan menambahkan delapan efek lainnya, Mode Ambien, efek visual, Kualitas Ultra, dan preset tanpa batas. Bukan langganan.</p>" },
+      { "q": "Saya sudah membuka SnowWall. Di mana aplikasinya?", "a": "<p>SnowWall tidak punya jendela atau ikon Dock sendiri. Aplikasi ini tinggal di bar menu, berupa kepingan salju di bagian atas layar. Klik untuk menjeda, mengganti efek, atau membuka Pengaturan.</p>" },
+      { "q": "Apakah Mac jadi lambat atau baterai cepat habis?", "a": "<p>SnowWall menggambar dengan prosesor grafis, jadi memang memakai sedikit energi. Aplikasi ini dijeda saat layar tidur dan turun ke 30 bingkai per detik dalam Mode Daya Rendah atau saat Mac panas. Agar lebih hemat, pilih Kualitas Hemat Baterai atau kurangi jumlah kepingan salju.</p>" },
+      { "q": "Apakah perlu memberi izin?", "a": "<p>Tidak. SnowWall menggambar di atas desktop tanpa membaca isi layar. Jika macOS meminta Anda memberinya akses rekaman layar atau aksesibilitas, jangan izinkan, dan mohon <a href=\"/support/\" hreflang=\"en\">beri tahu kami</a>.</p>" },
+      { "q": "Bisakah salju tetap di belakang jendela?", "a": "<p>Bisa. Nyalakan Efek di Belakang Jendela di Pengaturan, bagian Interaksi. Salju lalu turun di antara wallpaper dan ikon desktop Anda.</p>" },
+      { "q": "Saya memakai Kurangi Gerakan.", "a": "<p>Saat Kurangi Gerakan aktif, SnowWall menghentikan salju secara default. Anda bisa memilih untuk memperlambatnya, atau membiarkannya tetap turun.</p>" },
+      { "q": "Mac apa saja yang didukung?", "a": "<p>Mac apa pun dengan macOS 26 atau lebih baru.</p>" }
+    ],
+    "items11": [
+      { "q": "Bisakah menjeda tanpa membuka menu?", "a": "<p>Bisa. Tambahkan kontrol SnowWall ke Pusat Kontrol, atau gunakan tindakan Jeda di Spotlight atau Pintasan.</p>" }
+    ],
+    "more": "Ada pertanyaan lain? Kunjungi <a href=\"/support/\" hreflang=\"en\">Dukungan</a> (dalam bahasa Inggris), atau kirim email ke <a href=\"mailto:support@snowwall.app?subject=SnowWall\">support@snowwall.app</a>."
+  },
+  "footer": {
+    "tagline": "Cuaca untuk desktop Mac Anda.",
+    "navLabel": "Situs",
+    "support": "Dukungan",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Ketentuan Penggunaan",
+    "press": "Pers",
+    "small": "Membutuhkan macOS 26 atau lebih baru. Mac dan Mac App Store adalah merek dagang Apple Inc."
+  },
+  "jsonld": {
+    "description": "Aplikasi bar menu yang menghadirkan salju, hujan, dan cuaca musiman ke desktop Mac. Kepingan salju menghindari penunjuk dan menumpuk di jendela.",
+    "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  }
+}

@@ -24,12 +24,12 @@ section { position: relative; }
   pointer-events: none;
 }
 .topbar > * { pointer-events: auto; }
-.topnav { display: flex; gap: 8px; margin-left: auto; }
+.topnav { display: flex; gap: 8px; margin-inline-start: auto; }
 
 /* Play buttons exist only for Reduce Motion, where every canvas starts as a still frame. */
 .play { display: none; }
 .rm .play { display: inline-flex; }
-.section-play { position: absolute; right: 16px; bottom: 16px; z-index: 4; }
+.section-play { position: absolute; inset-inline-end: 16px; bottom: 16px; z-index: 4; }
 
 /* ---------- 1 · hero ---------- */
 .hero {
@@ -109,8 +109,8 @@ section { position: relative; }
 .settle-stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; display: grid; align-items: center; isolation: isolate; }
 .settle-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(24px, 5vw, 72px); align-items: center; }
 .settle-steps { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 14px; max-width: 30rem; }
-.settle-steps li { font-size: clamp(17px, 1.6vw, 20px); line-height: 1.45; color: var(--muted); padding-left: 22px; position: relative; }
-.settle-steps li::before { content: ""; position: absolute; left: 0; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); opacity: .7; }
+.settle-steps li { font-size: clamp(17px, 1.6vw, 20px); line-height: 1.45; color: var(--muted); padding-inline-start: 22px; position: relative; }
+.settle-steps li::before { content: ""; position: absolute; inset-inline-start: 0; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); opacity: .7; }
 .hint { margin: 22px 0 0; font-size: 14px; color: var(--faint); }
 @media (hover: none) { .hint { display: none; } }
 
@@ -138,13 +138,13 @@ section { position: relative; }
 .mock-row { display: flex; align-items: center; gap: 10px; padding: 8px 12px; min-height: 36px; }
 .mock-row + .mock-row { border-top: 1px solid var(--win-line); }
 .mock-row > span:first-child { flex: 1; min-width: 0; }
-.mock-row em { font-style: normal; color: var(--win-muted); min-width: 44px; text-align: right; font-variant-numeric: tabular-nums; }
+.mock-row em { font-style: normal; color: var(--win-muted); min-width: 44px; text-align: end; font-variant-numeric: tabular-nums; }
 .seg, .radios { display: inline-flex; gap: 2px; padding: 2px; border-radius: 7px; background: var(--win-group); border: 1px solid var(--win-line); }
 .seg b, .radios b { font-weight: 500; padding: 2px 8px; border-radius: 5px; white-space: nowrap; }
 .seg b.on, .radios b.on { background: var(--win); box-shadow: 0 1px 2px rgba(0, 0, 0, .15); }
 .track { position: relative; width: 38%; height: 4px; border-radius: 4px; background: var(--win-line); }
-.track .fill { position: absolute; inset: 0 auto 0 0; border-radius: inherit; background: #3b82f6; }
-.track .fill::after { content: ""; position: absolute; right: -8px; top: -6px; width: 16px; height: 16px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .35); }
+.track .fill { position: absolute; inset-block: 0; inset-inline-start: 0; border-radius: inherit; background: #3b82f6; }
+.track .fill::after { content: ""; position: absolute; inset-inline-end: -8px; top: -6px; width: 16px; height: 16px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .35); }
 .f25 { width: 25%; } .f45 { width: 45%; } .f60 { width: 60%; } .f85 { width: 85%; }
 .well { width: 40px; height: 22px; border-radius: 6px; background: #fff; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .18), 0 0 0 3px var(--win-group); }
 
@@ -169,7 +169,7 @@ section { position: relative; }
 .seasons > .wrap { position: relative; z-index: 1; }
 .cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(208px, 1fr)); }
 .card {
-  appearance: none; font: inherit; color: inherit; text-align: left; cursor: pointer;
+  appearance: none; font: inherit; color: inherit; text-align: start; cursor: pointer;
   position: relative; display: flex; flex-direction: column; width: 100%; height: 100%; padding: 0;
   border-radius: 18px; overflow: hidden; background: var(--glass-solid); border: 1px solid var(--glass-line);
   transition: transform .3s var(--ease-out), box-shadow .3s var(--ease-out);
@@ -187,7 +187,7 @@ section { position: relative; }
   display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .02em; line-height: 1;
   padding: 6px 9px; border-radius: 999px; margin: 0;
 }
-.card .tag { position: absolute; top: 10px; right: 10px; }
+.card .tag { position: absolute; top: 10px; inset-inline-end: 10px; }
 .tag-free { background: rgba(255, 255, 255, .9); color: #0d1726; }
 .tag-pro { background: rgba(10, 16, 30, .78); color: #fff; border: 1px solid rgba(255, 255, 255, .22); }
 .seasons-note { margin: 24px 0 0; color: var(--muted); font-size: 15px; min-height: 1.5em; }
@@ -302,14 +302,17 @@ input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(
   background: color-mix(in srgb, #34c759 calc(var(--p) * 100%), rgba(120, 120, 128, .32));
 }
 .toggle i {
-  position: absolute; top: 2px; left: 2px; width: 18px; height: 18px; border-radius: 50%; background: #fff;
+  position: absolute; top: 2px; inset-inline-start: 2px; width: 18px; height: 18px; border-radius: 50%; background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3); transform: translateX(calc(var(--p) * 16px));
 }
 .toggle.on-static { background: #34c759; }
 .toggle.on-static i { transform: translateX(16px); }
+/* Right to left, a switch's knob travels the other way, as it does in macOS. */
+[dir="rtl"] .toggle i { transform: translateX(calc(var(--p) * -16px)); }
+[dir="rtl"] .toggle.on-static i { transform: translateX(-16px); }
 .dim-when-behind { opacity: calc(1 - var(--p) * .55); }
 .desk-state {
-  position: absolute; left: 18px; bottom: 14px; z-index: 3; margin: 0; display: grid;
+  position: absolute; inset-inline-start: 18px; bottom: 14px; z-index: 3; margin: 0; display: grid;
   font-weight: 650; font-size: 15px; color: var(--ink);
 }
 .desk-state span { grid-area: 1 / 1; padding: 6px 12px; border-radius: 999px; background: var(--glass); border: 1px solid var(--glass-line); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
@@ -350,7 +353,7 @@ input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(
 .pro { padding: clamp(80px, 12vw, 140px) 0; }
 .compare { padding: 8px 0; overflow: hidden; }
 .compare table { width: 100%; border-collapse: collapse; font-size: 16px; }
-.compare th, .compare td { padding: 14px 20px; text-align: left; vertical-align: top; }
+.compare th, .compare td { padding: 14px 20px; text-align: start; vertical-align: top; }
 .compare thead th { font-size: 14px; font-weight: 700; color: var(--muted); padding-top: 16px; }
 .compare td, .compare thead th:not(:first-child) { text-align: center; width: 22%; }
 .compare tbody tr + tr > * { border-top: 1px solid var(--line); }
@@ -378,7 +381,7 @@ input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(
 }
 .faq summary::-webkit-details-marker { display: none; }
 .faq summary::after {
-  content: ""; flex: none; width: 10px; height: 10px; margin-right: 6px;
+  content: ""; flex: none; width: 10px; height: 10px; margin-inline-end: 6px;
   border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted);
   transform: translateY(-3px) rotate(45deg); transition: transform .25s var(--ease-out);
 }
@@ -455,11 +458,11 @@ input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(
   .card-text { padding: 10px 12px 12px; }
   .card-name { font-size: 15px; }
   .card-desc { font-size: 13.5px; }
-  .card .tag { top: 7px; right: 7px; font-size: 11px; padding: 5px 7px; }
+  .card .tag { top: 7px; inset-inline-end: 7px; font-size: 11px; padding: 5px 7px; }
   .compare th, .compare td { padding: 12px 10px; }
   .compare table { font-size: 15px; }
   .footer-grid { grid-template-columns: 1fr; }
-  .desk-state { left: 10px; bottom: 10px; font-size: 13px; }
+  .desk-state { inset-inline-start: 10px; bottom: 10px; font-size: 13px; }
   .behind { height: 210vh; }
 }
 @media (max-height: 700px) and (max-width: 860px) {

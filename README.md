@@ -7,7 +7,8 @@ served by Cloudflare at **snowwall.app**.
 | Path | What | Used by |
 |---|---|---|
 | `/` | the home page, English | Marketing URL in App Store Connect |
-| `/ru/` | the home page, Russian | hreflang alternate of `/` |
+| `/ru/`, `/de/`, `/ja/`, … | the home page in each of the app's 16 languages | hreflang alternates of `/` |
+| `/press/` | press kit: facts, screenshots, icon, ZIP | links in press emails |
 | `/support/` | answers and the support address | Support URL in App Store Connect (required, must be a web page) |
 | `/privacy/` | privacy policy | the app's purchase window, Privacy Policy URL in App Store Connect |
 | `/terms/` | terms of use | the app's purchase window |
@@ -23,7 +24,7 @@ already installed.
 
 ```
 build.mjs              the build: templates + i18n -> public/, hashed assets, sitemap, size report
-i18n/en.json, ru.json  every string on the home page, per language
+i18n/<lang>.json      every string on the home page, per language (en.json is the source)
 src/home.html          home page template ({{key}}, {{#list}}…{{/list}}, {{@asset}})
 src/page.html          layout for support, privacy, terms and 404
 src/pages/*.html       those pages' content (a <!--meta {...} --> line, then HTML)
@@ -34,6 +35,7 @@ src/assets/            content-hashed on build (icon, App Store badges, future v
 src/static/            copied as is (_headers, robots.txt, favicon, icon.png, og/ images)
 tools/serve.mjs        local preview that applies _headers, so the CSP is enforced
 tools/og.html, og.mjs  re-renders the 1200×630 social images from the real engine
+tools/check-i18n.mjs   checks every translation against en.json (keys, HTML, placeholders)
 ```
 
 ## Building and checking locally
@@ -59,9 +61,17 @@ The blocks are in `src/home.html` (facts grid, Pro section, FAQ) and their strin
 
 ## Adding a language
 
-The language menu reads `LANGUAGES` in `build.mjs`, which already lists all 16 languages the app
-ships in. A language appears on the site once `i18n/<code>.json` exists (copy `en.json`, translate,
-set `lang`, `path`, `badgeLang`); the hreflang links in `src/home.html` and the sitemap need the new page.
+All 16 languages the app ships in are on the site. `LANGUAGES` in `build.mjs` lists them; a language
+is built once `i18n/<code>.json` exists, and the language menu, hreflang links, `og:locale` tags and
+the sitemap follow on their own. After changing `en.json`, update every translation and run
+`node tools/check-i18n.mjs`: it fails on a missing or extra key, changed HTML or placeholders, and
+English left in place.
+
+- Right to left: languages in `RTL` (`build.mjs`) get `dir="rtl"`. The CSS uses logical properties
+  (`inset-inline-start`, `margin-inline-end`, `text-align: start`); keep it that way.
+- A language without its own `src/static/og/og-<code>.png` uses the English social image, and one
+  without `src/assets/badge-mac-black-<badgeLang>.svg` the English App Store badge. Apple's
+  localized badges come from its marketing tools.
 
 ## Adding effect videos
 
@@ -72,9 +82,11 @@ only while on screen, never under Reduce Motion; `media-src 'self'` already allo
 
 ## Social images
 
-`src/static/og/og-en.png` and `og-ru.png` are rendered by the site's own engine. To redo
-them: `node tools/og.mjs`, open `http://localhost:8790/tools/og.html?lang=en` and `?lang=ru`
-in a browser on a Mac (so the headline is set in the system font), and commit the PNGs.
+`src/static/og/og-<code>.png`, one per language, are rendered by the site's own engine with the
+headline from `i18n/<code>.json` (`hero.title`). To redo one: `node tools/og.mjs`, open
+`http://localhost:8790/tools/og.html?lang=<code>` (`?lang=pt-BR`, `?lang=zh-Hans`) in a browser on
+a Mac, so the headline is set in the system font, wait until the page says `saved`, and commit the
+PNG. `meta.ogAlt` in each language quotes that headline; change both together.
 
 ## Cloudflare deployment
 

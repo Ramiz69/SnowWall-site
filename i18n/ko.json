@@ -1,0 +1,199 @@
+{
+  "lang": "ko",
+  "path": "/ko/",
+  "badgeLang": "en",
+  "meta": {
+    "title": "Mac용 SnowWall: 데스크탑에 내리는 눈, 비, 그리고 계절",
+    "description": "SnowWall은 Mac 데스크탑에 눈, 비, 꽃잎 등을 내리게 합니다. 눈송이는 포인터를 피해 흩어지고 윈도우 위에 내려앉습니다. 무료이며, 메뉴 막대에서 바로 쓰고, 권한도 필요 없습니다.",
+    "ogTitle": "SnowWall: Mac 데스크탑에 날씨를",
+    "ogDescription": "Mac 화면에 눈이 내리고, 포인터를 비켜 가며, 윈도우 위에 쌓입니다. Mac App Store에서 무료.",
+    "ogAlt": "밤하늘을 배경으로 글자 위에 눈이 쌓인 문구 “데스크탑에 날씨를.”"
+  },
+  "ui": {
+    "skip": "본문으로 건너뛰기",
+    "langNav": "언어 및 화면 모드",
+    "play": "애니메이션 재생",
+    "pause": "애니메이션 일시 정지",
+    "language": "언어",
+    "theme": { "label": "색상 모드", "auto": "자동", "light": "라이트", "dark": "다크" },
+    "badgeAlt": "Mac App Store에서 다운로드",
+    "included": "포함",
+    "notIncluded": "포함 안 됨"
+  },
+  "hero": {
+    "eyebrow": "Mac용 SnowWall",
+    "title": "데스크탑에 날씨를.",
+    "sub": "Mac 화면에 눈이 내리고, 포인터를 비켜 가며, 윈도우 위에 쌓입니다. 모두 메뉴 막대의 눈송이 하나로.",
+    "price": "무료. SnowWall Pro는 $14.99에 한 번만 구입하면 됩니다.",
+    "switcherLabel": "효과 미리 보기",
+    "modes": { "snow": "눈", "rain": "비", "blossom": "벚꽃" },
+    "nowShowing": "지금 보는 효과: {name}",
+    "req": "macOS 26 이상 필요"
+  },
+  "settle": {
+    "title": "윈도우 위에 눈이 쌓입니다.",
+    "steps": [
+      "눈송이가 포인터를 피해 흩어집니다.",
+      "맨 앞 윈도우의 상단 가장자리에 내려앉습니다.",
+      "화면 아래쪽에는 눈이 쌓이고, 자리를 비우면 가장자리부터 서리가 낍니다."
+    ],
+    "hint": "눈 사이로 포인터를 움직여 보세요.",
+    "mockLabel": "모양 탭이 열린 SnowWall 설정 윈도우. 상단 가장자리에 눈이 쌓여 있습니다."
+  },
+  "mock": {
+    "title": "SnowWall 설정",
+    "tabs": ["일반", "효과", "모양", "물리", "상호 작용", "프리셋"],
+    "styleSize": "스타일 및 크기",
+    "style": "스타일",
+    "soft": "부드러움",
+    "crystal": "크리스털",
+    "sparkle": "반짝임",
+    "smallest": "최소 크기",
+    "largest": "최대 크기",
+    "smallestValue": "3pt",
+    "largestValue": "14pt",
+    "color": "색상",
+    "opacity": "불투명도",
+    "performance": "성능",
+    "quality": "품질",
+    "saver": "배터리 절약",
+    "balanced": "균형",
+    "ultra": "울트라",
+    "count": "눈송이 수",
+    "countValue": "2,400",
+    "layering": "레이어",
+    "behind": "윈도우 뒤에 효과 표시",
+    "behindHelp": "모든 항목 위가 아니라 배경화면과 데스크탑 아이콘 사이에 표시합니다",
+    "windows": "윈도우",
+    "land": "윈도우에 내려앉기",
+    "landHelp": "맨 앞 윈도우의 상단 가장자리에 눈송이가 멈춥니다"
+  },
+  "seasons": {
+    "title": "계절마다 다른 날씨.",
+    "lede": "함박눈과 비는 무료입니다. SnowWall Pro에서는 눈보라부터 색종이 조각까지 8가지 효과가 더해집니다.",
+    "hint": "하나를 고르면 여기와 페이지 맨 위에 내리기 시작합니다.",
+    "chosen": "지금 내리는 효과: {name}"
+  },
+  "packs": { "winter": "겨울", "spring": "봄", "autumn": "가을", "night": "밤", "events": "이벤트" },
+  "tiers": { "free": "무료", "pro": "Pro" },
+  "effects": {
+    "snow": { "name": "함박눈", "desc": "부드럽게 내려앉는 하얀 눈송이." },
+    "rain": { "name": "비", "desc": "윈도우 곁을 타고 흐르는 빗방울." },
+    "blizzard": { "name": "눈보라", "desc": "바람에 휘몰아치는 거센 눈." },
+    "christmas": { "name": "크리스마스", "desc": "빨강과 초록으로 반짝이는 눈." },
+    "frozen": { "name": "얼음 결정", "desc": "얼음처럼 푸른 결정." },
+    "glass": { "name": "유리창 빗방울", "desc": "물방울이 맺혀 화면을 타고 흘러내립니다." },
+    "blossom": { "name": "벚꽃", "desc": "봄바람에 흩날리는 분홍 꽃잎." },
+    "leaves": { "name": "낙엽", "desc": "빙글빙글 돌며 떨어지는 따스한 빛깔의 잎." },
+    "stars": { "name": "별이 빛나는 밤", "desc": "반짝이는 금빛 별." },
+    "confetti": { "name": "색종이 조각", "desc": "조각마다 저마다의 색." }
+  },
+  "ambient": {
+    "title": "자리를 비우면, 앰비언트 모드.",
+    "body": "눈이 화면을 가득 채우고 그 위에 시계가 나타납니다. 아무 키나 누르거나 클릭하면 데스크탑으로 돌아옵니다.",
+    "tag": "SnowWall Pro에 포함"
+  },
+  "tune": {
+    "title": "눈송이 하나까지 원하는 대로.",
+    "lede": "크기, 속도, 바람, 흔들림, 색상, 그리고 눈의 양까지. 여기서는 네 가지를 체험해 보고, 나머지는 앱에서 만나 보세요.",
+    "formLabel": "미리 보기용 눈 설정",
+    "reset": "재설정",
+    "sliders": [
+      { "id": "size", "label": "최대 크기", "min": "5", "max": "30", "step": "1", "value": "14", "unit": "pt", "minLabel": "작게", "maxLabel": "크게", "from": "", "to": "" },
+      { "id": "speed", "label": "낙하 속도", "min": "0.5", "max": "5", "step": "0.1", "value": "1.5", "unit": "×", "minLabel": "느리게", "maxLabel": "빠르게", "from": "", "to": "" },
+      { "id": "wind", "label": "바람", "min": "-3", "max": "3", "step": "0.1", "value": "0.5", "unit": "", "minLabel": "왼쪽", "maxLabel": "오른쪽", "from": "왼쪽으로", "to": "오른쪽으로" },
+      { "id": "amount", "label": "눈송이 수", "min": "100", "max": "4000", "step": "100", "value": "1500", "unit": "", "minLabel": "적게", "maxLabel": "많이", "from": "", "to": "" }
+    ],
+    "still": "잔잔함"
+  },
+  "behind": {
+    "title": "윈도우 앞에도, 뒤에도.",
+    "lede": "날씨를 모든 항목 위에 표시하거나, 윈도우 뒤쪽의 배경화면과 데스크탑 아이콘 사이로 보낼 수 있습니다.",
+    "over": "윈도우 앞",
+    "behind": "윈도우 뒤",
+    "switchLabel": "윈도우 뒤에 효과 표시",
+    "mockLabel": "‘윈도우 뒤에 효과 표시’ 스위치가 있는 SnowWall 상호 작용 설정."
+  },
+  "built": {
+    "title": "Mac을 위해 만들었습니다.",
+    "lede": "그래픽 프로세서에서 돌아가는 진짜 시뮬레이션. 물러설 때를 알아서 압니다.",
+    "facts": [
+      { "icon": "metal", "title": "Metal로 그리다", "body": "울트라 품질에서 최대 10,000개의 입자를 GPU로 시뮬레이션합니다. 동영상이 아니므로 같은 장면이 반복되지 않습니다." },
+      { "icon": "battery", "title": "배터리 절약", "body": "충전기 없이 보내는 긴 하루를 위한 가벼운 품질 설정입니다." },
+      { "icon": "gauge", "title": "저전력 모드에서는 30fps", "body": "Mac이 뜨거워질 때도 30fps로 낮추고, 디스플레이가 잠자기 상태일 때는 일시 정지합니다." },
+      { "icon": "displays", "title": "모든 디스플레이에서", "body": "연결한 모든 화면에 눈이 내립니다." },
+      { "icon": "motion", "title": "동작 줄이기도 원하는 대로", "body": "동작 줄이기가 켜져 있을 때 눈을 멈추거나, 느리게 하거나, 그대로 둘 수 있습니다." },
+      { "icon": "shortcuts", "title": "단축어와 집중 모드", "body": "단축어 동작, 그리고 집중 모드가 켜져 있는 동안 눈을 멈추는 집중 모드 필터를 지원합니다." },
+      { "icon": "globe", "title": "16개 언어", "body": "한국어, 영어, 일본어, 아랍어, 힌디어 외 11개 언어를 지원합니다." }
+    ],
+    "facts11": [
+      { "icon": "control", "title": "제어 센터에서 일시 정지", "body": "제어 센터의 제어 항목으로 메뉴를 열지 않고도 눈을 멈추고 다시 내리게 할 수 있습니다." },
+      { "icon": "widget", "title": "위젯", "body": "데스크탑 위젯에서 지금 내리는 효과를 확인하고 클릭 한 번으로 바꿀 수 있습니다." },
+      { "icon": "search", "title": "Spotlight 동작", "body": "Spotlight에서 바로 일시 정지, 재개, 효과 변경을 할 수 있습니다." },
+      { "icon": "sparkles", "title": "분위기 설명하기", "body": "Apple Intelligence를 지원하는 Mac에서 분위기를 설명하면 SnowWall이 어울리는 프리셋을 만들어 줍니다." }
+    ]
+  },
+  "private": {
+    "title": "처음부터 개인정보 보호를 생각했습니다.",
+    "items": [
+      { "title": "데이터 수집 없음.", "body": "분석도, 충돌 리포트도, 추적도 없습니다. SnowWall은 자체적으로 네트워크 요청을 보내지 않습니다." },
+      { "title": "권한 요청 없음.", "body": "데스크탑의 내용을 읽지 않고 그 위에 그리기만 합니다. 화면 기록도, 손쉬운 사용 접근도 필요 없습니다." },
+      { "title": "계정 없음.", "body": "가입할 필요가 없습니다. 구입은 사용자와 App Store 사이에서만 이루어집니다." }
+    ],
+    "more": "자세한 내용은 <a href=\"/privacy/\" hreflang=\"en\">개인정보 처리방침</a>(영문)에서 확인하세요. 말씀드릴 것이 많지 않아 짧습니다."
+  },
+  "pro": {
+    "title": "시작은 무료로. Pro는 한 번만.",
+    "lede": "함박눈과 비는 계속 무료로 쓰고 마음껏 조절할 수 있습니다. SnowWall Pro는 한 번의 구입으로 나머지를 모두 열어 줍니다. 구독은 없습니다.",
+    "caption": "무료 버전과 SnowWall Pro에 포함된 기능",
+    "feature": "기능",
+    "free": "무료",
+    "rows": [
+      { "label": "함박눈과 비, 모든 설정 조절 가능", "free": true, "pro": true },
+      { "label": "윈도우에 쌓이는 눈, 눈더미, 서리", "free": true, "pro": true },
+      { "label": "윈도우 앞이나 뒤에 표시", "free": true, "pro": true },
+      { "label": "단축어, 집중 모드 필터, 밤에는 잔잔하게", "free": true, "pro": true },
+      { "label": "프리셋 저장", "free": "3", "pro": "무제한" },
+      { "label": "품질", "free": "배터리 절약, 균형", "pro": "울트라 추가, 최대 10,000개 입자" },
+      { "label": "8가지 추가 효과", "note": "눈보라, 크리스마스, 얼음 결정, 벚꽃, 유리창 빗방울, 낙엽, 별이 빛나는 밤, 색종이 조각", "free": false, "pro": true },
+      { "label": "앰비언트 모드", "free": false, "pro": true },
+      { "label": "8가지 시각 효과", "note": "빛 번짐, 오로라 빛, 피사계 심도 등", "free": false, "pro": true },
+      { "label": "캘린더 이벤트", "note": "크리스마스, 새해, 핼러윈, 봄꽃 시즌에 맞춰 자동으로 켜집니다", "free": false, "pro": true },
+      { "label": "계절에 따라 바뀌는 테마", "free": false, "pro": true }
+    ],
+    "release11": [
+      { "title": "12월에는 크리스마스가 무료.", "body": "크리스마스 효과를 한 달 내내 누구나 사용할 수 있습니다." },
+      { "title": "구입 전에 체험해 보세요.", "body": "모든 Pro 효과를 구입하기 전에 내 데스크탑에서 직접 미리 볼 수 있습니다." }
+    ],
+    "price": "SnowWall Pro는 $14.99에 한 번만 구입하면 됩니다. 같은 Apple 계정으로 로그인한 모든 Mac에서 복원할 수 있습니다."
+  },
+  "faq": {
+    "title": "자주 묻는 질문.",
+    "items": [
+      { "q": "SnowWall은 무료인가요?", "a": "<p>네. 함박눈과 비는 모든 설정과 함께 무료이며, 프리셋을 3개까지 저장할 수 있습니다. SnowWall Pro는 한 번만 구입하는 상품으로, 나머지 8가지 효과, 앰비언트 모드, 시각 효과, 울트라 품질, 무제한 프리셋이 추가됩니다. 구독이 아닙니다.</p>" },
+      { "q": "SnowWall을 열었는데 어디 있나요?", "a": "<p>SnowWall에는 별도의 윈도우나 Dock 아이콘이 없습니다. 화면 맨 위 메뉴 막대에 눈송이 아이콘으로 머뭅니다. 클릭하면 일시 정지하거나, 효과를 바꾸거나, 설정을 열 수 있습니다.</p>" },
+      { "q": "Mac이 느려지거나 배터리가 빨리 닳지 않나요?", "a": "<p>그래픽 프로세서로 그리기 때문에 약간의 전력을 사용합니다. 디스플레이가 잠자기 상태일 때는 일시 정지하고, 저전력 모드이거나 Mac이 뜨거워지면 30fps로 낮춥니다. 더 아끼고 싶다면 품질을 배터리 절약으로 바꾸거나 눈송이 수를 줄이세요.</p>" },
+      { "q": "권한이 필요한가요?", "a": "<p>아니요. SnowWall은 화면의 내용을 읽지 않고 데스크탑 위에 그립니다. 혹시 macOS가 화면 기록이나 손쉬운 사용 접근 권한을 요청하면 허용하지 말고 <a href=\"/support/\" hreflang=\"en\">알려 주세요</a>.</p>" },
+      { "q": "눈이 윈도우 뒤에서 내리게 할 수 있나요?", "a": "<p>네. 설정의 상호 작용에서 ‘윈도우 뒤에 효과 표시’를 켜세요. 그러면 눈이 배경화면과 데스크탑 아이콘 사이에서 내립니다.</p>" },
+      { "q": "동작 줄이기를 사용하고 있어요.", "a": "<p>동작 줄이기가 켜져 있으면 SnowWall은 기본적으로 눈을 멈춥니다. 대신 느리게 내리게 하거나 그대로 둘 수도 있습니다.</p>" },
+      { "q": "어떤 Mac에서 작동하나요?", "a": "<p>macOS 26 이상을 사용하는 모든 Mac에서 작동합니다.</p>" }
+    ],
+    "items11": [
+      { "q": "메뉴를 열지 않고 일시 정지할 수 있나요?", "a": "<p>네. SnowWall 제어 항목을 제어 센터에 추가하거나, Spotlight나 단축어에서 ‘일시 정지’ 동작을 사용하세요.</p>" }
+    ],
+    "more": "다른 궁금한 점이 있나요? <a href=\"/support/\" hreflang=\"en\">지원</a>(영문) 페이지를 확인하거나 <a href=\"mailto:support@snowwall.app?subject=SnowWall\">support@snowwall.app</a>으로 문의하세요."
+  },
+  "footer": {
+    "tagline": "Mac 데스크탑에 날씨를.",
+    "navLabel": "사이트",
+    "support": "지원",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용 약관",
+    "press": "보도 자료",
+    "small": "macOS 26 이상이 필요합니다. Mac 및 Mac App Store는 Apple Inc.의 상표입니다."
+  },
+  "jsonld": {
+    "description": "Mac 데스크탑에 눈, 비, 계절의 날씨를 내리게 하는 메뉴 막대 앱. 눈송이는 포인터를 피해 흩어지고 윈도우 위에 내려앉습니다.",
+    "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  }
+}

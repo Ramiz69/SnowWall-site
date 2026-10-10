@@ -1,0 +1,199 @@
+{
+  "lang": "de",
+  "path": "/de/",
+  "badgeLang": "en",
+  "meta": {
+    "title": "SnowWall für den Mac: Schnee, Regen und Jahreszeiten auf dem Schreibtisch",
+    "description": "SnowWall lässt Schnee, Regen, Blüten und mehr über deinen Mac-Schreibtisch ziehen. Die Flocken weichen dem Zeiger aus und bleiben auf deinen Fenstern liegen. Kostenlos, aus der Menüleiste, ohne Berechtigungen.",
+    "ogTitle": "SnowWall: Wetter für deinen Mac-Schreibtisch",
+    "ogDescription": "Schnee zieht über deinen Mac, weicht dem Zeiger aus und bleibt auf deinen Fenstern liegen. Kostenlos im Mac App Store.",
+    "ogAlt": "Die Worte „Wetter für deinen Schreibtisch.“ mit Schnee auf den Buchstaben, vor einem Nachthimmel."
+  },
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "langNav": "Sprache und Darstellung",
+    "play": "Animation abspielen",
+    "pause": "Animation anhalten",
+    "language": "Sprache",
+    "theme": { "label": "Farbschema", "auto": "Automatisch", "light": "Hell", "dark": "Dunkel" },
+    "badgeAlt": "Laden im Mac App Store",
+    "included": "Enthalten",
+    "notIncluded": "Nicht enthalten"
+  },
+  "hero": {
+    "eyebrow": "SnowWall für den Mac",
+    "title": "Wetter für deinen Schreibtisch.",
+    "sub": "Schnee zieht über deinen Mac, weicht dem Zeiger aus und bleibt auf deinen Fenstern liegen. Alles über eine Schneeflocke in der Menüleiste.",
+    "price": "Kostenlos. SnowWall Pro gibt es einmalig für 14,99 $.",
+    "switcherLabel": "Effekt ansehen",
+    "modes": { "snow": "Schnee", "rain": "Regen", "blossom": "Blüten" },
+    "nowShowing": "Gerade zu sehen: {name}",
+    "req": "Erfordert macOS 26 oder neuer"
+  },
+  "settle": {
+    "title": "Schnee, der auf Fenstern liegen bleibt.",
+    "steps": [
+      "Die Flocken weichen deinem Zeiger aus.",
+      "Sie landen auf der Oberkante des vordersten Fensters.",
+      "Am unteren Bildschirmrand wächst eine Schneedecke, und während du weg bist, zieht von den Rändern Raureif herein."
+    ],
+    "hint": "Fahr mit dem Zeiger durch den Schnee.",
+    "mockLabel": "Das Einstellungsfenster von SnowWall im Bereich „Darstellung“, auf seiner Oberkante liegt Schnee."
+  },
+  "mock": {
+    "title": "SnowWall-Einstellungen",
+    "tabs": ["Allgemein", "Effekte", "Darstellung", "Physik", "Interaktion", "Voreinstellungen"],
+    "styleSize": "Stil & Größe",
+    "style": "Stil",
+    "soft": "Weich",
+    "crystal": "Kristall",
+    "sparkle": "Glitzer",
+    "smallest": "Kleinste",
+    "largest": "Größte",
+    "smallestValue": "3 pt",
+    "largestValue": "14 pt",
+    "color": "Farbe",
+    "opacity": "Deckkraft",
+    "performance": "Leistung",
+    "quality": "Qualität",
+    "saver": "Stromsparen",
+    "balanced": "Ausgewogen",
+    "ultra": "Ultra",
+    "count": "Anzahl der Flocken",
+    "countValue": "2.400",
+    "layering": "Ebenen",
+    "behind": "Effekte hinter Fenstern",
+    "behindHelp": "Zeichnet zwischen Hintergrundbild und Schreibtischsymbolen statt über allem",
+    "windows": "Fenster",
+    "land": "Auf Fenstern landen",
+    "landHelp": "Flocken bleiben auf der Oberkante des vordersten Fensters liegen"
+  },
+  "seasons": {
+    "title": "Wetter für jede Jahreszeit.",
+    "lede": "Schneefall und Regen sind kostenlos. SnowWall Pro bringt acht weitere, vom Schneesturm bis zum Konfettiregen.",
+    "hint": "Wähle einen Effekt, dann fällt er hier und oben auf der Seite.",
+    "chosen": "Jetzt fällt: {name}."
+  },
+  "packs": { "winter": "Winter", "spring": "Frühling", "autumn": "Herbst", "night": "Nacht", "events": "Anlässe" },
+  "tiers": { "free": "Kostenlos", "pro": "Pro" },
+  "effects": {
+    "snow": { "name": "Schneefall", "desc": "Weiche weiße Flocken, die sanft herabschweben." },
+    "rain": { "name": "Regen", "desc": "Regentropfen, die an deinen Fenstern vorbeiströmen." },
+    "blizzard": { "name": "Schneesturm", "desc": "Dichter Schnee, vom Wind getrieben." },
+    "christmas": { "name": "Weihnachten", "desc": "Schnee mit rotem und grünem Funkeln." },
+    "frozen": { "name": "Eiskristalle", "desc": "Eisblaue Kristalle." },
+    "glass": { "name": "Regen am Fenster", "desc": "Beschlag sammelt sich und rinnt über den Bildschirm." },
+    "blossom": { "name": "Kirschblüte", "desc": "Rosa Blüten in einer Frühlingsbrise." },
+    "leaves": { "name": "Herbstlaub", "desc": "Warme Blätter, die sich im Fallen drehen." },
+    "stars": { "name": "Sternennacht", "desc": "Funkelnde goldene Sterne." },
+    "confetti": { "name": "Konfetti", "desc": "Jedes Schnipsel in seiner eigenen Farbe." }
+  },
+  "ambient": {
+    "title": "Ambiente-Modus, wenn du eine Pause machst.",
+    "body": "Schnee füllt den Bildschirm, darüber eine Uhr. Eine beliebige Taste oder ein Klick bringt deinen Schreibtisch zurück.",
+    "tag": "In SnowWall Pro enthalten"
+  },
+  "tune": {
+    "title": "Jede Flocke nach deinem Geschmack.",
+    "lede": "Größe, Geschwindigkeit, Wind, Pendeln, Farbe und wie viel Schnee fällt. Vier davon kannst du hier ausprobieren, den Rest gibt es in der App.",
+    "formLabel": "Schnee-Einstellungen für die Vorschau",
+    "reset": "Zurücksetzen",
+    "sliders": [
+      { "id": "size", "label": "Größte Flocken", "min": "5", "max": "30", "step": "1", "value": "14", "unit": "pt", "minLabel": "Klein", "maxLabel": "Groß", "from": "", "to": "" },
+      { "id": "speed", "label": "Fallgeschwindigkeit", "min": "0.5", "max": "5", "step": "0.1", "value": "1.5", "unit": "×", "minLabel": "Langsam", "maxLabel": "Schnell", "from": "", "to": "" },
+      { "id": "wind", "label": "Wind", "min": "-3", "max": "3", "step": "0.1", "value": "0.5", "unit": "", "minLabel": "Links", "maxLabel": "Rechts", "from": "nach links", "to": "nach rechts" },
+      { "id": "amount", "label": "Anzahl der Flocken", "min": "100", "max": "4000", "step": "100", "value": "1500", "unit": "", "minLabel": "Wenige", "maxLabel": "Viele", "from": "", "to": "" }
+    ],
+    "still": "Windstill"
+  },
+  "behind": {
+    "title": "Über deinen Fenstern oder dahinter.",
+    "lede": "Lass das Wetter über allem fallen oder schick es hinter deine Fenster, zwischen Hintergrundbild und Schreibtischsymbole.",
+    "over": "Über den Fenstern",
+    "behind": "Dahinter",
+    "switchLabel": "Effekte hinter Fenstern",
+    "mockLabel": "Die Interaktionseinstellungen von SnowWall mit dem Schalter „Effekte hinter Fenstern“."
+  },
+  "built": {
+    "title": "Für den Mac gemacht.",
+    "lede": "Eine echte Simulation auf dem Grafikprozessor, die weiß, wann sie sich zurücknehmen muss.",
+    "facts": [
+      { "icon": "metal", "title": "Mit Metal gerendert", "body": "Bis zu 10.000 Partikel in der Qualitätsstufe „Ultra“, berechnet auf der GPU. Nichts wiederholt sich, denn nichts davon ist ein Video." },
+      { "icon": "battery", "title": "Stromsparen", "body": "Eine leichtere Qualitätsstufe für lange Tage ohne Ladegerät." },
+      { "icon": "gauge", "title": "30 fps im Stromsparmodus", "body": "Auch wenn der Mac heiß läuft, sind es 30 Bilder pro Sekunde. Und im Ruhezustand des Displays pausiert der Schnee." },
+      { "icon": "displays", "title": "Alle deine Displays", "body": "Schnee fällt auf jedem Bildschirm, den du anschließt." },
+      { "icon": "motion", "title": "„Bewegung reduzieren“, wie du willst", "body": "Ist „Bewegung reduzieren“ aktiv, kannst du den Schnee anhalten, verlangsamen oder weiterlaufen lassen." },
+      { "icon": "shortcuts", "title": "Kurzbefehle und Fokus", "body": "Aktionen für Kurzbefehle und ein Fokusfilter, der den Schnee pausiert, solange ein Fokus aktiv ist." },
+      { "icon": "globe", "title": "16 Sprachen", "body": "Deutsch, Englisch, Japanisch, Arabisch, Hindi und elf weitere." }
+    ],
+    "facts11": [
+      { "icon": "control", "title": "Pause im Kontrollzentrum", "body": "Ein Steuerelement im Kontrollzentrum hält den Schnee an und startet ihn wieder, ohne das Menü zu öffnen." },
+      { "icon": "widget", "title": "Widgets", "body": "Widgets auf dem Schreibtisch zeigen, was gerade fällt, und wechseln es mit einem Klick." },
+      { "icon": "search", "title": "Aktionen in Spotlight", "body": "Pausieren, fortsetzen oder den Effekt wechseln, direkt aus Spotlight." },
+      { "icon": "sparkles", "title": "Stimmung beschreiben", "body": "Auf Macs mit Apple Intelligence beschreibst du eine Stimmung, und SnowWall erstellt eine passende Voreinstellung." }
+    ]
+  },
+  "private": {
+    "title": "Privat von Grund auf.",
+    "items": [
+      { "title": "Keine Daten.", "body": "Keine Analysen, keine Absturzberichte, kein Tracking. SnowWall selbst stellt keine Netzwerkanfragen." },
+      { "title": "Keine Berechtigungen.", "body": "Die App zeichnet über deinen Schreibtisch, ohne zu lesen, was darauf ist. Keine Bildschirmaufnahme, kein Zugriff auf die Bedienungshilfen." },
+      { "title": "Kein Account.", "body": "Keine Registrierung. Dein Kauf bleibt zwischen dir und dem App Store." }
+    ],
+    "more": "Die Details stehen in der <a href=\"/privacy/\" hreflang=\"en\">Datenschutzerklärung</a> (auf Englisch). Sie ist kurz, denn es gibt wenig zu sagen."
+  },
+  "pro": {
+    "title": "Kostenlos starten. Pro einmal kaufen.",
+    "lede": "Schneefall und Regen gehören dir, mit allen Einstellungen. SnowWall Pro schaltet mit einem Kauf alles andere frei. Ohne Abo.",
+    "caption": "Was die kostenlose Version und SnowWall Pro enthalten",
+    "feature": "Funktion",
+    "free": "Kostenlos",
+    "rows": [
+      { "label": "Schneefall und Regen, voll einstellbar", "free": true, "pro": true },
+      { "label": "Schnee auf Fenstern, Schneedecke und Raureif", "free": true, "pro": true },
+      { "label": "Über deinen Fenstern oder dahinter", "free": true, "pro": true },
+      { "label": "Kurzbefehle, Fokusfilter und „Nachts ruhiger“", "free": true, "pro": true },
+      { "label": "Gesicherte Voreinstellungen", "free": "3", "pro": "Unbegrenzt" },
+      { "label": "Qualität", "free": "Stromsparen, Ausgewogen", "pro": "Dazu Ultra, bis zu 10.000 Partikel" },
+      { "label": "Acht weitere Effekte", "note": "Schneesturm, Weihnachten, Eiskristalle, Kirschblüte, Regen am Fenster, Herbstlaub, Sternennacht und Konfetti", "free": false, "pro": true },
+      { "label": "Ambiente-Modus", "free": false, "pro": true },
+      { "label": "Acht visuelle Effekte", "note": "Lichtschein, Polarlicht, Tiefenschärfe und mehr", "free": false, "pro": true },
+      { "label": "Besondere Anlässe", "note": "Weihnachten, Neujahr, Halloween und die Kirschblüte schalten sich von selbst ein", "free": false, "pro": true },
+      { "label": "Themen, die mit den Jahreszeiten wechseln", "free": false, "pro": true }
+    ],
+    "release11": [
+      { "title": "Weihnachten ist im Dezember kostenlos.", "body": "Der Effekt „Weihnachten“ steht den ganzen Monat allen offen." },
+      { "title": "Erst ausprobieren, dann kaufen.", "body": "Sieh dir jeden Pro-Effekt live auf deinem eigenen Schreibtisch an, bevor du dich entscheidest." }
+    ],
+    "price": "SnowWall Pro ist ein einmaliger Kauf für 14,99 $. Wiederherstellen kannst du ihn auf jedem Mac, der mit deinem Apple Account angemeldet ist."
+  },
+  "faq": {
+    "title": "Fragen.",
+    "items": [
+      { "q": "Ist SnowWall kostenlos?", "a": "<p>Ja. Schneefall und Regen sind mit allen Einstellungen kostenlos, und du kannst drei Voreinstellungen sichern. SnowWall Pro ist ein einmaliger Kauf und bringt die acht weiteren Effekte, den Ambiente-Modus, die visuellen Effekte, die Qualitätsstufe „Ultra“ und unbegrenzt viele Voreinstellungen. Ein Abo ist es nicht.</p>" },
+      { "q": "Ich habe SnowWall geöffnet. Wo ist es?", "a": "<p>SnowWall hat kein eigenes Fenster und kein Symbol im Dock. Es wohnt als Schneeflocke in der Menüleiste oben am Bildschirm. Klick darauf, um zu pausieren, den Effekt zu wechseln oder die Einstellungen zu öffnen.</p>" },
+      { "q": "Macht es meinen Mac langsamer oder leert den Akku?", "a": "<p>SnowWall zeichnet auf dem Grafikprozessor und braucht daher etwas Energie. Im Ruhezustand des Displays pausiert es, und im Stromsparmodus oder wenn der Mac heiß läuft, sinkt es auf 30 Bilder pro Sekunde. Für noch weniger wähle die Qualitätsstufe „Stromsparen“ oder reduziere die Anzahl der Flocken.</p>" },
+      { "q": "Braucht es Berechtigungen?", "a": "<p>Nein. SnowWall zeichnet über den Schreibtisch, ohne zu lesen, was auf dem Bildschirm ist. Falls macOS dich je bittet, ihm Bildschirmaufnahme oder Zugriff auf die Bedienungshilfen zu erlauben, lehne ab und <a href=\"/support/\" hreflang=\"en\">sag uns bitte Bescheid</a>.</p>" },
+      { "q": "Kann der Schnee hinter meinen Fenstern bleiben?", "a": "<p>Ja. Aktiviere „Effekte hinter Fenstern“ in den Einstellungen unter „Interaktion“. Dann fällt der Schnee zwischen deinem Hintergrundbild und den Schreibtischsymbolen.</p>" },
+      { "q": "Ich nutze „Bewegung reduzieren“.", "a": "<p>Ist „Bewegung reduzieren“ aktiv, hält SnowWall den Schnee standardmäßig an. Du kannst ihn stattdessen auch verlangsamen oder weiterlaufen lassen.</p>" },
+      { "q": "Auf welchen Macs läuft es?", "a": "<p>Auf jedem Mac mit macOS 26 oder neuer.</p>" }
+    ],
+    "items11": [
+      { "q": "Kann ich ohne das Menü pausieren?", "a": "<p>Ja. Füge das Steuerelement von SnowWall zum Kontrollzentrum hinzu oder nutze die Aktion „Pausieren“ in Spotlight oder Kurzbefehle.</p>" }
+    ],
+    "more": "Noch etwas? Schau in den <a href=\"/support/\" hreflang=\"en\">Support</a> (auf Englisch) oder schreib an <a href=\"mailto:support@snowwall.app?subject=SnowWall\">support@snowwall.app</a>. Gern auch auf Deutsch."
+  },
+  "footer": {
+    "tagline": "Wetter für deinen Mac-Schreibtisch.",
+    "navLabel": "Website",
+    "support": "Support",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "press": "Presse",
+    "small": "Erfordert macOS 26 oder neuer. Mac und Mac App Store sind Marken der Apple Inc."
+  },
+  "jsonld": {
+    "description": "Eine App für die Menüleiste, die Schnee, Regen und Wetter für jede Jahreszeit über den Mac-Schreibtisch ziehen lässt. Die Flocken weichen dem Zeiger aus und bleiben auf Fenstern liegen.",
+    "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  }
+}

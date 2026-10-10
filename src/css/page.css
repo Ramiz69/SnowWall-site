@@ -16,7 +16,7 @@ body { background: var(--page); }
 .doc h2 { font-size: 1.3rem; margin: 2.75rem 0 .6rem; letter-spacing: -.015em; }
 .doc h3 { font-size: 1.05rem; margin: 1.75rem 0 .35rem; }
 .doc p, .doc li { color: var(--ink); }
-.doc ul, .doc ol { padding-left: 1.2rem; }
+.doc ul, .doc ol { padding-inline-start: 1.2rem; }
 .doc li { margin: .4rem 0; }
 .updated { color: var(--muted); font-size: .95rem; margin: 0 0 2.25rem; }
 .lede {

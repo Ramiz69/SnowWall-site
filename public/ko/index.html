@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ko" dir="ltr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#081226" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#6f8fbd" media="(prefers-color-scheme: light)">
+<title>Mac용 SnowWall: 데스크탑에 내리는 눈, 비, 그리고 계절</title>
+<meta name="description" content="SnowWall은 Mac 데스크탑에 눈, 비, 꽃잎 등을 내리게 합니다. 눈송이는 포인터를 피해 흩어지고 윈도우 위에 내려앉습니다. 무료이며, 메뉴 막대에서 바로 쓰고, 권한도 필요 없습니다.">
+<link rel="canonical" href="https://snowwall.app/ko/">
+<link rel="alternate" hreflang="en" href="https://snowwall.app/">
+<link rel="alternate" hreflang="ru" href="https://snowwall.app/ru/">
+<link rel="alternate" hreflang="ar" href="https://snowwall.app/ar/">
+<link rel="alternate" hreflang="de" href="https://snowwall.app/de/">
+<link rel="alternate" hreflang="es" href="https://snowwall.app/es/">
+<link rel="alternate" hreflang="fr" href="https://snowwall.app/fr/">
+<link rel="alternate" hreflang="hi" href="https://snowwall.app/hi/">
+<link rel="alternate" hreflang="id" href="https://snowwall.app/id/">
+<link rel="alternate" hreflang="it" href="https://snowwall.app/it/">
+<link rel="alternate" hreflang="ja" href="https://snowwall.app/ja/">
+<link rel="alternate" hreflang="ko" href="https://snowwall.app/ko/">
+<link rel="alternate" hreflang="pt-BR" href="https://snowwall.app/pt-br/">
+<link rel="alternate" hreflang="tr" href="https://snowwall.app/tr/">
+<link rel="alternate" hreflang="vi" href="https://snowwall.app/vi/">
+<link rel="alternate" hreflang="zh-Hans" href="https://snowwall.app/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://snowwall.app/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://snowwall.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowWall">
+<meta property="og:title" content="SnowWall: Mac 데스크탑에 날씨를">
+<meta property="og:description" content="Mac 화면에 눈이 내리고, 포인터를 비켜 가며, 윈도우 위에 쌓입니다. Mac App Store에서 무료.">
+<meta property="og:url" content="https://snowwall.app/ko/">
+<meta property="og:image" content="https://snowwall.app/og/og-ko.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="밤하늘을 배경으로 글자 위에 눈이 쌓인 문구 “데스크탑에 날씨를.”">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SnowWall: Mac 데스크탑에 날씨를">
+<meta name="twitter:description" content="Mac 화면에 눈이 내리고, 포인터를 비켜 가며, 윈도우 위에 쌓입니다. Mac App Store에서 무료.">
+<meta name="twitter:image" content="https://snowwall.app/og/og-ko.png">
+<meta name="apple-itunes-app" content="app-id=6809149964">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="stylesheet" href="/assets/home.e8aaa18ab1.css">
+<script src="/assets/theme-init.3da56ff09f.js"></script>
+<script type="module" src="/assets/main.69720191f3.js"></script>
+<link rel="modulepreload" href="/assets/menus.99c281c9b6.js">
+<link rel="modulepreload" href="/assets/effects.662733e831.js">
+<link rel="modulepreload" href="/assets/motion.fbf57fc8e4.js">
+<link rel="modulepreload" href="/assets/stats.c5ab680bf8.js">
+<link rel="modulepreload" href="/assets/weather.b80f0fd2b2.js">
+<link rel="modulepreload" href="/assets/util.0f60c0292c.js">
+<link rel="modulepreload" href="/assets/hero.a06401ed31.js">
+<link rel="modulepreload" href="/assets/sections.16f4cef942.js">
+<link rel="modulepreload" href="/assets/reveal.6837af5595.js">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SnowWall","url":"https://snowwall.app/ko/","inLanguage":"ko","description":"Mac 데스크탑에 눈, 비, 계절의 날씨를 내리게 하는 메뉴 막대 앱. 눈송이는 포인터를 피해 흩어지고 윈도우 위에 내려앉습니다.","image":"https://snowwall.app/icon.png","operatingSystem":"macOS 26 or later","applicationCategory":"DesktopEnhancementApplication","installUrl":"https://apps.apple.com/app/id6809149964","offers":[{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/id6809149964"},{"@type":"Offer","name":"SnowWall Pro","description":"One-time in-app purchase","price":"14.99","priceCurrency":"USD","url":"https://apps.apple.com/app/id6809149964"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="topbar">
+  <button class="chip motion-chip play" id="hero-play" type="button" aria-pressed="false" data-play="애니메이션 재생" data-pause="애니메이션 일시 정지">애니메이션 재생</button>
+  <nav class="topnav" aria-label="언어 및 화면 모드">
+    <div class="menu-wrap lang-menu">
+      <button class="chip menu-btn" type="button" aria-expanded="false" aria-controls="lang-list"><span class="vh">언어: 한국어</span> <svg class="globe" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.8 1.7 2.7 3.8 2.7 6.25S9.8 12.55 8 14.25M8 1.75C6.2 3.45 5.3 5.55 5.3 8s.9 4.55 2.7 6.25"/></svg><span aria-hidden="true">KO</span><svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 6.5 3 3 3-3"/></svg></button>
+      <ul class="menu" id="lang-list" aria-label="언어"><li><a class="menu-item" tabindex="-1" href="/" hreflang="en" lang="en"><span class="label">English</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/ru/" hreflang="ru" lang="ru"><span class="label">Русский</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/ar/" hreflang="ar" lang="ar"><span class="label">العربية</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/de/" hreflang="de" lang="de"><span class="label">Deutsch</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/es/" hreflang="es" lang="es"><span class="label">Español</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/fr/" hreflang="fr" lang="fr"><span class="label">Français</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/hi/" hreflang="hi" lang="hi"><span class="label">हिन्दी</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/id/" hreflang="id" lang="id"><span class="label">Bahasa Indonesia</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/it/" hreflang="it" lang="it"><span class="label">Italiano</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/ja/" hreflang="ja" lang="ja"><span class="label">日本語</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/ko/" hreflang="ko" lang="ko" aria-current="page"><span class="label">한국어</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/pt-br/" hreflang="pt-BR" lang="pt-BR"><span class="label">Português (Brasil)</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/tr/" hreflang="tr" lang="tr"><span class="label">Türkçe</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/vi/" hreflang="vi" lang="vi"><span class="label">Tiếng Việt</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/zh-hans/" hreflang="zh-Hans" lang="zh-Hans"><span class="label">简体中文</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li><li><a class="menu-item" tabindex="-1" href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant"><span class="label">繁體中文</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></a></li></ul>
+    </div>
+    <div class="menu-wrap theme-menu" data-theme-menu>
+      <button class="chip menu-btn" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="theme-list"><span class="vh">색상 모드:</span> <span class="tv tv-auto"><svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="5.75"/><path d="M8 2.25a5.75 5.75 0 0 0 0 11.5Z" fill="currentColor"/></svg><span class="tvl">자동</span></span><span class="tv tv-light"><svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="2.75"/><path d="M8 1.5v1.25M8 13.25v1.25M1.5 8h1.25M13.25 8h1.25M3.4 3.4l.9.9M11.7 11.7l.9.9M3.4 12.6l.9-.9M11.7 4.3l.9-.9"/></svg><span class="tvl">라이트</span></span><span class="tv tv-dark"><svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.25 9.6A5.5 5.5 0 0 1 6.4 2.75a5.5 5.5 0 1 0 6.85 6.85Z"/></svg><span class="tvl">다크</span></span><svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 6.5 3 3 3-3"/></svg></button>
+      <div class="menu" id="theme-list" role="menu" aria-label="색상 모드"><button class="menu-item" type="button" role="menuitemradio" aria-checked="true" tabindex="-1" data-value="auto"><svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="5.75"/><path d="M8 2.25a5.75 5.75 0 0 0 0 11.5Z" fill="currentColor"/></svg><span class="label">자동</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></button><button class="menu-item" type="button" role="menuitemradio" aria-checked="false" tabindex="-1" data-value="light"><svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="2.75"/><path d="M8 1.5v1.25M8 13.25v1.25M1.5 8h1.25M13.25 8h1.25M3.4 3.4l.9.9M11.7 11.7l.9.9M3.4 12.6l.9-.9M11.7 4.3l.9-.9"/></svg><span class="label">라이트</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></button><button class="menu-item" type="button" role="menuitemradio" aria-checked="false" tabindex="-1" data-value="dark"><svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.25 9.6A5.5 5.5 0 0 1 6.4 2.75a5.5 5.5 0 1 0 6.85 6.85Z"/></svg><span class="label">다크</span><svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3.5 8.5 3 3 6-7"/></svg></button></div>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- 1 · Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <img class="app-icon" src="/assets/icon-192.3a014ec50c.webp" alt="" width="96" height="96" fetchpriority="high">
+    <p class="eyebrow enter">Mac용 SnowWall</p>
+    <h1 id="hero-title" class="display headline"><span class="w">데스크탑에</span> <span class="w">날씨를.</span></h1>
+    <p class="sub enter">Mac 화면에 눈이 내리고, 포인터를 비켜 가며, 윈도우 위에 쌓입니다. 모두 메뉴 막대의 눈송이 하나로.</p>
+    <div class="cta">
+      <a class="badge" href="https://apps.apple.com/app/apple-store/id6809149964?pt=118223827&amp;ct=site-home&amp;mt=8"><img src="/assets/badge-mac-black-en.15111cd043.svg" alt="Mac App Store에서 다운로드" width="187" height="48"></a>
+      <span class="price enter">무료. SnowWall Pro는 $14.99에 한 번만 구입하면 됩니다.</span>
+    </div>
+    <div class="switcher enter" role="radiogroup" aria-label="효과 미리 보기">
+      <button type="button" role="radio" aria-checked="true" data-effect="snow">눈</button>
+      <button type="button" role="radio" aria-checked="false" data-effect="rain" tabindex="-1">비</button>
+      <button type="button" role="radio" aria-checked="false" data-effect="blossom" tabindex="-1">벚꽃</button>
+    </div>
+    <p class="now-showing" aria-live="polite" data-template="지금 보는 효과: {name}"></p>
+  </div>
+  <p class="req">macOS 26 이상 필요</p>
+  <canvas class="layer front" aria-hidden="true"></canvas>
+</section>
+
+<!-- 2 · It settles on your windows -->
+<section class="settle" id="settle" aria-labelledby="settle-title">
+  <div class="settle-stage">
+    <canvas class="layer back" aria-hidden="true"></canvas>
+    <div class="wrap settle-grid">
+      <div class="settle-copy">
+        <h2 id="settle-title" class="display reveal">윈도우 위에 눈이 쌓입니다.</h2>
+        <ol class="settle-steps">
+          <li>눈송이가 포인터를 피해 흩어집니다.</li><li>맨 앞 윈도우의 상단 가장자리에 내려앉습니다.</li><li>화면 아래쪽에는 눈이 쌓이고, 자리를 비우면 가장자리부터 서리가 낍니다.</li>
+        </ol>
+        <p class="hint">눈 사이로 포인터를 움직여 보세요.</p>
+      </div>
+      <div class="mock-wrap">
+        <div class="mock" role="img" aria-label="모양 탭이 열린 SnowWall 설정 윈도우. 상단 가장자리에 눈이 쌓여 있습니다.">
+          <div class="mock-title" aria-hidden="true">SnowWall 설정</div>
+          <div class="mock-body" aria-hidden="true">
+            <ul class="mock-side">
+              <li class="t-general"><i></i>일반</li><li class="t-effects"><i></i>효과</li><li class="t-appearance on"><i></i>모양</li><li class="t-physics"><i></i>물리</li><li class="t-interaction"><i></i>상호 작용</li><li class="t-presets"><i></i>프리셋</li>
+            </ul>
+            <div class="mock-pane">
+              <p class="mock-h">스타일 및 크기</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>스타일</span><span class="seg"><b>부드러움</b><b class="on">크리스털</b><b>반짝임</b></span></div>
+                <div class="mock-row"><span>최소 크기</span><span class="track"><i class="fill f25"></i></span><em>3pt</em></div>
+                <div class="mock-row"><span>최대 크기</span><span class="track"><i class="fill f45"></i></span><em>14pt</em></div>
+              </div>
+              <p class="mock-h">색상</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>색상</span><span class="well"></span></div>
+                <div class="mock-row"><span>불투명도</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
+              </div>
+              <p class="mock-h">성능</p>
+              <div class="mock-group">
+                <div class="mock-row"><span>품질</span><span class="radios"><b>배터리 절약</b><b class="on">균형</b><b>울트라</b></span></div>
+                <div class="mock-row"><span>눈송이 수</span><span class="track"><i class="fill f60"></i></span><em>2,400</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas class="layer front" aria-hidden="true"></canvas>
+    <button class="chip play section-play" type="button" aria-pressed="false" data-play="애니메이션 재생" data-pause="애니메이션 일시 정지">애니메이션 재생</button>
+  </div>
+</section>
+
+<!-- 3 · Weather for every season -->
+<section class="seasons" id="effects" aria-labelledby="seasons-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="seasons-title" class="display reveal">계절마다 다른 날씨.</h2>
+      <p class="lede reveal">함박눈과 비는 무료입니다. SnowWall Pro에서는 눈보라부터 색종이 조각까지 8가지 효과가 더해집니다.</p>
+    </header>
+    <ul class="cards" role="list">
+      <li class="card-item reveal">
+        <button class="card fx-snow" type="button" aria-pressed="true" data-effect="snow">
+          <span class="poster poster-snow"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">함박눈</span>
+            <span class="card-desc">부드럽게 내려앉는 하얀 눈송이.</span>
+          </span>
+          <span class="tag tag-free">무료</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-rain" type="button" aria-pressed="false" data-effect="rain">
+          <span class="poster poster-rain"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">비</span>
+            <span class="card-desc">윈도우 곁을 타고 흐르는 빗방울.</span>
+          </span>
+          <span class="tag tag-free">무료</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-blizzard" type="button" aria-pressed="false" data-effect="blizzard">
+          <span class="poster poster-blizzard"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">눈보라</span>
+            <span class="card-desc">바람에 휘몰아치는 거센 눈.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-christmas" type="button" aria-pressed="false" data-effect="christmas">
+          <span class="poster poster-christmas"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">크리스마스</span>
+            <span class="card-desc">빨강과 초록으로 반짝이는 눈.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-frozen" type="button" aria-pressed="false" data-effect="frozen">
+          <span class="poster poster-frozen"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">얼음 결정</span>
+            <span class="card-desc">얼음처럼 푸른 결정.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-glass" type="button" aria-pressed="false" data-effect="glass">
+          <span class="poster poster-glass"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">유리창 빗방울</span>
+            <span class="card-desc">물방울이 맺혀 화면을 타고 흘러내립니다.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-blossom" type="button" aria-pressed="false" data-effect="blossom">
+          <span class="poster poster-blossom"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">벚꽃</span>
+            <span class="card-desc">봄바람에 흩날리는 분홍 꽃잎.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-leaves" type="button" aria-pressed="false" data-effect="leaves">
+          <span class="poster poster-leaves"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">낙엽</span>
+            <span class="card-desc">빙글빙글 돌며 떨어지는 따스한 빛깔의 잎.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-stars" type="button" aria-pressed="false" data-effect="stars">
+          <span class="poster poster-stars"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">별이 빛나는 밤</span>
+            <span class="card-desc">반짝이는 금빛 별.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li><li class="card-item reveal">
+        <button class="card fx-confetti" type="button" aria-pressed="false" data-effect="confetti">
+          <span class="poster poster-confetti"><canvas aria-hidden="true"></canvas></span>
+          <span class="card-text">
+            <span class="card-name">색종이 조각</span>
+            <span class="card-desc">조각마다 저마다의 색.</span>
+          </span>
+          <span class="tag tag-pro">Pro</span>
+        </button>
+      </li>
+    </ul>
+    <p class="seasons-note" aria-live="polite" data-template="지금 내리는 효과: {name}"><span class="choose-hint">하나를 고르면 여기와 페이지 맨 위에 내리기 시작합니다.</span></p>
+  </div>
+  <button class="chip play section-play" type="button" aria-pressed="false" data-play="애니메이션 재생" data-pause="애니메이션 일시 정지">애니메이션 재생</button>
+</section>
+
+<!-- 4 · Ambient Mode -->
+<section class="ambient night" id="ambient" aria-labelledby="ambient-title">
+  <canvas class="layer back" aria-hidden="true"></canvas>
+  <div class="ambient-clock" aria-hidden="true">
+    <span class="clock-time">9:41</span>
+    <span class="clock-date"></span>
+  </div>
+  <div class="wrap ambient-copy">
+    <h2 id="ambient-title" class="display reveal">자리를 비우면, 앰비언트 모드.</h2>
+    <p class="lede reveal">눈이 화면을 가득 채우고 그 위에 시계가 나타납니다. 아무 키나 누르거나 클릭하면 데스크탑으로 돌아옵니다.</p>
+    <p class="tag tag-pro reveal">SnowWall Pro에 포함</p>
+  </div>
+  <button class="chip play section-play" type="button" aria-pressed="false" data-play="애니메이션 재생" data-pause="애니메이션 일시 정지">애니메이션 재생</button>
+</section>
+
+<!-- 5 · Tune every flake -->
+<section class="tune" id="tune" aria-labelledby="tune-title" data-still="잔잔함">
+  <div class="wrap tune-grid">
+    <div class="tune-copy">
+      <h2 id="tune-title" class="display reveal">눈송이 하나까지 원하는 대로.</h2>
+      <p class="lede reveal">크기, 속도, 바람, 흔들림, 색상, 그리고 눈의 양까지. 여기서는 네 가지를 체험해 보고, 나머지는 앱에서 만나 보세요.</p>
+      <form class="sliders glass reveal" aria-label="미리 보기용 눈 설정">
+        <div class="slider">
+          <label for="s-size">최대 크기</label>
+          <output for="s-size" id="o-size"></output>
+          <input type="range" id="s-size" name="size" min="5" max="30" step="1" value="14" data-unit="pt" data-from="" data-to="">
+          <span class="ends" aria-hidden="true"><span>작게</span><span>크게</span></span>
+        </div><div class="slider">
+          <label for="s-speed">낙하 속도</label>
+          <output for="s-speed" id="o-speed"></output>
+          <input type="range" id="s-speed" name="speed" min="0.5" max="5" step="0.1" value="1.5" data-unit="×" data-from="" data-to="">
+          <span class="ends" aria-hidden="true"><span>느리게</span><span>빠르게</span></span>
+        </div><div class="slider">
+          <label for="s-wind">바람</label>
+          <output for="s-wind" id="o-wind"></output>
+          <input type="range" id="s-wind" name="wind" min="-3" max="3" step="0.1" value="0.5" data-unit="" data-from="왼쪽으로" data-to="오른쪽으로">
+          <span class="ends" aria-hidden="true"><span>왼쪽</span><span>오른쪽</span></span>
+        </div><div class="slider">
+          <label for="s-amount">눈송이 수</label>
+          <output for="s-amount" id="o-amount"></output>
+          <input type="range" id="s-amount" name="amount" min="100" max="4000" step="100" value="1500" data-unit="" data-from="" data-to="">
+          <span class="ends" aria-hidden="true"><span>적게</span><span>많이</span></span>
+        </div>
+        <button class="reset" type="reset">재설정</button>
+      </form>
+    </div>
+    <div class="tune-view reveal">
+      <canvas class="layer back" aria-hidden="true"></canvas>
+      <button class="chip play section-play" type="button" aria-pressed="false" data-play="애니메이션 재생" data-pause="애니메이션 일시 정지">애니메이션 재생</button>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Over your windows or behind them -->
+<section class="behind" id="behind" aria-labelledby="behind-title">
+  <div class="behind-stage">
+    <div class="wrap behind-head">
+      <h2 id="behind-title" class="display reveal">윈도우 앞에도, 뒤에도.</h2>
+      <p class="lede reveal">날씨를 모든 항목 위에 표시하거나, 윈도우 뒤쪽의 배경화면과 데스크탑 아이콘 사이로 보낼 수 있습니다.</p>
+    </div>
+    <div class="desk">
+      <canvas class="layer back" aria-hidden="true"></canvas>
+      <div class="mock mock-small" role="img" aria-label="‘윈도우 뒤에 효과 표시’ 스위치가 있는 SnowWall 상호 작용 설정.">
+        <div class="mock-title" aria-hidden="true">SnowWall 설정</div>
+        <div class="mock-pane" aria-hidden="true">
+          <p class="mock-h">레이어</p>
+          <div class="mock-group">
+            <div class="mock-row toggle-row">
+              <span><strong>윈도우 뒤에 효과 표시</strong><small>모든 항목 위가 아니라 배경화면과 데스크탑 아이콘 사이에 표시합니다</small></span>
+              <span class="toggle"><i></i></span>
+            </div>
+          </div>
+          <p class="mock-h">윈도우</p>
+          <div class="mock-group">
+            <div class="mock-row toggle-row dim-when-behind">
+              <span><strong>윈도우에 내려앉기</strong><small>맨 앞 윈도우의 상단 가장자리에 눈송이가 멈춥니다</small></span>
+              <span class="toggle on-static"><i></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas class="layer front" aria-hidden="true"></canvas>
+      <p class="desk-state" aria-hidden="true"><span class="s-over">윈도우 앞</span><span class="s-behind">윈도우 뒤</span></p>
+    </div>
+    <div class="behind-controls">
+      <button class="switch-btn" type="button" role="switch" aria-checked="false">윈도우 뒤에 효과 표시</button>
+      <button class="chip play section-play" type="button" aria-pressed="false" data-play="애니메이션 재생" data-pause="애니메이션 일시 정지">애니메이션 재생</button>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Built for the Mac -->
+<section class="built" id="built" aria-labelledby="built-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="built-title" class="display reveal">Mac을 위해 만들었습니다.</h2>
+      <p class="lede reveal">그래픽 프로세서에서 돌아가는 진짜 시뮬레이션. 물러설 때를 알아서 압니다.</p>
+    </header>
+    <ul class="facts" role="list">
+      <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>Metal로 그리다</h3><p>울트라 품질에서 최대 10,000개의 입자를 GPU로 시뮬레이션합니다. 동영상이 아니므로 같은 장면이 반복되지 않습니다.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>배터리 절약</h3><p>충전기 없이 보내는 긴 하루를 위한 가벼운 품질 설정입니다.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>저전력 모드에서는 30fps</h3><p>Mac이 뜨거워질 때도 30fps로 낮추고, 디스플레이가 잠자기 상태일 때는 일시 정지합니다.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>모든 디스플레이에서</h3><p>연결한 모든 화면에 눈이 내립니다.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>동작 줄이기도 원하는 대로</h3><p>동작 줄이기가 켜져 있을 때 눈을 멈추거나, 느리게 하거나, 그대로 둘 수 있습니다.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>단축어와 집중 모드</h3><p>단축어 동작, 그리고 집중 모드가 켜져 있는 동안 눈을 멈추는 집중 모드 필터를 지원합니다.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16개 언어</h3><p>한국어, 영어, 일본어, 아랍어, 힌디어 외 11개 언어를 지원합니다.</p></li>
+      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>제어 센터에서 일시 정지</h3><p>제어 센터의 제어 항목으로 메뉴를 열지 않고도 눈을 멈추고 다시 내리게 할 수 있습니다.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>위젯</h3><p>데스크탑 위젯에서 지금 내리는 효과를 확인하고 클릭 한 번으로 바꿀 수 있습니다.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Spotlight 동작</h3><p>Spotlight에서 바로 일시 정지, 재개, 효과 변경을 할 수 있습니다.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>분위기 설명하기</h3><p>Apple Intelligence를 지원하는 Mac에서 분위기를 설명하면 SnowWall이 어울리는 프리셋을 만들어 줍니다.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 8 · Private by design -->
+<section class="private" id="privacy" aria-labelledby="private-title">
+  <div class="wrap">
+    <h2 id="private-title" class="display">처음부터 개인정보 보호를 생각했습니다.</h2>
+    <ul class="noes" role="list">
+      <li><strong>데이터 수집 없음.</strong><span>분석도, 충돌 리포트도, 추적도 없습니다. SnowWall은 자체적으로 네트워크 요청을 보내지 않습니다.</span></li><li><strong>권한 요청 없음.</strong><span>데스크탑의 내용을 읽지 않고 그 위에 그리기만 합니다. 화면 기록도, 손쉬운 사용 접근도 필요 없습니다.</span></li><li><strong>계정 없음.</strong><span>가입할 필요가 없습니다. 구입은 사용자와 App Store 사이에서만 이루어집니다.</span></li>
+    </ul>
+    <p class="private-more">자세한 내용은 <a href="/privacy/" hreflang="en">개인정보 처리방침</a>(영문)에서 확인하세요. 말씀드릴 것이 많지 않아 짧습니다.</p>
+  </div>
+</section>
+
+<!-- 9 · SnowWall Pro -->
+<section class="pro" id="pro" aria-labelledby="pro-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="pro-title" class="display reveal">시작은 무료로. Pro는 한 번만.</h2>
+      <p class="lede reveal">함박눈과 비는 계속 무료로 쓰고 마음껏 조절할 수 있습니다. SnowWall Pro는 한 번의 구입으로 나머지를 모두 열어 줍니다. 구독은 없습니다.</p>
+    </header>
+    <div class="compare glass reveal">
+      <table>
+        <caption class="vh">무료 버전과 SnowWall Pro에 포함된 기능</caption>
+        <thead><tr><th scope="col"><span class="vh">기능</span></th><th scope="col">무료</th><th scope="col" class="pro-col">SnowWall Pro</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">함박눈과 비, 모든 설정 조절 가능</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td></tr><tr><th scope="row">윈도우에 쌓이는 눈, 눈더미, 서리</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td></tr><tr><th scope="row">윈도우 앞이나 뒤에 표시</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td></tr><tr><th scope="row">단축어, 집중 모드 필터, 밤에는 잔잔하게</th><td><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td></tr><tr><th scope="row">프리셋 저장</th><td>3</td><td class="pro-col">무제한</td></tr><tr><th scope="row">품질</th><td>배터리 절약, 균형</td><td class="pro-col">울트라 추가, 최대 10,000개 입자</td></tr><tr><th scope="row">8가지 추가 효과<span class="note">눈보라, 크리스마스, 얼음 결정, 벚꽃, 유리창 빗방울, 낙엽, 별이 빛나는 밤, 색종이 조각</span></th><td><span class="no" aria-hidden="true">—</span><span class="vh">포함 안 됨</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td></tr><tr><th scope="row">앰비언트 모드</th><td><span class="no" aria-hidden="true">—</span><span class="vh">포함 안 됨</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td></tr><tr><th scope="row">8가지 시각 효과<span class="note">빛 번짐, 오로라 빛, 피사계 심도 등</span></th><td><span class="no" aria-hidden="true">—</span><span class="vh">포함 안 됨</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td></tr><tr><th scope="row">캘린더 이벤트<span class="note">크리스마스, 새해, 핼러윈, 봄꽃 시즌에 맞춰 자동으로 켜집니다</span></th><td><span class="no" aria-hidden="true">—</span><span class="vh">포함 안 됨</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td></tr><tr><th scope="row">계절에 따라 바뀌는 테마</th><td><span class="no" aria-hidden="true">—</span><span class="vh">포함 안 됨</span></td><td class="pro-col"><svg class="yes" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><span class="vh">포함</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="release-note glass" data-release="1.1" hidden>
+      <p><strong>12월에는 크리스마스가 무료.</strong> 크리스마스 효과를 한 달 내내 누구나 사용할 수 있습니다.</p><p><strong>구입 전에 체험해 보세요.</strong> 모든 Pro 효과를 구입하기 전에 내 데스크탑에서 직접 미리 볼 수 있습니다.</p>
+    </div>
+    <div class="pro-cta">
+      <a class="badge" href="https://apps.apple.com/app/apple-store/id6809149964?pt=118223827&amp;ct=site-home&amp;mt=8"><img src="/assets/badge-mac-black-en.15111cd043.svg" alt="Mac App Store에서 다운로드" width="187" height="48" loading="lazy"></a>
+      <p class="price">SnowWall Pro는 $14.99에 한 번만 구입하면 됩니다. 같은 Apple 계정으로 로그인한 모든 Mac에서 복원할 수 있습니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · FAQ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap narrow">
+    <h2 id="faq-title" class="display reveal">자주 묻는 질문.</h2>
+    <div class="faq-list">
+      <details><summary>SnowWall은 무료인가요?</summary><div class="answer"><p>네. 함박눈과 비는 모든 설정과 함께 무료이며, 프리셋을 3개까지 저장할 수 있습니다. SnowWall Pro는 한 번만 구입하는 상품으로, 나머지 8가지 효과, 앰비언트 모드, 시각 효과, 울트라 품질, 무제한 프리셋이 추가됩니다. 구독이 아닙니다.</p></div></details><details><summary>SnowWall을 열었는데 어디 있나요?</summary><div class="answer"><p>SnowWall에는 별도의 윈도우나 Dock 아이콘이 없습니다. 화면 맨 위 메뉴 막대에 눈송이 아이콘으로 머뭅니다. 클릭하면 일시 정지하거나, 효과를 바꾸거나, 설정을 열 수 있습니다.</p></div></details><details><summary>Mac이 느려지거나 배터리가 빨리 닳지 않나요?</summary><div class="answer"><p>그래픽 프로세서로 그리기 때문에 약간의 전력을 사용합니다. 디스플레이가 잠자기 상태일 때는 일시 정지하고, 저전력 모드이거나 Mac이 뜨거워지면 30fps로 낮춥니다. 더 아끼고 싶다면 품질을 배터리 절약으로 바꾸거나 눈송이 수를 줄이세요.</p></div></details><details><summary>권한이 필요한가요?</summary><div class="answer"><p>아니요. SnowWall은 화면의 내용을 읽지 않고 데스크탑 위에 그립니다. 혹시 macOS가 화면 기록이나 손쉬운 사용 접근 권한을 요청하면 허용하지 말고 <a href="/support/" hreflang="en">알려 주세요</a>.</p></div></details><details><summary>눈이 윈도우 뒤에서 내리게 할 수 있나요?</summary><div class="answer"><p>네. 설정의 상호 작용에서 ‘윈도우 뒤에 효과 표시’를 켜세요. 그러면 눈이 배경화면과 데스크탑 아이콘 사이에서 내립니다.</p></div></details><details><summary>동작 줄이기를 사용하고 있어요.</summary><div class="answer"><p>동작 줄이기가 켜져 있으면 SnowWall은 기본적으로 눈을 멈춥니다. 대신 느리게 내리게 하거나 그대로 둘 수도 있습니다.</p></div></details><details><summary>어떤 Mac에서 작동하나요?</summary><div class="answer"><p>macOS 26 이상을 사용하는 모든 Mac에서 작동합니다.</p></div></details>
+      <details data-release="1.1" hidden><summary>메뉴를 열지 않고 일시 정지할 수 있나요?</summary><div class="answer"><p>네. SnowWall 제어 항목을 제어 센터에 추가하거나, Spotlight나 단축어에서 ‘일시 정지’ 동작을 사용하세요.</p></div></details>
+    </div>
+    <p class="faq-more">다른 궁금한 점이 있나요? <a href="/support/" hreflang="en">지원</a>(영문) 페이지를 확인하거나 <a href="mailto:support@snowwall.app?subject=SnowWall">support@snowwall.app</a>으로 문의하세요.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- 11 · Footer -->
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/icon-192.3a014ec50c.webp" alt="" width="40" height="40" loading="lazy">
+      <p><strong>SnowWall</strong><br>Mac 데스크탑에 날씨를.</p>
+    </div>
+    <a class="badge" href="https://apps.apple.com/app/apple-store/id6809149964?pt=118223827&amp;ct=site-home&amp;mt=8"><img src="/assets/badge-mac-black-en.15111cd043.svg" alt="Mac App Store에서 다운로드" width="187" height="48" loading="lazy"></a>
+    <nav class="footer-nav" aria-label="사이트">
+      <a href="/support/">지원</a>
+      <a href="/privacy/">개인정보 처리방침</a>
+      <a href="/terms/">이용 약관</a>
+      <a href="/press/">보도 자료</a>
+    </nav>
+    <p class="footer-small">macOS 26 이상이 필요합니다. Mac 및 Mac App Store는 Apple Inc.의 상표입니다.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+{
+  "lang": "vi",
+  "path": "/vi/",
+  "badgeLang": "en",
+  "meta": {
+    "title": "SnowWall cho Mac: tuyết, mưa và bốn mùa trên màn hình nền",
+    "description": "SnowWall mang tuyết, mưa, cánh hoa và nhiều hơn nữa lên màn hình nền Mac. Bông tuyết né con trỏ và đọng trên cửa sổ. Miễn phí, ngay trên thanh menu, không cần cấp quyền nào.",
+    "ogTitle": "SnowWall: thời tiết cho màn hình nền Mac",
+    "ogDescription": "Tuyết rơi trên Mac, dạt ra khi con trỏ đi qua và đọng trên cửa sổ. Miễn phí trên Mac App Store.",
+    "ogAlt": "Dòng chữ “Thời tiết cho màn hình nền.” có tuyết đọng trên các con chữ, trên nền trời đêm."
+  },
+  "ui": {
+    "skip": "Chuyển đến nội dung",
+    "langNav": "Ngôn ngữ và giao diện",
+    "play": "Phát hoạt ảnh",
+    "pause": "Tạm dừng hoạt ảnh",
+    "language": "Ngôn ngữ",
+    "theme": { "label": "Chế độ màu", "auto": "Tự động", "light": "Sáng", "dark": "Tối" },
+    "badgeAlt": "Tải về trên Mac App Store",
+    "included": "Có",
+    "notIncluded": "Không có"
+  },
+  "hero": {
+    "eyebrow": "SnowWall cho Mac",
+    "title": "Thời tiết cho màn hình nền.",
+    "sub": "Tuyết chưa từng rơi ngoài cửa sổ, nay rơi trên Mac của bạn. Tuyết dạt ra khi con trỏ đi qua và đọng lại trên cửa sổ, tất cả từ một bông tuyết trên thanh menu.",
+    "price": "Miễn phí. SnowWall Pro chỉ cần mua một lần, giá 14,99 USD.",
+    "switcherLabel": "Xem thử hiệu ứng",
+    "modes": { "snow": "Tuyết", "rain": "Mưa", "blossom": "Hoa anh đào" },
+    "nowShowing": "Đang hiển thị: {name}",
+    "req": "Yêu cầu macOS 26 trở lên"
+  },
+  "settle": {
+    "title": "Tuyết đọng trên cửa sổ.",
+    "steps": [
+      "Bông tuyết dạt ra xa con trỏ.",
+      "Rồi đáp xuống cạnh trên của cửa sổ phía trước.",
+      "Tuyết tích tụ dọc cạnh dưới màn hình, còn sương giá lan dần từ các cạnh khi bạn rời máy."
+    ],
+    "hint": "Lướt con trỏ qua làn tuyết.",
+    "mockLabel": "Cửa sổ Cài đặt của SnowWall đang mở mục Giao diện, có tuyết đọng dọc cạnh trên."
+  },
+  "mock": {
+    "title": "Cài đặt SnowWall",
+    "tabs": ["Cài đặt chung", "Hiệu ứng", "Giao diện", "Vật lý", "Tương tác", "Cài đặt sẵn"],
+    "styleSize": "Kiểu và kích thước",
+    "style": "Kiểu",
+    "soft": "Mềm mại",
+    "crystal": "Pha lê",
+    "sparkle": "Lấp lánh",
+    "smallest": "Nhỏ nhất",
+    "largest": "Lớn nhất",
+    "smallestValue": "3 pt",
+    "largestValue": "14 pt",
+    "color": "Màu",
+    "opacity": "Độ mờ",
+    "performance": "Hiệu năng",
+    "quality": "Chất lượng",
+    "saver": "Tiết kiệm pin",
+    "balanced": "Cân bằng",
+    "ultra": "Siêu cao",
+    "count": "Số lượng bông tuyết",
+    "countValue": "2.400",
+    "layering": "Lớp hiển thị",
+    "behind": "Giữ hiệu ứng phía sau cửa sổ",
+    "behindHelp": "Hiển thị giữa hình nền và các biểu tượng trên màn hình nền thay vì phủ lên mọi thứ",
+    "windows": "Cửa sổ",
+    "land": "Đọng trên cửa sổ",
+    "landHelp": "Bông tuyết dừng lại trên cạnh trên của cửa sổ phía trước"
+  },
+  "seasons": {
+    "title": "Mùa nào thời tiết nấy.",
+    "lede": "Tuyết rơi và Mưa được miễn phí. SnowWall Pro thêm tám hiệu ứng nữa, từ bão tuyết đến mưa hoa giấy.",
+    "hint": "Chọn một hiệu ứng để xem nó rơi, ở đây và ở đầu trang.",
+    "chosen": "Đang rơi: {name}."
+  },
+  "packs": { "winter": "Mùa đông", "spring": "Mùa xuân", "autumn": "Mùa thu", "night": "Đêm", "events": "Sự kiện" },
+  "tiers": { "free": "Miễn phí", "pro": "Pro" },
+  "effects": {
+    "snow": { "name": "Tuyết rơi", "desc": "Những bông tuyết trắng mềm khẽ rơi." },
+    "rain": { "name": "Mưa", "desc": "Hạt mưa lướt qua cửa sổ của bạn." },
+    "blizzard": { "name": "Bão tuyết", "desc": "Tuyết dày đặc cuộn theo gió." },
+    "christmas": { "name": "Giáng sinh", "desc": "Tuyết lấp lánh sắc đỏ và xanh lá." },
+    "frozen": { "name": "Băng giá", "desc": "Những tinh thể băng xanh lạnh." },
+    "glass": { "name": "Mưa trên kính", "desc": "Hơi nước đọng lại rồi chảy dài xuống màn hình." },
+    "blossom": { "name": "Hoa anh đào", "desc": "Cánh hoa hồng bay trong gió xuân." },
+    "leaves": { "name": "Lá thu", "desc": "Lá mang sắc ấm, xoay tròn khi rơi." },
+    "stars": { "name": "Đêm sao", "desc": "Những vì sao vàng lấp lánh." },
+    "confetti": { "name": "Hoa giấy", "desc": "Mỗi mảnh một màu." }
+  },
+  "ambient": {
+    "title": "Chế độ không gian, khi bạn rời máy.",
+    "body": "Tuyết phủ kín màn hình kèm đồng hồ phía trên. Nhấn phím bất kỳ hoặc bấm chuột để quay lại màn hình nền.",
+    "tag": "Có trong SnowWall Pro"
+  },
+  "tune": {
+    "title": "Chỉnh từng bông tuyết.",
+    "lede": "Kích thước, tốc độ, gió, độ đung đưa, màu sắc và lượng tuyết rơi. Thử bốn tùy chọn ngay tại đây; phần còn lại có trong ứng dụng.",
+    "formLabel": "Cài đặt tuyết cho bản xem trước",
+    "reset": "Đặt lại",
+    "sliders": [
+      { "id": "size", "label": "Bông tuyết lớn nhất", "min": "5", "max": "30", "step": "1", "value": "14", "unit": "pt", "minLabel": "Nhỏ", "maxLabel": "Lớn", "from": "", "to": "" },
+      { "id": "speed", "label": "Tốc độ rơi", "min": "0.5", "max": "5", "step": "0.1", "value": "1.5", "unit": "×", "minLabel": "Chậm", "maxLabel": "Nhanh", "from": "", "to": "" },
+      { "id": "wind", "label": "Gió", "min": "-3", "max": "3", "step": "0.1", "value": "0.5", "unit": "", "minLabel": "Trái", "maxLabel": "Phải", "from": "sang trái", "to": "sang phải" },
+      { "id": "amount", "label": "Số lượng bông tuyết", "min": "100", "max": "4000", "step": "100", "value": "1500", "unit": "", "minLabel": "Ít", "maxLabel": "Nhiều", "from": "", "to": "" }
+    ],
+    "still": "Lặng gió"
+  },
+  "behind": {
+    "title": "Phủ lên cửa sổ hay nằm phía sau.",
+    "lede": "Để thời tiết phủ lên mọi thứ, hoặc đưa nó ra sau cửa sổ, giữa hình nền và các biểu tượng trên màn hình nền.",
+    "over": "Phủ lên cửa sổ",
+    "behind": "Nằm phía sau",
+    "switchLabel": "Giữ hiệu ứng phía sau cửa sổ",
+    "mockLabel": "Cài đặt Tương tác của SnowWall với công tắc Giữ hiệu ứng phía sau cửa sổ."
+  },
+  "built": {
+    "title": "Thiết kế cho Mac.",
+    "lede": "Mô phỏng thật sự, hiển thị bằng bộ xử lý đồ họa, và biết lúc nào nên lùi lại.",
+    "facts": [
+      { "icon": "metal", "title": "Hiển thị bằng Metal", "body": "Tối đa 10.000 hạt ở chất lượng Siêu cao, mô phỏng trên GPU. Không có gì lặp lại, vì đây không phải video." },
+      { "icon": "battery", "title": "Tiết kiệm pin", "body": "Mức chất lượng nhẹ hơn cho những ngày dài xa bộ sạc." },
+      { "icon": "gauge", "title": "30 fps ở Chế độ nguồn điện thấp", "body": "Cũng giảm xuống 30 khung hình mỗi giây khi Mac nóng lên, và tạm dừng khi màn hình ngủ." },
+      { "icon": "displays", "title": "Mọi màn hình", "body": "Tuyết rơi trên mọi màn hình bạn kết nối." },
+      { "icon": "motion", "title": "Giảm chuyển động, theo ý bạn", "body": "Khi bật Giảm chuyển động, bạn có thể dừng tuyết, làm chậm hoặc để tuyết tiếp tục rơi." },
+      { "icon": "shortcuts", "title": "Phím tắt và Tập trung", "body": "Tác vụ cho ứng dụng Phím tắt, và bộ lọc Tập trung tạm dừng tuyết khi đang bật chế độ Tập trung." },
+      { "icon": "globe", "title": "16 ngôn ngữ", "body": "Tiếng Việt, tiếng Anh, tiếng Nhật, tiếng Ả Rập, tiếng Hindi và mười một ngôn ngữ khác." }
+    ],
+    "facts11": [
+      { "icon": "control", "title": "Tạm dừng từ Trung tâm điều khiển", "body": "Một điều khiển trong Trung tâm điều khiển dừng và bật tuyết mà không cần mở menu." },
+      { "icon": "widget", "title": "Tiện ích", "body": "Tiện ích trên màn hình nền cho biết hiệu ứng đang rơi và đổi hiệu ứng chỉ với một cú bấm." },
+      { "icon": "search", "title": "Tác vụ trong Spotlight", "body": "Tạm dừng, tiếp tục hoặc đổi hiệu ứng ngay từ Spotlight." },
+      { "icon": "sparkles", "title": "Mô tả tâm trạng", "body": "Trên máy Mac có Apple Intelligence, hãy mô tả một tâm trạng và SnowWall sẽ tạo cài đặt sẵn phù hợp." }
+    ]
+  },
+  "private": {
+    "title": "Riêng tư ngay từ thiết kế.",
+    "items": [
+      { "title": "Không thu thập dữ liệu.", "body": "Không phân tích, không báo cáo sự cố, không theo dõi. Bản thân SnowWall không gửi yêu cầu mạng nào." },
+      { "title": "Không cần cấp quyền.", "body": "Ứng dụng vẽ trên màn hình nền mà không đọc nội dung trên đó. Không ghi màn hình, không quyền trợ năng." },
+      { "title": "Không cần tài khoản.", "body": "Không phải đăng ký gì cả. Giao dịch mua chỉ diễn ra giữa bạn và App Store." }
+    ],
+    "more": "Chi tiết có trong <a href=\"/privacy/\" hreflang=\"en\">chính sách quyền riêng tư</a> (bằng tiếng Anh). Chính sách rất ngắn, vì chẳng có mấy điều để nói."
+  },
+  "pro": {
+    "title": "Bắt đầu miễn phí. Pro, mua một lần.",
+    "lede": "Tuyết rơi và Mưa là của bạn, dùng và chỉnh tùy ý. SnowWall Pro mở khóa mọi thứ còn lại chỉ với một lần mua. Không thuê bao.",
+    "caption": "Những gì có trong bản miễn phí và SnowWall Pro",
+    "feature": "Tính năng",
+    "free": "Miễn phí",
+    "rows": [
+      { "label": "Tuyết rơi và Mưa, tùy chỉnh đầy đủ", "free": true, "pro": true },
+      { "label": "Tuyết đọng trên cửa sổ, lớp tuyết tích tụ và sương giá", "free": true, "pro": true },
+      { "label": "Phủ lên cửa sổ hoặc nằm phía sau", "free": true, "pro": true },
+      { "label": "Phím tắt, bộ lọc Tập trung và Dịu hơn vào ban đêm", "free": true, "pro": true },
+      { "label": "Cài đặt sẵn đã lưu", "free": "3", "pro": "Không giới hạn" },
+      { "label": "Chất lượng", "free": "Tiết kiệm pin, Cân bằng", "pro": "Thêm Siêu cao, tối đa 10.000 hạt" },
+      { "label": "Thêm tám hiệu ứng", "note": "Bão tuyết, Giáng sinh, Băng giá, Hoa anh đào, Mưa trên kính, Lá thu, Đêm sao và Hoa giấy", "free": false, "pro": true },
+      { "label": "Chế độ không gian", "free": false, "pro": true },
+      { "label": "Tám hiệu ứng hình ảnh", "note": "Hào quang, Cực quang, Độ sâu trường ảnh và nhiều hơn nữa", "free": false, "pro": true },
+      { "label": "Ngày lễ", "note": "Giáng sinh, Năm mới, Halloween và mùa hoa xuân tự động bật", "free": false, "pro": true },
+      { "label": "Chủ đề đổi theo mùa", "free": false, "pro": true }
+    ],
+    "release11": [
+      { "title": "Giáng sinh miễn phí trong tháng 12.", "body": "Hiệu ứng Giáng sinh mở cho mọi người suốt cả tháng." },
+      { "title": "Dùng thử trước khi mua.", "body": "Xem trực tiếp mọi hiệu ứng Pro trên màn hình nền của bạn trước khi quyết định." }
+    ],
+    "price": "SnowWall Pro chỉ cần mua một lần, giá 14,99 USD. Khôi phục giao dịch mua trên mọi máy Mac đã đăng nhập Tài khoản Apple của bạn."
+  },
+  "faq": {
+    "title": "Hỏi đáp.",
+    "items": [
+      { "q": "SnowWall có miễn phí không?", "a": "<p>Có. Tuyết rơi và Mưa được miễn phí với đầy đủ cài đặt, và bạn có thể lưu ba cài đặt sẵn. SnowWall Pro chỉ cần mua một lần để có thêm tám hiệu ứng còn lại, Chế độ không gian, các hiệu ứng hình ảnh, chất lượng Siêu cao và cài đặt sẵn không giới hạn. Đây không phải gói thuê bao.</p>" },
+      { "q": "Tôi đã mở SnowWall. Ứng dụng ở đâu?", "a": "<p>SnowWall không có cửa sổ hay biểu tượng riêng trên Dock. Ứng dụng nằm trên thanh menu, là bông tuyết ở đầu màn hình. Bấm vào đó để tạm dừng, đổi hiệu ứng hoặc mở Cài đặt.</p>" },
+      { "q": "Ứng dụng có làm chậm Mac hay hao pin không?", "a": "<p>SnowWall vẽ bằng bộ xử lý đồ họa nên có tốn một ít năng lượng. Ứng dụng tạm dừng khi màn hình ngủ và giảm xuống 30 khung hình mỗi giây khi bật Chế độ nguồn điện thấp hoặc khi Mac nóng lên. Muốn tiết kiệm hơn, hãy chọn chất lượng Tiết kiệm pin hoặc giảm số lượng bông tuyết.</p>" },
+      { "q": "Ứng dụng có cần cấp quyền không?", "a": "<p>Không. SnowWall vẽ trên màn hình nền mà không đọc nội dung trên màn hình. Nếu macOS yêu cầu bạn cấp quyền ghi màn hình hoặc trợ năng cho ứng dụng, đừng đồng ý, và vui lòng <a href=\"/support/\" hreflang=\"en\">báo cho chúng tôi</a>.</p>" },
+      { "q": "Tuyết có thể nằm phía sau cửa sổ không?", "a": "<p>Có. Bật Giữ hiệu ứng phía sau cửa sổ trong Cài đặt, mục Tương tác. Khi đó tuyết sẽ rơi giữa hình nền và các biểu tượng trên màn hình nền.</p>" },
+      { "q": "Tôi dùng Giảm chuyển động.", "a": "<p>Khi bật Giảm chuyển động, SnowWall mặc định dừng tuyết. Bạn có thể chọn làm chậm tuyết, hoặc để tuyết tiếp tục rơi.</p>" },
+      { "q": "Ứng dụng chạy trên máy Mac nào?", "a": "<p>Mọi máy Mac chạy macOS 26 trở lên.</p>" }
+    ],
+    "items11": [
+      { "q": "Có thể tạm dừng mà không cần mở menu không?", "a": "<p>Có. Thêm điều khiển của SnowWall vào Trung tâm điều khiển, hoặc dùng tác vụ Tạm dừng trong Spotlight hay Phím tắt.</p>" }
+    ],
+    "more": "Còn thắc mắc khác? Xem trang <a href=\"/support/\" hreflang=\"en\">Hỗ trợ</a> (bằng tiếng Anh), hoặc viết thư tới <a href=\"mailto:support@snowwall.app?subject=SnowWall\">support@snowwall.app</a>."
+  },
+  "footer": {
+    "tagline": "Thời tiết cho màn hình nền Mac.",
+    "navLabel": "Trang web",
+    "support": "Hỗ trợ",
+    "privacy": "Chính sách quyền riêng tư",
+    "terms": "Điều khoản sử dụng",
+    "press": "Báo chí",
+    "small": "Yêu cầu macOS 26 trở lên. Mac và Mac App Store là nhãn hiệu của Apple Inc."
+  },
+  "jsonld": {
+    "description": "Ứng dụng trên thanh menu mang tuyết, mưa và thời tiết theo mùa lên màn hình nền Mac. Bông tuyết né con trỏ và đọng trên cửa sổ.",
+    "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  }
+}
