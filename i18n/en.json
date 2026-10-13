@@ -30,6 +30,11 @@
     "nowShowing": "Now showing: {name}",
     "req": "Requires macOS 26 or later"
   },
+  "film": {
+    "title": "See it on a desktop.",
+    "lede": "Twenty-five seconds of SnowWall: snow settling on a window, the window moving away from under it, four effects and Ambient Mode.",
+    "label": "Video: SnowWall on a desktop, from falling snow to Ambient Mode"
+  },
   "settle": {
     "title": "It settles on your windows.",
     "steps": [

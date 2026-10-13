@@ -30,6 +30,11 @@
     "nowShowing": "En ce moment : {name}",
     "req": "Nécessite macOS 26 ou version ultérieure"
   },
+  "film": {
+    "title": "Voyez par vous-même.",
+    "lede": "Vingt-cinq secondes de SnowWall : la neige se pose sur une fenêtre, la fenêtre se dérobe sous elle, quatre effets et le mode Ambiance.",
+    "label": "Vidéo : SnowWall sur un bureau, de la neige qui tombe au mode Ambiance"
+  },
   "settle": {
     "title": "Elle se pose sur vos fenêtres.",
     "steps": [

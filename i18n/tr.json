@@ -30,6 +30,11 @@
     "nowShowing": "Şu an: {name}",
     "req": "macOS 26 veya sonrası gerekir"
   },
+  "film": {
+    "title": "Masaüstünde görün.",
+    "lede": "SnowWall’dan yirmi beş saniye: kar bir pencerenin üstünde birikir, pencere altından kayıp gider, dört efekt ve Ortam Modu.",
+    "label": "Video: Masaüstünde SnowWall, yağan kardan Ortam Modu’na"
+  },
   "settle": {
     "title": "Pencerelerinizin üstünde birikir.",
     "steps": [

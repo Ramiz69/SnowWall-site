@@ -30,6 +30,11 @@
     "nowShowing": "正在顯示：{name}",
     "req": "需要 macOS 26 或以後版本"
   },
+  "film": {
+    "title": "看看實際效果。",
+    "lede": "25 秒的 SnowWall：雪停留在視窗上，視窗從雪下移開，四種效果，還有氛圍模式。",
+    "label": "影片：桌面上的 SnowWall，從飄雪到氛圍模式"
+  },
   "settle": {
     "title": "雪會停留在視窗上。",
     "steps": [

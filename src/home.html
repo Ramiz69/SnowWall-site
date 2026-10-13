@@ -68,6 +68,20 @@
   <canvas class="layer front" aria-hidden="true"></canvas>
 </section>
 
+<!-- 1b · The film: the App Store preview without its captions -->
+<section class="film" id="film" aria-labelledby="film-title">
+  <div class="wrap">
+    <h2 id="film-title" class="display reveal">{{film.title}}</h2>
+    <p class="lede reveal">{{film.lede}}</p>
+    <div class="film-frame">
+      <video muted loop playsinline preload="none" poster="{{@assets/film-poster.jpg}}" aria-label="{{film.label}}">
+        <source src="{{@assets/video/film.mp4}}" type="video/mp4">
+      </video>
+      <button class="chip play film-play" type="button" aria-pressed="false" data-play="{{ui.play}}" data-pause="{{ui.pause}}">{{ui.play}}</button>
+    </div>
+  </div>
+</section>
+
 <!-- 2 · It settles on your windows -->
 <section class="settle" id="settle" aria-labelledby="settle-title">
   <div class="settle-stage">

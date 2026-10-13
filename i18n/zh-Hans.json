@@ -30,6 +30,11 @@
     "nowShowing": "正在显示：{name}",
     "req": "需要 macOS 26 或更高版本"
   },
+  "film": {
+    "title": "看看实际效果。",
+    "lede": "25 秒的 SnowWall：雪积在窗口上，窗口从雪下移开，四种效果，还有氛围模式。",
+    "label": "视频：桌面上的 SnowWall，从飘雪到氛围模式"
+  },
   "settle": {
     "title": "雪会积在窗口上。",
     "steps": [

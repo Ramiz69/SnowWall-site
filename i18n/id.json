@@ -30,6 +30,11 @@
     "nowShowing": "Sedang tampil: {name}",
     "req": "Membutuhkan macOS 26 atau lebih baru"
   },
+  "film": {
+    "title": "Lihat langsung di desktop.",
+    "lede": "Dua puluh lima detik SnowWall: salju menumpuk di jendela, jendela bergeser dari bawahnya, empat efek, dan Mode Ambien.",
+    "label": "Video: SnowWall di desktop, dari salju turun hingga Mode Ambien"
+  },
   "settle": {
     "title": "Salju menumpuk di jendela Anda.",
     "steps": [

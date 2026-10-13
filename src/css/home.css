@@ -517,3 +517,13 @@ input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(
 @media (max-height: 700px) and (max-width: 860px) {
   .settle-stage .mock-pane .mock-h:nth-of-type(3), .settle-stage .mock-pane .mock-group:nth-of-type(3) { display: none; }
 }
+
+/* The film: the App Store preview, captions off. */
+.film { padding: clamp(64px, 9vw, 120px) 0; }
+.film .lede { max-width: 40rem; }
+.film-frame {
+  position: relative; margin-top: 28px; aspect-ratio: 16 / 9; border-radius: 20px; overflow: hidden;
+  background: #070b16; border: 1px solid var(--line); box-shadow: var(--shadow-lg);
+}
+.film-frame video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.film-play { position: absolute; inset-inline-end: 16px; bottom: 16px; z-index: 2; }

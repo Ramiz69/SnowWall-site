@@ -30,6 +30,11 @@
     "nowShowing": "Agora: {name}",
     "req": "Requer macOS 26 ou posterior"
   },
+  "film": {
+    "title": "Veja em ação.",
+    "lede": "Vinte e cinco segundos de SnowWall: a neve pousa sobre uma janela, a janela sai de baixo dela, quatro efeitos e o Modo Ambiente.",
+    "label": "Vídeo: SnowWall na mesa, da neve caindo ao Modo Ambiente"
+  },
   "settle": {
     "title": "Ela pousa nas suas janelas.",
     "steps": [

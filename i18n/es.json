@@ -30,6 +30,11 @@
     "nowShowing": "Ahora: {name}",
     "req": "Requiere macOS 26 o posterior"
   },
+  "film": {
+    "title": "Míralo en acción.",
+    "lede": "Veinticinco segundos de SnowWall: la nieve se posa sobre una ventana, la ventana se aparta de debajo, cuatro efectos y el modo ambiente.",
+    "label": "Vídeo: SnowWall en el escritorio, de la nevada al modo ambiente"
+  },
   "settle": {
     "title": "Se posa sobre tus ventanas.",
     "steps": [

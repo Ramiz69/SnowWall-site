@@ -1,6 +1,6 @@
 import './menus.99c281c9b6.js';
 import { initHero } from './hero.a06401ed31.js';
-import { initSettle, initGallery, initAmbient, initTune, initBehind } from './sections.16f4cef942.js';
+import { initSettle, initGallery, initAmbient, initTune, initBehind, initFilm } from './sections.639cdad490.js';
 import { initReveal } from './reveal.6837af5595.js';
 const hero = initHero();
 initSettle();
@@ -8,4 +8,5 @@ initGallery(hero);
 initAmbient();
 initTune();
 initBehind();
+initFilm();
 initReveal();

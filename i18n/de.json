@@ -30,6 +30,11 @@
     "nowShowing": "Gerade zu sehen: {name}",
     "req": "Erfordert macOS 26 oder neuer"
   },
+  "film": {
+    "title": "Sieh es dir an.",
+    "lede": "Fünfundzwanzig Sekunden SnowWall: Schnee legt sich auf ein Fenster, das Fenster fährt unter ihm weg, dazu vier Effekte und der Ambiente-Modus.",
+    "label": "Video: SnowWall auf dem Schreibtisch, vom Schneefall bis zum Ambiente-Modus"
+  },
   "settle": {
     "title": "Schnee, der auf Fenstern liegen bleibt.",
     "steps": [

@@ -149,3 +149,18 @@ w.start();
 });
 apply(0);
 }
+export function initFilm() {
+const section = $('.film');
+if (!section) return;
+const video = $('video', section), button = $('.film-play', section);
+let wanted = !motion.reduced, visible = false;
+const sync = () => {
+if (wanted && visible) video.play().catch(() => {}); else video.pause();
+button.setAttribute('aria-pressed', String(wanted));
+button.textContent = wanted ? button.dataset.pause : button.dataset.play;
+};
+new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; sync(); }, { threshold: .3 }).observe(video);
+button.addEventListener('click', () => { wanted = !wanted; sync(); });
+motion.subscribe(() => { if (motion.reduced) { wanted = false; sync(); } });
+sync();
+}
