@@ -127,28 +127,28 @@
         <p class="hint">Проведите указателем сквозь снег.</p>
       </div>
       <div class="mock-wrap">
-        <div class="mock" role="img" aria-label="Окно настроек SnowWall на вкладке «Внешний вид», на его верхнем краю лежит снег.">
-          <div class="mock-title" aria-hidden="true">Настройки SnowWall</div>
+        <!-- The 1.1 window: sidebar with search, Look & Motion with its live preview and section chips. -->
+        <div class="mock mock11" role="img" aria-label="Окно настроек SnowWall на вкладке «Вид и движение», на его верхнем краю лежит снег.">
           <div class="mock-body" aria-hidden="true">
-            <ul class="mock-side">
-              <li class="t-general"><i></i>Основные</li><li class="t-effects"><i></i>Эффекты</li><li class="t-appearance on"><i></i>Внешний вид</li><li class="t-physics"><i></i>Физика</li><li class="t-interaction"><i></i>Взаимодействие</li><li class="t-presets"><i></i>Пресеты</li>
-            </ul>
+            <div class="mock-side">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mock-search">Поиск</span>
+              <ul><li class="t-effect"><i></i><span>Эффект</span></li><li class="t-look on"><i></i><span>Вид и движение</span></li><li class="t-automatic"><i></i><span>Автоматически</span></li><li class="t-presets"><i></i><span>Пресеты</span></li><li class="t-general"><i></i><span>Основные</span></li><li class="t-siri"><i></i><span>Siri и Команды</span></li></ul>
+            </div>
             <div class="mock-pane">
+              <p class="mock-ttl">Вид и движение</p>
+              <div class="mock-preview"><span class="pv-btn pv-pause" title="Пауза"></span><span class="pv-btn">Взглянуть</span></div>
+              <div class="mock-chips"><b class="on">Частицы</b><b class="">Движение</b><b class="">Указатель и окна</b><b class="">Качество</b></div>
               <p class="mock-h">Стиль и размер</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Стиль</span><span class="seg"><b>Мягкий</b><b class="on">Кристалл</b><b>Искра</b></span></div>
                 <div class="mock-row"><span>Самые мелкие</span><span class="track"><i class="fill f25"></i></span><em>3 пт</em></div>
                 <div class="mock-row"><span>Самые крупные</span><span class="track"><i class="fill f45"></i></span><em>14 пт</em></div>
               </div>
-              <p class="mock-h">Цвет</p>
+              <p class="mock-h">Цвет и непрозрачность</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Цвет</span><span class="well"></span></div>
                 <div class="mock-row"><span>Непрозрачность</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
-              </div>
-              <p class="mock-h">Производительность</p>
-              <div class="mock-group">
-                <div class="mock-row"><span>Качество</span><span class="radios"><b>Экономия энергии</b><b class="on">Сбалансированно</b><b>Ультра</b></span></div>
-                <div class="mock-row"><span>Количество снежинок</span><span class="track"><i class="fill f60"></i></span><em>2 400</em></div>
               </div>
             </div>
           </div>
@@ -328,18 +328,16 @@
     </div>
     <div class="desk">
       <canvas class="layer back" aria-hidden="true"></canvas>
-      <div class="mock mock-small" role="img" aria-label="Настройки взаимодействия SnowWall с переключателем «Эффекты за окнами».">
-        <div class="mock-title" aria-hidden="true">Настройки SnowWall</div>
+      <div class="mock mock-small mock11" role="img" aria-label="Настройки «Вид и движение» в SnowWall с переключателем «Эффекты за окнами».">
+        <div class="mock-title" aria-hidden="true">Вид и движение</div>
         <div class="mock-pane" aria-hidden="true">
-          <p class="mock-h">Слои</p>
+          <div class="mock-chips"><b class="">Частицы</b><b class="">Движение</b><b class="on">Указатель и окна</b><b class="">Качество</b></div>
+          <p class="mock-h">Окна</p>
           <div class="mock-group">
             <div class="mock-row toggle-row">
               <span><strong>Эффекты за окнами</strong><small>Рисуется между обоями и иконками рабочего стола, а не поверх всего</small></span>
               <span class="toggle"><i></i></span>
             </div>
-          </div>
-          <p class="mock-h">Окна</p>
-          <div class="mock-group">
             <div class="mock-row toggle-row dim-when-behind">
               <span><strong>Оседать на окнах</strong><small>Снежинки задерживаются на верхнем краю активного окна</small></span>
               <span class="toggle on-static"><i></i></span>
@@ -366,7 +364,7 @@
     </header>
     <ul class="facts" role="list">
       <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>Отрисовка на Metal</h3><p>До 10 000 частиц в качестве «Ультра», и все они считаются на GPU. Ничего не повторяется по кругу: это не видео.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>Экономия энергии</h3><p>Облегчённое качество для долгого дня без зарядки.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>30 кадров в режиме энергосбережения</h3><p>И столько же, когда Mac перегревается. А пока дисплей спит, снег стоит на паузе.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>Все дисплеи</h3><p>Снег идёт на каждом подключённом экране.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>«Уменьшение движения» по-вашему</h3><p>Когда оно включено, снег можно остановить, замедлить или оставить как есть.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>Команды и фокусирование</h3><p>Действия для «Команд» и фильтр фокусирования, который останавливает снег на время фокуса.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16 языков</h3><p>Русский, английский, японский, арабский, хинди и ещё одиннадцать.</p></li>
-      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Пауза из Пункта управления</h3><p>Элемент в Пункте управления останавливает и запускает снег, не открывая меню.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Виджеты</h3><p>Виджеты на рабочем столе показывают, что сейчас идёт, и переключают эффект одним щелчком.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Действия в Spotlight</h3><p>Пауза, продолжение или смена эффекта прямо из Spotlight.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Опишите настроение</h3><p>На Mac с Apple Intelligence опишите настроение, и SnowWall соберёт под него пресет.</p></li>
+      <li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Пауза из Пункта управления</h3><p>Элемент в Пункте управления останавливает и запускает снег, не открывая меню.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Виджеты</h3><p>Виджеты на рабочем столе показывают, что сейчас идёт, и переключают эффект одним щелчком.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Действия в Spotlight</h3><p>Пауза, продолжение или смена эффекта прямо из Spotlight.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Опишите настроение</h3><p>На Mac с Apple Intelligence опишите настроение, и SnowWall соберёт под него пресет.</p></li>
     </ul>
   </div>
 </section>
@@ -398,7 +396,7 @@
         </tbody>
       </table>
     </div>
-    <div class="release-note glass" data-release="1.1" hidden>
+    <div class="release-note glass" data-release="1.1">
       <p><strong>Рождество бесплатно весь декабрь.</strong> Эффект «Рождество» открыт всем на целый месяц.</p><p><strong>Сначала попробуйте.</strong> Любой эффект Pro можно посмотреть вживую на своём рабочем столе до покупки.</p>
     </div>
     <div class="pro-cta">
@@ -413,8 +411,8 @@
   <div class="wrap narrow">
     <h2 id="faq-title" class="display reveal">Вопросы.</h2>
     <div class="faq-list">
-      <details><summary>SnowWall бесплатный?</summary><div class="answer"><p>Да. Снегопад и дождь бесплатны, со всеми настройками, и можно сохранить три своих пресета. SnowWall Pro — разовая покупка: в нём остальные восемь эффектов, Ambient-режим, визуальные эффекты, качество «Ультра» и пресеты без ограничений. Это не подписка.</p></div></details><details><summary>Я открыл SnowWall. Где он?</summary><div class="answer"><p>У SnowWall нет своего окна и значка в Dock. Он живёт в строке меню, снежинкой в верхней части экрана. Нажмите на неё, чтобы поставить снег на паузу, сменить эффект или открыть настройки.</p></div></details><details><summary>Не замедлит ли он Mac и не посадит ли батарею?</summary><div class="answer"><p>Он рисует на графическом процессоре, поэтому немного энергии тратит. Когда дисплей засыпает, снег останавливается, а в режиме энергосбережения или при перегреве идёт с частотой 30 кадров в секунду. Чтобы тратить ещё меньше, выберите качество «Экономия энергии» или уменьшите количество снежинок.</p></div></details><details><summary>Нужны ли ему разрешения?</summary><div class="answer"><p>Нет. SnowWall рисует поверх рабочего стола и не читает, что на экране. Если macOS когда-нибудь попросит дать ему доступ к записи экрана или универсальному доступу, не соглашайтесь и, пожалуйста, <a href="/support/" hreflang="en">напишите нам</a>.</p></div></details><details><summary>Может ли снег идти за окнами?</summary><div class="answer"><p>Да. В настройках на вкладке «Взаимодействие» включите «Эффекты за окнами». Тогда снег пойдёт между обоями и значками на рабочем столе.</p></div></details><details><summary>У меня включено «Уменьшение движения».</summary><div class="answer"><p>Тогда SnowWall по умолчанию останавливает снег. Вместо этого его можно замедлить или оставить как есть.</p></div></details><details><summary>На каких Mac он работает?</summary><div class="answer"><p>На любом Mac с macOS 26 или новее.</p></div></details>
-      <details data-release="1.1" hidden><summary>Можно поставить паузу без меню?</summary><div class="answer"><p>Да. Добавьте элемент SnowWall в Пункт управления или используйте действие «Пауза» в Spotlight или «Командах».</p></div></details>
+      <details><summary>SnowWall бесплатный?</summary><div class="answer"><p>Да. Снегопад и дождь бесплатны, со всеми настройками, и можно сохранить три своих пресета. SnowWall Pro — разовая покупка: в нём остальные восемь эффектов, Ambient-режим, визуальные эффекты, качество «Ультра» и пресеты без ограничений. Это не подписка.</p></div></details><details><summary>Я открыл SnowWall. Где он?</summary><div class="answer"><p>У SnowWall нет своего окна и значка в Dock. Он живёт в строке меню, снежинкой в верхней части экрана. Нажмите на неё, чтобы поставить снег на паузу, сменить эффект или открыть настройки.</p></div></details><details><summary>Не замедлит ли он Mac и не посадит ли батарею?</summary><div class="answer"><p>Он рисует на графическом процессоре, поэтому немного энергии тратит. Когда дисплей засыпает, снег останавливается, а в режиме энергосбережения или при перегреве идёт с частотой 30 кадров в секунду. Чтобы тратить ещё меньше, выберите качество «Экономия энергии» или уменьшите количество снежинок.</p></div></details><details><summary>Нужны ли ему разрешения?</summary><div class="answer"><p>Нет. SnowWall рисует поверх рабочего стола и не читает, что на экране. Если macOS когда-нибудь попросит дать ему доступ к записи экрана или универсальному доступу, не соглашайтесь и, пожалуйста, <a href="/support/" hreflang="en">напишите нам</a>.</p></div></details><details><summary>Может ли снег идти за окнами?</summary><div class="answer"><p>Да. В настройках откройте «Вид и движение» › «Указатель и окна» и включите «Эффекты за окнами». Тогда снег пойдёт между обоями и значками на рабочем столе.</p></div></details><details><summary>У меня включено «Уменьшение движения».</summary><div class="answer"><p>Тогда SnowWall по умолчанию останавливает снег. Вместо этого его можно замедлить или оставить как есть.</p></div></details><details><summary>На каких Mac он работает?</summary><div class="answer"><p>На любом Mac с macOS 26 или новее.</p></div></details>
+      <details data-release="1.1"><summary>Можно поставить паузу без меню?</summary><div class="answer"><p>Да. Добавьте элемент SnowWall в Пункт управления или используйте действие «Пауза» в Spotlight или «Командах».</p></div></details>
     </div>
     <p class="faq-more">Остались вопросы? Загляните в <a href="/support/" hreflang="en">поддержку</a> (на английском) или напишите на <a href="mailto:support@snowwall.app?subject=SnowWall">support@snowwall.app</a>. Можно по-русски.</p>
   </div>

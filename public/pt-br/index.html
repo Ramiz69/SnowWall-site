@@ -127,28 +127,28 @@
         <p class="hint">Passe o ponteiro pela neve.</p>
       </div>
       <div class="mock-wrap">
-        <div class="mock" role="img" aria-label="Janela de Ajustes do SnowWall, aberta em Aparência, com neve acumulada na borda superior.">
-          <div class="mock-title" aria-hidden="true">Ajustes do SnowWall</div>
+        <!-- The 1.1 window: sidebar with search, Look & Motion with its live preview and section chips. -->
+        <div class="mock mock11" role="img" aria-label="Janela de Ajustes do SnowWall, aberta em Aparência e movimento, com neve acumulada na borda superior.">
           <div class="mock-body" aria-hidden="true">
-            <ul class="mock-side">
-              <li class="t-general"><i></i>Geral</li><li class="t-effects"><i></i>Efeitos</li><li class="t-appearance on"><i></i>Aparência</li><li class="t-physics"><i></i>Física</li><li class="t-interaction"><i></i>Interação</li><li class="t-presets"><i></i>Predefinições</li>
-            </ul>
+            <div class="mock-side">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mock-search">Buscar</span>
+              <ul><li class="t-effect"><i></i><span>Efeito</span></li><li class="t-look on"><i></i><span>Aparência e movimento</span></li><li class="t-automatic"><i></i><span>Automático</span></li><li class="t-presets"><i></i><span>Predefinições</span></li><li class="t-general"><i></i><span>Geral</span></li><li class="t-siri"><i></i><span>Siri e Atalhos</span></li></ul>
+            </div>
             <div class="mock-pane">
+              <p class="mock-ttl">Aparência e movimento</p>
+              <div class="mock-preview"><span class="pv-btn pv-pause" title="Pausar"></span><span class="pv-btn">Espiar</span></div>
+              <div class="mock-chips"><b class="on">Partículas</b><b class="">Movimento</b><b class="">Ponteiro e janelas</b><b class="">Qualidade</b></div>
               <p class="mock-h">Estilo e tamanho</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Estilo</span><span class="seg"><b>Difuso</b><b class="on">Cristal</b><b>Brilho</b></span></div>
                 <div class="mock-row"><span>Menor</span><span class="track"><i class="fill f25"></i></span><em>3 pt</em></div>
                 <div class="mock-row"><span>Maior</span><span class="track"><i class="fill f45"></i></span><em>14 pt</em></div>
               </div>
-              <p class="mock-h">Cor</p>
+              <p class="mock-h">Cor e opacidade</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Cor</span><span class="well"></span></div>
                 <div class="mock-row"><span>Opacidade</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
-              </div>
-              <p class="mock-h">Desempenho</p>
-              <div class="mock-group">
-                <div class="mock-row"><span>Qualidade</span><span class="radios"><b>Economia de Bateria</b><b class="on">Equilibrado</b><b>Ultra</b></span></div>
-                <div class="mock-row"><span>Quantidade de flocos</span><span class="track"><i class="fill f60"></i></span><em>2.400</em></div>
               </div>
             </div>
           </div>
@@ -328,18 +328,16 @@
     </div>
     <div class="desk">
       <canvas class="layer back" aria-hidden="true"></canvas>
-      <div class="mock mock-small" role="img" aria-label="Ajustes de Interação do SnowWall com a opção Efeitos atrás das janelas.">
-        <div class="mock-title" aria-hidden="true">Ajustes do SnowWall</div>
+      <div class="mock mock-small mock11" role="img" aria-label="Ajustes de Aparência e movimento do SnowWall com a opção Efeitos atrás das janelas.">
+        <div class="mock-title" aria-hidden="true">Aparência e movimento</div>
         <div class="mock-pane" aria-hidden="true">
-          <p class="mock-h">Camadas</p>
+          <div class="mock-chips"><b class="">Partículas</b><b class="">Movimento</b><b class="on">Ponteiro e janelas</b><b class="">Qualidade</b></div>
+          <p class="mock-h">Janelas</p>
           <div class="mock-group">
             <div class="mock-row toggle-row">
               <span><strong>Efeitos atrás das janelas</strong><small>Mostra o efeito entre o papel de parede e os ícones da mesa, em vez de por cima de tudo</small></span>
               <span class="toggle"><i></i></span>
             </div>
-          </div>
-          <p class="mock-h">Janelas</p>
-          <div class="mock-group">
             <div class="mock-row toggle-row dim-when-behind">
               <span><strong>Pousar nas janelas</strong><small>Os flocos param na borda superior da janela em primeiro plano</small></span>
               <span class="toggle on-static"><i></i></span>
@@ -366,7 +364,7 @@
     </header>
     <ul class="facts" role="list">
       <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>Desenhado com Metal</h3><p>Até 10.000 partículas na qualidade Ultra, simuladas na GPU. Nada se repete, porque nada é vídeo.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>Economia de Bateria</h3><p>Uma qualidade mais leve para dias longos longe da tomada.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>30 fps no Modo de Pouca Energia</h3><p>Também cai para 30 quadros por segundo quando o Mac esquenta, e pausa enquanto a tela está em repouso.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>Todas as suas telas</h3><p>A neve cai em cada tela que você conectar.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>Reduzir movimento do seu jeito</h3><p>Com Reduzir movimento ativado, pare a neve, deixe-a mais lenta ou mantenha-a caindo.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>Atalhos e Foco</h3><p>Ações para o app Atalhos e um filtro de Foco que pausa a neve enquanto um Foco está ativado.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16 idiomas</h3><p>Português, inglês, russo, japonês, árabe, hindi e mais dez.</p></li>
-      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Pausa pela Central de Controle</h3><p>Um controle na Central de Controle para e retoma a neve sem abrir o menu.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Widgets na mesa mostram o que está caindo e trocam o efeito com um clique.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Ações no Spotlight</h3><p>Pause, retome ou troque o efeito direto pelo Spotlight.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Descreva um clima</h3><p>Em Macs com Apple Intelligence, descreva um clima e o SnowWall cria uma predefinição sob medida.</p></li>
+      <li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Pausa pela Central de Controle</h3><p>Um controle na Central de Controle para e retoma a neve sem abrir o menu.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Widgets na mesa mostram o que está caindo e trocam o efeito com um clique.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Ações no Spotlight</h3><p>Pause, retome ou troque o efeito direto pelo Spotlight.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Descreva um clima</h3><p>Em Macs com Apple Intelligence, descreva um clima e o SnowWall cria uma predefinição sob medida.</p></li>
     </ul>
   </div>
 </section>
@@ -398,7 +396,7 @@
         </tbody>
       </table>
     </div>
-    <div class="release-note glass" data-release="1.1" hidden>
+    <div class="release-note glass" data-release="1.1">
       <p><strong>Natal grátis em dezembro.</strong> O efeito Natal fica liberado para todos durante o mês inteiro.</p><p><strong>Experimente antes de comprar.</strong> Veja qualquer efeito Pro ao vivo na sua própria mesa antes de decidir.</p>
     </div>
     <div class="pro-cta">
@@ -413,8 +411,8 @@
   <div class="wrap narrow">
     <h2 id="faq-title" class="display reveal">Perguntas.</h2>
     <div class="faq-list">
-      <details><summary>O SnowWall é grátis?</summary><div class="answer"><p>Sim. Neve e Chuva são grátis, com todos os ajustes, e você pode salvar três predefinições. O SnowWall Pro é uma compra única que acrescenta os outros oito efeitos, o Modo Ambiente, os efeitos visuais, a qualidade Ultra e predefinições ilimitadas. Não é assinatura.</p></div></details><details><summary>Abri o SnowWall. Cadê ele?</summary><div class="answer"><p>O SnowWall não tem janela nem ícone no Dock. Ele mora na barra de menus, como um floco de neve no topo da tela. Clique nele para pausar, trocar de efeito ou abrir os Ajustes.</p></div></details><details><summary>Ele deixa o Mac lento ou gasta a bateria?</summary><div class="answer"><p>Ele desenha com o processador gráfico, então usa um pouco de energia. Pausa quando a tela entra em repouso e cai para 30 quadros por segundo no Modo de Pouca Energia ou quando o Mac esquenta. Para gastar menos, escolha a qualidade Economia de Bateria ou diminua a quantidade de flocos.</p></div></details><details><summary>Ele precisa de alguma permissão?</summary><div class="answer"><p>Não. O SnowWall desenha sobre a mesa sem ler o que está na tela. Se o macOS algum dia pedir acesso de gravação de tela ou de acessibilidade para ele, não conceda e, por favor, <a href="/support/" hreflang="en">avise a gente</a>.</p></div></details><details><summary>A neve pode ficar atrás das janelas?</summary><div class="answer"><p>Sim. Ative Efeitos atrás das janelas nos Ajustes, em Interação. A neve passa a cair entre o papel de parede e os ícones da mesa.</p></div></details><details><summary>Eu uso Reduzir movimento.</summary><div class="answer"><p>Com Reduzir movimento ativado, o SnowWall para a neve por padrão. Se preferir, você pode deixá-la mais lenta ou mantê-la caindo.</p></div></details><details><summary>Em quais Macs ele funciona?</summary><div class="answer"><p>Em qualquer Mac com macOS 26 ou posterior.</p></div></details>
-      <details data-release="1.1" hidden><summary>Dá para pausar sem o menu?</summary><div class="answer"><p>Sim. Adicione o controle do SnowWall à Central de Controle ou use a ação Pausar no Spotlight ou no app Atalhos.</p></div></details>
+      <details><summary>O SnowWall é grátis?</summary><div class="answer"><p>Sim. Neve e Chuva são grátis, com todos os ajustes, e você pode salvar três predefinições. O SnowWall Pro é uma compra única que acrescenta os outros oito efeitos, o Modo Ambiente, os efeitos visuais, a qualidade Ultra e predefinições ilimitadas. Não é assinatura.</p></div></details><details><summary>Abri o SnowWall. Cadê ele?</summary><div class="answer"><p>O SnowWall não tem janela nem ícone no Dock. Ele mora na barra de menus, como um floco de neve no topo da tela. Clique nele para pausar, trocar de efeito ou abrir os Ajustes.</p></div></details><details><summary>Ele deixa o Mac lento ou gasta a bateria?</summary><div class="answer"><p>Ele desenha com o processador gráfico, então usa um pouco de energia. Pausa quando a tela entra em repouso e cai para 30 quadros por segundo no Modo de Pouca Energia ou quando o Mac esquenta. Para gastar menos, escolha a qualidade Economia de Bateria ou diminua a quantidade de flocos.</p></div></details><details><summary>Ele precisa de alguma permissão?</summary><div class="answer"><p>Não. O SnowWall desenha sobre a mesa sem ler o que está na tela. Se o macOS algum dia pedir acesso de gravação de tela ou de acessibilidade para ele, não conceda e, por favor, <a href="/support/" hreflang="en">avise a gente</a>.</p></div></details><details><summary>A neve pode ficar atrás das janelas?</summary><div class="answer"><p>Sim. Ative Efeitos atrás das janelas nos Ajustes, em Aparência e movimento › Ponteiro e janelas. A neve passa a cair entre o papel de parede e os ícones da mesa.</p></div></details><details><summary>Eu uso Reduzir movimento.</summary><div class="answer"><p>Com Reduzir movimento ativado, o SnowWall para a neve por padrão. Se preferir, você pode deixá-la mais lenta ou mantê-la caindo.</p></div></details><details><summary>Em quais Macs ele funciona?</summary><div class="answer"><p>Em qualquer Mac com macOS 26 ou posterior.</p></div></details>
+      <details data-release="1.1"><summary>Dá para pausar sem o menu?</summary><div class="answer"><p>Sim. Adicione o controle do SnowWall à Central de Controle ou use a ação Pausar no Spotlight ou no app Atalhos.</p></div></details>
     </div>
     <p class="faq-more">Ficou alguma dúvida? Veja o <a href="/support/" hreflang="en">Suporte</a> (em inglês) ou escreva para <a href="mailto:support@snowwall.app?subject=SnowWall">support@snowwall.app</a>.</p>
   </div>

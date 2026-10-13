@@ -127,28 +127,28 @@
         <p class="hint">Lướt con trỏ qua làn tuyết.</p>
       </div>
       <div class="mock-wrap">
-        <div class="mock" role="img" aria-label="Cửa sổ Cài đặt của SnowWall đang mở mục Giao diện, có tuyết đọng dọc cạnh trên.">
-          <div class="mock-title" aria-hidden="true">Cài đặt SnowWall</div>
+        <!-- The 1.1 window: sidebar with search, Look & Motion with its live preview and section chips. -->
+        <div class="mock mock11" role="img" aria-label="Cửa sổ Cài đặt của SnowWall đang mở mục Giao diện và chuyển động, có tuyết đọng dọc cạnh trên.">
           <div class="mock-body" aria-hidden="true">
-            <ul class="mock-side">
-              <li class="t-general"><i></i>Cài đặt chung</li><li class="t-effects"><i></i>Hiệu ứng</li><li class="t-appearance on"><i></i>Giao diện</li><li class="t-physics"><i></i>Vật lý</li><li class="t-interaction"><i></i>Tương tác</li><li class="t-presets"><i></i>Cài đặt sẵn</li>
-            </ul>
+            <div class="mock-side">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mock-search">Tìm kiếm</span>
+              <ul><li class="t-effect"><i></i><span>Hiệu ứng</span></li><li class="t-look on"><i></i><span>Giao diện và chuyển động</span></li><li class="t-automatic"><i></i><span>Tự động</span></li><li class="t-presets"><i></i><span>Cài đặt sẵn</span></li><li class="t-general"><i></i><span>Cài đặt chung</span></li><li class="t-siri"><i></i><span>Siri & Phím tắt</span></li></ul>
+            </div>
             <div class="mock-pane">
+              <p class="mock-ttl">Giao diện và chuyển động</p>
+              <div class="mock-preview"><span class="pv-btn pv-pause" title="Tạm dừng"></span><span class="pv-btn">Xem nhanh</span></div>
+              <div class="mock-chips"><b class="on">Hạt</b><b class="">Chuyển động</b><b class="">Con trỏ và cửa sổ</b><b class="">Chất lượng</b></div>
               <p class="mock-h">Kiểu và kích thước</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Kiểu</span><span class="seg"><b>Mềm mại</b><b class="on">Pha lê</b><b>Lấp lánh</b></span></div>
                 <div class="mock-row"><span>Nhỏ nhất</span><span class="track"><i class="fill f25"></i></span><em>3 pt</em></div>
                 <div class="mock-row"><span>Lớn nhất</span><span class="track"><i class="fill f45"></i></span><em>14 pt</em></div>
               </div>
-              <p class="mock-h">Màu</p>
+              <p class="mock-h">Màu và độ mờ</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Màu</span><span class="well"></span></div>
                 <div class="mock-row"><span>Độ mờ</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
-              </div>
-              <p class="mock-h">Hiệu năng</p>
-              <div class="mock-group">
-                <div class="mock-row"><span>Chất lượng</span><span class="radios"><b>Tiết kiệm pin</b><b class="on">Cân bằng</b><b>Siêu cao</b></span></div>
-                <div class="mock-row"><span>Số lượng bông tuyết</span><span class="track"><i class="fill f60"></i></span><em>2.400</em></div>
               </div>
             </div>
           </div>
@@ -328,18 +328,16 @@
     </div>
     <div class="desk">
       <canvas class="layer back" aria-hidden="true"></canvas>
-      <div class="mock mock-small" role="img" aria-label="Cài đặt Tương tác của SnowWall với công tắc Giữ hiệu ứng phía sau cửa sổ.">
-        <div class="mock-title" aria-hidden="true">Cài đặt SnowWall</div>
+      <div class="mock mock-small mock11" role="img" aria-label="Cài đặt Giao diện và chuyển động của SnowWall với công tắc Giữ hiệu ứng phía sau cửa sổ.">
+        <div class="mock-title" aria-hidden="true">Giao diện và chuyển động</div>
         <div class="mock-pane" aria-hidden="true">
-          <p class="mock-h">Lớp hiển thị</p>
+          <div class="mock-chips"><b class="">Hạt</b><b class="">Chuyển động</b><b class="on">Con trỏ và cửa sổ</b><b class="">Chất lượng</b></div>
+          <p class="mock-h">Cửa sổ</p>
           <div class="mock-group">
             <div class="mock-row toggle-row">
               <span><strong>Giữ hiệu ứng phía sau cửa sổ</strong><small>Hiển thị giữa hình nền và các biểu tượng trên màn hình nền thay vì phủ lên mọi thứ</small></span>
               <span class="toggle"><i></i></span>
             </div>
-          </div>
-          <p class="mock-h">Cửa sổ</p>
-          <div class="mock-group">
             <div class="mock-row toggle-row dim-when-behind">
               <span><strong>Đọng trên cửa sổ</strong><small>Bông tuyết dừng lại trên cạnh trên của cửa sổ phía trước</small></span>
               <span class="toggle on-static"><i></i></span>
@@ -366,7 +364,7 @@
     </header>
     <ul class="facts" role="list">
       <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>Hiển thị bằng Metal</h3><p>Tối đa 10.000 hạt ở chất lượng Siêu cao, mô phỏng trên GPU. Không có gì lặp lại, vì đây không phải video.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>Tiết kiệm pin</h3><p>Mức chất lượng nhẹ hơn cho những ngày dài xa bộ sạc.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>30 fps ở Chế độ nguồn điện thấp</h3><p>Cũng giảm xuống 30 khung hình mỗi giây khi Mac nóng lên, và tạm dừng khi màn hình ngủ.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>Mọi màn hình</h3><p>Tuyết rơi trên mọi màn hình bạn kết nối.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>Giảm chuyển động, theo ý bạn</h3><p>Khi bật Giảm chuyển động, bạn có thể dừng tuyết, làm chậm hoặc để tuyết tiếp tục rơi.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>Phím tắt và Tập trung</h3><p>Tác vụ cho ứng dụng Phím tắt, và bộ lọc Tập trung tạm dừng tuyết khi đang bật chế độ Tập trung.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16 ngôn ngữ</h3><p>Tiếng Việt, tiếng Anh, tiếng Nhật, tiếng Ả Rập, tiếng Hindi và mười một ngôn ngữ khác.</p></li>
-      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Tạm dừng từ Trung tâm điều khiển</h3><p>Một điều khiển trong Trung tâm điều khiển dừng và bật tuyết mà không cần mở menu.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Tiện ích</h3><p>Tiện ích trên màn hình nền cho biết hiệu ứng đang rơi và đổi hiệu ứng chỉ với một cú bấm.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Tác vụ trong Spotlight</h3><p>Tạm dừng, tiếp tục hoặc đổi hiệu ứng ngay từ Spotlight.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Mô tả tâm trạng</h3><p>Trên máy Mac có Apple Intelligence, hãy mô tả một tâm trạng và SnowWall sẽ tạo cài đặt sẵn phù hợp.</p></li>
+      <li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Tạm dừng từ Trung tâm điều khiển</h3><p>Một điều khiển trong Trung tâm điều khiển dừng và bật tuyết mà không cần mở menu.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Tiện ích</h3><p>Tiện ích trên màn hình nền cho biết hiệu ứng đang rơi và đổi hiệu ứng chỉ với một cú bấm.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Tác vụ trong Spotlight</h3><p>Tạm dừng, tiếp tục hoặc đổi hiệu ứng ngay từ Spotlight.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Mô tả tâm trạng</h3><p>Trên máy Mac có Apple Intelligence, hãy mô tả một tâm trạng và SnowWall sẽ tạo cài đặt sẵn phù hợp.</p></li>
     </ul>
   </div>
 </section>
@@ -398,7 +396,7 @@
         </tbody>
       </table>
     </div>
-    <div class="release-note glass" data-release="1.1" hidden>
+    <div class="release-note glass" data-release="1.1">
       <p><strong>Giáng sinh miễn phí trong tháng 12.</strong> Hiệu ứng Giáng sinh mở cho mọi người suốt cả tháng.</p><p><strong>Dùng thử trước khi mua.</strong> Xem trực tiếp mọi hiệu ứng Pro trên màn hình nền của bạn trước khi quyết định.</p>
     </div>
     <div class="pro-cta">
@@ -413,8 +411,8 @@
   <div class="wrap narrow">
     <h2 id="faq-title" class="display reveal">Hỏi đáp.</h2>
     <div class="faq-list">
-      <details><summary>SnowWall có miễn phí không?</summary><div class="answer"><p>Có. Tuyết rơi và Mưa được miễn phí với đầy đủ cài đặt, và bạn có thể lưu ba cài đặt sẵn. SnowWall Pro chỉ cần mua một lần để có thêm tám hiệu ứng còn lại, Chế độ không gian, các hiệu ứng hình ảnh, chất lượng Siêu cao và cài đặt sẵn không giới hạn. Đây không phải gói thuê bao.</p></div></details><details><summary>Tôi đã mở SnowWall. Ứng dụng ở đâu?</summary><div class="answer"><p>SnowWall không có cửa sổ hay biểu tượng riêng trên Dock. Ứng dụng nằm trên thanh menu, là bông tuyết ở đầu màn hình. Bấm vào đó để tạm dừng, đổi hiệu ứng hoặc mở Cài đặt.</p></div></details><details><summary>Ứng dụng có làm chậm Mac hay hao pin không?</summary><div class="answer"><p>SnowWall vẽ bằng bộ xử lý đồ họa nên có tốn một ít năng lượng. Ứng dụng tạm dừng khi màn hình ngủ và giảm xuống 30 khung hình mỗi giây khi bật Chế độ nguồn điện thấp hoặc khi Mac nóng lên. Muốn tiết kiệm hơn, hãy chọn chất lượng Tiết kiệm pin hoặc giảm số lượng bông tuyết.</p></div></details><details><summary>Ứng dụng có cần cấp quyền không?</summary><div class="answer"><p>Không. SnowWall vẽ trên màn hình nền mà không đọc nội dung trên màn hình. Nếu macOS yêu cầu bạn cấp quyền ghi màn hình hoặc trợ năng cho ứng dụng, đừng đồng ý, và vui lòng <a href="/support/" hreflang="en">báo cho chúng tôi</a>.</p></div></details><details><summary>Tuyết có thể nằm phía sau cửa sổ không?</summary><div class="answer"><p>Có. Bật Giữ hiệu ứng phía sau cửa sổ trong Cài đặt, mục Tương tác. Khi đó tuyết sẽ rơi giữa hình nền và các biểu tượng trên màn hình nền.</p></div></details><details><summary>Tôi dùng Giảm chuyển động.</summary><div class="answer"><p>Khi bật Giảm chuyển động, SnowWall mặc định dừng tuyết. Bạn có thể chọn làm chậm tuyết, hoặc để tuyết tiếp tục rơi.</p></div></details><details><summary>Ứng dụng chạy trên máy Mac nào?</summary><div class="answer"><p>Mọi máy Mac chạy macOS 26 trở lên.</p></div></details>
-      <details data-release="1.1" hidden><summary>Có thể tạm dừng mà không cần mở menu không?</summary><div class="answer"><p>Có. Thêm điều khiển của SnowWall vào Trung tâm điều khiển, hoặc dùng tác vụ Tạm dừng trong Spotlight hay Phím tắt.</p></div></details>
+      <details><summary>SnowWall có miễn phí không?</summary><div class="answer"><p>Có. Tuyết rơi và Mưa được miễn phí với đầy đủ cài đặt, và bạn có thể lưu ba cài đặt sẵn. SnowWall Pro chỉ cần mua một lần để có thêm tám hiệu ứng còn lại, Chế độ không gian, các hiệu ứng hình ảnh, chất lượng Siêu cao và cài đặt sẵn không giới hạn. Đây không phải gói thuê bao.</p></div></details><details><summary>Tôi đã mở SnowWall. Ứng dụng ở đâu?</summary><div class="answer"><p>SnowWall không có cửa sổ hay biểu tượng riêng trên Dock. Ứng dụng nằm trên thanh menu, là bông tuyết ở đầu màn hình. Bấm vào đó để tạm dừng, đổi hiệu ứng hoặc mở Cài đặt.</p></div></details><details><summary>Ứng dụng có làm chậm Mac hay hao pin không?</summary><div class="answer"><p>SnowWall vẽ bằng bộ xử lý đồ họa nên có tốn một ít năng lượng. Ứng dụng tạm dừng khi màn hình ngủ và giảm xuống 30 khung hình mỗi giây khi bật Chế độ nguồn điện thấp hoặc khi Mac nóng lên. Muốn tiết kiệm hơn, hãy chọn chất lượng Tiết kiệm pin hoặc giảm số lượng bông tuyết.</p></div></details><details><summary>Ứng dụng có cần cấp quyền không?</summary><div class="answer"><p>Không. SnowWall vẽ trên màn hình nền mà không đọc nội dung trên màn hình. Nếu macOS yêu cầu bạn cấp quyền ghi màn hình hoặc trợ năng cho ứng dụng, đừng đồng ý, và vui lòng <a href="/support/" hreflang="en">báo cho chúng tôi</a>.</p></div></details><details><summary>Tuyết có thể nằm phía sau cửa sổ không?</summary><div class="answer"><p>Có. Bật Giữ hiệu ứng phía sau cửa sổ trong Cài đặt, mục Giao diện và chuyển động › Con trỏ và cửa sổ. Khi đó tuyết sẽ rơi giữa hình nền và các biểu tượng trên màn hình nền.</p></div></details><details><summary>Tôi dùng Giảm chuyển động.</summary><div class="answer"><p>Khi bật Giảm chuyển động, SnowWall mặc định dừng tuyết. Bạn có thể chọn làm chậm tuyết, hoặc để tuyết tiếp tục rơi.</p></div></details><details><summary>Ứng dụng chạy trên máy Mac nào?</summary><div class="answer"><p>Mọi máy Mac chạy macOS 26 trở lên.</p></div></details>
+      <details data-release="1.1"><summary>Có thể tạm dừng mà không cần mở menu không?</summary><div class="answer"><p>Có. Thêm điều khiển của SnowWall vào Trung tâm điều khiển, hoặc dùng tác vụ Tạm dừng trong Spotlight hay Phím tắt.</p></div></details>
     </div>
     <p class="faq-more">Còn thắc mắc khác? Xem trang <a href="/support/" hreflang="en">Hỗ trợ</a> (bằng tiếng Anh), hoặc viết thư tới <a href="mailto:support@snowwall.app?subject=SnowWall">support@snowwall.app</a>.</p>
   </div>

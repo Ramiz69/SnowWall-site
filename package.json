@@ -6,7 +6,7 @@
   "engines": { "node": ">=18" },
   "scripts": {
     "build": "node build.mjs",
-    "build:1.1": "node build.mjs --release=1.1",
+    "build:1.0": "node build.mjs --release=1.0",
     "serve": "node build.mjs && python3 -m http.server 8787 --bind 127.0.0.1 --directory public"
   }
 }

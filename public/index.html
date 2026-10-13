@@ -127,28 +127,28 @@
         <p class="hint">Move your pointer through the snow.</p>
       </div>
       <div class="mock-wrap">
-        <div class="mock" role="img" aria-label="SnowWall’s Settings window, open on Appearance, with snow piled along its top edge.">
-          <div class="mock-title" aria-hidden="true">SnowWall Settings</div>
+        <!-- The 1.1 window: sidebar with search, Look & Motion with its live preview and section chips. -->
+        <div class="mock mock11" role="img" aria-label="SnowWall’s Settings window, open on Look & Motion, with snow piled along its top edge.">
           <div class="mock-body" aria-hidden="true">
-            <ul class="mock-side">
-              <li class="t-general"><i></i>General</li><li class="t-effects"><i></i>Effects</li><li class="t-appearance on"><i></i>Appearance</li><li class="t-physics"><i></i>Physics</li><li class="t-interaction"><i></i>Interaction</li><li class="t-presets"><i></i>Presets</li>
-            </ul>
+            <div class="mock-side">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mock-search">Search</span>
+              <ul><li class="t-effect"><i></i><span>Effect</span></li><li class="t-look on"><i></i><span>Look & Motion</span></li><li class="t-automatic"><i></i><span>Automatic</span></li><li class="t-presets"><i></i><span>Presets</span></li><li class="t-general"><i></i><span>General</span></li><li class="t-siri"><i></i><span>Siri & Shortcuts</span></li></ul>
+            </div>
             <div class="mock-pane">
+              <p class="mock-ttl">Look & Motion</p>
+              <div class="mock-preview"><span class="pv-btn pv-pause" title="Pause"></span><span class="pv-btn">Peek</span></div>
+              <div class="mock-chips"><b class="on">Particles</b><b class="">Movement</b><b class="">Pointer & Windows</b><b class="">Quality</b></div>
               <p class="mock-h">Style & Size</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Style</span><span class="seg"><b>Soft</b><b class="on">Crystal</b><b>Sparkle</b></span></div>
                 <div class="mock-row"><span>Smallest</span><span class="track"><i class="fill f25"></i></span><em>3 pt</em></div>
                 <div class="mock-row"><span>Largest</span><span class="track"><i class="fill f45"></i></span><em>14 pt</em></div>
               </div>
-              <p class="mock-h">Color</p>
+              <p class="mock-h">Color & Opacity</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Color</span><span class="well"></span></div>
                 <div class="mock-row"><span>Opacity</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
-              </div>
-              <p class="mock-h">Performance</p>
-              <div class="mock-group">
-                <div class="mock-row"><span>Quality</span><span class="radios"><b>Battery Saver</b><b class="on">Balanced</b><b>Ultra</b></span></div>
-                <div class="mock-row"><span>Snowflake Count</span><span class="track"><i class="fill f60"></i></span><em>2,400</em></div>
               </div>
             </div>
           </div>
@@ -328,18 +328,16 @@
     </div>
     <div class="desk">
       <canvas class="layer back" aria-hidden="true"></canvas>
-      <div class="mock mock-small" role="img" aria-label="SnowWall’s Interaction settings with the Keep Effects Behind Windows switch.">
-        <div class="mock-title" aria-hidden="true">SnowWall Settings</div>
+      <div class="mock mock-small mock11" role="img" aria-label="SnowWall’s Look & Motion settings with the Keep Effects Behind Windows switch.">
+        <div class="mock-title" aria-hidden="true">Look & Motion</div>
         <div class="mock-pane" aria-hidden="true">
-          <p class="mock-h">Layering</p>
+          <div class="mock-chips"><b class="">Particles</b><b class="">Movement</b><b class="on">Pointer & Windows</b><b class="">Quality</b></div>
+          <p class="mock-h">Windows</p>
           <div class="mock-group">
             <div class="mock-row toggle-row">
               <span><strong>Keep Effects Behind Windows</strong><small>Draws it between the wallpaper and the desktop icons instead of over everything</small></span>
               <span class="toggle"><i></i></span>
             </div>
-          </div>
-          <p class="mock-h">Windows</p>
-          <div class="mock-group">
             <div class="mock-row toggle-row dim-when-behind">
               <span><strong>Land on Windows</strong><small>Flakes stop on the top edge of the frontmost window</small></span>
               <span class="toggle on-static"><i></i></span>
@@ -366,7 +364,7 @@
     </header>
     <ul class="facts" role="list">
       <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>Drawn with Metal</h3><p>Up to 10,000 particles at Ultra quality, simulated on the GPU. Nothing loops, because nothing is a video.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>Battery Saver</h3><p>A lighter quality setting for long days away from a charger.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>30 fps in Low Power Mode</h3><p>It also drops to 30 frames a second when the Mac runs hot, and pauses while the display sleeps.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>All your displays</h3><p>Snow falls across every screen you connect.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>Reduce Motion, your way</h3><p>When Reduce Motion is on, stop the snow, slow it down or leave it running.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>Shortcuts and Focus</h3><p>Shortcuts actions, and a Focus filter that pauses the snow while a Focus is on.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16 languages</h3><p>English, Russian, Japanese, Arabic, Hindi and eleven more.</p></li>
-      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Pause from Control Center</h3><p>A Control Center control stops and starts the snow without opening the menu.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Desktop widgets show what is falling and switch it with a click.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Spotlight actions</h3><p>Pause, resume or change the effect straight from Spotlight.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Describe a mood</h3><p>On Macs with Apple Intelligence, describe a mood and SnowWall builds a preset for it.</p></li>
+      <li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Pause from Control Center</h3><p>A Control Center control stops and starts the snow without opening the menu.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Desktop widgets show what is falling and switch it with a click.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Spotlight actions</h3><p>Pause, resume or change the effect straight from Spotlight.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Describe a mood</h3><p>On Macs with Apple Intelligence, describe a mood and SnowWall builds a preset for it.</p></li>
     </ul>
   </div>
 </section>
@@ -398,7 +396,7 @@
         </tbody>
       </table>
     </div>
-    <div class="release-note glass" data-release="1.1" hidden>
+    <div class="release-note glass" data-release="1.1">
       <p><strong>Christmas is free in December.</strong> The Christmas effect is open to everyone for the whole month.</p><p><strong>Try before you buy.</strong> Preview any Pro effect live on your own desktop before you decide.</p>
     </div>
     <div class="pro-cta">
@@ -413,8 +411,8 @@
   <div class="wrap narrow">
     <h2 id="faq-title" class="display reveal">Questions.</h2>
     <div class="faq-list">
-      <details><summary>Is SnowWall free?</summary><div class="answer"><p>Yes. Snowfall and Rain are free, with every setting, and you can save three presets. SnowWall Pro is a one-time purchase that adds the other eight effects, Ambient Mode, the visual effects, Ultra quality and unlimited presets. It is not a subscription.</p></div></details><details><summary>I opened SnowWall. Where is it?</summary><div class="answer"><p>SnowWall has no window or Dock icon of its own. It lives in the menu bar as a snowflake at the top of the screen. Click it to pause, switch effects or open Settings.</p></div></details><details><summary>Will it slow my Mac down or drain the battery?</summary><div class="answer"><p>It draws on the graphics processor, so it uses some energy. It pauses when the display sleeps and drops to 30 frames a second in Low Power Mode or when the Mac runs hot. For less, choose Battery Saver quality or lower the snowflake count.</p></div></details><details><summary>Does it need any permissions?</summary><div class="answer"><p>No. SnowWall draws over the desktop without reading what is on screen. If macOS ever asks you to give it screen recording or accessibility access, don’t grant it, and please <a href="/support/">let us know</a>.</p></div></details><details><summary>Can the snow stay behind my windows?</summary><div class="answer"><p>Yes. Turn on Keep Effects Behind Windows in Settings, under Interaction. The snow then falls between your wallpaper and your desktop icons.</p></div></details><details><summary>I use Reduce Motion.</summary><div class="answer"><p>When Reduce Motion is on, SnowWall stops the snow by default. You can choose to slow it down instead, or to leave it running.</p></div></details><details><summary>Which Macs does it run on?</summary><div class="answer"><p>Any Mac with macOS 26 or later.</p></div></details>
-      <details data-release="1.1" hidden><summary>Can I pause it without the menu?</summary><div class="answer"><p>Yes. Add SnowWall’s control to Control Center, or use the Pause action in Spotlight or Shortcuts.</p></div></details>
+      <details><summary>Is SnowWall free?</summary><div class="answer"><p>Yes. Snowfall and Rain are free, with every setting, and you can save three presets. SnowWall Pro is a one-time purchase that adds the other eight effects, Ambient Mode, the visual effects, Ultra quality and unlimited presets. It is not a subscription.</p></div></details><details><summary>I opened SnowWall. Where is it?</summary><div class="answer"><p>SnowWall has no window or Dock icon of its own. It lives in the menu bar as a snowflake at the top of the screen. Click it to pause, switch effects or open Settings.</p></div></details><details><summary>Will it slow my Mac down or drain the battery?</summary><div class="answer"><p>It draws on the graphics processor, so it uses some energy. It pauses when the display sleeps and drops to 30 frames a second in Low Power Mode or when the Mac runs hot. For less, choose Battery Saver quality or lower the snowflake count.</p></div></details><details><summary>Does it need any permissions?</summary><div class="answer"><p>No. SnowWall draws over the desktop without reading what is on screen. If macOS ever asks you to give it screen recording or accessibility access, don’t grant it, and please <a href="/support/">let us know</a>.</p></div></details><details><summary>Can the snow stay behind my windows?</summary><div class="answer"><p>Yes. Turn on Keep Effects Behind Windows in Settings, under Look & Motion › Pointer & Windows. The snow then falls between your wallpaper and your desktop icons.</p></div></details><details><summary>I use Reduce Motion.</summary><div class="answer"><p>When Reduce Motion is on, SnowWall stops the snow by default. You can choose to slow it down instead, or to leave it running.</p></div></details><details><summary>Which Macs does it run on?</summary><div class="answer"><p>Any Mac with macOS 26 or later.</p></div></details>
+      <details data-release="1.1"><summary>Can I pause it without the menu?</summary><div class="answer"><p>Yes. Add SnowWall’s control to Control Center, or use the Pause action in Spotlight or Shortcuts.</p></div></details>
     </div>
     <p class="faq-more">Something else? See <a href="/support/">Support</a>, or write to <a href="mailto:support@snowwall.app?subject=SnowWall">support@snowwall.app</a>.</p>
   </div>

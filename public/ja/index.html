@@ -127,28 +127,28 @@
         <p class="hint">雪の中でポインタを動かしてみてください。</p>
       </div>
       <div class="mock-wrap">
-        <div class="mock" role="img" aria-label="「外観」を開いたSnowWallの設定ウインドウ。上端に雪が積もっています。">
-          <div class="mock-title" aria-hidden="true">SnowWall設定</div>
+        <!-- The 1.1 window: sidebar with search, Look & Motion with its live preview and section chips. -->
+        <div class="mock mock11" role="img" aria-label="「外観と動き」を開いたSnowWallの設定ウインドウ。上端に雪が積もっています。">
           <div class="mock-body" aria-hidden="true">
-            <ul class="mock-side">
-              <li class="t-general"><i></i>一般</li><li class="t-effects"><i></i>エフェクト</li><li class="t-appearance on"><i></i>外観</li><li class="t-physics"><i></i>物理</li><li class="t-interaction"><i></i>インタラクション</li><li class="t-presets"><i></i>プリセット</li>
-            </ul>
+            <div class="mock-side">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mock-search">検索</span>
+              <ul><li class="t-effect"><i></i><span>エフェクト</span></li><li class="t-look on"><i></i><span>外観と動き</span></li><li class="t-automatic"><i></i><span>自動</span></li><li class="t-presets"><i></i><span>プリセット</span></li><li class="t-general"><i></i><span>一般</span></li><li class="t-siri"><i></i><span>Siriとショートカット</span></li></ul>
+            </div>
             <div class="mock-pane">
+              <p class="mock-ttl">外観と動き</p>
+              <div class="mock-preview"><span class="pv-btn pv-pause" title="一時停止"></span><span class="pv-btn">のぞき見</span></div>
+              <div class="mock-chips"><b class="on">粒子</b><b class="">動き</b><b class="">ポインタとウインドウ</b><b class="">画質</b></div>
               <p class="mock-h">スタイルとサイズ</p>
               <div class="mock-group">
                 <div class="mock-row"><span>スタイル</span><span class="seg"><b>ソフト</b><b class="on">クリスタル</b><b>きらめき</b></span></div>
                 <div class="mock-row"><span>最小サイズ</span><span class="track"><i class="fill f25"></i></span><em>3 pt</em></div>
                 <div class="mock-row"><span>最大サイズ</span><span class="track"><i class="fill f45"></i></span><em>14 pt</em></div>
               </div>
-              <p class="mock-h">色</p>
+              <p class="mock-h">色と不透明度</p>
               <div class="mock-group">
                 <div class="mock-row"><span>色</span><span class="well"></span></div>
                 <div class="mock-row"><span>不透明度</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
-              </div>
-              <p class="mock-h">パフォーマンス</p>
-              <div class="mock-group">
-                <div class="mock-row"><span>画質</span><span class="radios"><b>省電力</b><b class="on">バランス</b><b>ウルトラ</b></span></div>
-                <div class="mock-row"><span>雪の結晶の数</span><span class="track"><i class="fill f60"></i></span><em>2,400</em></div>
               </div>
             </div>
           </div>
@@ -328,18 +328,16 @@
     </div>
     <div class="desk">
       <canvas class="layer back" aria-hidden="true"></canvas>
-      <div class="mock mock-small" role="img" aria-label="「エフェクトをウインドウの背後に表示」スイッチがあるSnowWallのインタラクション設定。">
-        <div class="mock-title" aria-hidden="true">SnowWall設定</div>
+      <div class="mock mock-small mock11" role="img" aria-label="「エフェクトをウインドウの背後に表示」スイッチがあるSnowWallの「外観と動き」設定。">
+        <div class="mock-title" aria-hidden="true">外観と動き</div>
         <div class="mock-pane" aria-hidden="true">
-          <p class="mock-h">レイヤー</p>
+          <div class="mock-chips"><b class="">粒子</b><b class="">動き</b><b class="on">ポインタとウインドウ</b><b class="">画質</b></div>
+          <p class="mock-h">ウインドウ</p>
           <div class="mock-group">
             <div class="mock-row toggle-row">
               <span><strong>エフェクトをウインドウの背後に表示</strong><small>すべての上ではなく、壁紙とデスクトップアイコンの間に描画します</small></span>
               <span class="toggle"><i></i></span>
             </div>
-          </div>
-          <p class="mock-h">ウインドウ</p>
-          <div class="mock-group">
             <div class="mock-row toggle-row dim-when-behind">
               <span><strong>ウインドウに積もる</strong><small>最前面のウインドウの上端に雪がとどまります</small></span>
               <span class="toggle on-static"><i></i></span>
@@ -366,7 +364,7 @@
     </header>
     <ul class="facts" role="list">
       <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>Metalで描画</h3><p>ウルトラ画質では最大10,000個の粒子をGPUでシミュレーション。動画ではないので、同じ動きが繰り返されることはありません。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>省電力</h3><p>充電できない長い一日のための、軽めの画質設定です。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>低電力モードでは30fps</h3><p>Macが熱くなったときも30fpsに下げ、ディスプレイのスリープ中は一時停止します。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>すべてのディスプレイで</h3><p>接続したすべての画面に雪が降ります。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>“視差効果を減らす”も思いどおりに</h3><p>“視差効果を減らす”がオンのときは、雪を止める、ゆっくりにする、そのまま降らせる、から選べます。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>ショートカットと集中モード</h3><p>ショートカットのアクションと、集中モードの間は雪を一時停止する集中モードフィルタに対応しています。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16の言語</h3><p>日本語、英語、ロシア語、アラビア語、ヒンディー語ほか、11の言語に対応しています。</p></li>
-      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>コントロールセンターから一時停止</h3><p>コントロールセンターのコントロールで、メニューを開かずに雪を止めたり再開したりできます。</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>ウィジェット</h3><p>デスクトップのウィジェットで、いま降っているものを確認し、クリックひとつで切り替えられます。</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Spotlightのアクション</h3><p>一時停止、再開、エフェクトの切り替えを、Spotlightから直接行えます。</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>ムードを言葉に</h3><p>Apple Intelligenceに対応したMacでは、ムードを言葉にするだけで、SnowWallがぴったりのプリセットを作ります。</p></li>
+      <li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>コントロールセンターから一時停止</h3><p>コントロールセンターのコントロールで、メニューを開かずに雪を止めたり再開したりできます。</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>ウィジェット</h3><p>デスクトップのウィジェットで、いま降っているものを確認し、クリックひとつで切り替えられます。</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Spotlightのアクション</h3><p>一時停止、再開、エフェクトの切り替えを、Spotlightから直接行えます。</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>ムードを言葉に</h3><p>Apple Intelligenceに対応したMacでは、ムードを言葉にするだけで、SnowWallがぴったりのプリセットを作ります。</p></li>
     </ul>
   </div>
 </section>
@@ -398,7 +396,7 @@
         </tbody>
       </table>
     </div>
-    <div class="release-note glass" data-release="1.1" hidden>
+    <div class="release-note glass" data-release="1.1">
       <p><strong>12月はクリスマスが無料。</strong> 「クリスマス」エフェクトは、12月の間すべての人に開放されます。</p><p><strong>購入前に試せます。</strong> どのProエフェクトも、購入を決める前に自分のデスクトップでライブプレビューできます。</p>
     </div>
     <div class="pro-cta">
@@ -413,8 +411,8 @@
   <div class="wrap narrow">
     <h2 id="faq-title" class="display reveal">よくある質問。</h2>
     <div class="faq-list">
-      <details><summary>SnowWallは無料ですか？</summary><div class="answer"><p>はい。「雪」と「雨」はすべての設定を含めて無料で、プリセットも3つまで保存できます。SnowWall Proは買い切りの購入で、残り8種類のエフェクト、アンビエントモード、視覚効果、ウルトラ画質、プリセットの無制限保存が加わります。サブスクリプションではありません。</p></div></details><details><summary>SnowWallを開いたのに、見当たりません。</summary><div class="answer"><p>SnowWallには専用のウインドウやDockのアイコンがありません。画面上部のメニューバーに、雪の結晶として常駐しています。クリックすると、一時停止、エフェクトの切り替え、設定の表示ができます。</p></div></details><details><summary>Macが重くなったり、バッテリーが減ったりしませんか？</summary><div class="answer"><p>グラフィックスプロセッサで描画するため、多少の電力は使います。ディスプレイのスリープ中は一時停止し、低電力モードのときやMacが熱くなったときは30fpsに下がります。さらに抑えたい場合は、画質を「省電力」にするか、雪の結晶の数を減らしてください。</p></div></details><details><summary>アクセス許可は必要ですか？</summary><div class="answer"><p>いいえ。SnowWallは画面の内容を読み取らずに、デスクトップの上に描画します。もしmacOSから画面収録やアクセシビリティへのアクセスを求められても許可せず、<a href="/support/" hreflang="en">お知らせください</a>。</p></div></details><details><summary>雪をウインドウの背後に表示できますか？</summary><div class="answer"><p>はい。設定の「インタラクション」で「エフェクトをウインドウの背後に表示」をオンにしてください。雪が壁紙とデスクトップアイコンの間に降るようになります。</p></div></details><details><summary>“視差効果を減らす”を使っています。</summary><div class="answer"><p>“視差効果を減らす”がオンのとき、SnowWallは標準で雪を止めます。代わりに、ゆっくり降らせることも、そのまま降らせることもできます。</p></div></details><details><summary>どのMacで使えますか？</summary><div class="answer"><p>macOS 26以降を搭載したすべてのMacで使えます。</p></div></details>
-      <details data-release="1.1" hidden><summary>メニューを開かずに一時停止できますか？</summary><div class="answer"><p>はい。SnowWallのコントロールをコントロールセンターに追加するか、Spotlightやショートカットの「一時停止」アクションを使ってください。</p></div></details>
+      <details><summary>SnowWallは無料ですか？</summary><div class="answer"><p>はい。「雪」と「雨」はすべての設定を含めて無料で、プリセットも3つまで保存できます。SnowWall Proは買い切りの購入で、残り8種類のエフェクト、アンビエントモード、視覚効果、ウルトラ画質、プリセットの無制限保存が加わります。サブスクリプションではありません。</p></div></details><details><summary>SnowWallを開いたのに、見当たりません。</summary><div class="answer"><p>SnowWallには専用のウインドウやDockのアイコンがありません。画面上部のメニューバーに、雪の結晶として常駐しています。クリックすると、一時停止、エフェクトの切り替え、設定の表示ができます。</p></div></details><details><summary>Macが重くなったり、バッテリーが減ったりしませんか？</summary><div class="answer"><p>グラフィックスプロセッサで描画するため、多少の電力は使います。ディスプレイのスリープ中は一時停止し、低電力モードのときやMacが熱くなったときは30fpsに下がります。さらに抑えたい場合は、画質を「省電力」にするか、雪の結晶の数を減らしてください。</p></div></details><details><summary>アクセス許可は必要ですか？</summary><div class="answer"><p>いいえ。SnowWallは画面の内容を読み取らずに、デスクトップの上に描画します。もしmacOSから画面収録やアクセシビリティへのアクセスを求められても許可せず、<a href="/support/" hreflang="en">お知らせください</a>。</p></div></details><details><summary>雪をウインドウの背後に表示できますか？</summary><div class="answer"><p>はい。設定の「外観と動き」›「ポインタとウインドウ」で「エフェクトをウインドウの背後に表示」をオンにしてください。雪が壁紙とデスクトップアイコンの間に降るようになります。</p></div></details><details><summary>“視差効果を減らす”を使っています。</summary><div class="answer"><p>“視差効果を減らす”がオンのとき、SnowWallは標準で雪を止めます。代わりに、ゆっくり降らせることも、そのまま降らせることもできます。</p></div></details><details><summary>どのMacで使えますか？</summary><div class="answer"><p>macOS 26以降を搭載したすべてのMacで使えます。</p></div></details>
+      <details data-release="1.1"><summary>メニューを開かずに一時停止できますか？</summary><div class="answer"><p>はい。SnowWallのコントロールをコントロールセンターに追加するか、Spotlightやショートカットの「一時停止」アクションを使ってください。</p></div></details>
     </div>
     <p class="faq-more">ほかにご質問があれば、<a href="/support/" hreflang="en">サポート</a>（英語）をご覧いただくか、<a href="mailto:support@snowwall.app?subject=SnowWall">support@snowwall.app</a>までご連絡ください。</p>
   </div>

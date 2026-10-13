@@ -127,28 +127,28 @@
         <p class="hint">İmlecinizi karın içinde gezdirin.</p>
       </div>
       <div class="mock-wrap">
-        <div class="mock" role="img" aria-label="Görünüm bölümünde açık SnowWall Ayarları penceresi, üst kenarında kar birikmiş.">
-          <div class="mock-title" aria-hidden="true">SnowWall Ayarları</div>
+        <!-- The 1.1 window: sidebar with search, Look & Motion with its live preview and section chips. -->
+        <div class="mock mock11" role="img" aria-label="Görünüm ve Hareket bölümünde açık SnowWall Ayarları penceresi, üst kenarında kar birikmiş.">
           <div class="mock-body" aria-hidden="true">
-            <ul class="mock-side">
-              <li class="t-general"><i></i>Genel</li><li class="t-effects"><i></i>Efektler</li><li class="t-appearance on"><i></i>Görünüm</li><li class="t-physics"><i></i>Fizik</li><li class="t-interaction"><i></i>Etkileşim</li><li class="t-presets"><i></i>Hazır Ayarlar</li>
-            </ul>
+            <div class="mock-side">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mock-search">Ara</span>
+              <ul><li class="t-effect"><i></i><span>Efekt</span></li><li class="t-look on"><i></i><span>Görünüm ve Hareket</span></li><li class="t-automatic"><i></i><span>Otomatik</span></li><li class="t-presets"><i></i><span>Hazır Ayarlar</span></li><li class="t-general"><i></i><span>Genel</span></li><li class="t-siri"><i></i><span>Siri ve Kestirmeler</span></li></ul>
+            </div>
             <div class="mock-pane">
+              <p class="mock-ttl">Görünüm ve Hareket</p>
+              <div class="mock-preview"><span class="pv-btn pv-pause" title="Duraklat"></span><span class="pv-btn">Göz At</span></div>
+              <div class="mock-chips"><b class="on">Parçacıklar</b><b class="">Hareket</b><b class="">İmleç ve Pencereler</b><b class="">Kalite</b></div>
               <p class="mock-h">Stil ve Boyut</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Stil</span><span class="seg"><b>Yumuşak</b><b class="on">Kristal</b><b>Parıltı</b></span></div>
                 <div class="mock-row"><span>En küçük</span><span class="track"><i class="fill f25"></i></span><em>3 pt</em></div>
                 <div class="mock-row"><span>En büyük</span><span class="track"><i class="fill f45"></i></span><em>14 pt</em></div>
               </div>
-              <p class="mock-h">Renk</p>
+              <p class="mock-h">Renk ve Saydamsızlık</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Renk</span><span class="well"></span></div>
                 <div class="mock-row"><span>Saydamsızlık</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
-              </div>
-              <p class="mock-h">Performans</p>
-              <div class="mock-group">
-                <div class="mock-row"><span>Kalite</span><span class="radios"><b>Pil Tasarrufu</b><b class="on">Dengeli</b><b>Ultra</b></span></div>
-                <div class="mock-row"><span>Kar Tanesi Sayısı</span><span class="track"><i class="fill f60"></i></span><em>2.400</em></div>
               </div>
             </div>
           </div>
@@ -328,18 +328,16 @@
     </div>
     <div class="desk">
       <canvas class="layer back" aria-hidden="true"></canvas>
-      <div class="mock mock-small" role="img" aria-label="SnowWall’un Etkileşim ayarları ve Efektleri pencerelerin arkasında tut anahtarı.">
-        <div class="mock-title" aria-hidden="true">SnowWall Ayarları</div>
+      <div class="mock mock-small mock11" role="img" aria-label="SnowWall’un Görünüm ve Hareket ayarları ve Efektleri pencerelerin arkasında tut anahtarı.">
+        <div class="mock-title" aria-hidden="true">Görünüm ve Hareket</div>
         <div class="mock-pane" aria-hidden="true">
-          <p class="mock-h">Katmanlar</p>
+          <div class="mock-chips"><b class="">Parçacıklar</b><b class="">Hareket</b><b class="on">İmleç ve Pencereler</b><b class="">Kalite</b></div>
+          <p class="mock-h">Pencereler</p>
           <div class="mock-group">
             <div class="mock-row toggle-row">
               <span><strong>Efektleri pencerelerin arkasında tut</strong><small>Her şeyin üzerine değil, duvar kâğıdı ile masaüstü simgelerinin arasına çizer</small></span>
               <span class="toggle"><i></i></span>
             </div>
-          </div>
-          <p class="mock-h">Pencereler</p>
-          <div class="mock-group">
             <div class="mock-row toggle-row dim-when-behind">
               <span><strong>Pencerelere kon</strong><small>Taneler en öndeki pencerenin üst kenarında durur</small></span>
               <span class="toggle on-static"><i></i></span>
@@ -366,7 +364,7 @@
     </header>
     <ul class="facts" role="list">
       <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>Metal ile çizilir</h3><p>Ultra kalitede 10.000 parçacığa kadar, hepsi GPU’da hesaplanır. Hiçbir şey döngüye girmez, çünkü hiçbiri video değil.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>Pil Tasarrufu</h3><p>Şarj aletinden uzak uzun günler için daha hafif bir kalite ayarı.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>Düşük Güç Modu’nda 30 fps</h3><p>Mac ısındığında da saniyede 30 kareye iner, ekran uyurken duraklar.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>Tüm ekranlarınız</h3><p>Bağladığınız her ekrana kar yağar.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>Hareketi Azalt, size göre</h3><p>Hareketi Azalt açıkken karı durdurun, yavaşlatın ya da yağmaya devam etsin.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>Kestirmeler ve Odak</h3><p>Kestirmeler eylemleri ve bir Odak açıkken karı duraklatan bir Odak filtresi.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16 dil</h3><p>Türkçe, İngilizce, Rusça, Japonca, Arapça, Hintçe ve on dil daha.</p></li>
-      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Denetim Merkezi’nden duraklatın</h3><p>Denetim Merkezi’ndeki bir denetim, menüyü açmadan karı durdurur ve başlatır.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Araç Takımları</h3><p>Masaüstü araç takımları neyin yağdığını gösterir ve tek tıkla değiştirir.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Spotlight eylemleri</h3><p>Efekti doğrudan Spotlight’tan duraklatın, sürdürün ya da değiştirin.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Bir ruh hâli tarif edin</h3><p>Apple Intelligence’lı Mac’lerde bir ruh hâli tarif edin, SnowWall ona uygun bir hazır ayar oluştursun.</p></li>
+      <li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Denetim Merkezi’nden duraklatın</h3><p>Denetim Merkezi’ndeki bir denetim, menüyü açmadan karı durdurur ve başlatır.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Araç Takımları</h3><p>Masaüstü araç takımları neyin yağdığını gösterir ve tek tıkla değiştirir.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Spotlight eylemleri</h3><p>Efekti doğrudan Spotlight’tan duraklatın, sürdürün ya da değiştirin.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Bir ruh hâli tarif edin</h3><p>Apple Intelligence’lı Mac’lerde bir ruh hâli tarif edin, SnowWall ona uygun bir hazır ayar oluştursun.</p></li>
     </ul>
   </div>
 </section>
@@ -398,7 +396,7 @@
         </tbody>
       </table>
     </div>
-    <div class="release-note glass" data-release="1.1" hidden>
+    <div class="release-note glass" data-release="1.1">
       <p><strong>Aralıkta Noel ücretsiz.</strong> Noel efekti ay boyunca herkese açık.</p><p><strong>Almadan önce deneyin.</strong> Karar vermeden önce istediğiniz Pro efektini kendi masaüstünüzde canlı olarak önizleyin.</p>
     </div>
     <div class="pro-cta">
@@ -413,8 +411,8 @@
   <div class="wrap narrow">
     <h2 id="faq-title" class="display reveal">Sorular.</h2>
     <div class="faq-list">
-      <details><summary>SnowWall ücretsiz mi?</summary><div class="answer"><p>Evet. Kar Yağışı ve Yağmur tüm ayarlarıyla ücretsizdir ve üç hazır ayar kaydedebilirsiniz. SnowWall Pro tek seferlik bir satın almadır; diğer sekiz efekti, Ortam Modu’nu, görsel efektleri, Ultra kaliteyi ve sınırsız hazır ayarı ekler. Abonelik değildir.</p></div></details><details><summary>SnowWall’u açtım. Nerede?</summary><div class="answer"><p>SnowWall’un kendi penceresi ya da Dock simgesi yoktur. Ekranın üstündeki menü çubuğunda bir kar tanesi olarak durur. Duraklatmak, efekt değiştirmek ya da Ayarlar’ı açmak için onu tıklayın.</p></div></details><details><summary>Mac’imi yavaşlatır ya da pilimi bitirir mi?</summary><div class="answer"><p>Grafik işlemcide çizildiği için biraz enerji harcar. Ekran uyuduğunda duraklar; Düşük Güç Modu’nda ya da Mac ısındığında saniyede 30 kareye iner. Daha da az harcaması için Pil Tasarrufu kalitesini seçin ya da kar tanesi sayısını azaltın.</p></div></details><details><summary>Herhangi bir izin gerekiyor mu?</summary><div class="answer"><p>Hayır. SnowWall ekranda ne olduğunu okumadan masaüstünün üzerine çizer. macOS bir gün ona ekran kaydı ya da erişilebilirlik erişimi vermenizi isterse izin vermeyin ve lütfen <a href="/support/" hreflang="en">bize haber verin</a>.</p></div></details><details><summary>Kar pencerelerimin arkasında kalabilir mi?</summary><div class="answer"><p>Evet. Ayarlar’da Etkileşim bölümünden Efektleri pencerelerin arkasında tut seçeneğini açın. Kar artık duvar kâğıdınız ile masaüstü simgeleriniz arasında yağar.</p></div></details><details><summary>Hareketi Azalt’ı kullanıyorum.</summary><div class="answer"><p>Hareketi Azalt açıkken SnowWall varsayılan olarak karı durdurur. Bunun yerine yavaşlatmayı ya da yağmaya devam etmesini seçebilirsiniz.</p></div></details><details><summary>Hangi Mac’lerde çalışır?</summary><div class="answer"><p>macOS 26 veya sonrası yüklü her Mac’te.</p></div></details>
-      <details data-release="1.1" hidden><summary>Menüyü açmadan duraklatabilir miyim?</summary><div class="answer"><p>Evet. SnowWall denetimini Denetim Merkezi’ne ekleyin ya da Spotlight’ta veya Kestirmeler’de Duraklat eylemini kullanın.</p></div></details>
+      <details><summary>SnowWall ücretsiz mi?</summary><div class="answer"><p>Evet. Kar Yağışı ve Yağmur tüm ayarlarıyla ücretsizdir ve üç hazır ayar kaydedebilirsiniz. SnowWall Pro tek seferlik bir satın almadır; diğer sekiz efekti, Ortam Modu’nu, görsel efektleri, Ultra kaliteyi ve sınırsız hazır ayarı ekler. Abonelik değildir.</p></div></details><details><summary>SnowWall’u açtım. Nerede?</summary><div class="answer"><p>SnowWall’un kendi penceresi ya da Dock simgesi yoktur. Ekranın üstündeki menü çubuğunda bir kar tanesi olarak durur. Duraklatmak, efekt değiştirmek ya da Ayarlar’ı açmak için onu tıklayın.</p></div></details><details><summary>Mac’imi yavaşlatır ya da pilimi bitirir mi?</summary><div class="answer"><p>Grafik işlemcide çizildiği için biraz enerji harcar. Ekran uyuduğunda duraklar; Düşük Güç Modu’nda ya da Mac ısındığında saniyede 30 kareye iner. Daha da az harcaması için Pil Tasarrufu kalitesini seçin ya da kar tanesi sayısını azaltın.</p></div></details><details><summary>Herhangi bir izin gerekiyor mu?</summary><div class="answer"><p>Hayır. SnowWall ekranda ne olduğunu okumadan masaüstünün üzerine çizer. macOS bir gün ona ekran kaydı ya da erişilebilirlik erişimi vermenizi isterse izin vermeyin ve lütfen <a href="/support/" hreflang="en">bize haber verin</a>.</p></div></details><details><summary>Kar pencerelerimin arkasında kalabilir mi?</summary><div class="answer"><p>Evet. Ayarlar’da Görünüm ve Hareket › İmleç ve Pencereler bölümünden Efektleri pencerelerin arkasında tut seçeneğini açın. Kar artık duvar kâğıdınız ile masaüstü simgeleriniz arasında yağar.</p></div></details><details><summary>Hareketi Azalt’ı kullanıyorum.</summary><div class="answer"><p>Hareketi Azalt açıkken SnowWall varsayılan olarak karı durdurur. Bunun yerine yavaşlatmayı ya da yağmaya devam etmesini seçebilirsiniz.</p></div></details><details><summary>Hangi Mac’lerde çalışır?</summary><div class="answer"><p>macOS 26 veya sonrası yüklü her Mac’te.</p></div></details>
+      <details data-release="1.1"><summary>Menüyü açmadan duraklatabilir miyim?</summary><div class="answer"><p>Evet. SnowWall denetimini Denetim Merkezi’ne ekleyin ya da Spotlight’ta veya Kestirmeler’de Duraklat eylemini kullanın.</p></div></details>
     </div>
     <p class="faq-more">Başka bir sorunuz mu var? <a href="/support/" hreflang="en">Destek</a> sayfasına (İngilizce) bakın ya da <a href="mailto:support@snowwall.app?subject=SnowWall">support@snowwall.app</a> adresine yazın.</p>
   </div>

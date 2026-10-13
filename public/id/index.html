@@ -127,28 +127,28 @@
         <p class="hint">Gerakkan penunjuk menembus salju.</p>
       </div>
       <div class="mock-wrap">
-        <div class="mock" role="img" aria-label="Jendela Pengaturan SnowWall di tab Tampilan, dengan salju menumpuk di tepi atasnya.">
-          <div class="mock-title" aria-hidden="true">Pengaturan SnowWall</div>
+        <!-- The 1.1 window: sidebar with search, Look & Motion with its live preview and section chips. -->
+        <div class="mock mock11" role="img" aria-label="Jendela Pengaturan SnowWall di tab Tampilan & Gerakan, dengan salju menumpuk di tepi atasnya.">
           <div class="mock-body" aria-hidden="true">
-            <ul class="mock-side">
-              <li class="t-general"><i></i>Umum</li><li class="t-effects"><i></i>Efek</li><li class="t-appearance on"><i></i>Tampilan</li><li class="t-physics"><i></i>Fisika</li><li class="t-interaction"><i></i>Interaksi</li><li class="t-presets"><i></i>Preset</li>
-            </ul>
+            <div class="mock-side">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mock-search">Cari</span>
+              <ul><li class="t-effect"><i></i><span>Efek</span></li><li class="t-look on"><i></i><span>Tampilan & Gerakan</span></li><li class="t-automatic"><i></i><span>Otomatis</span></li><li class="t-presets"><i></i><span>Preset</span></li><li class="t-general"><i></i><span>Umum</span></li><li class="t-siri"><i></i><span>Siri & Pintasan</span></li></ul>
+            </div>
             <div class="mock-pane">
+              <p class="mock-ttl">Tampilan & Gerakan</p>
+              <div class="mock-preview"><span class="pv-btn pv-pause" title="Jeda"></span><span class="pv-btn">Intip</span></div>
+              <div class="mock-chips"><b class="on">Partikel</b><b class="">Gerakan</b><b class="">Penunjuk & Jendela</b><b class="">Kualitas</b></div>
               <p class="mock-h">Gaya & Ukuran</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Gaya</span><span class="seg"><b>Halus</b><b class="on">Kristal</b><b>Kilau</b></span></div>
                 <div class="mock-row"><span>Terkecil</span><span class="track"><i class="fill f25"></i></span><em>3 pt</em></div>
                 <div class="mock-row"><span>Terbesar</span><span class="track"><i class="fill f45"></i></span><em>14 pt</em></div>
               </div>
-              <p class="mock-h">Warna</p>
+              <p class="mock-h">Warna & Opasitas</p>
               <div class="mock-group">
                 <div class="mock-row"><span>Warna</span><span class="well"></span></div>
                 <div class="mock-row"><span>Opasitas</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
-              </div>
-              <p class="mock-h">Kinerja</p>
-              <div class="mock-group">
-                <div class="mock-row"><span>Kualitas</span><span class="radios"><b>Hemat Baterai</b><b class="on">Seimbang</b><b>Ultra</b></span></div>
-                <div class="mock-row"><span>Jumlah Kepingan Salju</span><span class="track"><i class="fill f60"></i></span><em>2.400</em></div>
               </div>
             </div>
           </div>
@@ -328,18 +328,16 @@
     </div>
     <div class="desk">
       <canvas class="layer back" aria-hidden="true"></canvas>
-      <div class="mock mock-small" role="img" aria-label="Pengaturan Interaksi SnowWall dengan sakelar Efek di Belakang Jendela.">
-        <div class="mock-title" aria-hidden="true">Pengaturan SnowWall</div>
+      <div class="mock mock-small mock11" role="img" aria-label="Pengaturan Tampilan & Gerakan SnowWall dengan sakelar Efek di Belakang Jendela.">
+        <div class="mock-title" aria-hidden="true">Tampilan & Gerakan</div>
         <div class="mock-pane" aria-hidden="true">
-          <p class="mock-h">Lapisan</p>
+          <div class="mock-chips"><b class="">Partikel</b><b class="">Gerakan</b><b class="on">Penunjuk & Jendela</b><b class="">Kualitas</b></div>
+          <p class="mock-h">Jendela</p>
           <div class="mock-group">
             <div class="mock-row toggle-row">
               <span><strong>Efek di Belakang Jendela</strong><small>Menampilkan efek di antara wallpaper dan ikon desktop, bukan di atas semuanya</small></span>
               <span class="toggle"><i></i></span>
             </div>
-          </div>
-          <p class="mock-h">Jendela</p>
-          <div class="mock-group">
             <div class="mock-row toggle-row dim-when-behind">
               <span><strong>Hinggap di Jendela</strong><small>Kepingan salju berhenti di tepi atas jendela paling depan</small></span>
               <span class="toggle on-static"><i></i></span>
@@ -366,7 +364,7 @@
     </header>
     <ul class="facts" role="list">
       <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>Digambar dengan Metal</h3><p>Hingga 10.000 partikel pada Kualitas Ultra, disimulasikan di GPU. Tidak ada yang berulang, karena ini bukan video.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>Hemat Baterai</h3><p>Kualitas yang lebih ringan untuk hari panjang jauh dari pengisi daya.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>30 fps dalam Mode Daya Rendah</h3><p>Juga turun ke 30 bingkai per detik saat Mac panas, dan dijeda selama layar tidur.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>Semua layar Anda</h3><p>Salju turun di setiap layar yang tersambung.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>Kurangi Gerakan, sesuai pilihan Anda</h3><p>Saat Kurangi Gerakan aktif, hentikan salju, perlambat, atau biarkan tetap turun.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>Pintasan dan Fokus</h3><p>Tindakan untuk Pintasan, serta filter Fokus yang menjeda salju saat Fokus aktif.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16 bahasa</h3><p>Indonesia, Inggris, Jepang, Arab, Hindi, dan sebelas lainnya.</p></li>
-      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Jeda dari Pusat Kontrol</h3><p>Kontrol di Pusat Kontrol menghentikan dan menjalankan salju tanpa membuka menu.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widget</h3><p>Widget desktop menampilkan efek yang sedang turun dan menggantinya dengan sekali klik.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Tindakan Spotlight</h3><p>Jeda, lanjutkan, atau ganti efek langsung dari Spotlight.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Gambarkan suasana</h3><p>Di Mac dengan Apple Intelligence, gambarkan suasana dan SnowWall membuatkan preset yang cocok.</p></li>
+      <li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>Jeda dari Pusat Kontrol</h3><p>Kontrol di Pusat Kontrol menghentikan dan menjalankan salju tanpa membuka menu.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widget</h3><p>Widget desktop menampilkan efek yang sedang turun dan menggantinya dengan sekali klik.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Tindakan Spotlight</h3><p>Jeda, lanjutkan, atau ganti efek langsung dari Spotlight.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>Gambarkan suasana</h3><p>Di Mac dengan Apple Intelligence, gambarkan suasana dan SnowWall membuatkan preset yang cocok.</p></li>
     </ul>
   </div>
 </section>
@@ -398,7 +396,7 @@
         </tbody>
       </table>
     </div>
-    <div class="release-note glass" data-release="1.1" hidden>
+    <div class="release-note glass" data-release="1.1">
       <p><strong>Natal gratis di bulan Desember.</strong> Efek Natal terbuka untuk semua orang sepanjang bulan.</p><p><strong>Coba sebelum membeli.</strong> Lihat efek Pro apa pun langsung di desktop Anda sendiri sebelum memutuskan.</p>
     </div>
     <div class="pro-cta">
@@ -413,8 +411,8 @@
   <div class="wrap narrow">
     <h2 id="faq-title" class="display reveal">Pertanyaan.</h2>
     <div class="faq-list">
-      <details><summary>Apakah SnowWall gratis?</summary><div class="answer"><p>Ya. Hujan Salju dan Hujan gratis, lengkap dengan semua pengaturannya, dan Anda bisa menyimpan tiga preset. SnowWall Pro dibeli sekali dan menambahkan delapan efek lainnya, Mode Ambien, efek visual, Kualitas Ultra, dan preset tanpa batas. Bukan langganan.</p></div></details><details><summary>Saya sudah membuka SnowWall. Di mana aplikasinya?</summary><div class="answer"><p>SnowWall tidak punya jendela atau ikon Dock sendiri. Aplikasi ini tinggal di bar menu, berupa kepingan salju di bagian atas layar. Klik untuk menjeda, mengganti efek, atau membuka Pengaturan.</p></div></details><details><summary>Apakah Mac jadi lambat atau baterai cepat habis?</summary><div class="answer"><p>SnowWall menggambar dengan prosesor grafis, jadi memang memakai sedikit energi. Aplikasi ini dijeda saat layar tidur dan turun ke 30 bingkai per detik dalam Mode Daya Rendah atau saat Mac panas. Agar lebih hemat, pilih Kualitas Hemat Baterai atau kurangi jumlah kepingan salju.</p></div></details><details><summary>Apakah perlu memberi izin?</summary><div class="answer"><p>Tidak. SnowWall menggambar di atas desktop tanpa membaca isi layar. Jika macOS meminta Anda memberinya akses rekaman layar atau aksesibilitas, jangan izinkan, dan mohon <a href="/support/" hreflang="en">beri tahu kami</a>.</p></div></details><details><summary>Bisakah salju tetap di belakang jendela?</summary><div class="answer"><p>Bisa. Nyalakan Efek di Belakang Jendela di Pengaturan, bagian Interaksi. Salju lalu turun di antara wallpaper dan ikon desktop Anda.</p></div></details><details><summary>Saya memakai Kurangi Gerakan.</summary><div class="answer"><p>Saat Kurangi Gerakan aktif, SnowWall menghentikan salju secara default. Anda bisa memilih untuk memperlambatnya, atau membiarkannya tetap turun.</p></div></details><details><summary>Mac apa saja yang didukung?</summary><div class="answer"><p>Mac apa pun dengan macOS 26 atau lebih baru.</p></div></details>
-      <details data-release="1.1" hidden><summary>Bisakah menjeda tanpa membuka menu?</summary><div class="answer"><p>Bisa. Tambahkan kontrol SnowWall ke Pusat Kontrol, atau gunakan tindakan Jeda di Spotlight atau Pintasan.</p></div></details>
+      <details><summary>Apakah SnowWall gratis?</summary><div class="answer"><p>Ya. Hujan Salju dan Hujan gratis, lengkap dengan semua pengaturannya, dan Anda bisa menyimpan tiga preset. SnowWall Pro dibeli sekali dan menambahkan delapan efek lainnya, Mode Ambien, efek visual, Kualitas Ultra, dan preset tanpa batas. Bukan langganan.</p></div></details><details><summary>Saya sudah membuka SnowWall. Di mana aplikasinya?</summary><div class="answer"><p>SnowWall tidak punya jendela atau ikon Dock sendiri. Aplikasi ini tinggal di bar menu, berupa kepingan salju di bagian atas layar. Klik untuk menjeda, mengganti efek, atau membuka Pengaturan.</p></div></details><details><summary>Apakah Mac jadi lambat atau baterai cepat habis?</summary><div class="answer"><p>SnowWall menggambar dengan prosesor grafis, jadi memang memakai sedikit energi. Aplikasi ini dijeda saat layar tidur dan turun ke 30 bingkai per detik dalam Mode Daya Rendah atau saat Mac panas. Agar lebih hemat, pilih Kualitas Hemat Baterai atau kurangi jumlah kepingan salju.</p></div></details><details><summary>Apakah perlu memberi izin?</summary><div class="answer"><p>Tidak. SnowWall menggambar di atas desktop tanpa membaca isi layar. Jika macOS meminta Anda memberinya akses rekaman layar atau aksesibilitas, jangan izinkan, dan mohon <a href="/support/" hreflang="en">beri tahu kami</a>.</p></div></details><details><summary>Bisakah salju tetap di belakang jendela?</summary><div class="answer"><p>Bisa. Nyalakan Efek di Belakang Jendela di Pengaturan, bagian Tampilan & Gerakan › Penunjuk & Jendela. Salju lalu turun di antara wallpaper dan ikon desktop Anda.</p></div></details><details><summary>Saya memakai Kurangi Gerakan.</summary><div class="answer"><p>Saat Kurangi Gerakan aktif, SnowWall menghentikan salju secara default. Anda bisa memilih untuk memperlambatnya, atau membiarkannya tetap turun.</p></div></details><details><summary>Mac apa saja yang didukung?</summary><div class="answer"><p>Mac apa pun dengan macOS 26 atau lebih baru.</p></div></details>
+      <details data-release="1.1"><summary>Bisakah menjeda tanpa membuka menu?</summary><div class="answer"><p>Bisa. Tambahkan kontrol SnowWall ke Pusat Kontrol, atau gunakan tindakan Jeda di Spotlight atau Pintasan.</p></div></details>
     </div>
     <p class="faq-more">Ada pertanyaan lain? Kunjungi <a href="/support/" hreflang="en">Dukungan</a> (dalam bahasa Inggris), atau kirim email ke <a href="mailto:support@snowwall.app?subject=SnowWall">support@snowwall.app</a>.</p>
   </div>

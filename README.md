@@ -48,23 +48,21 @@ node tools/serve.mjs 8787      # http://localhost:8787/ with the _headers applie
 Useful query strings on the home page: `?stats` (fps and ms/frame per canvas),
 `?motion=reduced` (the Reduce Motion path: still frames and Play buttons).
 
-## Switching on the 1.1 sections
+## Release sections
 
-Copy for 1.1 (Control Center pause, widgets, Spotlight actions, “describe a mood” presets,
-Christmas free in December, live Pro preview) is already written in both languages and sits
-in the page with `data-release="1.1" hidden`. When 1.1 is live on the App Store:
+SnowWall 1.1 is in the App Store (13 October 2026), and the build's default release is 1.1:
+`node build.mjs` shows every block marked `data-release="1.1"` and the 1.1 Settings window
+mocks. `node build.mjs --release=1.0` still renders the page as it was for 1.0.
 
-run `node build.mjs --release=1.1`, check it with `node tools/serve.mjs 8787`, and commit `public/`.
+Blocks for a future release are written in every language and marked `data-release="<version>"
+hidden`; markup that replaces something goes between `<!--<version>-->` and `<!--/<version>-->`,
+with what it replaces between `<!--pre<version>-->` and `<!--/pre<version>-->` (the build handles
+1.1; add the next version's markers to `render()` in `build.mjs` when it comes). On release day
+raise the default in `build.mjs`, build, check with `node tools/serve.mjs 8787`, and commit `public/`.
 
-The blocks are in `src/home.html` (facts grid, Pro section, FAQ) and their strings under
-`built.facts11`, `pro.release11` and `faq.items11` in `i18n/*.json`.
-
-The Settings window mocks change with the release too. 1.1's window (sidebar with search, Look &
-Motion with its live preview and section chips) sits between `<!--1.1-->` and `<!--/1.1-->`, and
-1.0's between `<!--pre1.1-->` and `<!--/pre1.1-->`; the build keeps only the one for its release,
-so the page never carries a hidden copy that a script could pick up. Their labels in `mock11` are
-the app's own strings, copied from `Localizable.xcstrings`; the FAQ answer that names the window
-switches to `faq.items[4].a11`, and the mocks' screen-reader labels to `mockLabel11`.
+The 1.1 Settings window mocks (sidebar with search, Look & Motion with its live preview and
+section chips) take their labels in `mock11` from the app's `Localizable.xcstrings`; the FAQ answer
+that names the window uses `faq.items[4].a11`, and the mocks' screen-reader labels `mockLabel11`.
 
 ## Adding a language
 
@@ -105,8 +103,6 @@ is the build's output and is committed: after changing anything in `src/` or `i1
 `node build.mjs` and commit `public/` with the change. A push to `main` deploys; if that build
 fails, the previous version stays live.
 
-To switch on the 1.1 sections when 1.1 is in the App Store, build with `node build.mjs
---release=1.1` and commit the result.
 
 There is nothing to install: `package.json` has no dependencies.
 

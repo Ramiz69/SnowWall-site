@@ -127,28 +127,28 @@
         <p class="hint">حرّك المؤشر عبر الثلج.</p>
       </div>
       <div class="mock-wrap">
-        <div class="mock" role="img" aria-label="نافذة إعدادات SnowWall مفتوحة على قسم المظهر، والثلج متراكم على حافتها العلوية.">
-          <div class="mock-title" aria-hidden="true">إعدادات SnowWall</div>
+        <!-- The 1.1 window: sidebar with search, Look & Motion with its live preview and section chips. -->
+        <div class="mock mock11" role="img" aria-label="نافذة إعدادات SnowWall مفتوحة على قسم المظهر والحركة، والثلج متراكم على حافتها العلوية.">
           <div class="mock-body" aria-hidden="true">
-            <ul class="mock-side">
-              <li class="t-general"><i></i>عام</li><li class="t-effects"><i></i>التأثيرات</li><li class="t-appearance on"><i></i>المظهر</li><li class="t-physics"><i></i>الفيزياء</li><li class="t-interaction"><i></i>التفاعل</li><li class="t-presets"><i></i>الإعدادات المسبقة</li>
-            </ul>
+            <div class="mock-side">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mock-search">بحث</span>
+              <ul><li class="t-effect"><i></i><span>التأثير</span></li><li class="t-look on"><i></i><span>المظهر والحركة</span></li><li class="t-automatic"><i></i><span>تلقائي</span></li><li class="t-presets"><i></i><span>الإعدادات المسبقة</span></li><li class="t-general"><i></i><span>عام</span></li><li class="t-siri"><i></i><span>Siri والاختصارات</span></li></ul>
+            </div>
             <div class="mock-pane">
+              <p class="mock-ttl">المظهر والحركة</p>
+              <div class="mock-preview"><span class="pv-btn pv-pause" title="إيقاف مؤقت"></span><span class="pv-btn">إلقاء نظرة</span></div>
+              <div class="mock-chips"><b class="on">الجسيمات</b><b class="">الحركة</b><b class="">المؤشر والنوافذ</b><b class="">الجودة</b></div>
               <p class="mock-h">النمط والحجم</p>
               <div class="mock-group">
                 <div class="mock-row"><span>النمط</span><span class="seg"><b>ناعم</b><b class="on">بلوري</b><b>بريق</b></span></div>
                 <div class="mock-row"><span>الأصغر</span><span class="track"><i class="fill f25"></i></span><em>3 نقطة</em></div>
                 <div class="mock-row"><span>الأكبر</span><span class="track"><i class="fill f45"></i></span><em>14 نقطة</em></div>
               </div>
-              <p class="mock-h">اللون</p>
+              <p class="mock-h">اللون والتعتيم</p>
               <div class="mock-group">
                 <div class="mock-row"><span>اللون</span><span class="well"></span></div>
                 <div class="mock-row"><span>التعتيم</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
-              </div>
-              <p class="mock-h">الأداء</p>
-              <div class="mock-group">
-                <div class="mock-row"><span>الجودة</span><span class="radios"><b>توفير البطارية</b><b class="on">متوازن</b><b>فائق</b></span></div>
-                <div class="mock-row"><span>عدد ندف الثلج</span><span class="track"><i class="fill f60"></i></span><em>2,400</em></div>
               </div>
             </div>
           </div>
@@ -328,18 +328,16 @@
     </div>
     <div class="desk">
       <canvas class="layer back" aria-hidden="true"></canvas>
-      <div class="mock mock-small" role="img" aria-label="إعدادات التفاعل في SnowWall مع مفتاح «إبقاء التأثيرات خلف النوافذ».">
-        <div class="mock-title" aria-hidden="true">إعدادات SnowWall</div>
+      <div class="mock mock-small mock11" role="img" aria-label="إعدادات المظهر والحركة في SnowWall مع مفتاح «إبقاء التأثيرات خلف النوافذ».">
+        <div class="mock-title" aria-hidden="true">المظهر والحركة</div>
         <div class="mock-pane" aria-hidden="true">
-          <p class="mock-h">الطبقات</p>
+          <div class="mock-chips"><b class="">الجسيمات</b><b class="">الحركة</b><b class="on">المؤشر والنوافذ</b><b class="">الجودة</b></div>
+          <p class="mock-h">النوافذ</p>
           <div class="mock-group">
             <div class="mock-row toggle-row">
               <span><strong>إبقاء التأثيرات خلف النوافذ</strong><small>يرسم التأثير بين الخلفية وأيقونات سطح المكتب بدلًا من رسمه فوق كل شيء</small></span>
               <span class="toggle"><i></i></span>
             </div>
-          </div>
-          <p class="mock-h">النوافذ</p>
-          <div class="mock-group">
             <div class="mock-row toggle-row dim-when-behind">
               <span><strong>الاستقرار على النوافذ</strong><small>تستقر الندف على الحافة العلوية للنافذة الأمامية</small></span>
               <span class="toggle on-static"><i></i></span>
@@ -366,7 +364,7 @@
     </header>
     <ul class="facts" role="list">
       <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>مرسوم باستخدام Metal</h3><p>حتى 10,000 جسيم بجودة «فائق»، تُحاكى على وحدة GPU. لا شيء يتكرر، لأنه ليس فيديو.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>توفير البطارية</h3><p>إعداد جودة أخف للأيام الطويلة بعيدًا عن الشاحن.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>30 إطارًا في وضع الطاقة المنخفضة</h3><p>وينخفض أيضًا إلى 30 إطارًا في الثانية حين ترتفع حرارة Mac، ويتوقف مؤقتًا أثناء سكون الشاشة.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>كل شاشاتك</h3><p>يتساقط الثلج على كل شاشة توصلها.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>«تقليل الحركة» كما تحب</h3><p>عند تشغيل «تقليل الحركة»، أوقف الثلج أو أبطئه أو اتركه يتساقط.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>الاختصارات والتركيز</h3><p>إجراءات لتطبيق الاختصارات، وعامل تصفية للتركيز يوقف الثلج مؤقتًا أثناء تشغيل التركيز.</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16 لغة</h3><p>العربية والإنجليزية والروسية واليابانية والهندية وإحدى عشرة لغة أخرى.</p></li>
-      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>الإيقاف المؤقت من مركز التحكم</h3><p>عنصر تحكم في مركز التحكم يوقف الثلج ويشغّله دون فتح القائمة.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>الأدوات</h3><p>أدوات سطح المكتب تعرض ما يتساقط الآن وتبدّله بنقرة.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>إجراءات في Spotlight</h3><p>أوقف التأثير مؤقتًا أو استأنفه أو غيّره مباشرة من Spotlight.</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>صِف حالتك المزاجية</h3><p>على أجهزة Mac التي تدعم ذكاء Apple، صِف حالة مزاجية وسينشئ SnowWall إعدادًا مسبقًا يناسبها.</p></li>
+      <li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>الإيقاف المؤقت من مركز التحكم</h3><p>عنصر تحكم في مركز التحكم يوقف الثلج ويشغّله دون فتح القائمة.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>الأدوات</h3><p>أدوات سطح المكتب تعرض ما يتساقط الآن وتبدّله بنقرة.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>إجراءات في Spotlight</h3><p>أوقف التأثير مؤقتًا أو استأنفه أو غيّره مباشرة من Spotlight.</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>صِف حالتك المزاجية</h3><p>على أجهزة Mac التي تدعم ذكاء Apple، صِف حالة مزاجية وسينشئ SnowWall إعدادًا مسبقًا يناسبها.</p></li>
     </ul>
   </div>
 </section>
@@ -398,7 +396,7 @@
         </tbody>
       </table>
     </div>
-    <div class="release-note glass" data-release="1.1" hidden>
+    <div class="release-note glass" data-release="1.1">
       <p><strong>عيد الميلاد مجاني في ديسمبر.</strong> تأثير عيد الميلاد متاح للجميع طوال الشهر.</p><p><strong>جرّب قبل أن تشتري.</strong> عاين أي تأثير Pro مباشرة على سطح مكتبك قبل أن تقرر.</p>
     </div>
     <div class="pro-cta">
@@ -413,8 +411,8 @@
   <div class="wrap narrow">
     <h2 id="faq-title" class="display reveal">أسئلة.</h2>
     <div class="faq-list">
-      <details><summary>هل SnowWall مجاني؟</summary><div class="answer"><p>نعم. تساقط الثلج والمطر مجانيان بكل إعداداتهما، ويمكنك حفظ ثلاثة إعدادات مسبقة. أما SnowWall Pro فشراء لمرة واحدة يضيف التأثيرات الثمانية الأخرى، ووضع الأجواء، والتأثيرات المرئية، وجودة «فائق»، وإعدادات مسبقة بلا حدود. وهو ليس اشتراكًا.</p></div></details><details><summary>فتحت SnowWall. أين هو؟</summary><div class="answer"><p>ليس لـ SnowWall نافذة خاصة ولا أيقونة في Dock. فهو يسكن في شريط القائمة على شكل ندفة ثلج أعلى الشاشة. انقر عليها للإيقاف المؤقت أو تبديل التأثير أو فتح الإعدادات.</p></div></details><details><summary>هل سيبطئ جهاز Mac أو يستنزف البطارية؟</summary><div class="answer"><p>يرسم SnowWall باستخدام معالج الرسومات، لذا يستهلك بعض الطاقة. يتوقف مؤقتًا حين تدخل الشاشة في وضع السكون، وينخفض إلى 30 إطارًا في الثانية في وضع الطاقة المنخفضة أو حين ترتفع حرارة Mac. ولاستهلاك أقل، اختر جودة «توفير البطارية» أو قلّل عدد ندف الثلج.</p></div></details><details><summary>هل يحتاج إلى أي أذونات؟</summary><div class="answer"><p>لا. يرسم SnowWall فوق سطح المكتب دون أن يقرأ ما على الشاشة. إذا طلب منك macOS يومًا منحه إذن تسجيل الشاشة أو الوصول إلى تسهيلات الاستخدام، فلا توافق، ونرجو أن <a href="/support/" hreflang="en">تخبرنا بذلك</a>.</p></div></details><details><summary>هل يمكن أن يبقى الثلج خلف نوافذي؟</summary><div class="answer"><p>نعم. شغّل «إبقاء التأثيرات خلف النوافذ» في الإعدادات، ضمن قسم التفاعل. عندها يتساقط الثلج بين الخلفية وأيقونات سطح المكتب.</p></div></details><details><summary>أستخدم «تقليل الحركة».</summary><div class="answer"><p>عند تشغيل «تقليل الحركة»، يوقف SnowWall الثلج افتراضيًا. ويمكنك أن تختار إبطاءه بدلًا من ذلك، أو تركه يتساقط.</p></div></details><details><summary>على أي أجهزة Mac يعمل؟</summary><div class="answer"><p>على أي Mac يعمل بنظام macOS 26 أو أحدث.</p></div></details>
-      <details data-release="1.1" hidden><summary>هل يمكنني إيقافه مؤقتًا دون القائمة؟</summary><div class="answer"><p>نعم. أضف عنصر تحكم SnowWall إلى مركز التحكم، أو استخدم إجراء «إيقاف مؤقت» في Spotlight أو الاختصارات.</p></div></details>
+      <details><summary>هل SnowWall مجاني؟</summary><div class="answer"><p>نعم. تساقط الثلج والمطر مجانيان بكل إعداداتهما، ويمكنك حفظ ثلاثة إعدادات مسبقة. أما SnowWall Pro فشراء لمرة واحدة يضيف التأثيرات الثمانية الأخرى، ووضع الأجواء، والتأثيرات المرئية، وجودة «فائق»، وإعدادات مسبقة بلا حدود. وهو ليس اشتراكًا.</p></div></details><details><summary>فتحت SnowWall. أين هو؟</summary><div class="answer"><p>ليس لـ SnowWall نافذة خاصة ولا أيقونة في Dock. فهو يسكن في شريط القائمة على شكل ندفة ثلج أعلى الشاشة. انقر عليها للإيقاف المؤقت أو تبديل التأثير أو فتح الإعدادات.</p></div></details><details><summary>هل سيبطئ جهاز Mac أو يستنزف البطارية؟</summary><div class="answer"><p>يرسم SnowWall باستخدام معالج الرسومات، لذا يستهلك بعض الطاقة. يتوقف مؤقتًا حين تدخل الشاشة في وضع السكون، وينخفض إلى 30 إطارًا في الثانية في وضع الطاقة المنخفضة أو حين ترتفع حرارة Mac. ولاستهلاك أقل، اختر جودة «توفير البطارية» أو قلّل عدد ندف الثلج.</p></div></details><details><summary>هل يحتاج إلى أي أذونات؟</summary><div class="answer"><p>لا. يرسم SnowWall فوق سطح المكتب دون أن يقرأ ما على الشاشة. إذا طلب منك macOS يومًا منحه إذن تسجيل الشاشة أو الوصول إلى تسهيلات الاستخدام، فلا توافق، ونرجو أن <a href="/support/" hreflang="en">تخبرنا بذلك</a>.</p></div></details><details><summary>هل يمكن أن يبقى الثلج خلف نوافذي؟</summary><div class="answer"><p>نعم. شغّل «إبقاء التأثيرات خلف النوافذ» في الإعدادات، ضمن المظهر والحركة › المؤشر والنوافذ. عندها يتساقط الثلج بين الخلفية وأيقونات سطح المكتب.</p></div></details><details><summary>أستخدم «تقليل الحركة».</summary><div class="answer"><p>عند تشغيل «تقليل الحركة»، يوقف SnowWall الثلج افتراضيًا. ويمكنك أن تختار إبطاءه بدلًا من ذلك، أو تركه يتساقط.</p></div></details><details><summary>على أي أجهزة Mac يعمل؟</summary><div class="answer"><p>على أي Mac يعمل بنظام macOS 26 أو أحدث.</p></div></details>
+      <details data-release="1.1"><summary>هل يمكنني إيقافه مؤقتًا دون القائمة؟</summary><div class="answer"><p>نعم. أضف عنصر تحكم SnowWall إلى مركز التحكم، أو استخدم إجراء «إيقاف مؤقت» في Spotlight أو الاختصارات.</p></div></details>
     </div>
     <p class="faq-more">لديك سؤال آخر؟ تفضّل بزيارة <a href="/support/" hreflang="en">الدعم</a> (بالإنجليزية)، أو راسلنا على <a href="mailto:support@snowwall.app?subject=SnowWall">support@snowwall.app</a>.</p>
   </div>

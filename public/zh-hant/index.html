@@ -127,28 +127,28 @@
         <p class="hint">把指標移進雪裡試試看。</p>
       </div>
       <div class="mock-wrap">
-        <div class="mock" role="img" aria-label="SnowWall 的設定視窗，停在「外觀」頁面，頂端邊緣積著雪。">
-          <div class="mock-title" aria-hidden="true">SnowWall 設定</div>
+        <!-- The 1.1 window: sidebar with search, Look & Motion with its live preview and section chips. -->
+        <div class="mock mock11" role="img" aria-label="SnowWall 的設定視窗，停在「外觀與動態」頁面，頂端邊緣積著雪。">
           <div class="mock-body" aria-hidden="true">
-            <ul class="mock-side">
-              <li class="t-general"><i></i>一般</li><li class="t-effects"><i></i>效果</li><li class="t-appearance on"><i></i>外觀</li><li class="t-physics"><i></i>物理</li><li class="t-interaction"><i></i>互動</li><li class="t-presets"><i></i>預設組合</li>
-            </ul>
+            <div class="mock-side">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mock-search">搜尋</span>
+              <ul><li class="t-effect"><i></i><span>效果</span></li><li class="t-look on"><i></i><span>外觀與動態</span></li><li class="t-automatic"><i></i><span>自動</span></li><li class="t-presets"><i></i><span>預設組合</span></li><li class="t-general"><i></i><span>一般</span></li><li class="t-siri"><i></i><span>Siri與捷徑</span></li></ul>
+            </div>
             <div class="mock-pane">
+              <p class="mock-ttl">外觀與動態</p>
+              <div class="mock-preview"><span class="pv-btn pv-pause" title="暫停"></span><span class="pv-btn">瞄一眼</span></div>
+              <div class="mock-chips"><b class="on">粒子</b><b class="">動態</b><b class="">指標與視窗</b><b class="">畫質</b></div>
               <p class="mock-h">樣式與大小</p>
               <div class="mock-group">
                 <div class="mock-row"><span>樣式</span><span class="seg"><b>柔和</b><b class="on">冰晶</b><b>閃耀</b></span></div>
                 <div class="mock-row"><span>最小</span><span class="track"><i class="fill f25"></i></span><em>3 pt</em></div>
                 <div class="mock-row"><span>最大</span><span class="track"><i class="fill f45"></i></span><em>14 pt</em></div>
               </div>
-              <p class="mock-h">顏色</p>
+              <p class="mock-h">顏色與不透明度</p>
               <div class="mock-group">
                 <div class="mock-row"><span>顏色</span><span class="well"></span></div>
                 <div class="mock-row"><span>不透明度</span><span class="track"><i class="fill f85"></i></span><em>85%</em></div>
-              </div>
-              <p class="mock-h">效能</p>
-              <div class="mock-group">
-                <div class="mock-row"><span>畫質</span><span class="radios"><b>省電</b><b class="on">平衡</b><b>極致</b></span></div>
-                <div class="mock-row"><span>雪花數量</span><span class="track"><i class="fill f60"></i></span><em>2,400</em></div>
               </div>
             </div>
           </div>
@@ -328,18 +328,16 @@
     </div>
     <div class="desk">
       <canvas class="layer back" aria-hidden="true"></canvas>
-      <div class="mock mock-small" role="img" aria-label="SnowWall 的「互動」設定，其中有「讓效果留在視窗後方」開關。">
-        <div class="mock-title" aria-hidden="true">SnowWall 設定</div>
+      <div class="mock mock-small mock11" role="img" aria-label="SnowWall 的「外觀與動態」設定，其中有「讓效果留在視窗後方」開關。">
+        <div class="mock-title" aria-hidden="true">外觀與動態</div>
         <div class="mock-pane" aria-hidden="true">
-          <p class="mock-h">圖層</p>
+          <div class="mock-chips"><b class="">粒子</b><b class="">動態</b><b class="on">指標與視窗</b><b class="">畫質</b></div>
+          <p class="mock-h">視窗</p>
           <div class="mock-group">
             <div class="mock-row toggle-row">
               <span><strong>讓效果留在視窗後方</strong><small>顯示在背景圖片與桌面圖像之間，而不是覆蓋所有內容</small></span>
               <span class="toggle"><i></i></span>
             </div>
-          </div>
-          <p class="mock-h">視窗</p>
-          <div class="mock-group">
             <div class="mock-row toggle-row dim-when-behind">
               <span><strong>停留在視窗上</strong><small>雪花會停留在最前方視窗的頂端邊緣</small></span>
               <span class="toggle on-static"><i></i></span>
@@ -366,7 +364,7 @@
     </header>
     <ul class="facts" role="list">
       <li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 12 4l8 14H4Z"/><path d="M8.5 18 12 11.5 15.5 18"/></svg><h3>採用 Metal 繪製</h3><p>「極致」畫質下，多達 10,000 個粒子在 GPU 上即時模擬。它不是影片，所以永遠不會重複循環。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2.5"/><path d="M21 10.5v3"/><path d="M6.5 10v4"/><path d="M9.5 10v4"/></svg><h3>省電畫質</h3><p>較輕量的畫質設定，適合長時間不接電源使用。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="m12 13 3.5-4"/><circle cx="12" cy="13" r="1"/></svg><h3>低耗電模式下 30 fps</h3><p>Mac 溫度過高時同樣降至每秒 30 格，顯示器睡眠時自動暫停。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="12" height="9" rx="1.5"/><rect x="9.5" y="9" width="12" height="9" rx="1.5"/></svg><h3>支援所有顯示器</h3><p>雪花飄過你連接的每一個螢幕。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 3 10 2-5h6"/></svg><h3>減少動態效果，由你決定</h3><p>開啟「減少動態效果」時，可以讓雪停下、放慢，或照常飄落。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="3"/><rect x="10" y="10" width="10" height="10" rx="3"/></svg><h3>捷徑與專注模式</h3><p>提供「捷徑」動作，以及專注模式過濾條件：開啟專注模式時，雪會暫停。</p></li><li class="fact glass reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></svg><h3>16 種語言</h3><p>英文、俄文、日文、阿拉伯文、印地文等 16 種語言。</p></li>
-      <li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>從控制中心暫停</h3><p>使用控制中心裡的控制項目隨時暫停或繼續，不必打開選單。</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>小工具</h3><p>桌面小工具顯示目前的效果，按一下即可切換。</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Spotlight 動作</h3><p>直接在 Spotlight 中暫停、繼續或切換效果。</p></li><li class="fact glass reveal" data-release="1.1" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>描述一種氛圍</h3><p>在支援 Apple Intelligence 的 Mac 上，描述一種氛圍，SnowWall 就會為它建立預設組合。</p></li>
+      <li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 9v6"/><path d="M14 9v6"/></svg><h3>從控制中心暫停</h3><p>使用控制中心裡的控制項目隨時暫停或繼續，不必打開選單。</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>小工具</h3><p>桌面小工具顯示目前的效果，按一下即可切換。</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><h3>Spotlight 動作</h3><p>直接在 Spotlight 中暫停、繼續或切換效果。</p></li><li class="fact glass reveal" data-release="1.1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.9L12 18.5l-1.8-5.8L4.5 10.8 10.2 9 12 3.5Z"/></svg><h3>描述一種氛圍</h3><p>在支援 Apple Intelligence 的 Mac 上，描述一種氛圍，SnowWall 就會為它建立預設組合。</p></li>
     </ul>
   </div>
 </section>
@@ -398,7 +396,7 @@
         </tbody>
       </table>
     </div>
-    <div class="release-note glass" data-release="1.1" hidden>
+    <div class="release-note glass" data-release="1.1">
       <p><strong>十二月，聖誕節免費。</strong> 整個十二月，每個人都能使用「聖誕節」效果。</p><p><strong>先試用，再購買。</strong> 決定之前，可以在自己的桌面上即時預覽任何 Pro 效果。</p>
     </div>
     <div class="pro-cta">
@@ -413,8 +411,8 @@
   <div class="wrap narrow">
     <h2 id="faq-title" class="display reveal">常見問題</h2>
     <div class="faq-list">
-      <details><summary>SnowWall 是免費的嗎？</summary><div class="answer"><p>是的。「飄雪」和「下雨」免費提供，所有設定都能使用，還能儲存三組預設組合。SnowWall Pro 為一次購買，加入其餘八種效果、氛圍模式、視覺效果、「極致」畫質和無限預設組合。它不是訂閱制。</p></div></details><details><summary>我打開了 SnowWall，它在哪裡？</summary><div class="answer"><p>SnowWall 沒有自己的視窗，也沒有 Dock 圖像。它以雪花圖像的形式待在螢幕頂端的選單列中。按一下即可暫停、切換效果或打開設定。</p></div></details><details><summary>它會拖慢 Mac 或耗電嗎？</summary><div class="answer"><p>它由圖形處理器繪製，因此會耗用一些電力。顯示器睡眠時它會暫停，在低耗電模式下或 Mac 溫度過高時降至每秒 30 格。想更省電，可以選擇「省電」畫質，或減少雪花數量。</p></div></details><details><summary>它需要任何權限嗎？</summary><div class="answer"><p>不需要。SnowWall 在桌面上繪製，但不讀取螢幕上的內容。如果 macOS 要求你授予它螢幕錄製或輔助使用權限，請不要允許，並<a href="/support/" hreflang="en">告訴我們</a>。</p></div></details><details><summary>雪可以留在視窗後方嗎？</summary><div class="answer"><p>可以。在設定的「互動」中開啟「讓效果留在視窗後方」，雪就會飄落在背景圖片與桌面圖像之間。</p></div></details><details><summary>我開啟了「減少動態效果」。</summary><div class="answer"><p>開啟「減少動態效果」時，SnowWall 預設會讓雪停下。你也可以選擇讓它放慢，或照常飄落。</p></div></details><details><summary>哪些 Mac 可以使用？</summary><div class="answer"><p>任何安裝 macOS 26 或以後版本的 Mac。</p></div></details>
-      <details data-release="1.1" hidden><summary>不打開選單也能暫停嗎？</summary><div class="answer"><p>可以。將 SnowWall 的控制項目加入控制中心，或在 Spotlight 或「捷徑」中使用「暫停」動作。</p></div></details>
+      <details><summary>SnowWall 是免費的嗎？</summary><div class="answer"><p>是的。「飄雪」和「下雨」免費提供，所有設定都能使用，還能儲存三組預設組合。SnowWall Pro 為一次購買，加入其餘八種效果、氛圍模式、視覺效果、「極致」畫質和無限預設組合。它不是訂閱制。</p></div></details><details><summary>我打開了 SnowWall，它在哪裡？</summary><div class="answer"><p>SnowWall 沒有自己的視窗，也沒有 Dock 圖像。它以雪花圖像的形式待在螢幕頂端的選單列中。按一下即可暫停、切換效果或打開設定。</p></div></details><details><summary>它會拖慢 Mac 或耗電嗎？</summary><div class="answer"><p>它由圖形處理器繪製，因此會耗用一些電力。顯示器睡眠時它會暫停，在低耗電模式下或 Mac 溫度過高時降至每秒 30 格。想更省電，可以選擇「省電」畫質，或減少雪花數量。</p></div></details><details><summary>它需要任何權限嗎？</summary><div class="answer"><p>不需要。SnowWall 在桌面上繪製，但不讀取螢幕上的內容。如果 macOS 要求你授予它螢幕錄製或輔助使用權限，請不要允許，並<a href="/support/" hreflang="en">告訴我們</a>。</p></div></details><details><summary>雪可以留在視窗後方嗎？</summary><div class="answer"><p>可以。在設定的「外觀與動態」›「指標與視窗」中開啟「讓效果留在視窗後方」，雪就會飄落在背景圖片與桌面圖像之間。</p></div></details><details><summary>我開啟了「減少動態效果」。</summary><div class="answer"><p>開啟「減少動態效果」時，SnowWall 預設會讓雪停下。你也可以選擇讓它放慢，或照常飄落。</p></div></details><details><summary>哪些 Mac 可以使用？</summary><div class="answer"><p>任何安裝 macOS 26 或以後版本的 Mac。</p></div></details>
+      <details data-release="1.1"><summary>不打開選單也能暫停嗎？</summary><div class="answer"><p>可以。將 SnowWall 的控制項目加入控制中心，或在 Spotlight 或「捷徑」中使用「暫停」動作。</p></div></details>
     </div>
     <p class="faq-more">還有其他問題？請前往<a href="/support/" hreflang="en">支援頁面</a>（英文），或寄信至 <a href="mailto:support@snowwall.app?subject=SnowWall">support@snowwall.app</a>。</p>
   </div>

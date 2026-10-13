@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 // Builds public/ from src/ and i18n/. Zero dependencies: Node 18+ standard library only.
 //
-//   node build.mjs                 production build
-//   node build.mjs --release=1.1   also switches on blocks marked data-release="1.1"
-//   RELEASE=1.1 node build.mjs     same, for a Cloudflare Pages environment variable
+//   node build.mjs                 production build, release 1.1 (in the App Store since 13 Oct 2026)
+//   node build.mjs --release=1.0   the page as it was for 1.0
+//   RELEASE=1.0 node build.mjs     same, from an environment variable
 //
 // What it does: copies src/static as is; content-hashes src/assets, the CSS bundles and the JS
 // modules into public/assets/ (served immutable); renders the home page per language from
@@ -56,7 +56,7 @@ const RTL = new Set(['ar']);
 const BUILT = LANGUAGES.filter(l => existsSync(join(ROOT, 'i18n', `${l.code}.json`)));
 const LANGS = BUILT.map(l => l.code);
 const releaseArg = process.argv.find(a => a.startsWith('--release='));
-const RELEASE = parseFloat(releaseArg ? releaseArg.split('=')[1] : process.env.RELEASE || '1.0');
+const RELEASE = parseFloat(releaseArg ? releaseArg.split('=')[1] : process.env.RELEASE || '1.1');
 
 const read = p => readFileSync(p, 'utf8');
 const write = (p, s) => { mkdirSync(dirname(p), { recursive: true }); writeFileSync(p, s); };
