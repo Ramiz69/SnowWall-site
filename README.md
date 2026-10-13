@@ -103,6 +103,10 @@ is the build's output and is committed: after changing anything in `src/` or `i1
 `node build.mjs` and commit `public/` with the change. A push to `main` deploys; if that build
 fails, the previous version stays live.
 
+`wrangler.jsonc` is the deploy configuration. The only code is `worker/index.js`, and it runs
+only for `.mp4` paths: static assets answer a `Range` request with the whole file, and
+Safari won't play a video without a `206`. Test it locally with `npx wrangler dev`.
+
 
 There is nothing to install: `package.json` has no dependencies.
 
