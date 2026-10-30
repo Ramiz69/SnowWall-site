@@ -106,7 +106,7 @@
     "snow": { "name": "Kar Yağışı", "desc": "Yavaşça süzülen yumuşak beyaz taneler." },
     "rain": { "name": "Yağmur", "desc": "Pencerelerinizin önünden akan yağmur damlaları." },
     "blizzard": { "name": "Tipi", "desc": "Rüzgârla savrulan yoğun kar." },
-    "christmas": { "name": "Noel", "desc": "Kırmızı ve yeşil ışıltılı kar." },
+    "christmas": { "name": "Noel", "desc": "Kırmızı, yeşil, altın ve beyaz kar." },
     "frozen": { "name": "Buzul", "desc": "Buz mavisi kristaller." },
     "glass": { "name": "Camda Yağmur", "desc": "Buğu toplanır ve ekrandan aşağı süzülür." },
     "blossom": { "name": "Kiraz Çiçeği", "desc": "Bahar esintisinde pembe yapraklar." },

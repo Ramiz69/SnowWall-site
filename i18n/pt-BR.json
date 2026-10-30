@@ -106,7 +106,7 @@
     "snow": { "name": "Neve", "desc": "Flocos brancos e macios, caindo devagar." },
     "rain": { "name": "Chuva", "desc": "Gotas de chuva passando pelas janelas." },
     "blizzard": { "name": "Nevasca", "desc": "Neve densa, levada pelo vento." },
-    "christmas": { "name": "Natal", "desc": "Neve com brilhos vermelhos e verdes." },
+    "christmas": { "name": "Natal", "desc": "Neve vermelha, verde, dourada e branca." },
     "frozen": { "name": "Gelo", "desc": "Cristais de gelo azulados." },
     "glass": { "name": "Chuva no Vidro", "desc": "O vapor se condensa e escorre pela tela." },
     "blossom": { "name": "Cerejeiras em Flor", "desc": "Pétalas cor-de-rosa na brisa da primavera." },

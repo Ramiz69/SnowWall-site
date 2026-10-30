@@ -106,7 +106,7 @@
     "snow": { "name": "Chute de neige", "desc": "De doux flocons blancs qui descendent lentement." },
     "rain": { "name": "Pluie", "desc": "Des gouttes qui filent devant vos fenêtres." },
     "blizzard": { "name": "Blizzard", "desc": "Une neige dense, poussée par le vent." },
-    "christmas": { "name": "Noël", "desc": "De la neige pailletée de rouge et de vert." },
+    "christmas": { "name": "Noël", "desc": "De la neige rouge, verte, dorée et blanche." },
     "frozen": { "name": "Glace", "desc": "Des cristaux bleu glacier." },
     "glass": { "name": "Pluie sur la vitre", "desc": "La buée se forme et ruisselle sur l’écran." },
     "blossom": { "name": "Fleurs de cerisier", "desc": "Des pétales roses portés par la brise de printemps." },

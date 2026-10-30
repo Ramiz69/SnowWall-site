@@ -106,7 +106,7 @@
     "snow": { "name": "Nevada", "desc": "Copos blancos y suaves que caen despacio." },
     "rain": { "name": "Lluvia", "desc": "Gotas que caen junto a tus ventanas." },
     "blizzard": { "name": "Ventisca", "desc": "Nieve densa arrastrada por el viento." },
-    "christmas": { "name": "Navidad", "desc": "Nieve con destellos rojos y verdes." },
+    "christmas": { "name": "Navidad", "desc": "Nieve roja, verde, dorada y blanca." },
     "frozen": { "name": "Glacial", "desc": "Cristales de hielo azulados." },
     "glass": { "name": "Lluvia en la ventana", "desc": "El vaho se condensa y resbala por la pantalla." },
     "blossom": { "name": "Flor de cerezo", "desc": "Pétalos rosas en la brisa de primavera." },

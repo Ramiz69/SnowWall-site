@@ -106,7 +106,7 @@
     "snow": { "name": "Schneefall", "desc": "Weiche weiße Flocken, die sanft herabschweben." },
     "rain": { "name": "Regen", "desc": "Regentropfen, die an deinen Fenstern vorbeiströmen." },
     "blizzard": { "name": "Schneesturm", "desc": "Dichter Schnee, vom Wind getrieben." },
-    "christmas": { "name": "Weihnachten", "desc": "Schnee mit rotem und grünem Funkeln." },
+    "christmas": { "name": "Weihnachten", "desc": "Schnee in Rot, Grün, Gold und Weiß." },
     "frozen": { "name": "Eiskristalle", "desc": "Eisblaue Kristalle." },
     "glass": { "name": "Regen am Fenster", "desc": "Beschlag sammelt sich und rinnt über den Bildschirm." },
     "blossom": { "name": "Kirschblüte", "desc": "Rosa Blüten in einer Frühlingsbrise." },

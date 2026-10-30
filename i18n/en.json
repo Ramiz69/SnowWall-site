@@ -106,7 +106,7 @@
     "snow": { "name": "Snowfall", "desc": "Soft white flakes, drifting down." },
     "rain": { "name": "Rain", "desc": "Raindrops streaming past your windows." },
     "blizzard": { "name": "Blizzard", "desc": "Dense, wind-driven snow." },
-    "christmas": { "name": "Christmas", "desc": "Snow with a red and green sparkle." },
+    "christmas": { "name": "Christmas", "desc": "Snow in red, green, gold and white." },
     "frozen": { "name": "Frozen", "desc": "Icy blue crystals." },
     "glass": { "name": "Rain on Glass", "desc": "Condensation gathers and runs down the screen." },
     "blossom": { "name": "Cherry Blossom", "desc": "Pink petals on a spring breeze." },

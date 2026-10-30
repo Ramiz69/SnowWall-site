@@ -106,7 +106,7 @@
     "snow": { "name": "飄雪", "desc": "柔軟的白色雪花，輕輕飄落。" },
     "rain": { "name": "下雨", "desc": "雨絲從視窗旁傾瀉而過。" },
     "blizzard": { "name": "暴風雪", "desc": "狂風捲著漫天大雪。" },
-    "christmas": { "name": "聖誕節", "desc": "飄雪中閃爍著紅綠光點。" },
+    "christmas": { "name": "聖誕節", "desc": "紅、綠、金、白四色飄雪。" },
     "frozen": { "name": "冰封", "desc": "冰藍色的晶體。" },
     "glass": { "name": "雨打玻璃", "desc": "水氣凝結，沿著螢幕流下。" },
     "blossom": { "name": "櫻花", "desc": "粉色花瓣隨春風飛舞。" },

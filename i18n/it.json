@@ -106,7 +106,7 @@
     "snow": { "name": "Nevicata", "desc": "Fiocchi bianchi e morbidi che scendono piano." },
     "rain": { "name": "Pioggia", "desc": "Gocce che scorrono accanto alle finestre." },
     "blizzard": { "name": "Tormenta", "desc": "Neve fitta spinta dal vento." },
-    "christmas": { "name": "Natale", "desc": "Neve con scintille rosse e verdi." },
+    "christmas": { "name": "Natale", "desc": "Neve rossa, verde, dorata e bianca." },
     "frozen": { "name": "Gelo", "desc": "Cristalli di ghiaccio azzurri." },
     "glass": { "name": "Pioggia sul vetro", "desc": "La condensa si raccoglie e scivola giù per lo schermo." },
     "blossom": { "name": "Fiori di ciliegio", "desc": "Petali rosa nella brezza di primavera." },
