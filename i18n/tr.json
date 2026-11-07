@@ -228,5 +228,55 @@
   "jsonld": {
     "description": "Mac masaüstüne kar, yağmur ve mevsim havası getiren bir menü çubuğu uygulaması. Taneler imleçten kaçar ve pencerelerin üstünde birikir.",
     "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  },
+  "blackFriday": {
+    "title": "Kara Cuma’da SnowWall Pro: yaklaşık üçte bir indirim",
+    "description": "27 Kasım’dan 1 Aralık 2026’ya kadar Mac için SnowWall Pro tüm App Store’larda yaklaşık üçte bir indirimli. Tek seferlik satın alma, abonelik yok.",
+    "ogTitle": "Kara Cuma’da SnowWall Pro: yaklaşık üçte bir indirim",
+    "ogDescription": "27 Kasım’dan 1 Aralık 2026’ya kadar SnowWall Pro, Mac’teki SnowWall için tek seferlik satın alma, tüm App Store’larda yaklaşık üçte bir indirimli. Abonelik yok.",
+    "heading": "Kara Cuma’da SnowWall Pro",
+    "dates": "27 Kasım’dan 1 Aralık 2026’ya kadar",
+    "lede": "SnowWall, Mac App Store’da ücretsizdir. 27 Kasım’dan 1 Aralık 2026’ya kadar SnowWall Pro, geri kalan her şeyi açan tek seferlik satın alma, tüm App Store’larda yaklaşık üçte bir indirimli. Kod gerekmez, abonelik yok.",
+    "usLabel": "ABD’de",
+    "wasLabel": "Normal fiyat",
+    "nowLabel": "Kara Cuma fiyatı",
+    "was": "14,99 $",
+    "now": "9,99 $",
+    "off": "Yaklaşık üçte bir indirim",
+    "local": "Diğer tüm App Store’larda da Pro, yerel para biriminizde yaklaşık üçte bir indirimli.",
+    "noCode": "Kod gerekmez: kampanya boyunca uygulama indirimli fiyatı kendisi gösterir. Fiyatlar 2 Aralık’ta normale döner.",
+    "storeNote": "SnowWall ücretsiz indirilir. Pro, uygulamanın içinden satın alınır.",
+    "includesTitle": "SnowWall Pro’da neler var",
+    "includes": [
+      {
+        "title": "{count} efektin tamamı",
+        "body": "Tipi, Camda Yağmur, Noel, Kiraz Çiçeği<span data-release=\"1.2\" hidden>, Emojileriniz</span> ve daha fazlası."
+      },
+      {
+        "title": "Ortam Modu",
+        "body": "Bilgisayarın başından kalktığınızda ekranı kaplar, efektin üzerinde bir saat gösterir."
+      },
+      {
+        "title": "Görsel iyileştirmeler",
+        "body": "Işıma, kristal parıltı, kutup ışıkları, alan derinliği ve dört efekt daha."
+      },
+      {
+        "title": "Sınırsız hazır ayar",
+        "body": "İstediğiniz kadar özel hazır ayar kaydedin. Ücretsiz sürümde en fazla 3 tane kaydedilebilir."
+      },
+      {
+        "title": "Ultra kalite",
+        "body": "Ekranınızın tam yenileme hızında 10.000 parçacığa kadar."
+      }
+    ],
+    "freeNote": "Kar Yağışı ve Yağmur, Pro olsun olmasın, tüm ayarlarıyla ücretsiz kalır.",
+    "buyTitle": "Nasıl satın alınır",
+    "buySteps": [
+      "SnowWall’u Mac App Store’dan indirin. Uygulamanın kendisi ücretsizdir.",
+      "Menü çubuğundaki kar tanesini tıklayıp <strong>SnowWall Pro…</strong> seçeneğini seçin ya da Ayarlar penceresinin üst kısmındaki <strong>SnowWall Pro</strong> düğmesini tıklayın.",
+      "Bir kez satın alırsınız. Abonelik değildir ve Apple Hesabınızla giriş yaptığınız her Mac’te geri yükleyebilirsiniz."
+    ],
+    "homeText": "<strong>Kara Cuma.</strong> 27 Kasım’dan 1 Aralık’a kadar SnowWall Pro yaklaşık üçte bir indirimli.",
+    "homeMore": "Kampanyaya göz atın"
   }
 }

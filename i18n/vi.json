@@ -228,5 +228,55 @@
   "jsonld": {
     "description": "Ứng dụng trên thanh menu mang tuyết, mưa và thời tiết theo mùa lên màn hình nền Mac. Bông tuyết né con trỏ và đọng trên cửa sổ.",
     "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  },
+  "blackFriday": {
+    "title": "SnowWall Pro dịp Black Friday: giảm khoảng một phần ba",
+    "description": "Từ ngày 27/11 đến hết ngày 1/12/2026, SnowWall Pro cho Mac giảm khoảng một phần ba trên mọi App Store. Mua một lần, không thuê bao.",
+    "ogTitle": "SnowWall Pro dịp Black Friday: giảm khoảng một phần ba",
+    "ogDescription": "Từ ngày 27/11 đến hết ngày 1/12/2026, SnowWall Pro, gói mua một lần của SnowWall trên Mac, giảm khoảng một phần ba trên mọi App Store. Không thuê bao.",
+    "heading": "SnowWall Pro dịp Black Friday",
+    "dates": "Từ ngày 27 tháng 11 đến hết ngày 1 tháng 12 năm 2026",
+    "lede": "SnowWall miễn phí trên Mac App Store. Từ ngày 27 tháng 11 đến hết ngày 1 tháng 12 năm 2026, SnowWall Pro, gói mua một lần mở khóa mọi thứ còn lại, giảm khoảng một phần ba trên mọi App Store. Không cần mã, không thuê bao.",
+    "usLabel": "Tại Mỹ",
+    "wasLabel": "Giá thường",
+    "nowLabel": "Giá Black Friday",
+    "was": "14,99 USD",
+    "now": "9,99 USD",
+    "off": "Giảm khoảng một phần ba",
+    "local": "Ở mọi App Store khác, Pro cũng giảm khoảng một phần ba theo đơn vị tiền tệ địa phương.",
+    "noCode": "Không cần mã: trong thời gian khuyến mãi, ứng dụng tự hiển thị giá đã giảm. Giá trở lại bình thường vào ngày 2 tháng 12.",
+    "storeNote": "SnowWall tải về miễn phí. Pro được mua ngay trong ứng dụng.",
+    "includesTitle": "SnowWall Pro gồm những gì",
+    "includes": [
+      {
+        "title": "Trọn bộ {count} hiệu ứng",
+        "body": "Bão tuyết, Mưa trên kính, Giáng sinh, Hoa anh đào<span data-release=\"1.2\" hidden>, Emoji của bạn</span> và nhiều hơn nữa."
+      },
+      {
+        "title": "Chế độ không gian",
+        "body": "Phủ kín màn hình khi bạn rời máy, kèm đồng hồ trên nền hiệu ứng."
+      },
+      {
+        "title": "Tăng cường hình ảnh",
+        "body": "Hào quang, lấp lánh pha lê, cực quang, độ sâu trường ảnh và bốn hiệu ứng khác."
+      },
+      {
+        "title": "Cài đặt sẵn không giới hạn",
+        "body": "Lưu bao nhiêu cài đặt sẵn tùy thích. Bản miễn phí cho phép lưu 3."
+      },
+      {
+        "title": "Chất lượng siêu cao",
+        "body": "Tối đa 10.000 hạt ở tốc độ làm mới cao nhất của màn hình."
+      }
+    ],
+    "freeNote": "Tuyết rơi và Mưa vẫn miễn phí, đầy đủ mọi cài đặt, dù có Pro hay không.",
+    "buyTitle": "Cách mua",
+    "buySteps": [
+      "Tải SnowWall từ Mac App Store. Bản thân ứng dụng là miễn phí.",
+      "Bấm vào bông tuyết trên thanh menu và chọn <strong>SnowWall Pro…</strong>, hoặc bấm <strong>SnowWall Pro</strong> ở đầu cửa sổ Cài đặt.",
+      "Chỉ mua một lần. Đây không phải thuê bao, và bạn có thể khôi phục trên mọi máy Mac đã đăng nhập Tài khoản Apple của bạn."
+    ],
+    "homeText": "<strong>Black Friday.</strong> Từ 27/11 đến hết 1/12, SnowWall Pro giảm khoảng một phần ba.",
+    "homeMore": "Xem ưu đãi"
   }
 }

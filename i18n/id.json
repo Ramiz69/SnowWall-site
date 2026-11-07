@@ -228,5 +228,55 @@
   "jsonld": {
     "description": "Aplikasi bar menu yang menghadirkan salju, hujan, dan cuaca musiman ke desktop Mac. Kepingan salju menghindari penunjuk dan menumpuk di jendela.",
     "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  },
+  "blackFriday": {
+    "title": "SnowWall Pro untuk Black Friday: sekitar sepertiga lebih murah",
+    "description": "Mulai 27 November sampai 1 Desember 2026, SnowWall Pro untuk Mac sekitar sepertiga lebih murah di semua App Store. Sekali beli, tanpa langganan.",
+    "ogTitle": "SnowWall Pro untuk Black Friday: sekitar sepertiga lebih murah",
+    "ogDescription": "Mulai 27 November sampai 1 Desember 2026, SnowWall Pro, pembelian satu kali untuk SnowWall di Mac, sekitar sepertiga lebih murah di semua App Store. Tanpa langganan.",
+    "heading": "SnowWall Pro untuk Black Friday",
+    "dates": "27 November sampai 1 Desember 2026",
+    "lede": "SnowWall gratis di Mac App Store. Mulai 27 November sampai 1 Desember 2026, SnowWall Pro, pembelian satu kali yang membuka semua fitur lainnya, sekitar sepertiga lebih murah di semua App Store. Tanpa kode dan tanpa langganan.",
+    "usLabel": "Di AS",
+    "wasLabel": "Harga normal",
+    "nowLabel": "Harga Black Friday",
+    "was": "US$14,99",
+    "now": "US$9,99",
+    "off": "Sekitar sepertiga lebih murah",
+    "local": "Di App Store negara lain, Pro juga sekitar sepertiga lebih murah dalam mata uang setempat.",
+    "noCode": "Tidak perlu kode: selama promo, aplikasi menampilkan harga yang lebih murah dengan sendirinya. Harga kembali normal pada 2 Desember.",
+    "storeNote": "SnowWall bisa diunduh gratis. Pro dibeli di dalam aplikasi.",
+    "includesTitle": "Isi SnowWall Pro",
+    "includes": [
+      {
+        "title": "Semua {count} efek",
+        "body": "Badai Salju, Hujan di Kaca, Natal, Bunga Sakura<span data-release=\"1.2\" hidden>, Emoji Anda</span>, dan lainnya."
+      },
+      {
+        "title": "Mode Ambien",
+        "body": "Mengisi layar saat Anda pergi, dengan jam di atas efek."
+      },
+      {
+        "title": "Peningkatan visual",
+        "body": "Pendaran, kilau kristal, aurora, ruang tajam, dan empat lainnya."
+      },
+      {
+        "title": "Preset tanpa batas",
+        "body": "Simpan preset khusus sebanyak yang Anda mau. Versi gratis mencakup 3."
+      },
+      {
+        "title": "Kualitas Ultra",
+        "body": "Hingga 10.000 partikel pada kecepatan refresh penuh layar Anda."
+      }
+    ],
+    "freeNote": "Hujan Salju dan Hujan tetap gratis, dengan semua pengaturannya, dengan atau tanpa Pro.",
+    "buyTitle": "Cara membeli",
+    "buySteps": [
+      "Unduh SnowWall dari Mac App Store. Aplikasinya sendiri gratis.",
+      "Klik kepingan salju di bar menu dan pilih <strong>SnowWall Pro…</strong>, atau klik <strong>SnowWall Pro</strong> di bagian atas jendela Pengaturan.",
+      "Cukup beli sekali. Ini bukan langganan, dan Anda bisa memulihkannya di setiap Mac yang masuk ke Akun Apple Anda."
+    ],
+    "homeText": "<strong>Black Friday.</strong> Mulai 27 November sampai 1 Desember, SnowWall Pro sekitar sepertiga lebih murah.",
+    "homeMore": "Lihat penawarannya"
   }
 }

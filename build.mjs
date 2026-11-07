@@ -53,6 +53,13 @@ const OG_LOCALE = {
   it: 'it_IT', ja: 'ja_JP', ko: 'ko_KR', 'pt-BR': 'pt_BR', tr: 'tr_TR', vi: 'vi_VN', 'zh-Hans': 'zh_CN', 'zh-Hant': 'zh_TW',
 };
 const RTL = new Set(['ar']);
+// Black Friday 2026: SnowWall Pro about a third off from 27 November to 1 December inclusive, set
+// in App Store Connect. The page (/black-friday/, /<lang>/black-friday/) stays up and in the
+// sitemap; the line on the home page that links to it is built only up to the sale's last day, so
+// the first build after 1 December leaves it out. Strings: `blackFriday` in i18n/<lang>.json.
+const SALE = { dir: 'black-friday/', lastDay: '2026-12-01' };
+const SALE_LINK = new Date().toISOString().slice(0, 10) <= SALE.lastDay;
+const salePath = l => `${l.path}${SALE.dir}`;
 const BUILT = LANGUAGES.filter(l => existsSync(join(ROOT, 'i18n', `${l.code}.json`)));
 const LANGS = BUILT.map(l => l.code);
 const releaseArg = process.argv.find(a => a.startsWith('--release='));
@@ -115,7 +122,9 @@ function render(tpl, data, where) {
   // Release-specific markup, kept only in the build it belongs to, so scripts that look for an
   // element (the settle canvas finds `.mock`) never find the other release's hidden copy.
   tpl = tpl.replace(/<!--1\.1-->\n?([\s\S]*?)<!--\/1\.1-->\n?/g, (_, body) => RELEASE >= 1.1 ? body : '')
-           .replace(/<!--pre1\.1-->\n?([\s\S]*?)<!--\/pre1\.1-->\n?/g, (_, body) => RELEASE >= 1.1 ? '' : body);
+           .replace(/<!--pre1\.1-->\n?([\s\S]*?)<!--\/pre1\.1-->\n?/g, (_, body) => RELEASE >= 1.1 ? '' : body)
+           // The home page's link to the Black Friday page, until the sale ends (SALE above).
+           .replace(/<!--sale-->\n?([\s\S]*?)<!--\/sale-->\n?/g, (_, body) => SALE_LINK ? body : '');
   tpl = tpl.replace(/{{#([\w.]+)}}([\s\S]*?){{\/\1}}/g, (_, key, body) => {
     const list = get(data, key);
     if (!Array.isArray(list)) throw new Error(`${where}: {{#${key}}} is not a list`);
@@ -228,7 +237,7 @@ function homeData(t) {
   return {
     ...t,
     dir: RTL.has(t.lang) ? 'rtl' : 'ltr', alternates, ogLocales, ogImage, badgeLang, badgeWidth,
-    site: SITE, url, appStore: campaign('site-home'), modulepreload,
+    site: SITE, url, appStore: campaign('site-home'), modulepreload, salePath: salePath(t),
     menus: headerMenus(t.ui, t.lang, homeHrefs),
     jsonld: JSON.stringify(jsonld).replace(/</g, '\\u003c'),
     // Each word animates on its own and never breaks inside. Japanese and Chinese have no spaces,
@@ -272,6 +281,36 @@ for (const lang of LANGS) {
   pages.push([t.path, out, html]);
 }
 
+// ---------- the Black Friday page, in every language ----------
+// The home page's head and footer data, with this page's URL, alternates and language menu. Its
+// App Store links carry their own campaign, so App Analytics shows what the page brought in.
+const saleTpl = read(join(SRC, 'black-friday.html'));
+const saleHrefs = Object.fromEntries(BUILT.map(l => [l.code, salePath(l)]));
+// "All N effects" counts the effects the way the app's purchase window does (`SeasonalTheme`):
+// 11 in 1.1, Hearts included, and 12 from 1.2, which adds Your Emoji.
+const effectCount = RELEASE >= 1.2 ? 12 : 11;
+const fillCount = v => typeof v === 'string' ? v.replace(/\{count\}/g, effectCount)
+  : Array.isArray(v) ? v.map(fillCount)
+  : v && typeof v === 'object' ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, fillCount(x)])) : v;
+for (const lang of LANGS) {
+  const t = JSON.parse(read(join(ROOT, 'i18n', `${lang}.json`)));
+  const path = salePath(t);
+  const data = {
+    ...homeData(t),
+    url: SITE + path,
+    bf: fillCount(t.blackFriday),
+    appStore: campaign('site-blackfriday'),
+    alternates: [...BUILT.map(l => `<link rel="alternate" hreflang="${l.code}" href="${SITE}${saleHrefs[l.code]}">`),
+      `<link rel="alternate" hreflang="x-default" href="${SITE}${saleHrefs.en}">`].join('\n'),
+    menus: headerMenus(t.ui, t.lang, saleHrefs),
+    check: CHECK,
+  };
+  const html = render(saleTpl, data, `black-friday/${lang}`);
+  const out = `${path.slice(1)}index.html`;
+  write(join(DIST, out), html);
+  pages.push([path, out, html]);
+}
+
 const pageTpl = read(join(SRC, 'page.html'));
 // Support, privacy, terms and the press kit are English only: their language menu offers the other home pages.
 const enUi = JSON.parse(read(join(ROOT, 'i18n', 'en.json'))).ui;
@@ -299,10 +338,15 @@ for (const f of readdirSync(join(SRC, 'pages'))) {
 
 // ---------- sitemap ----------
 const today = new Date().toISOString().slice(0, 10);
-const homePaths = new Set(BUILT.map(l => l.path));
-const alt = BUILT.map(l => `<xhtml:link rel="alternate" hreflang="${l.code}" href="${SITE}${l.path}"/>`).join('') + `<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/"/>`;
+// Pages that exist in every language list each other as alternates, English as the default.
+const altGroups = [BUILT.map(l => l.path), BUILT.map(salePath)];
+const alt = path => {
+  const group = altGroups.find(g => g.includes(path));
+  return group ? group.map((p, i) => `<xhtml:link rel="alternate" hreflang="${BUILT[i].code}" href="${SITE}${p}"/>`).join('')
+    + `<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${group[0]}"/>` : '';
+};
 const urls = pages.filter(p => !p[3]).map(([path]) =>
-  `  <url><loc>${SITE}${path}</loc><lastmod>${today}</lastmod>${homePaths.has(path) ? alt : ''}</url>`);
+  `  <url><loc>${SITE}${path}</loc><lastmod>${today}</lastmod>${alt(path)}</url>`);
 write(join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`);
 
 // ---------- report ----------

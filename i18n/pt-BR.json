@@ -228,5 +228,55 @@
   "jsonld": {
     "description": "Um app de barra de menus que espalha neve, chuva e o clima de cada estação pela mesa do Mac. Os flocos desviam do ponteiro e pousam nas janelas.",
     "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  },
+  "blackFriday": {
+    "title": "SnowWall Pro na Black Friday: cerca de um terço mais barato",
+    "description": "De 27 de novembro a 1º de dezembro de 2026, o SnowWall Pro para Mac fica cerca de um terço mais barato em todas as App Store. Compra única, sem assinatura.",
+    "ogTitle": "SnowWall Pro na Black Friday: cerca de um terço mais barato",
+    "ogDescription": "De 27 de novembro a 1º de dezembro de 2026, o SnowWall Pro, a compra única do SnowWall para Mac, fica cerca de um terço mais barato em todas as App Store. Sem assinatura.",
+    "heading": "SnowWall Pro na Black Friday",
+    "dates": "De 27 de novembro a 1º de dezembro de 2026",
+    "lede": "O SnowWall é grátis na Mac App Store. De 27 de novembro a 1º de dezembro de 2026, o SnowWall Pro, a compra única que libera todo o resto, fica cerca de um terço mais barato em todas as App Store. Sem código e sem assinatura.",
+    "usLabel": "Nos EUA",
+    "wasLabel": "Preço normal",
+    "nowLabel": "Preço na Black Friday",
+    "was": "US$ 14,99",
+    "now": "US$ 9,99",
+    "off": "Cerca de um terço mais barato",
+    "local": "Nas outras App Store, o Pro também fica cerca de um terço mais barato, na sua moeda local.",
+    "noCode": "Não precisa de código: durante a promoção, o app mostra o preço menor sozinho. Em 2 de dezembro os preços voltam ao normal.",
+    "storeNote": "O SnowWall é baixado de graça. O Pro é comprado dentro do app.",
+    "includesTitle": "O que o SnowWall Pro inclui",
+    "includes": [
+      {
+        "title": "Todos os {count} efeitos",
+        "body": "Nevasca, Chuva no Vidro, Natal, Cerejeiras em Flor<span data-release=\"1.2\" hidden>, Seus emojis</span> e mais."
+      },
+      {
+        "title": "Modo Ambiente",
+        "body": "Ocupa a tela quando você se afasta, com um relógio sobre o efeito."
+      },
+      {
+        "title": "Melhorias visuais",
+        "body": "Halo luminoso, cintilação cristalina, aurora, profundidade de campo e mais quatro."
+      },
+      {
+        "title": "Predefinições ilimitadas",
+        "body": "Salve quantas predefinições quiser. A versão gratuita permite 3."
+      },
+      {
+        "title": "Qualidade Ultra",
+        "body": "Até 10.000 partículas na taxa de atualização máxima da tela."
+      }
+    ],
+    "freeNote": "Neve e Chuva continuam grátis, com todos os ajustes, com ou sem o Pro.",
+    "buyTitle": "Como comprar",
+    "buySteps": [
+      "Baixe o SnowWall na Mac App Store. O app em si é grátis.",
+      "Clique no floco de neve na barra de menus e escolha <strong>SnowWall Pro…</strong>, ou clique em <strong>SnowWall Pro</strong> no topo da janela de Ajustes.",
+      "Você compra uma vez. Não é assinatura, e dá para restaurar a compra em qualquer Mac com a sua Conta Apple."
+    ],
+    "homeText": "<strong>Black Friday.</strong> De 27 de novembro a 1º de dezembro, o SnowWall Pro fica cerca de um terço mais barato.",
+    "homeMore": "Ver a oferta"
   }
 }
