@@ -1,5 +1,5 @@
 {
-  "_comment": "Gallery order, pack and tier. To add a loop video for a card, put the files in src/assets/video/ and list them here, e.g. \"video\": { \"mp4\": \"video/blizzard.mp4\", \"webm\": \"video/blizzard.webm\" }. The poster stays the canvas render underneath; the video plays only while the card is on screen and Reduce Motion is off.",
+  "_comment": "Gallery order, pack and tier; \"release\" keeps a card out of the builds before that version. To add a loop video for a card, put the files in src/assets/video/ and list them here, e.g. \"video\": { \"mp4\": \"video/blizzard.mp4\", \"webm\": \"video/blizzard.webm\" }. The poster stays the canvas render underneath; the video plays only while the card is on screen and Reduce Motion is off.",
   "effects": [
     { "id": "snow",      "pack": "winter", "tier": "free", "video": null },
     { "id": "rain",      "pack": "spring", "tier": "free", "video": null },
@@ -10,6 +10,7 @@
     { "id": "blossom",   "pack": "spring", "tier": "pro",  "video": null },
     { "id": "leaves",    "pack": "autumn", "tier": "pro",  "video": null },
     { "id": "stars",     "pack": "night",  "tier": "pro",  "video": null },
-    { "id": "confetti",  "pack": "events", "tier": "pro",  "video": null }
+    { "id": "confetti",  "pack": "events", "tier": "pro",  "video": null },
+    { "id": "emoji",     "pack": "events", "tier": "pro",  "video": null, "release": "1.2" }
   ]
 }

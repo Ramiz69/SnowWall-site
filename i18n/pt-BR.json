@@ -97,6 +97,7 @@
   "seasons": {
     "title": "Um clima para cada estação.",
     "lede": "Neve e Chuva são grátis. O SnowWall Pro traz mais oito, de uma nevasca a uma chuva de confete.",
+    "lede12": "Neve e Chuva são grátis. O SnowWall Pro traz mais nove, de uma nevasca a uma chuva de confete.",
     "hint": "Escolha um para vê-lo cair aqui e no topo da página.",
     "chosen": "Caindo agora: {name}."
   },
@@ -112,7 +113,8 @@
     "blossom": { "name": "Cerejeiras em Flor", "desc": "Pétalas cor-de-rosa na brisa da primavera." },
     "leaves": { "name": "Folhas de Outono", "desc": "Folhas em tons quentes, girando na queda." },
     "stars": { "name": "Noite Estrelada", "desc": "Estrelas douradas cintilando." },
-    "confetti": { "name": "Confete", "desc": "Cada pedacinho de uma cor." }
+    "confetti": { "name": "Confete", "desc": "Cada pedacinho de uma cor." },
+    "emoji": { "name": "Seus emojis", "desc": "Até 32 emojis à sua escolha, caindo no lugar da neve." }
   },
   "ambient": {
     "title": "Modo Ambiente, quando você se afasta.",
@@ -182,7 +184,7 @@
       { "label": "Atalhos, filtro de Foco e Mais calmo à noite", "free": true, "pro": true },
       { "label": "Predefinições salvas", "free": "3", "pro": "Ilimitadas" },
       { "label": "Qualidade", "free": "Economia de Bateria, Equilibrado", "pro": "Inclui Ultra, até 10.000 partículas" },
-      { "label": "Mais oito efeitos", "note": "Nevasca, Natal, Gelo, Cerejeiras em Flor, Chuva no Vidro, Folhas de Outono, Noite Estrelada e Confete", "free": false, "pro": true },
+      { "label": "Mais oito efeitos", "note": "Nevasca, Natal, Gelo, Cerejeiras em Flor, Chuva no Vidro, Folhas de Outono, Noite Estrelada e Confete", "label12": "Mais nove efeitos", "note12": "Nevasca, Natal, Gelo, Cerejeiras em Flor, Chuva no Vidro, Folhas de Outono, Noite Estrelada, Confete e Seus emojis", "free": false, "pro": true },
       { "label": "Modo Ambiente", "free": false, "pro": true },
       { "label": "Oito efeitos visuais", "note": "Halo luminoso, Aurora boreal, Profundidade de campo e mais", "free": false, "pro": true },
       { "label": "Datas comemorativas", "note": "Natal, Ano-Novo, Halloween e a florada das cerejeiras entram sozinhos", "free": false, "pro": true },
@@ -201,7 +203,7 @@
   "faq": {
     "title": "Perguntas.",
     "items": [
-      { "q": "O SnowWall é grátis?", "a": "<p>Sim. Neve e Chuva são grátis, com todos os ajustes, e você pode salvar três predefinições. O SnowWall Pro é uma compra única que acrescenta os outros oito efeitos, o Modo Ambiente, os efeitos visuais, a qualidade Ultra e predefinições ilimitadas. Não é assinatura.</p>" },
+      { "q": "O SnowWall é grátis?", "a": "<p>Sim. Neve e Chuva são grátis, com todos os ajustes, e você pode salvar três predefinições. O SnowWall Pro é uma compra única que acrescenta os outros oito efeitos, o Modo Ambiente, os efeitos visuais, a qualidade Ultra e predefinições ilimitadas. Não é assinatura.</p>", "a12": "<p>Sim. Neve e Chuva são grátis, com todos os ajustes, e você pode salvar três predefinições. O SnowWall Pro é uma compra única que acrescenta os outros nove efeitos, o Modo Ambiente, os efeitos visuais, a qualidade Ultra e predefinições ilimitadas. Não é assinatura.</p>" },
       { "q": "Abri o SnowWall. Cadê ele?", "a": "<p>O SnowWall não tem janela nem ícone no Dock. Ele mora na barra de menus, como um floco de neve no topo da tela. Clique nele para pausar, trocar de efeito ou abrir os Ajustes.</p>" },
       { "q": "Ele deixa o Mac lento ou gasta a bateria?", "a": "<p>Ele desenha com o processador gráfico, então usa um pouco de energia. Pausa quando a tela entra em repouso e cai para 30 quadros por segundo no Modo de Pouca Energia ou quando o Mac esquenta. Para gastar menos, escolha a qualidade Economia de Bateria ou diminua a quantidade de flocos.</p>" },
       { "q": "Ele precisa de alguma permissão?", "a": "<p>Não. O SnowWall desenha sobre a mesa sem ler o que está na tela. Se o macOS algum dia pedir acesso de gravação de tela ou de acessibilidade para ele, não conceda e, por favor, <a href=\"/support/\" hreflang=\"en\">avise a gente</a>.</p>" },

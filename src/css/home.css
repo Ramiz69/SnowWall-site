@@ -56,6 +56,7 @@ section { position: relative; }
 .hero[data-fx="leaves"]    { --fx-a: rgba(255, 150, 60, .2); --fx-b: rgba(255, 90, 60, .12); }
 .hero[data-fx="stars"]     { --fx-a: rgba(255, 210, 110, .14); --fx-b: rgba(90, 100, 255, .16); }
 .hero[data-fx="confetti"]  { --fx-a: rgba(176, 108, 255, .18); --fx-b: rgba(255, 90, 110, .12); }
+.hero[data-fx="emoji"]     { --fx-a: rgba(255, 214, 102, .14); --fx-b: rgba(110, 190, 255, .14); }
 .hero[data-fx="frozen"]    { --fx-a: rgba(110, 210, 255, .2); --fx-b: rgba(150, 130, 255, .14); }
 .hero[data-fx="rain"], .hero[data-fx="glass"] { --fx-a: rgba(120, 160, 210, .12); --fx-b: rgba(90, 120, 180, .12); }
 .rm .hero { transition: none; }
@@ -250,6 +251,7 @@ section { position: relative; }
 .fx-leaves    { --p1: #24130a; --p2: #6b3a17; --fx-glow: rgba(255, 173, 90, .35); }
 .fx-stars     { --p1: #050814; --p2: #1a1f45; --fx-glow: rgba(255, 216, 107, .35); }
 .fx-confetti  { --p1: #1a1033; --p2: #3a2a6b; --fx-glow: rgba(176, 108, 255, .35); }
+.fx-emoji     { --p1: #0e1a35; --p2: #2c3f78; --fx-glow: rgba(255, 214, 102, .35); }
 
 /* ---------- 4 · ambient mode ---------- */
 .ambient {

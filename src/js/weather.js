@@ -241,6 +241,8 @@ export class Weather {
       p.amp = rnd(25, 60); p.f = rnd(.25, .7); p.ph = rnd(0, TAU);
       p.rot = rnd(0, TAU); p.spin = rnd(-1.6, 1.6) * fx.spin; p.flip = rnd(0, TAU); p.flipV = rnd(1.2, 3.4) * fx.flip;
       p.a = .55 + z * .45; p.si = (Math.random() * fx.tints.length) | 0; p.front = z > .3; p.settles = fx.settle && z > .3 && z < .85;
+      p.upright = fx.shape === 'emoji';   // emoji fall at a fixed tilt and never turn edge-on
+      if (p.upright) { p.a = .8 + z * .2; p.rot = rnd(-.35, .35); }
     }
     p.img = this.spritesFor(id)[p.si];
     p.y = anywhere ? rnd(-20, H) : rnd(-60, -10) - (fx.kind === 'rain' ? rnd(0, 200) : 0);
@@ -471,7 +473,7 @@ export class Weather {
       let a = this.alphaOf(p); if (a <= .01) continue;
       if (isFront && this.badges.length && this.covered(p.x, p.y)) continue;
       if (occ && this.hiddenByWindow(p.x, p.y)) { a *= 1 - occ; if (a <= .01) continue; }
-      const sx = Math.cos(p.flip);
+      const sx = p.upright ? 1 : Math.cos(p.flip);
       this.drawPetal(ctx, p.x, p.y, p.size, p.rot, Math.abs(sx) < .12 ? .12 : sx, p.img, a * (.6 + .4 * Math.abs(sx)));
     }
     ctx.setTransform(this.DPR, 0, 0, this.DPR, 0, 0); ctx.globalAlpha = 1;
@@ -625,6 +627,13 @@ function makeSprites(fx, C) {
     }
     return out;
   }
+  if (fx.shape === 'emoji') return fx.tints.map(([glyph]) => {
+    const [c, x] = canvas64();
+    x.font = '50px "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif';
+    x.textAlign = 'center'; x.textBaseline = 'middle';
+    x.fillText(glyph, 32, 35);
+    return c;
+  });
   if (fx.kind === 'petal') return fx.tints.map(([light, deep]) => {
     const [c, x] = canvas64();
     if (fx.shape === 'confetti') {

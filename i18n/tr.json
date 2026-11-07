@@ -97,6 +97,7 @@
   "seasons": {
     "title": "Her mevsime bir hava.",
     "lede": "Kar Yağışı ve Yağmur ücretsiz. SnowWall Pro, tipiden konfeti yağmuruna sekiz efekt daha ekler.",
+    "lede12": "Kar Yağışı ve Yağmur ücretsiz. SnowWall Pro, tipiden konfeti yağmuruna dokuz efekt daha ekler.",
     "hint": "Birini seçin; hem burada hem sayfanın üstünde yağsın.",
     "chosen": "Şimdi yağan: {name}."
   },
@@ -112,7 +113,8 @@
     "blossom": { "name": "Kiraz Çiçeği", "desc": "Bahar esintisinde pembe yapraklar." },
     "leaves": { "name": "Sonbahar Yaprakları", "desc": "Düşerken dönen sıcak renkli yapraklar." },
     "stars": { "name": "Yıldızlı Gece", "desc": "Göz kırpan altın yıldızlar." },
-    "confetti": { "name": "Konfeti", "desc": "Her parçası ayrı bir renk." }
+    "confetti": { "name": "Konfeti", "desc": "Her parçası ayrı bir renk." },
+    "emoji": { "name": "Emojileriniz", "desc": "Seçtiğiniz en fazla 32 emoji kar yerine yağar." }
   },
   "ambient": {
     "title": "Siz yokken Ortam Modu.",
@@ -182,7 +184,7 @@
       { "label": "Kestirmeler, Odak filtresi ve Geceleri sakin", "free": true, "pro": true },
       { "label": "Kayıtlı hazır ayarlar", "free": "3", "pro": "Sınırsız" },
       { "label": "Kalite", "free": "Pil Tasarrufu, Dengeli", "pro": "Ultra da eklenir, 10.000 parçacığa kadar" },
-      { "label": "Sekiz efekt daha", "note": "Tipi, Noel, Buzul, Kiraz Çiçeği, Camda Yağmur, Sonbahar Yaprakları, Yıldızlı Gece ve Konfeti", "free": false, "pro": true },
+      { "label": "Sekiz efekt daha", "note": "Tipi, Noel, Buzul, Kiraz Çiçeği, Camda Yağmur, Sonbahar Yaprakları, Yıldızlı Gece ve Konfeti", "label12": "Dokuz efekt daha", "note12": "Tipi, Noel, Buzul, Kiraz Çiçeği, Camda Yağmur, Sonbahar Yaprakları, Yıldızlı Gece, Konfeti ve Emojileriniz", "free": false, "pro": true },
       { "label": "Ortam Modu", "free": false, "pro": true },
       { "label": "Sekiz görsel efekt", "note": "Işıma, Kutup Işıkları, Alan Derinliği ve daha fazlası", "free": false, "pro": true },
       { "label": "Özel günler", "note": "Noel, Yılbaşı, Cadılar Bayramı ve bahar çiçekleri kendiliğinden açılır", "free": false, "pro": true },
@@ -201,7 +203,7 @@
   "faq": {
     "title": "Sorular.",
     "items": [
-      { "q": "SnowWall ücretsiz mi?", "a": "<p>Evet. Kar Yağışı ve Yağmur tüm ayarlarıyla ücretsizdir ve üç hazır ayar kaydedebilirsiniz. SnowWall Pro tek seferlik bir satın almadır; diğer sekiz efekti, Ortam Modu’nu, görsel efektleri, Ultra kaliteyi ve sınırsız hazır ayarı ekler. Abonelik değildir.</p>" },
+      { "q": "SnowWall ücretsiz mi?", "a": "<p>Evet. Kar Yağışı ve Yağmur tüm ayarlarıyla ücretsizdir ve üç hazır ayar kaydedebilirsiniz. SnowWall Pro tek seferlik bir satın almadır; diğer sekiz efekti, Ortam Modu’nu, görsel efektleri, Ultra kaliteyi ve sınırsız hazır ayarı ekler. Abonelik değildir.</p>", "a12": "<p>Evet. Kar Yağışı ve Yağmur tüm ayarlarıyla ücretsizdir ve üç hazır ayar kaydedebilirsiniz. SnowWall Pro tek seferlik bir satın almadır; diğer dokuz efekti, Ortam Modu’nu, görsel efektleri, Ultra kaliteyi ve sınırsız hazır ayarı ekler. Abonelik değildir.</p>" },
       { "q": "SnowWall’u açtım. Nerede?", "a": "<p>SnowWall’un kendi penceresi ya da Dock simgesi yoktur. Ekranın üstündeki menü çubuğunda bir kar tanesi olarak durur. Duraklatmak, efekt değiştirmek ya da Ayarlar’ı açmak için onu tıklayın.</p>" },
       { "q": "Mac’imi yavaşlatır ya da pilimi bitirir mi?", "a": "<p>Grafik işlemcide çizildiği için biraz enerji harcar. Ekran uyuduğunda duraklar; Düşük Güç Modu’nda ya da Mac ısındığında saniyede 30 kareye iner. Daha da az harcaması için Pil Tasarrufu kalitesini seçin ya da kar tanesi sayısını azaltın.</p>" },
       { "q": "Herhangi bir izin gerekiyor mu?", "a": "<p>Hayır. SnowWall ekranda ne olduğunu okumadan masaüstünün üzerine çizer. macOS bir gün ona ekran kaydı ya da erişilebilirlik erişimi vermenizi isterse izin vermeyin ve lütfen <a href=\"/support/\" hreflang=\"en\">bize haber verin</a>.</p>" },

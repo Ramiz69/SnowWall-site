@@ -97,6 +97,7 @@
   "seasons": {
     "title": "Wetter für jede Jahreszeit.",
     "lede": "Schneefall und Regen sind kostenlos. SnowWall Pro bringt acht weitere, vom Schneesturm bis zum Konfettiregen.",
+    "lede12": "Schneefall und Regen sind kostenlos. SnowWall Pro bringt neun weitere, vom Schneesturm bis zum Konfettiregen.",
     "hint": "Wähle einen Effekt, dann fällt er hier und oben auf der Seite.",
     "chosen": "Jetzt fällt: {name}."
   },
@@ -112,7 +113,8 @@
     "blossom": { "name": "Kirschblüte", "desc": "Rosa Blüten in einer Frühlingsbrise." },
     "leaves": { "name": "Herbstlaub", "desc": "Warme Blätter, die sich im Fallen drehen." },
     "stars": { "name": "Sternennacht", "desc": "Funkelnde goldene Sterne." },
-    "confetti": { "name": "Konfetti", "desc": "Jedes Schnipsel in seiner eigenen Farbe." }
+    "confetti": { "name": "Konfetti", "desc": "Jedes Schnipsel in seiner eigenen Farbe." },
+    "emoji": { "name": "Deine Emojis", "desc": "Bis zu 32 Emojis deiner Wahl fallen statt Schnee." }
   },
   "ambient": {
     "title": "Ambiente-Modus, wenn du eine Pause machst.",
@@ -182,7 +184,7 @@
       { "label": "Kurzbefehle, Fokusfilter und „Nachts ruhiger“", "free": true, "pro": true },
       { "label": "Gesicherte Voreinstellungen", "free": "3", "pro": "Unbegrenzt" },
       { "label": "Qualität", "free": "Stromsparen, Ausgewogen", "pro": "Dazu Ultra, bis zu 10.000 Partikel" },
-      { "label": "Acht weitere Effekte", "note": "Schneesturm, Weihnachten, Eiskristalle, Kirschblüte, Regen am Fenster, Herbstlaub, Sternennacht und Konfetti", "free": false, "pro": true },
+      { "label": "Acht weitere Effekte", "note": "Schneesturm, Weihnachten, Eiskristalle, Kirschblüte, Regen am Fenster, Herbstlaub, Sternennacht und Konfetti", "label12": "Neun weitere Effekte", "note12": "Schneesturm, Weihnachten, Eiskristalle, Kirschblüte, Regen am Fenster, Herbstlaub, Sternennacht, Konfetti und Deine Emojis", "free": false, "pro": true },
       { "label": "Ambiente-Modus", "free": false, "pro": true },
       { "label": "Acht visuelle Effekte", "note": "Lichtschein, Polarlicht, Tiefenschärfe und mehr", "free": false, "pro": true },
       { "label": "Besondere Anlässe", "note": "Weihnachten, Neujahr, Halloween und die Kirschblüte schalten sich von selbst ein", "free": false, "pro": true },
@@ -201,7 +203,7 @@
   "faq": {
     "title": "Fragen.",
     "items": [
-      { "q": "Ist SnowWall kostenlos?", "a": "<p>Ja. Schneefall und Regen sind mit allen Einstellungen kostenlos, und du kannst drei Voreinstellungen sichern. SnowWall Pro ist ein einmaliger Kauf und bringt die acht weiteren Effekte, den Ambiente-Modus, die visuellen Effekte, die Qualitätsstufe „Ultra“ und unbegrenzt viele Voreinstellungen. Ein Abo ist es nicht.</p>" },
+      { "q": "Ist SnowWall kostenlos?", "a": "<p>Ja. Schneefall und Regen sind mit allen Einstellungen kostenlos, und du kannst drei Voreinstellungen sichern. SnowWall Pro ist ein einmaliger Kauf und bringt die acht weiteren Effekte, den Ambiente-Modus, die visuellen Effekte, die Qualitätsstufe „Ultra“ und unbegrenzt viele Voreinstellungen. Ein Abo ist es nicht.</p>", "a12": "<p>Ja. Schneefall und Regen sind mit allen Einstellungen kostenlos, und du kannst drei Voreinstellungen sichern. SnowWall Pro ist ein einmaliger Kauf und bringt die neun weiteren Effekte, den Ambiente-Modus, die visuellen Effekte, die Qualitätsstufe „Ultra“ und unbegrenzt viele Voreinstellungen. Ein Abo ist es nicht.</p>" },
       { "q": "Ich habe SnowWall geöffnet. Wo ist es?", "a": "<p>SnowWall hat kein eigenes Fenster und kein Symbol im Dock. Es wohnt als Schneeflocke in der Menüleiste oben am Bildschirm. Klick darauf, um zu pausieren, den Effekt zu wechseln oder die Einstellungen zu öffnen.</p>" },
       { "q": "Macht es meinen Mac langsamer oder leert den Akku?", "a": "<p>SnowWall zeichnet auf dem Grafikprozessor und braucht daher etwas Energie. Im Ruhezustand des Displays pausiert es, und im Stromsparmodus oder wenn der Mac heiß läuft, sinkt es auf 30 Bilder pro Sekunde. Für noch weniger wähle die Qualitätsstufe „Stromsparen“ oder reduziere die Anzahl der Flocken.</p>" },
       { "q": "Braucht es Berechtigungen?", "a": "<p>Nein. SnowWall zeichnet über den Schreibtisch, ohne zu lesen, was auf dem Bildschirm ist. Falls macOS dich je bittet, ihm Bildschirmaufnahme oder Zugriff auf die Bedienungshilfen zu erlauben, lehne ab und <a href=\"/support/\" hreflang=\"en\">sag uns bitte Bescheid</a>.</p>" },

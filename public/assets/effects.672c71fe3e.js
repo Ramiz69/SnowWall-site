@@ -10,6 +10,8 @@ blossom:   { kind: 'petal', shape: 'petal', settle: true, tints: [['#ffe6ee', '#
 leaves:    { kind: 'petal', shape: 'leaf', settle: true, size: 1.25, spin: 1.3, tints: [['#ffb347', '#d9661f'], ['#ff8a5c', '#b8361e'], ['#ffd56b', '#d89a1c']] },
 confetti:  { kind: 'petal', shape: 'confetti', settle: true, size: .62, speed: 1.35, spin: 2, flip: 2.2, count: 1.4,
 tints: [['#ff5a6e', '#ff5a6e'], ['#3d8bff', '#3d8bff'], ['#ffd23f', '#ffd23f'], ['#3ddc84', '#3ddc84'], ['#b06cff', '#b06cff']] },
+emoji:     { kind: 'petal', shape: 'emoji', settle: true, size: 1.05, speed: .9, spin: 0, count: .9,
+tints: ['⭐️', '🎈', '🍀', '🦋', '🌈'].map(g => [g, g]) },
 };
 for (const fx of Object.values(EFFECTS)) {
 fx.count ??= 1; fx.speed ??= 1; fx.wind ??= 1; fx.size ??= 1; fx.spin ??= 1; fx.flip ??= 1;

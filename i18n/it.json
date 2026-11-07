@@ -97,6 +97,7 @@
   "seasons": {
     "title": "Il meteo di ogni stagione.",
     "lede": "Nevicata e Pioggia sono gratis. SnowWall Pro ne aggiunge altri otto, dalla tormenta a una pioggia di coriandoli.",
+    "lede12": "Nevicata e Pioggia sono gratis. SnowWall Pro ne aggiunge altri nove, dalla tormenta a una pioggia di coriandoli.",
     "hint": "Scegline uno per vederlo cadere, qui e in cima alla pagina.",
     "chosen": "Ora cade: {name}."
   },
@@ -112,7 +113,8 @@
     "blossom": { "name": "Fiori di ciliegio", "desc": "Petali rosa nella brezza di primavera." },
     "leaves": { "name": "Foglie d'autunno", "desc": "Foglie calde che volteggiano cadendo." },
     "stars": { "name": "Notte stellata", "desc": "Stelle dorate che scintillano." },
-    "confetti": { "name": "Coriandoli", "desc": "Ognuno del suo colore." }
+    "confetti": { "name": "Coriandoli", "desc": "Ognuno del suo colore." },
+    "emoji": { "name": "Le tue emoji", "desc": "Fino a 32 emoji a tua scelta, che cadono al posto della neve." }
   },
   "ambient": {
     "title": "Modalità Ambiente, quando ti allontani.",
@@ -182,7 +184,7 @@
       { "label": "Comandi Rapidi, filtro Full immersion e Più tenue di notte", "free": true, "pro": true },
       { "label": "Preset salvati", "free": "3", "pro": "Illimitati" },
       { "label": "Qualità", "free": "Risparmio batteria, Bilanciata", "pro": "In più Ultra, fino a 10.000 particelle" },
-      { "label": "Altri otto effetti", "note": "Tormenta, Natale, Gelo, Fiori di ciliegio, Pioggia sul vetro, Foglie d'autunno, Notte stellata e Coriandoli", "free": false, "pro": true },
+      { "label": "Altri otto effetti", "note": "Tormenta, Natale, Gelo, Fiori di ciliegio, Pioggia sul vetro, Foglie d'autunno, Notte stellata e Coriandoli", "label12": "Altri nove effetti", "note12": "Tormenta, Natale, Gelo, Fiori di ciliegio, Pioggia sul vetro, Foglie d'autunno, Notte stellata, Coriandoli e Le tue emoji", "free": false, "pro": true },
       { "label": "Modalità Ambiente", "free": false, "pro": true },
       { "label": "Otto effetti visivi", "note": "Bagliore, aurora boreale, profondità di campo e altri", "free": false, "pro": true },
       { "label": "Date delle feste", "note": "Natale, Capodanno, Halloween e la fioritura di primavera si attivano da sole", "free": false, "pro": true },
@@ -201,7 +203,7 @@
   "faq": {
     "title": "Domande.",
     "items": [
-      { "q": "SnowWall è gratis?", "a": "<p>Sì. Nevicata e Pioggia sono gratis, con tutte le impostazioni, e puoi salvare tre preset. SnowWall Pro è un acquisto unico che aggiunge gli altri otto effetti, la Modalità Ambiente, gli effetti visivi, la qualità Ultra e i preset illimitati. Non è un abbonamento.</p>" },
+      { "q": "SnowWall è gratis?", "a": "<p>Sì. Nevicata e Pioggia sono gratis, con tutte le impostazioni, e puoi salvare tre preset. SnowWall Pro è un acquisto unico che aggiunge gli altri otto effetti, la Modalità Ambiente, gli effetti visivi, la qualità Ultra e i preset illimitati. Non è un abbonamento.</p>", "a12": "<p>Sì. Nevicata e Pioggia sono gratis, con tutte le impostazioni, e puoi salvare tre preset. SnowWall Pro è un acquisto unico che aggiunge gli altri nove effetti, la Modalità Ambiente, gli effetti visivi, la qualità Ultra e i preset illimitati. Non è un abbonamento.</p>" },
       { "q": "Ho aperto SnowWall. Dov’è?", "a": "<p>SnowWall non ha una finestra né un’icona nel Dock. Vive nella barra dei menu, come un fiocco di neve in cima allo schermo. Fai clic per metterla in pausa, cambiare effetto o aprire le impostazioni.</p>" },
       { "q": "Rallenta il Mac o consuma la batteria?", "a": "<p>Disegna con il processore grafico, quindi consuma un po’ di energia. Si mette in pausa quando il display va in stop e scende a 30 fotogrammi al secondo in modalità Basso consumo o quando il Mac si scalda. Per consumare meno, scegli la qualità Risparmio batteria o riduci il numero di fiocchi.</p>" },
       { "q": "Servono autorizzazioni?", "a": "<p>No. SnowWall disegna sulla scrivania senza leggere cosa c’è sullo schermo. Se macOS dovesse chiederti di concederle la registrazione dello schermo o l’accesso all’accessibilità, non farlo e, per favore, <a href=\"/support/\" hreflang=\"en\">faccelo sapere</a>.</p>" },
