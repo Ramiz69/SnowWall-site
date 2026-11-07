@@ -192,6 +192,10 @@
       { "title": "Noël est gratuit en décembre.", "body": "L’effet Noël est ouvert à tous pendant tout le mois." },
       { "title": "Essayez avant d’acheter.", "body": "Testez n’importe quel effet Pro en direct sur votre bureau avant de vous décider." }
     ],
+    "release12": [
+      { "title": "Nouveau givre.", "body": "La glace avance depuis les bords de l’écran avec des facettes de cristal et de fines aiguilles, et le pointeur y fait fondre un passage." },
+      { "title": "Vos emojis.", "body": "Choisissez jusqu’à 32 emojis et laissez-les tomber à la place de la neige. Inclus dans Pro." }
+    ],
     "price": "SnowWall Pro est un achat unique de 14,99 $. Restaurez-le sur chaque Mac connecté à votre compte Apple."
   },
   "faq": {
