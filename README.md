@@ -9,6 +9,7 @@ served by Cloudflare at **snowwall.app**.
 | `/` | the home page, English | Marketing URL in App Store Connect |
 | `/ru/`, `/de/`, `/ja/`, … | the home page in each of the app's 16 languages | hreflang alternates of `/` |
 | `/press/` | press kit: facts, screenshots, icon, ZIP | links in press emails |
+| `/black-friday/`, `/ru/black-friday/`, … | the Black Friday 2026 offer (Pro about a third off, 27 Nov to 1 Dec), in all 16 languages | deal lists and press, which want the old and new price and the dates on our own page |
 | `/support/` | answers and the support address | Support URL in App Store Connect (required, must be a web page) |
 | `/privacy/` | privacy policy | the app's purchase window, Privacy Policy URL in App Store Connect |
 | `/terms/` | terms of use | the app's purchase window |
@@ -69,6 +70,16 @@ card (`"release": "1.2"` in `src/data/effects.json` keeps it out of earlier buil
 draws the app's default emoji), the counts that include it (`seasons.lede12`, the Pro row's
 `label12`/`note12`, `faq.items[0].a12`), the release note `pro.release12`, and in the press kit
 the frost screenshot and "New in 1.2".
+
+## Black Friday page
+
+`src/black-friday.html`, with its strings under `blackFriday` in every `i18n/<lang>.json` (checked by
+`tools/check-i18n.mjs` like the rest). The build renders it per language at `<home path>black-friday/`,
+lists the versions as hreflang alternates of each other (in the page and in the sitemap), and links its
+App Store badges with the campaign `site-blackfriday`. "All {count} effects" is filled from the release:
+11 in 1.1, 12 in 1.2 (the app's own count, Hearts included); Your Emoji is a `data-release="1.2" hidden`
+span. The home page's Pro section links to the page between `<!--sale-->` markers, kept only by builds
+up to `SALE.lastDay` in `build.mjs`: rebuild and push after 1 December and the link is gone.
 
 ## Adding a language
 

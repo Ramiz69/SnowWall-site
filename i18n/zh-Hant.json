@@ -228,5 +228,55 @@
   "jsonld": {
     "description": "一款選單列 App，可在 Mac 桌面上呈現飄雪、下雨和四季天氣。雪花會避開指標，停留在視窗上。",
     "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  },
+  "blackFriday": {
+    "title": "黑色星期五：SnowWall Pro 優惠約三分之一",
+    "description": "2026年11月27日至12月1日，Mac 版 SnowWall Pro 在所有 App Store 優惠約三分之一。一次購買，無需訂閱。",
+    "ogTitle": "黑色星期五：SnowWall Pro 優惠約三分之一",
+    "ogDescription": "2026年11月27日至12月1日，SnowWall Pro（Mac 上 SnowWall 的一次性購買項目）在所有 App Store 優惠約三分之一。無需訂閱。",
+    "heading": "黑色星期五的 SnowWall Pro",
+    "dates": "2026年11月27日至12月1日",
+    "lede": "SnowWall 可在 Mac App Store 免費下載。2026年11月27日至12月1日，解鎖其餘全部功能的一次性購買項目 SnowWall Pro 在所有 App Store 優惠約三分之一。無需優惠碼，也無需訂閱。",
+    "usLabel": "美國",
+    "wasLabel": "原價",
+    "nowLabel": "黑色星期五價格",
+    "was": "US$14.99",
+    "now": "US$9.99",
+    "off": "優惠約三分之一",
+    "local": "在其他所有 App Store，Pro 同樣以當地貨幣優惠約三分之一。",
+    "noCode": "無需優惠碼：活動期間，App 會自動顯示優惠後的價格。12月2日起恢復原價。",
+    "storeNote": "SnowWall 可免費下載，Pro 在 App 內購買。",
+    "includesTitle": "SnowWall Pro 包含",
+    "includes": [
+      {
+        "title": "全部 {count} 種效果",
+        "body": "暴風雪、雨打玻璃、聖誕節、櫻花<span data-release=\"1.2\" hidden>、你的表情符號</span>等。"
+      },
+      {
+        "title": "氛圍模式",
+        "body": "你離開時佈滿整個螢幕，並在效果上顯示時鐘。"
+      },
+      {
+        "title": "畫面增強",
+        "body": "光暈、冰晶閃光、極光、景深，以及另外四種效果。"
+      },
+      {
+        "title": "無限預設組合",
+        "body": "自訂預設組合想存幾組都可以。免費版可儲存 3 組。"
+      },
+      {
+        "title": "極致畫質",
+        "body": "以顯示器的完整更新頻率呈現多達 10,000 個粒子。"
+      }
+    ],
+    "freeNote": "無論是否購買 Pro，飄雪和下雨都維持免費，所有設定皆可使用。",
+    "buyTitle": "如何購買",
+    "buySteps": [
+      "從 Mac App Store 取得 SnowWall。App 本身免費。",
+      "按一下選單列中的雪花，選擇<strong>SnowWall Pro…</strong>，或按一下設定視窗頂端的<strong>SnowWall Pro</strong>。",
+      "只需購買一次。這不是訂閱，在登入同一個 Apple 帳號的每部 Mac 上都能回復購買項目。"
+    ],
+    "homeText": "<strong>黑色星期五。</strong>11月27日至12月1日，SnowWall Pro 優惠約三分之一。",
+    "homeMore": "查看優惠詳情"
   }
 }

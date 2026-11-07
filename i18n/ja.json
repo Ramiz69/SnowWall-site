@@ -228,5 +228,55 @@
   "jsonld": {
     "description": "Macのデスクトップに雪や雨、季節の天気を降らせるメニューバーアプリ。雪はポインタをよけて舞い、ウインドウに積もります。",
     "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  },
+  "blackFriday": {
+    "title": "ブラックフライデー：SnowWall Proが約3分の1オフ",
+    "description": "2026年11月27日から12月1日まで、Mac用SnowWall ProがすべてのApp Storeで約3分の1オフ。買い切りで、サブスクリプションはありません。",
+    "ogTitle": "ブラックフライデー：SnowWall Proが約3分の1オフ",
+    "ogDescription": "2026年11月27日から12月1日まで、MacのSnowWallを買い切りで拡張するSnowWall Proが、すべてのApp Storeで約3分の1オフ。サブスクリプションなし。",
+    "heading": "ブラックフライデーのSnowWall Pro",
+    "dates": "2026年11月27日〜12月1日",
+    "lede": "SnowWallはMac App Storeで無料です。2026年11月27日から12月1日まで、ほかのすべての機能を開放する買い切りのSnowWall Proが、すべてのApp Storeで約3分の1オフになります。コードは不要、サブスクリプションもありません。",
+    "usLabel": "米国",
+    "wasLabel": "通常価格",
+    "nowLabel": "ブラックフライデー価格",
+    "was": "14.99ドル",
+    "now": "9.99ドル",
+    "off": "約3分の1オフ",
+    "local": "ほかの国や地域のApp Storeでも、現地通貨で約3分の1オフになります。",
+    "noCode": "コードは必要ありません。セール期間中は、アプリに割引価格が自動で表示されます。12月2日に通常価格に戻ります。",
+    "storeNote": "SnowWallは無料でダウンロードでき、Proはアプリ内で購入します。",
+    "includesTitle": "SnowWall Proの内容",
+    "includes": [
+      {
+        "title": "全{count}種類のエフェクト",
+        "body": "吹雪、窓ガラスの雨、クリスマス、桜<span data-release=\"1.2\" hidden>、あなたの絵文字</span>など。"
+      },
+      {
+        "title": "アンビエントモード",
+        "body": "席を離れると、画面いっぱいのエフェクトの上に時計を表示します。"
+      },
+      {
+        "title": "画質の強化",
+        "body": "ブルーム、結晶のきらめき、オーロラ、被写界深度ほか4種類。"
+      },
+      {
+        "title": "プリセット無制限",
+        "body": "カスタムプリセットを好きなだけ保存できます。無料版では3個までです。"
+      },
+      {
+        "title": "ウルトラ画質",
+        "body": "ディスプレイの最大リフレッシュレートで最大10,000個の粒子。"
+      }
+    ],
+    "freeNote": "雪と雨は、Proがなくてもすべての設定とともに無料のままです。",
+    "buyTitle": "購入方法",
+    "buySteps": [
+      "Mac App StoreからSnowWallを入手します。アプリ自体は無料です。",
+      "メニューバーの雪の結晶をクリックして<strong>SnowWall Pro…</strong>を選ぶか、設定ウインドウ上部の<strong>SnowWall Pro</strong>をクリックします。",
+      "購入は一度だけ。サブスクリプションではなく、同じApple AccountでサインインしているすべてのMacで復元できます。"
+    ],
+    "homeText": "<strong>ブラックフライデー。</strong>11月27日から12月1日まで、SnowWall Proが約3分の1オフになります。",
+    "homeMore": "セールの詳細"
   }
 }

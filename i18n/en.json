@@ -228,5 +228,55 @@
   "jsonld": {
     "description": "A menu bar app that draws snow, rain and seasonal weather across the Mac desktop. Flakes drift around the pointer and settle on windows.",
     "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  },
+  "blackFriday": {
+    "title": "SnowWall Pro for Black Friday: about a third off",
+    "description": "From 27 November to 1 December 2026, SnowWall Pro for Mac is about a third off in every App Store: $9.99 instead of $14.99 in the US. One-time purchase, no subscription.",
+    "ogTitle": "SnowWall Pro for Black Friday: about a third off",
+    "ogDescription": "From 27 November to 1 December 2026, SnowWall Pro, the one-time upgrade for SnowWall on the Mac, is about a third off in every App Store. No subscription.",
+    "heading": "SnowWall Pro for Black Friday",
+    "dates": "27 November to 1 December 2026",
+    "lede": "SnowWall is free on the Mac App Store. From 27 November to 1 December 2026, SnowWall Pro, the one-time purchase that unlocks everything else, is about a third off in every App Store. No code and no subscription.",
+    "usLabel": "In the US",
+    "wasLabel": "Regular price",
+    "nowLabel": "Black Friday price",
+    "was": "$14.99",
+    "now": "$9.99",
+    "off": "About a third off",
+    "local": "In every other App Store, Pro is also about a third off, in your local currency.",
+    "noCode": "No code needed: during the sale the app shows the lower price on its own. Prices return to normal on 2 December.",
+    "storeNote": "SnowWall is a free download. You buy Pro inside the app.",
+    "includesTitle": "What SnowWall Pro includes",
+    "includes": [
+      {
+        "title": "All {count} effects",
+        "body": "Blizzard, Rain on Glass, Christmas, Cherry Blossom<span data-release=\"1.2\" hidden>, Your Emoji</span> and more."
+      },
+      {
+        "title": "Ambient Mode",
+        "body": "Takes over the screen when you step away, with a clock over the effect."
+      },
+      {
+        "title": "Visual enhancements",
+        "body": "Bloom, crystalline sparkle, aurora, depth of field and four more."
+      },
+      {
+        "title": "Unlimited presets",
+        "body": "Save as many custom presets as you like. Free includes 3."
+      },
+      {
+        "title": "Ultra quality",
+        "body": "Up to 10,000 particles at your display’s full refresh rate."
+      }
+    ],
+    "freeNote": "Snowfall and Rain stay free, with every setting, whether you buy Pro or not.",
+    "buyTitle": "How to buy",
+    "buySteps": [
+      "Get SnowWall from the Mac App Store. The app itself is free.",
+      "Click the snowflake in the menu bar and choose <strong>SnowWall Pro…</strong>, or click <strong>SnowWall Pro</strong> at the top of the Settings window.",
+      "Buy it once. It is not a subscription, and you can restore it on every Mac signed in to your Apple Account."
+    ],
+    "homeText": "<strong>Black Friday.</strong> SnowWall Pro is about a third off from 27 November to 1 December.",
+    "homeMore": "See the offer"
   }
 }

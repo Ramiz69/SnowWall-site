@@ -228,5 +228,55 @@
   "jsonld": {
     "description": "Mac 데스크탑에 눈, 비, 계절의 날씨를 내리게 하는 메뉴 막대 앱. 눈송이는 포인터를 피해 흩어지고 윈도우 위에 내려앉습니다.",
     "proOffer": { "name": "SnowWall Pro", "price": "14.99", "priceCurrency": "USD" }
+  },
+  "blackFriday": {
+    "title": "블랙 프라이데이: SnowWall Pro 약 3분의 1 할인",
+    "description": "2026년 11월 27일부터 12월 1일까지 Mac용 SnowWall Pro를 모든 App Store에서 약 3분의 1 할인합니다. 한 번 구입, 구독 없음.",
+    "ogTitle": "블랙 프라이데이: SnowWall Pro 약 3분의 1 할인",
+    "ogDescription": "2026년 11월 27일부터 12월 1일까지, Mac용 SnowWall의 한 번 구입 업그레이드인 SnowWall Pro를 모든 App Store에서 약 3분의 1 할인합니다. 구독 없음.",
+    "heading": "블랙 프라이데이 SnowWall Pro",
+    "dates": "2026년 11월 27일부터 12월 1일까지",
+    "lede": "SnowWall은 Mac App Store에서 무료입니다. 2026년 11월 27일부터 12월 1일까지, 나머지 모든 기능을 여는 한 번 구입 상품 SnowWall Pro를 모든 App Store에서 약 3분의 1 할인합니다. 코드도 구독도 필요 없습니다.",
+    "usLabel": "미국",
+    "wasLabel": "정상가",
+    "nowLabel": "블랙 프라이데이 가격",
+    "was": "$14.99",
+    "now": "$9.99",
+    "off": "약 3분의 1 할인",
+    "local": "다른 모든 App Store에서도 Pro를 현지 통화 기준 약 3분의 1 할인합니다.",
+    "noCode": "코드는 필요 없습니다. 할인 기간에는 앱에 할인된 가격이 자동으로 표시됩니다. 12월 2일에 정상가로 돌아갑니다.",
+    "storeNote": "SnowWall은 무료로 다운로드하고, Pro는 앱 안에서 구입합니다.",
+    "includesTitle": "SnowWall Pro에 포함된 것",
+    "includes": [
+      {
+        "title": "효과 {count}가지 모두",
+        "body": "눈보라, 유리창 빗방울, 크리스마스, 벚꽃<span data-release=\"1.2\" hidden>, 나만의 이모지</span> 등."
+      },
+      {
+        "title": "앰비언트 모드",
+        "body": "자리를 비우면 효과가 화면을 채우고 그 위에 시계를 표시합니다."
+      },
+      {
+        "title": "화질 향상",
+        "body": "빛 번짐, 크리스털 반짝임, 오로라, 피사계 심도 외 4가지."
+      },
+      {
+        "title": "무제한 프리셋",
+        "body": "사용자 프리셋을 원하는 만큼 저장할 수 있습니다. 무료 버전은 3개까지입니다."
+      },
+      {
+        "title": "울트라 품질",
+        "body": "디스플레이 최대 재생률로 최대 10,000개의 입자 표시."
+      }
+    ],
+    "freeNote": "함박눈과 비는 Pro가 없어도 모든 설정과 함께 계속 무료입니다.",
+    "buyTitle": "구입 방법",
+    "buySteps": [
+      "Mac App Store에서 SnowWall을 받으세요. 앱 자체는 무료입니다.",
+      "메뉴 막대의 눈송이를 클릭하고 <strong>SnowWall Pro…</strong>를 선택하거나, 설정 윈도우 위쪽의 <strong>SnowWall Pro</strong>를 클릭하세요.",
+      "한 번만 구입하면 됩니다. 구독이 아니며, 같은 Apple 계정으로 로그인한 모든 Mac에서 복원할 수 있습니다."
+    ],
+    "homeText": "<strong>블랙 프라이데이.</strong> 11월 27일부터 12월 1일까지 SnowWall Pro를 약 3분의 1 할인합니다.",
+    "homeMore": "할인 자세히 보기"
   }
 }

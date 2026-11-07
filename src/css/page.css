@@ -54,3 +54,22 @@ nav.site a[aria-current="page"] { color: var(--muted); text-decoration: none; }
 }
 .press-video { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); background: #070b16; margin: 0 0 12px; }
 .button + .button { margin-inline-start: 8px; }
+/* Black Friday: the price card and what Pro includes, after the home page's Pro section */
+.glass { background: var(--glass); border: 1px solid var(--glass-line); border-radius: 20px; }
+.deal { padding: 22px 24px 6px; margin: 0 0 1rem; }
+.deal p { margin: 0 0 .7rem; }
+.deal-where { color: var(--muted); font-size: .95rem; font-weight: 600; }
+.deal .deal-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin: 0; }
+.deal-price s { color: var(--muted); font-size: 1.5rem; text-decoration-thickness: 2px; }
+.deal-price strong { font-size: clamp(2.4rem, 7vw, 3.2rem); line-height: 1.15; letter-spacing: -.03em; }
+.deal-off { font-weight: 600; color: var(--accent); }
+.deal-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 0 16px; }
+.deal-cta .badge { margin-block: 6px 14px; margin-inline: 0; }
+.deal .deal-note { color: var(--muted); font-size: .95rem; margin-bottom: 14px; }
+.includes { list-style: none; padding: 6px 0 !important; margin: 0 0 1rem; }
+.doc .includes li { display: flex; gap: 12px; align-items: flex-start; margin: 0; padding: 12px 20px; }
+.includes li + li { border-top: 1px solid var(--line); }
+.includes .yes { flex: none; width: 20px; height: 20px; margin-top: 3px; color: var(--accent); }
+.includes strong { display: block; }
+.includes .note { color: var(--muted); font-size: .95rem; }
+.release-note { padding: 16px 20px; margin: 2rem 0 0; }

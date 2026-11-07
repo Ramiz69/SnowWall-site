@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="{{lang}}" dir="{{dir}}" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>{{bf.title}}</title>
+<meta name="description" content="{{bf.description}}">
+<link rel="canonical" href="{{url}}">
+{{alternates}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowWall">
+<meta property="og:title" content="{{bf.ogTitle}}">
+<meta property="og:description" content="{{bf.ogDescription}}">
+<meta property="og:url" content="{{url}}">
+<meta property="og:image" content="{{site}}/og/{{ogImage}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{meta.ogAlt}}">
+{{ogLocales}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{bf.ogTitle}}">
+<meta name="twitter:description" content="{{bf.ogDescription}}">
+<meta name="twitter:image" content="{{site}}/og/{{ogImage}}">
+<meta name="apple-itunes-app" content="app-id=6809149964">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="stylesheet" href="{{@css/page.css}}">
+<script src="{{@js/theme-init.js}}"></script>
+<script type="module" src="{{@js/menus.js}}"></script>
+</head>
+<body>
+<a class="skip" href="#main">{{ui.skip}}</a>
+<header class="page-top">
+  <div class="page-bar">
+    <a class="brand" href="{{path}}"><img src="{{@assets/icon-192.webp}}" alt="" width="32" height="32">SnowWall</a>
+    <nav class="topnav" aria-label="{{ui.langNav}}">
+    {{menus}}
+    </nav>
+  </div>
+</header>
+<main class="doc" id="main">
+<h1>{{bf.heading}}</h1>
+<p class="updated">{{bf.dates}}</p>
+
+<p class="lede">{{bf.lede}}</p>
+
+<section class="deal glass" aria-labelledby="deal-us">
+  <p class="deal-where" id="deal-us">{{bf.usLabel}}</p>
+  <p class="deal-price"><span class="vh">{{bf.wasLabel}}:</span><s><bdi>{{bf.was}}</bdi></s> <span class="vh">{{bf.nowLabel}}:</span><strong><bdi>{{bf.now}}</bdi></strong></p>
+  <p class="deal-off">{{bf.off}}</p>
+  <p>{{bf.local}}</p>
+  <p>{{bf.noCode}}</p>
+  <div class="deal-cta">
+    <a class="badge" href="{{appStore}}"><img src="{{@assets/badge-mac-black-{{badgeLang}}.svg}}" alt="{{ui.badgeAlt}}" width="{{badgeWidth}}" height="48"></a>
+    <p class="deal-note">{{bf.storeNote}}</p>
+  </div>
+</section>
+
+<h2>{{bf.includesTitle}}</h2>
+<ul class="includes glass" role="list">
+  {{#bf.includes}}<li>{{check}}<span><strong>{{.title}}</strong> <span class="note">{{.body}}</span></span></li>{{/bf.includes}}
+</ul>
+<p>{{bf.freeNote}}</p>
+
+<h2>{{bf.buyTitle}}</h2>
+<ol>
+  {{#bf.buySteps}}<li>{{.}}</li>{{/bf.buySteps}}
+</ol>
+
+<p class="release-note glass" data-release="1.1" hidden><strong>{{pro.release11.0.title}}</strong> {{pro.release11.0.body}}</p>
+</main>
+<footer class="page-foot">
+  <nav class="site" aria-label="{{footer.navLabel}}">
+    <a href="{{path}}">SnowWall</a>
+    <a href="/support/">{{footer.support}}</a>
+    <a href="/privacy/">{{footer.privacy}}</a>
+    <a href="/terms/">{{footer.terms}}</a>
+    <a href="/press/">{{footer.press}}</a>
+  </nav>
+  <a class="badge" href="{{appStore}}"><img src="{{@assets/badge-mac-black-{{badgeLang}}.svg}}" alt="{{ui.badgeAlt}}" width="{{badgeWidth}}" height="48" loading="lazy"></a>
+</footer>
+</body>
+</html>
