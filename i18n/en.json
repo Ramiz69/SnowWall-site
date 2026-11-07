@@ -97,6 +97,7 @@
   "seasons": {
     "title": "Weather for every season.",
     "lede": "Snowfall and Rain come free. SnowWall Pro adds eight more, from a blizzard to a shower of confetti.",
+    "lede12": "Snowfall and Rain come free. SnowWall Pro adds nine more, from a blizzard to a shower of confetti.",
     "hint": "Choose one to see it fall, here and at the top of the page.",
     "chosen": "{name} is falling now."
   },
@@ -112,7 +113,8 @@
     "blossom": { "name": "Cherry Blossom", "desc": "Pink petals on a spring breeze." },
     "leaves": { "name": "Autumn Leaves", "desc": "Warm leaves, turning as they fall." },
     "stars": { "name": "Starry Night", "desc": "Twinkling golden stars." },
-    "confetti": { "name": "Confetti", "desc": "Every piece its own color." }
+    "confetti": { "name": "Confetti", "desc": "Every piece its own color." },
+    "emoji": { "name": "Your Emoji", "desc": "Up to 32 emoji of your choice, falling instead of snow." }
   },
   "ambient": {
     "title": "Ambient Mode, when you step away.",
@@ -182,7 +184,7 @@
       { "label": "Shortcuts, Focus filter and Quiet at Night", "free": true, "pro": true },
       { "label": "Saved presets", "free": "3", "pro": "Unlimited" },
       { "label": "Quality", "free": "Battery Saver, Balanced", "pro": "Adds Ultra, up to 10,000 particles" },
-      { "label": "Eight more effects", "note": "Blizzard, Christmas, Frozen, Cherry Blossom, Rain on Glass, Autumn Leaves, Starry Night and Confetti", "free": false, "pro": true },
+      { "label": "Eight more effects", "note": "Blizzard, Christmas, Frozen, Cherry Blossom, Rain on Glass, Autumn Leaves, Starry Night and Confetti", "label12": "Nine more effects", "note12": "Blizzard, Christmas, Frozen, Cherry Blossom, Rain on Glass, Autumn Leaves, Starry Night, Confetti and Your Emoji", "free": false, "pro": true },
       { "label": "Ambient Mode", "free": false, "pro": true },
       { "label": "Eight visual effects", "note": "Bloom, Aurora Light, Depth of Field and more", "free": false, "pro": true },
       { "label": "Holiday dates", "note": "Christmas, New Year, Halloween and spring blossom switch on by themselves", "free": false, "pro": true },
@@ -192,12 +194,16 @@
       { "title": "Christmas is free in December.", "body": "The Christmas effect is open to everyone for the whole month." },
       { "title": "Try before you buy.", "body": "Preview any Pro effect live on your own desktop before you decide." }
     ],
+    "release12": [
+      { "title": "New frost.", "body": "Ice grows in from the edges of the screen with crystal facets and fine needles, and your pointer melts a path through it." },
+      { "title": "Your Emoji.", "body": "Pick up to 32 emoji and let them fall instead of snow. Comes with Pro." }
+    ],
     "price": "SnowWall Pro is a one-time purchase of $14.99. Restore it on every Mac signed in to your Apple Account."
   },
   "faq": {
     "title": "Questions.",
     "items": [
-      { "q": "Is SnowWall free?", "a": "<p>Yes. Snowfall and Rain are free, with every setting, and you can save three presets. SnowWall Pro is a one-time purchase that adds the other eight effects, Ambient Mode, the visual effects, Ultra quality and unlimited presets. It is not a subscription.</p>" },
+      { "q": "Is SnowWall free?", "a": "<p>Yes. Snowfall and Rain are free, with every setting, and you can save three presets. SnowWall Pro is a one-time purchase that adds the other eight effects, Ambient Mode, the visual effects, Ultra quality and unlimited presets. It is not a subscription.</p>", "a12": "<p>Yes. Snowfall and Rain are free, with every setting, and you can save three presets. SnowWall Pro is a one-time purchase that adds the other nine effects, Ambient Mode, the visual effects, Ultra quality and unlimited presets. It is not a subscription.</p>" },
       { "q": "I opened SnowWall. Where is it?", "a": "<p>SnowWall has no window or Dock icon of its own. It lives in the menu bar as a snowflake at the top of the screen. Click it to pause, switch effects or open Settings.</p>" },
       { "q": "Will it slow my Mac down or drain the battery?", "a": "<p>It draws on the graphics processor, so it uses some energy. It pauses when the display sleeps and drops to 30 frames a second in Low Power Mode or when the Mac runs hot. For less, choose Battery Saver quality or lower the snowflake count.</p>" },
       { "q": "Does it need any permissions?", "a": "<p>No. SnowWall draws over the desktop without reading what is on screen. If macOS ever asks you to give it screen recording or accessibility access, don’t grant it, and please <a href=\"/support/\">let us know</a>.</p>" },

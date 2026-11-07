@@ -97,6 +97,7 @@
   "seasons": {
     "title": "Cuaca untuk setiap musim.",
     "lede": "Hujan Salju dan Hujan gratis. SnowWall Pro menambahkan delapan lagi, dari badai salju hingga hujan konfeti.",
+    "lede12": "Hujan Salju dan Hujan gratis. SnowWall Pro menambahkan sembilan lagi, dari badai salju hingga hujan konfeti.",
     "hint": "Pilih satu untuk melihatnya turun, di sini dan di bagian atas halaman.",
     "chosen": "{name} sedang turun."
   },
@@ -112,7 +113,8 @@
     "blossom": { "name": "Bunga Sakura", "desc": "Kelopak merah muda tertiup angin musim semi." },
     "leaves": { "name": "Daun Gugur", "desc": "Daun berwarna hangat yang berputar saat jatuh." },
     "stars": { "name": "Malam Berbintang", "desc": "Bintang emas yang berkelip." },
-    "confetti": { "name": "Konfeti", "desc": "Setiap kepingnya punya warna sendiri." }
+    "confetti": { "name": "Konfeti", "desc": "Setiap kepingnya punya warna sendiri." },
+    "emoji": { "name": "Emoji Anda", "desc": "Hingga 32 emoji pilihan Anda, berjatuhan menggantikan salju." }
   },
   "ambient": {
     "title": "Mode Ambien, saat Anda pergi.",
@@ -182,7 +184,7 @@
       { "label": "Pintasan, filter Fokus, dan Tenang di Malam Hari", "free": true, "pro": true },
       { "label": "Preset tersimpan", "free": "3", "pro": "Tanpa batas" },
       { "label": "Kualitas", "free": "Hemat Baterai, Seimbang", "pro": "Ditambah Ultra, hingga 10.000 partikel" },
-      { "label": "Delapan efek tambahan", "note": "Badai Salju, Natal, Beku, Bunga Sakura, Hujan di Kaca, Daun Gugur, Malam Berbintang, dan Konfeti", "free": false, "pro": true },
+      { "label": "Delapan efek tambahan", "note": "Badai Salju, Natal, Beku, Bunga Sakura, Hujan di Kaca, Daun Gugur, Malam Berbintang, dan Konfeti", "label12": "Sembilan efek tambahan", "note12": "Badai Salju, Natal, Beku, Bunga Sakura, Hujan di Kaca, Daun Gugur, Malam Berbintang, Konfeti, dan Emoji Anda", "free": false, "pro": true },
       { "label": "Mode Ambien", "free": false, "pro": true },
       { "label": "Delapan efek visual", "note": "Pendaran, Cahaya Aurora, Ruang Tajam, dan lainnya", "free": false, "pro": true },
       { "label": "Tanggal perayaan", "note": "Natal, Tahun Baru, Halloween, dan bunga musim semi aktif dengan sendirinya", "free": false, "pro": true },
@@ -192,12 +194,16 @@
       { "title": "Natal gratis di bulan Desember.", "body": "Efek Natal terbuka untuk semua orang sepanjang bulan." },
       { "title": "Coba sebelum membeli.", "body": "Lihat efek Pro apa pun langsung di desktop Anda sendiri sebelum memutuskan." }
     ],
+    "release12": [
+      { "title": "Embun beku baru.", "body": "Es tumbuh dari tepi layar dengan sisi kristal dan jarum halus, dan penunjuk mencairkan jalur di dalamnya." },
+      { "title": "Emoji Anda.", "body": "Pilih hingga 32 emoji dan biarkan berjatuhan menggantikan salju. Termasuk dalam Pro." }
+    ],
     "price": "SnowWall Pro cukup dibeli sekali seharga US$14,99. Pulihkan di setiap Mac yang masuk ke Akun Apple Anda."
   },
   "faq": {
     "title": "Pertanyaan.",
     "items": [
-      { "q": "Apakah SnowWall gratis?", "a": "<p>Ya. Hujan Salju dan Hujan gratis, lengkap dengan semua pengaturannya, dan Anda bisa menyimpan tiga preset. SnowWall Pro dibeli sekali dan menambahkan delapan efek lainnya, Mode Ambien, efek visual, Kualitas Ultra, dan preset tanpa batas. Bukan langganan.</p>" },
+      { "q": "Apakah SnowWall gratis?", "a": "<p>Ya. Hujan Salju dan Hujan gratis, lengkap dengan semua pengaturannya, dan Anda bisa menyimpan tiga preset. SnowWall Pro dibeli sekali dan menambahkan delapan efek lainnya, Mode Ambien, efek visual, Kualitas Ultra, dan preset tanpa batas. Bukan langganan.</p>", "a12": "<p>Ya. Hujan Salju dan Hujan gratis, lengkap dengan semua pengaturannya, dan Anda bisa menyimpan tiga preset. SnowWall Pro dibeli sekali dan menambahkan sembilan efek lainnya, Mode Ambien, efek visual, Kualitas Ultra, dan preset tanpa batas. Bukan langganan.</p>" },
       { "q": "Saya sudah membuka SnowWall. Di mana aplikasinya?", "a": "<p>SnowWall tidak punya jendela atau ikon Dock sendiri. Aplikasi ini tinggal di bar menu, berupa kepingan salju di bagian atas layar. Klik untuk menjeda, mengganti efek, atau membuka Pengaturan.</p>" },
       { "q": "Apakah Mac jadi lambat atau baterai cepat habis?", "a": "<p>SnowWall menggambar dengan prosesor grafis, jadi memang memakai sedikit energi. Aplikasi ini dijeda saat layar tidur dan turun ke 30 bingkai per detik dalam Mode Daya Rendah atau saat Mac panas. Agar lebih hemat, pilih Kualitas Hemat Baterai atau kurangi jumlah kepingan salju.</p>" },
       { "q": "Apakah perlu memberi izin?", "a": "<p>Tidak. SnowWall menggambar di atas desktop tanpa membaca isi layar. Jika macOS meminta Anda memberinya akses rekaman layar atau aksesibilitas, jangan izinkan, dan mohon <a href=\"/support/\" hreflang=\"en\">beri tahu kami</a>.</p>" },

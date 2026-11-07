@@ -1,4 +1,4 @@
-import { Weather } from './weather.b80f0fd2b2.js';
+import { Weather } from './weather.87981f5e5f.js';
 import { $, $$ } from './util.0f60c0292c.js';
 export function initHero() {
 const host = $('.hero');

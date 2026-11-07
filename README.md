@@ -64,6 +64,12 @@ The 1.1 Settings window mocks (sidebar with search, Look & Motion with its live 
 section chips) take their labels in `mock11` from the app's `Localizable.xcstrings`; the FAQ answer
 that names the window uses `faq.items[4].a11`, and the mocks' screen-reader labels `mockLabel11`.
 
+SnowWall 1.2 is prepared the same way and shows with `RELEASE=1.2 node build.mjs`: the Your Emoji
+card (`"release": "1.2"` in `src/data/effects.json` keeps it out of earlier builds; the canvas
+draws the app's default emoji), the counts that include it (`seasons.lede12`, the Pro row's
+`label12`/`note12`, `faq.items[0].a12`), the release note `pro.release12`, and in the press kit
+the frost screenshot and "New in 1.2".
+
 ## Adding a language
 
 All 16 languages the app ships in are on the site. `LANGUAGES` in `build.mjs` lists them; a language

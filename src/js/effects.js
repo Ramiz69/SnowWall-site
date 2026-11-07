@@ -1,9 +1,9 @@
-// The ten SnowWall effects as the web preview draws them. A 2D-canvas sketch of each, not
+// The SnowWall effects as the web preview draws them. A 2D-canvas sketch of each, not
 // the app's Metal renderer: same names, colours and character, much less of everything.
 //
 // kind     flake (snow-like sprites), rain (streaks), petal (tumbling sprites), glass (beads)
 // sprite   flake look: soft, sparkle, crystal, star
-// shape    petal look: petal, leaf, confetti
+// shape    petal look: petal, leaf, confetti, emoji (tints are then the glyphs, upright, no flip)
 // tints    'r,g,b' strings; null means the theme's own flake colour
 // count, speed, wind, size  multipliers on the base simulation
 // settle   whether it piles up on surfaces (snow) / lands (petals) / splashes (rain)
@@ -20,6 +20,9 @@ export const EFFECTS = {
   leaves:    { kind: 'petal', shape: 'leaf', settle: true, size: 1.25, spin: 1.3, tints: [['#ffb347', '#d9661f'], ['#ff8a5c', '#b8361e'], ['#ffd56b', '#d89a1c']] },
   confetti:  { kind: 'petal', shape: 'confetti', settle: true, size: .62, speed: 1.35, spin: 2, flip: 2.2, count: 1.4,
                tints: [['#ff5a6e', '#ff5a6e'], ['#3d8bff', '#3d8bff'], ['#ffd23f', '#ffd23f'], ['#3ddc84', '#3ddc84'], ['#b06cff', '#b06cff']] },
+  // Your Emoji (1.2), with the app's default set (EmojiSelection.defaults).
+  emoji:     { kind: 'petal', shape: 'emoji', settle: true, size: 1.05, speed: .9, spin: 0, count: .9,
+               tints: ['⭐️', '🎈', '🍀', '🦋', '🌈'].map(g => [g, g]) },
 };
 
 for (const fx of Object.values(EFFECTS)) {

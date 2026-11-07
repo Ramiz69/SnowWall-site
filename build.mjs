@@ -244,13 +244,19 @@ function homeData(t) {
       chipItems: t.mock11.chips.map((name, i) => ({ name, cls: i === 0 ? 'on' : '' })),
       chipItemsWindows: t.mock11.chips.map((name, i) => ({ name, cls: i === 2 ? 'on' : '' })) },
     // From 1.1 an answer can point at the new window (`a11`).
-    faq: { ...t.faq, items: t.faq.items.map(i => (RELEASE >= 1.1 && i.a11 ? { ...i, a: i.a11 } : i)) },
-    effects: effectData.map(e => ({
+    // From 1.2 (`a12`) an answer can count Your Emoji among the effects.
+    faq: { ...t.faq, items: t.faq.items.map(i => (RELEASE >= 1.2 && i.a12 ? { ...i, a: i.a12 }
+                                                 : RELEASE >= 1.1 && i.a11 ? { ...i, a: i.a11 } : i)) },
+    // 1.2 adds Your Emoji, a tenth effect: the counts with it are `lede12`, `label12`, `note12`.
+    seasons: RELEASE >= 1.2 ? { ...t.seasons, lede: t.seasons.lede12 } : t.seasons,
+    // A card with a `release` is left out of the builds before it.
+    effects: effectData.filter(e => !e.release || parseFloat(e.release) <= RELEASE).map(e => ({
       id: e.id, name: t.effects[e.id].name, desc: t.effects[e.id].desc,
       tier: e.tier, tierLabel: t.tiers[e.tier], pressed: e.id === 'snow' ? 'true' : 'false', video: video(e.video),
     })),
     built: { ...t.built, facts: t.built.facts.map(f => ({ ...f, icon: icon(f.icon) })), facts11: t.built.facts11.map(f => ({ ...f, icon: icon(f.icon) })) },
-    pro: { ...t.pro, rows: t.pro.rows.map(r => ({ label: r.label, note: r.note ? `<span class="note">${r.note}</span>` : '', free: cell(r.free), pro: cell(r.pro) })) },
+    pro: { ...t.pro, rows: t.pro.rows.map(r => (RELEASE >= 1.2 && r.label12 ? { ...r, label: r.label12, note: r.note12 } : r))
+      .map(r => ({ label: r.label, note: r.note ? `<span class="note">${r.note}</span>` : '', free: cell(r.free), pro: cell(r.pro) })) },
   };
 }
 function fail(msg) { throw new Error(msg); }

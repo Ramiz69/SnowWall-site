@@ -97,6 +97,7 @@
   "seasons": {
     "title": "Un temps pour chaque saison.",
     "lede": "Chute de neige et Pluie sont gratuits. SnowWall Pro en ajoute huit autres, du blizzard à la pluie de confettis.",
+    "lede12": "Chute de neige et Pluie sont gratuits. SnowWall Pro en ajoute neuf autres, du blizzard à la pluie de confettis.",
     "hint": "Choisissez un effet pour le voir tomber, ici et en haut de la page.",
     "chosen": "En ce moment : {name}."
   },
@@ -112,7 +113,8 @@
     "blossom": { "name": "Fleurs de cerisier", "desc": "Des pétales roses portés par la brise de printemps." },
     "leaves": { "name": "Feuilles d’automne", "desc": "Des feuilles aux tons chauds qui tournoient en tombant." },
     "stars": { "name": "Nuit étoilée", "desc": "Des étoiles dorées qui scintillent." },
-    "confetti": { "name": "Confettis", "desc": "Chacun de sa propre couleur." }
+    "confetti": { "name": "Confettis", "desc": "Chacun de sa propre couleur." },
+    "emoji": { "name": "Vos emojis", "desc": "Jusqu’à 32 emojis de votre choix tombent à la place de la neige." }
   },
   "ambient": {
     "title": "Le mode Ambiance, quand vous vous éloignez.",
@@ -182,7 +184,7 @@
       { "label": "Raccourcis, filtre de concentration et « Plus discret la nuit »", "free": true, "pro": true },
       { "label": "Préréglages enregistrés", "free": "3", "pro": "Illimités" },
       { "label": "Qualité", "free": "Économie d’énergie, Équilibré", "pro": "Ultra en plus, jusqu’à 10 000 particules" },
-      { "label": "Huit effets de plus", "note": "Blizzard, Noël, Glace, Fleurs de cerisier, Pluie sur la vitre, Feuilles d’automne, Nuit étoilée et Confettis", "free": false, "pro": true },
+      { "label": "Huit effets de plus", "note": "Blizzard, Noël, Glace, Fleurs de cerisier, Pluie sur la vitre, Feuilles d’automne, Nuit étoilée et Confettis", "label12": "Neuf effets de plus", "note12": "Blizzard, Noël, Glace, Fleurs de cerisier, Pluie sur la vitre, Feuilles d’automne, Nuit étoilée, Confettis et Vos emojis", "free": false, "pro": true },
       { "label": "Mode Ambiance", "free": false, "pro": true },
       { "label": "Huit effets visuels", "note": "Halo lumineux, Aurore boréale, Profondeur de champ et d’autres", "free": false, "pro": true },
       { "label": "Événements du calendrier", "note": "Noël, le Nouvel An, Halloween et la floraison du printemps s’activent d’eux-mêmes", "free": false, "pro": true },
@@ -192,12 +194,16 @@
       { "title": "Noël est gratuit en décembre.", "body": "L’effet Noël est ouvert à tous pendant tout le mois." },
       { "title": "Essayez avant d’acheter.", "body": "Testez n’importe quel effet Pro en direct sur votre bureau avant de vous décider." }
     ],
+    "release12": [
+      { "title": "Nouveau givre.", "body": "La glace avance depuis les bords de l’écran avec des facettes de cristal et de fines aiguilles, et le pointeur y fait fondre un passage." },
+      { "title": "Vos emojis.", "body": "Choisissez jusqu’à 32 emojis et laissez-les tomber à la place de la neige. Inclus dans Pro." }
+    ],
     "price": "SnowWall Pro est un achat unique de 14,99 $. Restaurez-le sur chaque Mac connecté à votre compte Apple."
   },
   "faq": {
     "title": "Questions.",
     "items": [
-      { "q": "SnowWall est-il gratuit ?", "a": "<p>Oui. Chute de neige et Pluie sont gratuits, avec tous leurs réglages, et vous pouvez enregistrer trois préréglages. SnowWall Pro est un achat unique qui ajoute les huit autres effets, le mode Ambiance, les effets visuels, la qualité Ultra et des préréglages illimités. Ce n’est pas un abonnement.</p>" },
+      { "q": "SnowWall est-il gratuit ?", "a": "<p>Oui. Chute de neige et Pluie sont gratuits, avec tous leurs réglages, et vous pouvez enregistrer trois préréglages. SnowWall Pro est un achat unique qui ajoute les huit autres effets, le mode Ambiance, les effets visuels, la qualité Ultra et des préréglages illimités. Ce n’est pas un abonnement.</p>", "a12": "<p>Oui. Chute de neige et Pluie sont gratuits, avec tous leurs réglages, et vous pouvez enregistrer trois préréglages. SnowWall Pro est un achat unique qui ajoute les neuf autres effets, le mode Ambiance, les effets visuels, la qualité Ultra et des préréglages illimités. Ce n’est pas un abonnement.</p>" },
       { "q": "J’ai ouvert SnowWall. Où est-il ?", "a": "<p>SnowWall n’a ni fenêtre ni icône dans le Dock. Il vit dans la barre des menus, sous la forme d’un flocon en haut de l’écran. Cliquez dessus pour mettre en pause, changer d’effet ou ouvrir les réglages.</p>" },
       { "q": "Va-t-il ralentir mon Mac ou vider la batterie ?", "a": "<p>Il dessine avec le processeur graphique, il consomme donc un peu d’énergie. Il se met en pause quand l’écran est en veille et passe à 30 images par seconde en mode Économie d’énergie ou quand le Mac chauffe. Pour consommer encore moins, choisissez la qualité Économie d’énergie ou réduisez le nombre de flocons.</p>" },
       { "q": "Faut-il lui accorder des autorisations ?", "a": "<p>Non. SnowWall dessine sur le bureau sans lire ce qui est à l’écran. Si macOS vous demande un jour de lui accorder l’enregistrement de l’écran ou l’accès à l’accessibilité, refusez et <a href=\"/support/\" hreflang=\"en\">prévenez-nous</a>.</p>" },

@@ -97,6 +97,7 @@
   "seasons": {
     "title": "Un clima para cada estación.",
     "lede": "Nevada y Lluvia son gratis. SnowWall Pro añade ocho más, de una ventisca a una lluvia de confeti.",
+    "lede12": "Nevada y Lluvia son gratis. SnowWall Pro añade nueve más, de una ventisca a una lluvia de confeti.",
     "hint": "Elige uno para verlo caer, aquí y en lo alto de la página.",
     "chosen": "Ahora cae: {name}."
   },
@@ -112,7 +113,8 @@
     "blossom": { "name": "Flor de cerezo", "desc": "Pétalos rosas en la brisa de primavera." },
     "leaves": { "name": "Hojas de otoño", "desc": "Hojas cálidas que giran al caer." },
     "stars": { "name": "Noche estrellada", "desc": "Estrellas doradas que titilan." },
-    "confetti": { "name": "Confeti", "desc": "Cada trocito, de un color." }
+    "confetti": { "name": "Confeti", "desc": "Cada trocito, de un color." },
+    "emoji": { "name": "Tus emojis", "desc": "Hasta 32 emojis a tu elección, cayendo en lugar de nieve." }
   },
   "ambient": {
     "title": "Modo ambiente, cuando te alejas.",
@@ -182,7 +184,7 @@
       { "label": "Atajos, filtro de concentración y Calma nocturna", "free": true, "pro": true },
       { "label": "Preajustes guardados", "free": "3", "pro": "Ilimitados" },
       { "label": "Calidad", "free": "Ahorro de energía, Equilibrado", "pro": "Añade Ultra, hasta 10.000 partículas" },
-      { "label": "Ocho efectos más", "note": "Ventisca, Navidad, Glacial, Flor de cerezo, Lluvia en la ventana, Hojas de otoño, Noche estrellada y Confeti", "free": false, "pro": true },
+      { "label": "Ocho efectos más", "note": "Ventisca, Navidad, Glacial, Flor de cerezo, Lluvia en la ventana, Hojas de otoño, Noche estrellada y Confeti", "label12": "Nueve efectos más", "note12": "Ventisca, Navidad, Glacial, Flor de cerezo, Lluvia en la ventana, Hojas de otoño, Noche estrellada, Confeti y Tus emojis", "free": false, "pro": true },
       { "label": "Modo ambiente", "free": false, "pro": true },
       { "label": "Ocho efectos visuales", "note": "Resplandor, aurora boreal, profundidad de campo y más", "free": false, "pro": true },
       { "label": "Fechas especiales", "note": "Navidad, Año Nuevo, Halloween y la floración de primavera se activan solas", "free": false, "pro": true },
@@ -192,12 +194,16 @@
       { "title": "En diciembre, Navidad es gratis.", "body": "El efecto Navidad está abierto a todo el mundo durante todo el mes." },
       { "title": "Pruébalo antes de comprar.", "body": "Prueba cualquier efecto Pro en directo en tu propio escritorio antes de decidirte." }
     ],
+    "release12": [
+      { "title": "Nueva escarcha.", "body": "El hielo crece desde los bordes de la pantalla con facetas de cristal y agujas finas, y el puntero abre un camino al derretirlo." },
+      { "title": "Tus emojis.", "body": "Elige hasta 32 emojis y deja que caigan en lugar de la nieve. Incluido en Pro." }
+    ],
     "price": "SnowWall Pro es un único pago de 14,99 US$. Restáuralo en cada Mac con tu cuenta de Apple."
   },
   "faq": {
     "title": "Preguntas.",
     "items": [
-      { "q": "¿SnowWall es gratis?", "a": "<p>Sí. Nevada y Lluvia son gratis, con todos sus ajustes, y puedes guardar tres preajustes. SnowWall Pro es un único pago que añade los otros ocho efectos, el modo ambiente, los efectos visuales, la calidad Ultra y preajustes ilimitados. No es una suscripción.</p>" },
+      { "q": "¿SnowWall es gratis?", "a": "<p>Sí. Nevada y Lluvia son gratis, con todos sus ajustes, y puedes guardar tres preajustes. SnowWall Pro es un único pago que añade los otros ocho efectos, el modo ambiente, los efectos visuales, la calidad Ultra y preajustes ilimitados. No es una suscripción.</p>", "a12": "<p>Sí. Nevada y Lluvia son gratis, con todos sus ajustes, y puedes guardar tres preajustes. SnowWall Pro es un único pago que añade los otros nueve efectos, el modo ambiente, los efectos visuales, la calidad Ultra y preajustes ilimitados. No es una suscripción.</p>" },
       { "q": "He abierto SnowWall. ¿Dónde está?", "a": "<p>SnowWall no tiene ventana ni icono en el Dock. Vive en la barra de menús, como un copo de nieve en la parte superior de la pantalla. Haz clic en él para pausar, cambiar de efecto o abrir los ajustes.</p>" },
       { "q": "¿Ralentiza el Mac o gasta batería?", "a": "<p>Dibuja con el procesador gráfico, así que consume algo de energía. Se pausa cuando la pantalla entra en reposo y baja a 30 fotogramas por segundo en modo de bajo consumo o si el Mac se calienta. Para gastar menos, elige la calidad Ahorro de energía o reduce la cantidad de copos.</p>" },
       { "q": "¿Necesita algún permiso?", "a": "<p>No. SnowWall dibuja sobre el escritorio sin leer lo que hay en pantalla. Si macOS te pide alguna vez darle acceso a la grabación de pantalla o a la accesibilidad, no lo concedas y, por favor, <a href=\"/support/\" hreflang=\"en\">avísanos</a>.</p>" },
