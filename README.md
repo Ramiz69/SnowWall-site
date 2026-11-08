@@ -7,9 +7,9 @@ served by Cloudflare at **snowwall.app**.
 | Path | What | Used by |
 |---|---|---|
 | `/` | the home page, English | Marketing URL in App Store Connect |
-| `/ru/`, `/de/`, `/ja/`, … | the home page in each of the app's 16 languages | hreflang alternates of `/` |
+| `/ru/`, `/uk/`, `/de/`, `/ja/`, … | the home page in each of the app's 16 languages, plus Ukrainian | hreflang alternates of `/` |
 | `/press/` | press kit: facts, screenshots, icon, ZIP | links in press emails |
-| `/black-friday/`, `/ru/black-friday/`, … | the Black Friday 2026 offer (Pro about a third off, 27 Nov to 1 Dec), in all 16 languages | deal lists and press, which want the old and new price and the dates on our own page |
+| `/black-friday/`, `/ru/black-friday/`, … | the Black Friday 2026 offer (Pro about a third off, 27 Nov to 1 Dec), in all 17 site languages | deal lists and press, which want the old and new price and the dates on our own page |
 | `/support/` | answers and the support address | Support URL in App Store Connect (required, must be a web page) |
 | `/privacy/` | privacy policy | the app's purchase window, Privacy Policy URL in App Store Connect |
 | `/terms/` | terms of use | the app's purchase window |
@@ -83,7 +83,10 @@ up to `SALE.lastDay` in `build.mjs`: rebuild and push after 1 December and the l
 
 ## Adding a language
 
-All 16 languages the app ships in are on the site. `LANGUAGES` in `build.mjs` lists them; a language
+All 16 languages the app ships in are on the site, and Ukrainian, which the app adds in 1.2. The
+"16 languages" fact on the home page (`built.facts`, icon `globe`) and the press kit's count switch
+to 17 in the 1.2 build (`title12`/`body12`, and `<!--1.2-->`/`<!--pre1.2-->` markers, which `render()`
+now handles for any version). `LANGUAGES` in `build.mjs` lists them; a language
 is built once `i18n/<code>.json` exists, and the language menu, hreflang links, `og:locale` tags and
 the sitemap follow on their own. After changing `en.json`, update every translation and run
 `node tools/check-i18n.mjs`: it fails on a missing or extra key, changed HTML or placeholders, and

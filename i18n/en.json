@@ -153,7 +153,7 @@
       { "icon": "displays", "title": "All your displays", "body": "Snow falls across every screen you connect." },
       { "icon": "motion", "title": "Reduce Motion, your way", "body": "When Reduce Motion is on, stop the snow, slow it down or leave it running." },
       { "icon": "shortcuts", "title": "Shortcuts and Focus", "body": "Shortcuts actions, and a Focus filter that pauses the snow while a Focus is on." },
-      { "icon": "globe", "title": "16 languages", "body": "English, Russian, Japanese, Arabic, Hindi and eleven more." }
+      { "icon": "globe", "title": "16 languages", "body": "English, Russian, Japanese, Arabic, Hindi and eleven more.", "title12": "17 languages", "body12": "English, Russian, Japanese, Arabic, Hindi and twelve more." }
     ],
     "facts11": [
       { "icon": "control", "title": "Pause from Control Center", "body": "A Control Center control stops and starts the snow without opening the menu." },

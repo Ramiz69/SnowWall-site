@@ -153,7 +153,7 @@
       { "icon": "displays", "title": "Tutti i tuoi display", "body": "La neve cade su ogni schermo che colleghi." },
       { "icon": "motion", "title": "Riduci movimento, a modo tuo", "body": "Con Riduci movimento attivo, ferma la neve, rallentala o lasciala cadere." },
       { "icon": "shortcuts", "title": "Comandi Rapidi e Full immersion", "body": "Azioni per Comandi Rapidi e un filtro Full immersion che mette in pausa la neve quando una modalità Full immersion è attiva." },
-      { "icon": "globe", "title": "16 lingue", "body": "Italiano, inglese, russo, giapponese, arabo, hindi e altre dieci." }
+      { "icon": "globe", "title": "16 lingue", "body": "Italiano, inglese, russo, giapponese, arabo, hindi e altre dieci.", "title12": "17 lingue", "body12": "Italiano, inglese, russo, giapponese, arabo, hindi e altre undici." }
     ],
     "facts11": [
       { "icon": "control", "title": "Pausa dal Centro di Controllo", "body": "Un controllo nel Centro di Controllo ferma e riavvia la neve senza aprire il menu." },

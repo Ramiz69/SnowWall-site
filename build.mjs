@@ -25,13 +25,15 @@ const APP_STORE = 'https://apps.apple.com/app/id6809149964';
 // site a download came from. Structured data keeps the plain URL. The channel list and the provider
 // token live in the SnowWall repo, docs/press/campaign-links.py.
 const campaign = ct => `https://apps.apple.com/app/apple-store/id6809149964?pt=118223827&amp;ct=${ct}&amp;mt=8`;
-// Every language the app ships in, in the order the language menu lists them. A language joins
-// the site (its home page, the menu, sitemap) once i18n/<code>.json exists; only en and ru do now.
+// Every language the app ships in, plus Ukrainian (site only, the app has no Ukrainian yet), in the
+// order the language menu lists them. A language joins the site (its home page, the menu, sitemap)
+// once i18n/<code>.json exists.
 // No flags: a flag names a country, not a language, and several of these have no single country.
 // The menu shows each language by its own name, the way Apple's own language pickers do.
 const LANGUAGES = [
   { code: 'en', short: 'EN', name: 'English' },
   { code: 'ru', short: 'RU', name: 'Русский' },
+  { code: 'uk', short: 'UK', name: 'Українська' },
   { code: 'ar', short: 'AR', name: 'العربية' },
   { code: 'de', short: 'DE', name: 'Deutsch' },
   { code: 'es', short: 'ES', name: 'Español' },
@@ -49,7 +51,7 @@ const LANGUAGES = [
 ].map(l => ({ ...l, path: l.code === 'en' ? '/' : `/${l.code.toLowerCase()}/` }));
 // Open Graph locale per language, and which languages read right to left.
 const OG_LOCALE = {
-  en: 'en_US', ru: 'ru_RU', ar: 'ar_AR', de: 'de_DE', es: 'es_ES', fr: 'fr_FR', hi: 'hi_IN', id: 'id_ID',
+  en: 'en_US', ru: 'ru_RU', uk: 'uk_UA', ar: 'ar_AR', de: 'de_DE', es: 'es_ES', fr: 'fr_FR', hi: 'hi_IN', id: 'id_ID',
   it: 'it_IT', ja: 'ja_JP', ko: 'ko_KR', 'pt-BR': 'pt_BR', tr: 'tr_TR', vi: 'vi_VN', 'zh-Hans': 'zh_CN', 'zh-Hant': 'zh_TW',
 };
 const RTL = new Set(['ar']);
@@ -118,11 +120,13 @@ const modulepreload = [...done].filter(f => f !== 'main.js').map(f => `<link rel
 // ---------- templating ----------
 // {{key.path}} inserts a value, {{#list}}…{{/list}} repeats for each item ({{.field}} or {{.}}),
 // {{@src/path}} is a hashed asset URL. A missing key is an error, not an empty string.
+// `<!--1.2-->…<!--/1.2-->` is kept from that release on, `<!--pre1.2-->…<!--/pre1.2-->` only before it.
+const releaseBlocks = s => s.replace(/<!--(pre)?(\d+\.\d+)-->\n?([\s\S]*?)<!--\/\1\2-->\n?/g,
+  (_, pre, v, body) => (RELEASE >= parseFloat(v)) !== Boolean(pre) ? body : '');
 function render(tpl, data, where) {
   // Release-specific markup, kept only in the build it belongs to, so scripts that look for an
   // element (the settle canvas finds `.mock`) never find the other release's hidden copy.
-  tpl = tpl.replace(/<!--1\.1-->\n?([\s\S]*?)<!--\/1\.1-->\n?/g, (_, body) => RELEASE >= 1.1 ? body : '')
-           .replace(/<!--pre1\.1-->\n?([\s\S]*?)<!--\/pre1\.1-->\n?/g, (_, body) => RELEASE >= 1.1 ? '' : body)
+  tpl = releaseBlocks(tpl)
            // The home page's link to the Black Friday page, until the sale ends (SALE above).
            .replace(/<!--sale-->\n?([\s\S]*?)<!--\/sale-->\n?/g, (_, body) => SALE_LINK ? body : '');
   tpl = tpl.replace(/{{#([\w.]+)}}([\s\S]*?){{\/\1}}/g, (_, key, body) => {
@@ -263,7 +267,8 @@ function homeData(t) {
       id: e.id, name: t.effects[e.id].name, desc: t.effects[e.id].desc,
       tier: e.tier, tierLabel: t.tiers[e.tier], pressed: e.id === 'snow' ? 'true' : 'false', video: video(e.video),
     })),
-    built: { ...t.built, facts: t.built.facts.map(f => ({ ...f, icon: icon(f.icon) })), facts11: t.built.facts11.map(f => ({ ...f, icon: icon(f.icon) })) },
+    // From 1.2, which adds Ukrainian to the app, the languages fact counts 17 (`title12`, `body12`).
+    built: { ...t.built, facts: t.built.facts.map(f => (RELEASE >= 1.2 && f.title12 ? { ...f, title: f.title12, body: f.body12 } : f)).map(f => ({ ...f, icon: icon(f.icon) })), facts11: t.built.facts11.map(f => ({ ...f, icon: icon(f.icon) })) },
     pro: { ...t.pro, rows: t.pro.rows.map(r => (RELEASE >= 1.2 && r.label12 ? { ...r, label: r.label12, note: r.note12 } : r))
       .map(r => ({ label: r.label, note: r.note ? `<span class="note">${r.note}</span>` : '', free: cell(r.free), pro: cell(r.pro) })) },
   };
@@ -325,7 +330,7 @@ for (const f of readdirSync(join(SRC, 'pages'))) {
     metaDescription: meta.description ? `<meta name="description" content="${meta.description}">` : '',
     robots: meta.robots ? `<meta name="robots" content="${meta.robots}">` : '',
     canonical: meta.robots ? '' : `<link rel="canonical" href="${SITE}${meta.path}">`,
-    content: raw.slice(m[0].length).replace(/{{/g, '&#123;&#123;'),
+    content: releaseBlocks(raw.slice(m[0].length)).replace(/{{/g, '&#123;&#123;'),
     storeLink: campaign(meta.nav === 'press' ? 'site-press' : 'site-support'),
     current,
     menus: headerMenus(enUi, 'en', { ...homeHrefs, en: meta.robots ? '/' : meta.path }),

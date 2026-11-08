@@ -153,7 +153,7 @@
       { "icon": "displays", "title": "Tous vos écrans", "body": "La neige tombe sur chaque écran que vous branchez." },
       { "icon": "motion", "title": "« Réduire les animations », à votre façon", "body": "Quand l’option est activée, arrêtez la neige, ralentissez-la ou laissez-la tomber." },
       { "icon": "shortcuts", "title": "Raccourcis et Concentration", "body": "Des actions pour Raccourcis, et un filtre de concentration qui met la neige en pause pendant un mode de concentration." },
-      { "icon": "globe", "title": "16 langues", "body": "Français, anglais, japonais, arabe, hindi et onze autres." }
+      { "icon": "globe", "title": "16 langues", "body": "Français, anglais, japonais, arabe, hindi et onze autres.", "title12": "17 langues", "body12": "Français, anglais, japonais, arabe, hindi et douze autres." }
     ],
     "facts11": [
       { "icon": "control", "title": "Pause depuis le Centre de contrôle", "body": "Une commande du Centre de contrôle arrête et relance la neige sans ouvrir le menu." },

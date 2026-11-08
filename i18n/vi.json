@@ -153,7 +153,7 @@
       { "icon": "displays", "title": "Mọi màn hình", "body": "Tuyết rơi trên mọi màn hình bạn kết nối." },
       { "icon": "motion", "title": "Giảm chuyển động, theo ý bạn", "body": "Khi bật Giảm chuyển động, bạn có thể dừng tuyết, làm chậm hoặc để tuyết tiếp tục rơi." },
       { "icon": "shortcuts", "title": "Phím tắt và Tập trung", "body": "Tác vụ cho ứng dụng Phím tắt, và bộ lọc Tập trung tạm dừng tuyết khi đang bật chế độ Tập trung." },
-      { "icon": "globe", "title": "16 ngôn ngữ", "body": "Tiếng Việt, tiếng Anh, tiếng Nhật, tiếng Ả Rập, tiếng Hindi và mười một ngôn ngữ khác." }
+      { "icon": "globe", "title": "16 ngôn ngữ", "body": "Tiếng Việt, tiếng Anh, tiếng Nhật, tiếng Ả Rập, tiếng Hindi và mười một ngôn ngữ khác.", "title12": "17 ngôn ngữ", "body12": "Tiếng Việt, tiếng Anh, tiếng Nhật, tiếng Ả Rập, tiếng Hindi và mười hai ngôn ngữ khác." }
     ],
     "facts11": [
       { "icon": "control", "title": "Tạm dừng từ Trung tâm điều khiển", "body": "Một điều khiển trong Trung tâm điều khiển dừng và bật tuyết mà không cần mở menu." },
