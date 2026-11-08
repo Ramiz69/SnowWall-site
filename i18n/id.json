@@ -153,7 +153,7 @@
       { "icon": "displays", "title": "Semua layar Anda", "body": "Salju turun di setiap layar yang tersambung." },
       { "icon": "motion", "title": "Kurangi Gerakan, sesuai pilihan Anda", "body": "Saat Kurangi Gerakan aktif, hentikan salju, perlambat, atau biarkan tetap turun." },
       { "icon": "shortcuts", "title": "Pintasan dan Fokus", "body": "Tindakan untuk Pintasan, serta filter Fokus yang menjeda salju saat Fokus aktif." },
-      { "icon": "globe", "title": "16 bahasa", "body": "Indonesia, Inggris, Jepang, Arab, Hindi, dan sebelas lainnya." }
+      { "icon": "globe", "title": "16 bahasa", "body": "Indonesia, Inggris, Jepang, Arab, Hindi, dan sebelas lainnya.", "title12": "17 bahasa", "body12": "Indonesia, Inggris, Jepang, Arab, Hindi, dan dua belas lainnya." }
     ],
     "facts11": [
       { "icon": "control", "title": "Jeda dari Pusat Kontrol", "body": "Kontrol di Pusat Kontrol menghentikan dan menjalankan salju tanpa membuka menu." },

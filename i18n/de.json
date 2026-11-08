@@ -153,7 +153,7 @@
       { "icon": "displays", "title": "Alle deine Displays", "body": "Schnee fällt auf jedem Bildschirm, den du anschließt." },
       { "icon": "motion", "title": "„Bewegung reduzieren“, wie du willst", "body": "Ist „Bewegung reduzieren“ aktiv, kannst du den Schnee anhalten, verlangsamen oder weiterlaufen lassen." },
       { "icon": "shortcuts", "title": "Kurzbefehle und Fokus", "body": "Aktionen für Kurzbefehle und ein Fokusfilter, der den Schnee pausiert, solange ein Fokus aktiv ist." },
-      { "icon": "globe", "title": "16 Sprachen", "body": "Deutsch, Englisch, Japanisch, Arabisch, Hindi und elf weitere." }
+      { "icon": "globe", "title": "16 Sprachen", "body": "Deutsch, Englisch, Japanisch, Arabisch, Hindi und elf weitere.", "title12": "17 Sprachen", "body12": "Deutsch, Englisch, Japanisch, Arabisch, Hindi und zwölf weitere." }
     ],
     "facts11": [
       { "icon": "control", "title": "Pause im Kontrollzentrum", "body": "Ein Steuerelement im Kontrollzentrum hält den Schnee an und startet ihn wieder, ohne das Menü zu öffnen." },

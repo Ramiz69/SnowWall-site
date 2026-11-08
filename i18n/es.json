@@ -153,7 +153,7 @@
       { "icon": "displays", "title": "Todas tus pantallas", "body": "La nieve cae en cada pantalla que conectes." },
       { "icon": "motion", "title": "Reducir movimiento, a tu manera", "body": "Con Reducir movimiento activado, detén la nieve, ralentízala o déjala caer." },
       { "icon": "shortcuts", "title": "Atajos y Concentración", "body": "Acciones para Atajos y un filtro de concentración que pausa la nieve mientras un modo de concentración está activado." },
-      { "icon": "globe", "title": "16 idiomas", "body": "Español, inglés, ruso, japonés, árabe, hindi y diez más." }
+      { "icon": "globe", "title": "16 idiomas", "body": "Español, inglés, ruso, japonés, árabe, hindi y diez más.", "title12": "17 idiomas", "body12": "Español, inglés, ruso, japonés, árabe, hindi y once más." }
     ],
     "facts11": [
       { "icon": "control", "title": "Pausa desde el centro de control", "body": "Un control en el centro de control detiene y reanuda la nieve sin abrir el menú." },

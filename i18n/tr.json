@@ -153,7 +153,7 @@
       { "icon": "displays", "title": "Tüm ekranlarınız", "body": "Bağladığınız her ekrana kar yağar." },
       { "icon": "motion", "title": "Hareketi Azalt, size göre", "body": "Hareketi Azalt açıkken karı durdurun, yavaşlatın ya da yağmaya devam etsin." },
       { "icon": "shortcuts", "title": "Kestirmeler ve Odak", "body": "Kestirmeler eylemleri ve bir Odak açıkken karı duraklatan bir Odak filtresi." },
-      { "icon": "globe", "title": "16 dil", "body": "Türkçe, İngilizce, Rusça, Japonca, Arapça, Hintçe ve on dil daha." }
+      { "icon": "globe", "title": "16 dil", "body": "Türkçe, İngilizce, Rusça, Japonca, Arapça, Hintçe ve on dil daha.", "title12": "17 dil", "body12": "Türkçe, İngilizce, Rusça, Japonca, Arapça, Hintçe ve on bir dil daha." }
     ],
     "facts11": [
       { "icon": "control", "title": "Denetim Merkezi’nden duraklatın", "body": "Denetim Merkezi’ndeki bir denetim, menüyü açmadan karı durdurur ve başlatır." },
