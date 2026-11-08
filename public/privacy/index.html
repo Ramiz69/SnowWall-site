@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <title>SnowWall Privacy Policy</title>
-<meta name="description" content="SnowWall collects nothing: no analytics, no crash reporting, no accounts, and no network requests of its own.">
+<meta name="description" content="SnowWall collects nothing: no analytics, no automatic crash reporting, no accounts, and no network requests of its own.">
 
 <link rel="canonical" href="https://snowwall.app/privacy/">
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -32,7 +32,7 @@
 </header>
 <main class="doc">
 <h1>Privacy Policy</h1>
-<p class="updated">SnowWall for macOS · Last updated 13 September 2026</p>
+<p class="updated">SnowWall for macOS · Last updated 8 November 2026</p>
 
 <p class="lede">SnowWall collects nothing. It has no analytics, no crash reporting, no
 accounts, and makes no network requests of its own. Everything it knows about you stays on
@@ -57,11 +57,26 @@ it is readable by us. Deleting the app removes it.</p>
 <h2>What SnowWall does not do</h2>
 <ul>
   <li>No analytics, usage statistics, or telemetry of any kind.</li>
-  <li>No crash or diagnostic reporting.</li>
+  <li>No automatic crash or diagnostic reporting. Crash reports stay on your Mac unless you
+  attach them to an email yourself (see Diagnostics below).</li>
   <li>No advertising, and no advertising identifiers.</li>
   <li>No account, sign-in, or email collection.</li>
   <li>No third-party services embedded in the app.</li>
 </ul>
+
+<h2>Diagnostics</h2>
+<p>From version 1.2.1, macOS may give SnowWall reports about its own crashes and hangs
+(Apple's MetricKit). SnowWall keeps at most five of them, none older than seven days, on your
+Mac only, and never sends them.</p>
+<p>If you write to us from Settings › About with "Attach Diagnostics" turned on, your email
+app attaches a file named <code>snowwall-diagnostics.json</code>: the SnowWall and macOS
+versions, your Mac's model identifier, your displays' size, refresh rate and HDR support, the
+effect's main settings, and those reports. It contains no names, files, window titles or
+anything you typed. You can read the file first with "Show Diagnostics…", remove it from the
+email before sending, and delete the stored reports with "Delete Diagnostic Reports". The
+switch is off unless you turn it on.</p>
+<p>Like any email, what you send reaches us only when you send it, and we use it only to
+answer you and fix the problem.</p>
 
 <h2>Permissions SnowWall does not ask for</h2>
 <p>SnowWall requests no system permissions at all. It does not use screen recording,
