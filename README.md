@@ -51,7 +51,7 @@ Useful query strings on the home page: `?stats` (fps and ms/frame per canvas),
 
 ## Release sections
 
-SnowWall 1.1 is in the App Store (13 October 2026), and the build's default release is 1.1:
+SnowWall 1.2 is in the App Store (9 November 2026), and the build's default release is 1.2 (1.1 shipped on 13 October 2026):
 `node build.mjs` shows every block marked `data-release="1.1"` and the 1.1 Settings window
 mocks. `node build.mjs --release=1.0` still renders the page as it was for 1.0.
 
